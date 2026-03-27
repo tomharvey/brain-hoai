@@ -1,0 +1,12 @@
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.DS_Store
+Thumbs.db
+.qmd/
+node_modules/
+.quartz-cache/
+public/
+*.swp
+*.swo
+*~
