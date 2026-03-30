@@ -12,7 +12,7 @@ Run at the start of a working session to get oriented.
 2. List files modified in the last 48 hours using `git log --since="48 hours ago" --name-only --pretty=format:""` or file timestamps if git is unavailable.
 3. Count items in `inbox/` (excluding .gitkeep).
 4. Scan `initiatives/` for all active initiatives (status: active in frontmatter). Summarise each in one line.
-5. Check yesterday's meeting notes (if any) in `meetings/` for unchecked action items.
+5. Check yesterday's meeting notes (if any) in `meetings/` (excluding `meetings/transcripts/`) for unchecked action items.
 6. Check if a weekly review is due: look at `reviews/` for the current ISO week file. If missing, it's due.
 
 ## Output

@@ -8,7 +8,7 @@ Run at the end of a session, or whenever the vault structure has changed.
 
 ## Steps
 
-1. Walk all directories, skipping `.claude/`, `.git/`, `node_modules/`, `.obsidian/`, `.devcontainer/`.
+1. Walk all directories, skipping `.claude/`, `.git/`, `node_modules/`, `.obsidian/`, `.devcontainer/`, `meetings/transcripts/`.
 2. For each `.md` file found (excluding root-level README.md, CLAUDE.md, AGENTS.md, BOOTSTRAP.md, WORKING.md, MANIFEST.md), parse YAML frontmatter to extract title, domain, type, status, created, and updated dates.
 3. Group notes by domain, then by type.
 4. Generate a "Recent (last 7 days)" section listing notes with updated or created dates within the last 7 days.

@@ -37,9 +37,11 @@ Everything in this vault maps to one of four leadership domains:
 │   ├── operational-tooling/
 │   ├── product-ai/
 │   └── ai-enablement/
+├── issues/                    # Issue tracker (AI-NNN, Linear-style)
 ├── initiatives/               # Active initiatives with status tracking
 ├── decisions/                 # Decision records (MADR format)
 ├── meetings/                  # Meeting notes by date
+│   └── transcripts/           # Raw Granola transcripts (linked from meeting notes)
 ├── people/                    # Stakeholder notes, 1:1 logs
 ├── reviews/                   # Weekly reviews, monthly reflections
 ├── reference/                 # Stable knowledge, frameworks, templates
@@ -58,6 +60,7 @@ Everything in this vault maps to one of four leadership domains:
 - Decision records: `decisions/NNN-short-title.md` (zero-padded three digits, sequential)
 - Weekly reviews: `reviews/YYYY-WNN.md`
 - Initiative files: `initiatives/kebab-case-name.md`
+- Issues: `issues/AI-NNN-kebab-case-title.md` (zero-padded three digits, sequential)
 
 ### Frontmatter
 Every note has YAML frontmatter:
@@ -67,8 +70,10 @@ title: Note title
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 domain: engineering-workflows | operational-tooling | product-ai | ai-enablement
-type: initiative | decision | meeting | person | review | reference | inbox
+type: initiative | decision | meeting | person | review | reference | inbox | issue
 status: active | paused | completed | abandoned  # for initiatives and decisions
+# for issues: backlog | todo | in-progress | done | cancelled
+priority: urgent | high | medium | low  # issues only
 tags: []
 ---
 ```
@@ -118,6 +123,9 @@ Skills live in `.claude/skills/` as markdown files. Each describes when to use i
 | `/initiative` | Create or update an initiative |
 | `/review` | Generate a weekly review template |
 | `/ingest` | Triage and route inbox items to correct locations |
+| `/issue` | Create, update, list, or close issues |
+| `/granola` | Import scoped meetings from Granola |
+| `/calendar` | Find availability, create and update calendar events |
 
 ---
 

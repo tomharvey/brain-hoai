@@ -11,6 +11,7 @@ This vault is a markdown-native personal operating system for a Head of AI at an
 | `initiatives/` | Active initiatives with status tracking |
 | `decisions/` | Decision records in MADR format |
 | `meetings/` | Meeting notes by date |
+| `meetings/transcripts/` | Raw Granola transcripts (linked from meeting notes) |
 | `people/` | Stakeholder notes, 1:1 logs |
 | `reviews/` | Weekly reviews, monthly reflections |
 | `reference/templates/` | Note templates |
