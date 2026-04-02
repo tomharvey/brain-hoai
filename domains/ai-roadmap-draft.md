@@ -26,18 +26,20 @@ This roadmap covers the four AI domains, informed by discovery conversations wit
 
 - **Platform architecture documentation** — [[chris]] building arch docs + skills so Claude writes code to company standards. Types done, architecture in progress. _Owner: Chris Fothergill._
 - **AI-assisted code review** — proposed extension of arch docs into GitHub Actions. Non-blocking PR comments. _Owner: Chris Fothergill. Depends on: arch docs._
-- **Skills distribution** — central repo exists, Tom taking ownership. Contribution guidelines, catalogue, cross-team visibility. _Owner: Tom Harvey._
+- **Skills distribution** — central repo exists, Tom taking ownership. Contribution guidelines, catalogue, cross-team visibility. Need public/private governance + testing standards. _Owner: Tom Harvey._
+- **Engine Room triage automation** — Jordi building Lambda + Bedrock MVP to auto-triage Linear bug tickets using PostHog + internal MCP. Very early. _Owner: Jordi Pallares Roset._
+- **Enterprise Engine** — Matt Lees built 9 autonomous agents on Claude Cowork managing a £294M enterprise sales pipeline in ~5 days. New capability, not efficiency — enterprise prospecting was previously paused. Admiral acquisition is the strategic accelerant. Cost: $104/month. Needs: HubSpot integration, governance, production path. _Owner: Matt Lees. Status: live, ungoverned._
 
 ### Operational Tooling
 
 - **Submissions automation** — three groups working independently. Needs consolidation post-discovery. Chat interface with human-in-the-loop is the emerging direction. _Owner: TBD (Abs leaving). Status: fragmented._
 - **CC extraction handover** — Abs's tool, technical deep-dive in progress. Must transfer before departure. _Owner: Abs Lamzini → TBD._
-- **Underwriting assistance AI** — third-party vendor rejected. In-house approach preferred. Emily conversation today. _Owner: TBD._
+- **Underwriting assistance AI** — third-party vendor rejected. In-house approach preferred. Renewals process mapped: direction is eliminate spreadsheets (Looker→HubSpot direct), not automate them. Kirsty's Looker→Claude connection is the key enabler. _Owner: Emily Staton._
 
 ### Product AI
 
 - **Safety agent with memory** — Ishmael building an agent that learns from corrections. Pattern could generalise. _Owner: Ismael Jebril._
-- **WhatsApp driver reporting** — proof of concept (Anthropic API + Twilio). Paused/broken. _Owner: TBD._
+- **WhatsApp driver reporting** — Ollie Crowe deployed to render.com (Twilio, SQLite). Not customer-facing. Testing with 1-2 fleets next. _Owner: Ollie Crowe._
 
 ### AI Enablement
 
@@ -122,7 +124,7 @@ This roadmap covers the four AI domains, informed by discovery conversations wit
 | 2026-03-26 | [[abs]] | Engineer | Retool-replication culture. 10x better not 10x faster. Referrals = how to do it right. |
 | 2026-03-27 | [[chris]] | Head of Architecture | 3 groups on submissions. Load-bearing sheets. Arch docs for Claude. |
 | 2026-03-27 | Group | Skills AI session | Skills = context + procedure + references. Distribution is the gap. |
-| 2026-03-30 | [[emily]] | Senior UW Ops Manager | _Today — to be filled_ |
+| 2026-03-30 | [[emily]] | Senior UW Ops Manager | Team uses AI daily. Zapier is primary automation tool. Claude preferred for data extraction. Designs new processes with AI in mind. Monthly AI sync exists. No pushback — team is keen. |
 | 2026-03-30 | [[jade-mounir]] | VP of Finance | _Today — to be filled_ |
-| 2026-03-30 | [[jordy]] | Head of Engineering | _Today — to be filled_ |
-| 2026-03-31 | [[adam-smith]] | Head of Distribution | _Tomorrow — to be filled_ |
+| 2026-03-30 | [[jordi]] | Head of Engineering | Sam → evals + docs. Engine Room triage MVP. WhatsApp bot (Ollie) in the wild. Renewal automation blocked by Google MCP. Skills need governance. Insights database = 3-month bet. Coordination model: Jordi discovers, Tom supports. |
+| 2026-04-02 | [[adam-smith]] | Head of Distribution | "Selfish with AI" — team needs ready-made toolkit, not exploration time. Granola = accidental CRM/knowledge base. Kirsty's Looker MCP already generating review packs. HubSpot thin on broker data — clean-up project with Emily. Wants Granola→HubSpot→Claude pipeline. Semantic naming consistency prerequisite. |

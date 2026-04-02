@@ -1,0 +1,44 @@
+---
+title: Shreya Chowta
+created: 2026-03-30
+updated: 2026-04-02
+type: person
+role: Underwriting Assistant
+team: Ops (reports to Emily Staton)
+tags: [underwriting, ops, ai-user, zapier, hubspot, cancellations]
+---
+
+## Role
+
+Underwriting Assistant
+
+## Team
+
+Ops — reports to [[emily|Emily Staton]]
+
+## Relationship
+
+First spoke 2026-04-02. Proactive, keen, already designing automations independently. Knew Sam via Tracy from a previous company.
+
+## Working style notes
+
+- Most advanced AI user on the ops team (Emily's assessment)
+- Working on post-buying processes, driver referral authority, MTA authority
+- Proficient with Zapier — designs workflows independently
+- Uses AI to sense-check business writing and proposals
+- Emily describes her as "boot on the ground" — daily hands-on usage
+- Prefers Word documents over Google Docs ("very old school")
+- Key observation: "We're relying more on Claude now than tech automation"
+- Connected HubSpot to Claude live during discovery call — immediately productive
+- Had already designed a full NOC automation workflow and pitched it to Sam before Tom arrived
+
+## 1:1 Log
+
+### 2026-04-02 — AI Discovery
+
+- **NOC automation** is her primary pain point — cancellation notices when connectivity drops below 75%. Currently manual copy/paste from HubSpot into Word templates. She'd designed a Zapier workflow; Tom suggested iterating via Claude prompt first as faster path.
+- Connected HubSpot to Claude on the call — pulled up her tickets correctly, needs filtering refinement
+- Approach: feed NOC Word template to Claude, iterate prompt until reliable, then scale to batch processing, then automate upload
+- **Submissions/new business logging** flagged as much larger project — needs dedicated meetings to break into small goals
+- CC parsing: Retool version (Abs) still works, but haulage portal Claude prompt (CC→CSV) reportedly faster
+- Testing Claude + HubSpot NOC approach immediately after the call — will report back

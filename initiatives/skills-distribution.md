@@ -25,6 +25,10 @@ A well-governed, discoverable catalogue of company skills that any team member â
 - Came up in 3 of 7 meetings this week
 - Skills AI session (Mar 27) established shared vocabulary for dev and non-dev audiences
 - Proposed: GitHub repo with automatic updates to Claude plugins
+- **Jordi flagged (2026-03-30)**: Matt asked about sharing a skill company-wide â€” Jordi's response: "who tested this?" Need clear standards for:
+  - Public vs private skills
+  - Testing/review requirements before distribution
+  - Who approves company-wide sharing
 
 ## Dependencies
 
@@ -52,3 +56,14 @@ A well-governed, discoverable catalogue of company skills that any team member â
 - Raised in engineering drop-in, Chris AI, and skills AI session
 - Tom committed to taking ownership
 - Tracked as AI-002
+
+### 2026-03-30
+
+- Jordi raised deployment standards in 1:1 â€” Matt asked to share a skill without testing
+- Need public/private governance and review process before company-wide distribution
+
+### 2026-04-02
+
+- Matt Lees created a Claude skill for renewal documents (Flock Value Statement) â€” wanted to install at org level
+- Jordi pushed back: org-level skills need validation and maintenance process. Share directly with users first, get feedback.
+- Matt Lees accepted, keeping local. Good test case for whatever governance process we define.

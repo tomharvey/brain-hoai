@@ -74,9 +74,14 @@ type: initiative | decision | meeting | person | review | reference | inbox | is
 status: active | paused | completed | abandoned  # for initiatives and decisions
 # for issues: backlog | todo | in-progress | done | cancelled
 priority: urgent | high | medium | low  # issues only
+due: YYYY-MM-DD  # issues only, optional — triggers advance reminders
+origin: "[[meeting-note]]"  # issues only, optional — link to originating meeting
 tags: []
 ---
 ```
+
+### Issues from meeting actions
+When a meeting note contains action items, create an issue for each actionable item. Include `origin: "[[meeting-note]]"` in frontmatter to link back to the source. Set a `due` date where one is clear or can be inferred.
 
 ### Links
 Use wikilinks: `[[note-name]]` or `[[note-name|display text]]`. These work in Obsidian, Foam, Quartz, and most markdown renderers.

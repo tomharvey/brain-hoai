@@ -38,3 +38,11 @@ Formerly a direct report.
 - Proposed business continuity workshop with Paul
 - Shared AiCore industry report on AI for UK insurers
 - PhD research on regulation policies and systematic security mapping
+
+### 2026-03-30 (via Jordi 1:1)
+
+- AI CoP pitch got pushback from [[mima|Mima]]: "we're already doing this" — things moved fast since Sam's original proposal
+- Redirect for Q2: focus on **evals** (defining what evals go into prompt-foo, not the framework itself) + **documentation for AI readability** (institutional knowledge that Chris hasn't covered — platform stuff vs library stuff)
+- Jordi notes Sam struggles with execution on large undefined projects — start small, measurable goals, expand after delivery
+- Jordi has 1:1 with Sam Thursday to set Q2 goals
+- Lunch & learn proposed: Sam presents documentation learnings

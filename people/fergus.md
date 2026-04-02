@@ -36,3 +36,11 @@ Reports-to. Tom reports directly to Fergus. They worked together years ago at an
 - Board meeting Apr 20 — needs AI roadmap (H2 2026 + 24-month)
 - Three strategic bets: disconnected fleets, e-trading automation, driver-level risk
 - Fertile grounds for AI: distribution, underwriting assistance, finance
+
+### 2026-04-02 — Matt Lees Enterprise Engine review
+
+- **Pre-call** (Slack to Tom/Jordi/Mima): initial reaction was "overengineered solution to the problem" and "might struggle with ownership/maintainability in its proposed state". Matt had asked for API keys; Fergus gave a cautious answer and wanted a call first.
+- Fergus wanted to join for two reasons: (1) understand what Matt's trying to achieve, (2) optics — didn't want to seem unwilling to help after the bureaucratic API key response
+- **Post-call**: shifted to thumbs up. Wants Antton kept in the loop. Comfortable with current security posture at this stage.
+- Happy for Tom to run point — doesn't feel need to be involved beyond this conversation
+- Enterprise Engine could be the board story — most concrete AI ROI example

@@ -123,7 +123,7 @@ graph TD
 
     %% === Finance (under Christian Nielsen) ===
     JM["Jade Mounir<br/>VP of Finance"]
-    KA["Kirsty Alexander<br/>Senior Analytics Engineer"]
+    KA["Kirsty Alexandre<br/>Senior Analytics Engineer"]
     PSO["Paul O'Neill<br/>Head of Risk and Compliance"]
     KB["Kevin Berg<br/>Head of Financial Planning & Analysis"]
 
