@@ -1,3 +1,9 @@
+---
+name: decision
+description: Create a new MADR-format decision record with context, options, and rationale
+disable-model-invocation: true
+---
+
 # /decision — Create Decision Record
 
 Create a new decision record in MADR format.

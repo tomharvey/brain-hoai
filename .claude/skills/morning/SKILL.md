@@ -1,3 +1,8 @@
+---
+name: morning
+description: Generate a morning brief from recent vault activity and open actions
+---
+
 # /morning — Morning Brief
 
 Generate a morning brief to start the day.

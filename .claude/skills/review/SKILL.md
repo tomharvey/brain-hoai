@@ -1,3 +1,8 @@
+---
+name: review
+description: Generate a weekly review template pre-populated with automated vault data
+---
+
 # /review — Weekly Review
 
 Generate a weekly review template, pre-populated with what can be automated.

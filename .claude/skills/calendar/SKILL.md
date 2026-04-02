@@ -1,3 +1,9 @@
+---
+name: calendar
+description: Find availability, create and update calendar events using the gws CLI
+disable-model-invocation: true
+---
+
 # /calendar — Manage calendar events
 
 Find availability, create, and update calendar events using the `gws` CLI tool.

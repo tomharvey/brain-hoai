@@ -1,3 +1,8 @@
+---
+name: manifest
+description: Rebuild MANIFEST.md vault index from current vault contents
+---
+
 # /manifest — Rebuild Vault Index
 
 Rebuild MANIFEST.md from vault contents.

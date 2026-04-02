@@ -1,3 +1,9 @@
+---
+name: initiative
+description: Create or update an initiative with status tracking and domain assignment
+disable-model-invocation: true
+---
+
 # /initiative — Create or Update Initiative
 
 Create a new initiative or update an existing one.

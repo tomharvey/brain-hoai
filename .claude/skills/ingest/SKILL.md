@@ -1,3 +1,8 @@
+---
+name: ingest
+description: Triage and route inbox items to their correct vault locations
+---
+
 # /ingest — Process Inbox
 
 Triage and route inbox items to their correct locations.

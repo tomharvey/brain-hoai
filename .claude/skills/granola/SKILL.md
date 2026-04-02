@@ -1,3 +1,8 @@
+---
+name: granola
+description: Import meeting notes and transcripts from Granola into the vault
+---
+
 # /granola — Import meetings from Granola
 
 Import meeting notes and transcripts from Granola into the vault, with user confirmation on which meetings are in scope.

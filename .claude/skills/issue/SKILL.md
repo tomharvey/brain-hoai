@@ -1,3 +1,8 @@
+---
+name: issue
+description: Create, update, list, or close issues in the local markdown tracker
+---
+
 # /issue — Create or update an issue
 
 Manage issues in the local markdown tracker (`issues/` directory).
