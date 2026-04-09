@@ -35,6 +35,7 @@ Aggregated, pipeline-driven insight that customers and internal teams can act on
 - Process documentation — need to understand what data flows through each domain
 - Agent framework — insight pipelines may be implemented as agents
 - Product-ai direction — needs product ownership and a customer-facing vision
+- Submissions data into the data lake — prerequisite for scaling TCO automation and other use cases (flagged in [[2026-04-08-value-statement-automation]])
 
 ## Risks
 

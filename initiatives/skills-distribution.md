@@ -67,3 +67,7 @@ A well-governed, discoverable catalogue of company skills that any team member â
 - Matt Lees created a Claude skill for renewal documents (Flock Value Statement) â€” wanted to install at org level
 - Jordi pushed back: org-level skills need validation and maintenance process. Share directly with users first, get feedback.
 - Matt Lees accepted, keeping local. Good test case for whatever governance process we define.
+
+### 2026-04-08
+
+- Eval testing regroup (Mima-led, Tom absent): 111 test cases now in Notion + GitHub (`redteam-evals` branch). Golden dataset (53), red team/security (49), PromptFoo plugins (9). New `/create-test-cases` skill on the branch. Paul reviewing for compliance gaps. Jordi investigating third-party security audit. See [[2026-04-08-eval-testing-regroup]].

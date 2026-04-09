@@ -24,6 +24,7 @@ Leadership
 
 - Key person for AI governance/risk framework
 - Sam suggested including Paul in business continuity workshop
+- Asked to review eval test suite for compliance gaps (2026-04-08, from Mima's testing regroup)
 
 ## 1:1 Log
 

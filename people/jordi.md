@@ -22,7 +22,6 @@ Replaced Tom after his time as interim Head of Engineering — handed over as a 
 
 ## Working style notes
 
-- Working on a leadership workshop for EMs and PMs (around town hall week)
 - Observed the OKR session and underwriting/distribution team dynamics
 - Blog post work that Abs was contributing to
 - Strategy: stays close to business side, asks about AI needs, discovers opportunities

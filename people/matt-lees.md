@@ -45,7 +45,7 @@ Client-facing value documents for new business and renewal opportunities:
 - Full process documented in Notion + 3-part Loom series
 - Working examples: Spectrum Comms, Beaz Logistics
 
-**Status**: Mima assessed as experimental, not product-market fit. Prioritising established process automation. Matt keeping it local.
+**Status**: Moving toward automation. Mima and Matt discussed replacing Lovable pipeline with Claude + HubSpot MCP (2026-04-08). Target: ~80% automated, document appears in submission folder without Matt's involvement. Simplifying output for everyday cases — headline metrics only, bespoke decks retained for large risks. Snowflake CCA extraction (Tom's prior work) reusable. See [[2026-04-08-value-statement-automation]].
 
 ### 2. Enterprise Engine — autonomous agent pipeline
 
@@ -103,6 +103,16 @@ Client-facing value documents for new business and renewal opportunities:
 - Admiral acquisition timing driving the push
 - Flock Value Statement work (with Mima/Jordi) is separate — about sales materials, not pipeline management
 - Mima: further automation on value statements pending, subject to Q2 OKR progress on simplifying value sales approach
+
+### 2026-04-08 — Value Statement automation workshop (with Mima, Tom absent)
+
+- Discussed replacing Lovable pipeline with Claude + HubSpot MCP for new business value docs
+- Goal: remove Matt from process entirely — document appears automatically in submission folder
+- Could trigger automatically on TCO ticket creation. Snowflake CCA data (Tom's prior work) reusable.
+- Target: ~80% automated with human check. Simplify output to headline metrics for everyday cases.
+- Renewal to follow with same logic. Sub-£100K fleets: no near-term extension.
+- Longer-term: submissions data into data lake is a prerequisite for scaling.
+- See [[2026-04-08-value-statement-automation]]
 
 ### 2026-04-02 (call with Fergus + Tom)
 

@@ -9,7 +9,6 @@
 		"ghcr.io/devcontainers/features/aws-cli:1": {},
 		"ghcr.io/tomharvey/devcontainer-features/aws-sso-util:1": {},
 		"ghcr.io/siri404/devcontainer-ai-features/claude-code:1": {},
-		"ghcr.io/devcontainers-extra/features/gcloud-cli:1": {}
 	},
 
 	"postCreateCommand": "npm install -g @googleworkspace/cli",
