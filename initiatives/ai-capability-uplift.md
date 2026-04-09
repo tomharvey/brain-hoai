@@ -1,7 +1,7 @@
 ---
 title: AI capability uplift programme
 created: 2026-03-30
-updated: 2026-03-30
+updated: 2026-04-09
 domain: ai-enablement
 type: initiative
 status: active
@@ -23,9 +23,9 @@ Every department uses AI tools confidently and independently. People design proc
 - **Ops (Emily's team)**: already self-sufficient — daily AI usage, Zapier automation, process-first thinking. Monthly AI/Automations sync running. This is the model to replicate.
 - **Engineering**: mixed. Some power users (Abs, Chris, Mima), some sceptical. Skills sessions started (session 1 delivered 2026-03-27). Code quality concerns with AI-generated output.
 - **Product**: PMs shifting to Cursor/Claude as IDE. Matt and Mima leading. Output quality is the gap.
-- **Distribution**: unknown — Adam conversation tomorrow.
-- **Finance**: unknown — Jade conversation tomorrow.
-- **Underwriting**: unknown — Darren's team not yet spoken to.
+- **Distribution**: Adam's team needs ready-made toolkit, not "go explore." Kirsty is the power user anchor — team needs to book sessions with her.
+- **Finance**: Kirsty is a standout — Looker→Claude MCP, AI-generated insights, self-started. Christian, Kevin, David trialling. Jade conversation done (2026-04-07).
+- **Underwriting**: Fred (ops) early-stage but receptive. Attended prompting workshops. Darren's team not yet spoken to.
 - Claude desktop being installed company-wide by IT.
 
 ## Dependencies
@@ -56,6 +56,14 @@ Every department uses AI tools confidently and independently. People design proc
 - Created from pitch document review
 - Emily's team identified as reference model — daily usage, process-first thinking
 - Skills session 1 delivered to cross-functional group (2026-03-27)
-- **Via Jordi 1:1**: Sam's AI CoP pitch got pushback ("we're already doing this"). Redirecting Sam to evals + documentation for Q2 — tighter scope, measurable goals. Jordi setting Q2 goals with Sam Thursday.
+- **Sam's AI CoP pitch** ([[2026-03-30-sam-ai-cop]]): full operational model with 4 streams (Workshops, Processes, Products, Policy) and 8-week delivery cycles. Tom and Jordi pushed back — too ambitious, company doesn't respond to big-hit approaches. Agreed to strip back to single initiative (documentation pipeline). Sam to show value first, then expand. Redirecting Sam to evals + documentation for Q2 — tighter scope, measurable goals. Jordi setting Q2 goals with Sam Thursday.
 - **Adam discovery**: Distribution team needs a different uplift model — ready-made toolkit, not "go explore." Sophie, Alex, and new hire need structured tools; Matt and Ollie need freedom. Adam's "selfish with AI" framing = use it for efficiency, don't build models. Kirsty's Looker MCP already a win — team needs to book sessions with her.
 - **Matt Lees' Enterprise Engine**: strongest capability uplift case study. Self-described "layman" built a 9-agent pipeline managing £294M in 5 days. Board story: if a non-technical Enterprise Fleet Lead can do this, what's the ceiling when you give the whole company structured tools and support? Spectrum runs from Sophie (needs a toolkit) to Matt Lees (needs freedom + governance).
+
+### 2026-04-08
+
+- **Fred discovery**: Baseline established. Early-stage user, attended beginner prompting workshops. Key learning: "have a conversation with it" vs one-shotting. Previous employer actively discouraged AI — complete culture shift at Flock. Open and willing, needs direction not convincing. Emily is the right lever for pushing his team further.
+
+### 2026-04-09
+
+- **Kirsty discovery**: Finance team's capability is higher than expected. Kirsty is a power user exemplar — self-started Looker→Claude MCP, producing AI-generated insights that change business decisions. Christian, Kevin, David trialling locally. Multiple business users requesting access. The spectrum now runs: Fred (needs enablement) → average user (needs toolkit) → Kirsty/Matt Lees (needs infrastructure + freedom).

@@ -35,11 +35,20 @@ Uses `gws calendar` CLI. Key commands:
 
 Only after the user confirms, call the API.
 
+### Day-of-week verification
+
+**CRITICAL: Before proposing or creating any event, verify the day of the week for the target date.** Run:
+```bash
+date -d "YYYY-MM-DD" +"%A %Y-%m-%d"
+```
+Never assume "tomorrow" or "next Friday" maps to a specific date without checking. Confirm it is a weekday (Mon-Fri) before scheduling. If it falls on a weekend, flag it and find the nearest weekday.
+
 ### Time preferences
 
 - Tom prefers **morning** slots when given a choice.
 - Tom is in **Valencia, Spain (CET/CEST)**. Always show his time first, then UK time.
 - When finding mutual availability, look for the **earliest available slot** unless told otherwise.
+- Never schedule meetings before **09:00 UK time** for attendees.
 
 ### Finding availability
 
@@ -56,6 +65,8 @@ Only after the user confirms, call the API.
 - **Always include a Google Meet link.** Use `conferenceDataVersion: 1` in params and include `conferenceData.createRequest` in the body (see format below).
 - Always include a description. If the user doesn't provide one, suggest one and confirm.
 - Title format: `Tom <> Name: Topic` for 1:1s, descriptive title for group meetings.
+- **Create events sequentially, not in parallel.** Wait for each API call to return successfully before creating the next event. This prevents duplicates if a call appears to fail but actually succeeds. Verify the response contains a valid event `id` before proceeding.
+- **Use a unique `requestId`** for each event's `conferenceData.createRequest`. Include the attendee name and full date to ensure uniqueness.
 
 ### Updating events
 

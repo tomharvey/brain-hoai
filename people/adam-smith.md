@@ -14,7 +14,7 @@ Head of Distribution
 
 ## Team
 
-Distribution — direct reports: Alex Drybell, Liam Thomson, Matthew Lees, Sophie Dodds (+ new hire incoming)
+Distribution — direct reports: Alex Dyball, Liam Thomson, Matthew Lees, Sophie Dodds (+ new hire incoming)
 
 ## Relationship
 

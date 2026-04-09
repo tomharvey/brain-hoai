@@ -7,7 +7,7 @@ due: 2026-04-07
 origin: "[[2026-04-02-matt-lees-enterprise-engine]]"
 domain: operational-tooling
 type: issue
-status: todo
+status: done
 priority: high
 assignee: tom
 tags: [hubspot, enterprise-engine, matt-lees, agents]
@@ -32,8 +32,13 @@ Matt Lees' Enterprise Engine (9 autonomous agents managing a £294M enterprise s
 - Adam + Emily have a parallel HubSpot clean-up project — check for overlap
 - HubSpot MCP connector is available but not yet connected in Matt's Cowork
 
+## Resolution
+
+Resolved in [[2026-04-07-matt-lees-enterprise-engine-002]]. Matt connected HubSpot to Claude (with Emily's help). Direction confirmed: AI-generated data goes on **company records**, not deal records — avoids overlap with underwriting team's BAU on deal properties. Matt is leading the conversation with Emily and Adam on data structure as he explores write permissions incrementally.
+
 ## Links
 
 - [[2026-04-02-matt-lees-enterprise-engine]]
+- [[2026-04-07-matt-lees-enterprise-engine-002]]
 - [[agent-framework]]
 - [[matt-lees]]

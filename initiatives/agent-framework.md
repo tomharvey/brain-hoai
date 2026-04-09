@@ -33,6 +33,7 @@ Prodtech team deploys agentic systems as naturally as non-agentic. Agents are mo
 - [[platform-architecture-docs]] — Chris's work on standards feeds into how agents get built
 - [[skills-distribution]] — skills are the knowledge layer agents consume
 - Clarity on where agent services live in the platform (infrastructure decision)
+- [[ai-governance-framework]] — eval suite and observability are the testing/monitoring layer for production agents
 
 ## Risks
 
@@ -46,6 +47,8 @@ Prodtech team deploys agentic systems as naturally as non-agentic. Agents are mo
 - [ ] Discuss with Chris and Jordi where agent services sit in the platform architecture
 - [ ] Define minimum viable production standard for an agent (monitoring, error handling, cost tracking)
 - [ ] Identify one existing agent to move through the framework as a reference implementation
+- [ ] Connect Datadog observability work (Ismael) to agent monitoring requirements — per-tool traces, latency, token costs
+- [ ] Evaluate S3 agent output storage as part of production agent standard (compliance + analytics)
 
 ## Log
 
@@ -67,3 +70,15 @@ Prodtech team deploys agentic systems as naturally as non-agentic. Agents are mo
   - Tom: 15 mins with Matt next week to review front end and share tips
   - Apollo agent self-improved — identified email bounce-backs and suggested its own integration
   - Full technical review: [[enterprise-engine-technical-review]]
+  - **2026-04-07**: HubSpot connected (Emily got it working). Read-only initially. AI data going on company records (not deal records — avoids underwriting overlap). Matt aligning with Emily and Adam on structure. Adam interested in replicating the pattern for broker contacts. Lovable front-end may give way to HubSpot dashboard if data lives there.
+
+### 2026-04-08
+
+- Eval testing regroup (Mima-led, Tom absent). The eval/testing layer that production agents need is being built:
+  - 111 PromptFoo test cases (red team, golden dataset, plugins) — run on-demand before major agent changes
+  - `/create-test-cases` skill for stakeholders to contribute test requirements
+  - Ismael connecting agent framework to **Datadog** — per-tool traces, outputs, latency. Demo with Datadog architect Fri/Mon.
+  - **S3 storage** for all agent outputs under investigation — organised by user/policy for security, compliance, analytics
+  - Auth/user-isolation testing scoped for Playwright (separate from PromptFoo)
+  - Longer-term: agents analysing stored conversations for higher-level insights
+  - See [[2026-04-08-eval-testing-regroup]]

@@ -2,82 +2,72 @@
 
 ## Current task
 
-Week 14 review complete. Board roadmap draft due tomorrow. Kirsty call needed urgently.
+Board roadmap polish (AI-001) is the priority. Discovery round nearly complete. Week 15 in progress.
 
 ## Context
 
-Week 2 as Head of AI. Discovery round nearly complete — 10 calls across 2 weeks. Vault now has:
-- 13 meeting notes + transcripts
-- 24 people files
+Week 3 as Head of AI. Discovery round nearly complete — 15+ calls across 3 weeks. Vault now has:
+- 15 meeting notes + transcripts
+- 24+ people files
 - 14 initiatives tracked across 4 domains
-- 9 issues (AI-001 to AI-009)
-- Calendar skill fixed (responseStatus: accepted, timezone handling)
-- Granola ingestion workflow established
+- 12 issues (AI-001 to AI-012, AI-012 removed)
+- 1 decision record (004 — Looker MCP server selection)
+- Calendar skill and Granola ingestion workflows established
+- gws CLI authenticated for calendar management
 
-**Key deadline: AI board roadmap draft due 2026-04-03** (AI-001).
+**Key deadline: AI board roadmap for Pioneer board meeting 2026-04-20** (AI-001). 11 days out.
 
-## This week — completed
+## This week (W15) — completed
 
-- [x] Emily discovery (Mon 30 Mar) — ingested
-- [x] Jordi 1:1 (Mon 30 Mar) — ingested, coordination model agreed, weekly Friday 1:1 set
-- [x] Adam discovery (Thu 2 Apr) — ingested. "Selfish with AI", toolkits, Granola as CRM
-- [x] Matt Lees Enterprise Engine (Thu 2 Apr) — ingested. 9 agents, £294M pipeline. Fergus thumbs up.
-- [x] Anna discovery (Thu 2 Apr) — ingested. Renewals mapped, eliminate spreadsheets direction
-- [x] Shreya discovery (Thu 2 Apr) — ingested. NOC automation, Claude > Zapier cultural shift
-- [x] Jordi Friday 1:1 created (recurring from Apr 10)
-- [x] Matt Lees review call booked (Tue 7 Apr)
-- [x] Jade rebooked (Tue 7 Apr)
-- [x] Fred booked (Wed 8 Apr)
+- [x] Matt Lees Enterprise Engine 002 (Mon 7 Apr) — HubSpot connected, AI-005 resolved, data goes on company records
+- [x] Jade discovery (Mon 7 Apr) — ingested
+- [x] Fred AI discovery (Tue 8 Apr) — ingested. Driver referrals = biggest manual gap (AI-011)
+- [x] Kirsty AI discovery (Wed 9 Apr) — ingested. Looker MCP understood (AI-006 done), renewals path confirmed viable (AI-007), cloud deployment needed (AI-010), ICP analysis kicked off, insight layer updated
+- [x] Looker MCP server research — evaluated googleapis/mcp-toolbox vs Ultrathink. Decision 004: stay with googleapis, use `use_client_oauth=true` for multi-user
+- [x] Scheduled 5 discovery calls for Fri 10 Apr + Mon 13 Apr
 
-## What slipped
+## Tomorrow (Fri 10 Apr)
 
-- Mon/Tue calls cancelled (illness) — recovered Thu
-- Product + Tech kickoff, OKR meeting — missed
-- Skills repo access (AI-002) — not progressed
-- Finance (Jade), compliance (Paul) — not yet spoken to
-- Kirsty — critical dependency, not yet booked (email not found)
+| CEST | UK | Who | Topic |
+|------|----|-----|-------|
+| 10:00-10:45 | 09:00-09:45 | Jordi 1:1 | First weekly — align on board roadmap |
+| 10:45-11:00 | 09:45-10:00 | Liam Thomson | Discovery (distribution/marketing) |
+| 12:00-12:15 | 11:00-11:15 | Paul O'Neill | Discovery (compliance/governance) |
+| 14:00-14:15 | 13:00-13:15 | Alex Dyball | Discovery (distribution/junior) |
+| 15:00-15:15 | 14:00-14:15 | Jonny Smith | Discovery (connectivity ops) |
+| 15:30-16:00 | 14:30-15:00 | Javier Arranz | Acquisition AI vision |
+
+Between calls: **Board roadmap polish** — use Jordi and Paul conversations to sharpen the narrative.
+
+## Monday 13 Apr
+
+| CEST | UK | Who | Topic |
+|------|----|-----|-------|
+| 12:30-12:45 | 11:30-11:45 | Sophie Dodds | Discovery (distribution/broker management) |
 
 ## Open issues
 
-| Issue | Priority | Due | Status |
-|-------|----------|-----|--------|
-| AI-001 Board roadmap | High | **Apr 3 (tomorrow)** | Draft exists, needs polish |
-| AI-005 HubSpot architecture | High | Apr 7 | Not started |
-| AI-006 Kirsty Looker connection | High | Apr 7 | **Not started — critical path** |
-| AI-008 Shreya NOC follow-up | Medium | Apr 7 | Waiting on Shreya |
-| AI-007 Renewals Looker→HubSpot | Medium | Apr 14 | Depends on AI-006 |
-| AI-009 Submissions scoping | Medium | Apr 14 | Not started |
-| AI-002 Skills repo ownership | Medium | No date | Not progressed |
-| AI-003 Discovery round | High | Ongoing | Jade + Fred + Kirsty + Paul remaining |
+| Issue | Priority | Status | Notes |
+|-------|----------|--------|-------|
+| **AI-001** Board roadmap | High | todo | **Due Apr 20. 11 days.** Draft in `ai-roadmap-draft.md` |
+| **AI-010** Looker MCP cloud | High | todo | Notion page received. Next: test `use_client_oauth`, deploy |
+| **AI-007** Renewals Looker→HubSpot | Medium | todo | Blocked on AI-010. Confirmed viable. |
+| **AI-008** Shreya NOC follow-up | Medium | todo | **Overdue.** Ping her async. |
+| **AI-009** Submissions scoping | Medium | todo | Not started |
+| **AI-003** Discovery round | High | in-progress | Paul + Darren's team remaining after this week |
+| **AI-011** Driver referral automation | Medium | backlog | Map HubSpot template, prototype |
+| **AI-002** Skills repo ownership | Medium | todo | Not progressed |
 
-## Priorities
+## Waiting on
 
-### Rest of today (Thu 2 Apr)
-- [ ] Find Kirsty's email and book a call (before Tuesday)
+- [ ] Kirsty: HTML dashboard file (promised on call)
+- [ ] Kirsty: ICP analysis results (testing Claude vs Adam's assumptions)
+- [ ] Shreya: NOC template test results (AI-008)
+- [ ] Matt Lees: HubSpot data structure alignment with Emily + Adam
+
+## Still to do today
+
+- [ ] Ping Shreya re NOC test
+- [ ] Send Matt Lees Google Drive for Desktop link
+- [ ] Run `/manifest`
 - [ ] Commit vault changes
-
-### Tomorrow (Fri 3 Apr — company holiday, quiet day)
-- [ ] **Polish board roadmap** — #1 priority. Raw material is all in ai-roadmap-draft.md. Needs coherent narrative, Enterprise Engine as headline, complete discovery log.
-- [ ] Start HubSpot architecture assessment (AI-005) if time
-
-### Monday 6 Apr
-- [ ] HubSpot assessment continued
-- [ ] Kirsty call if not done
-- [ ] Reach out to Paul (compliance) — governance angle for roadmap
-
-### Tuesday 7 Apr
-- 10:30 CEST — Matt Lees (Enterprise Engine review)
-- 11:30 CEST — Jade (Finance discovery)
-
-### Wednesday 8 Apr
-- 11:20 CEST — Fred (Underwriting discovery)
-
-### Friday 10 Apr
-- 10:00 CEST — Jordi weekly 1:1 (first occurrence)
-
-## Next steps
-
-- [ ] Find Kirsty's email — try Slack or ask someone
-- [ ] Board roadmap: `domains/ai-roadmap-draft.md`
-- [ ] Run `/manifest` at session end
-- [ ] Commit with meaningful message

@@ -19,7 +19,7 @@ First discovery conversation with Adam (Head of Distribution). Distribution flag
 
 - ~300 brokers, some with 50+ UK offices — contact points easily double that
 - High-volume, high-touch: growing the panel, trading data, review packs, broker account management
-- Team: Sophie Dodds, Alex Drybell, new hire coming in, plus Adam himself
+- Team: Sophie Dodds, Alex Dybell, new hire coming in, plus Adam himself
 
 ### Current AI usage
 

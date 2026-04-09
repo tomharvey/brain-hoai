@@ -2,7 +2,7 @@
 title: Complete discovery round — remaining conversations
 id: AI-003
 created: 2026-03-27
-updated: 2026-03-27
+updated: 2026-04-09
 domain: ai-enablement
 type: issue
 status: in-progress
@@ -24,13 +24,19 @@ First week covered 7 meetings with prod-tech/engineering people. Need to expand 
 - [x] Engineering drop-in (group)
 - [x] Skills AI session (group, cross-functional)
 
-### Next up (w/c 2026-03-31)
-- [ ] [[adam]] — distribution
-- [ ] [[emily]] — underwriting assistance
-- [ ] Finance / fin-ops representative
-- [ ] Underwriting team
-- [ ] Distribution team (understand what they actually do)
-- [ ] Compliance / legal (governance angle)
+### Completed (w/c 2026-03-31 — 2026-04-09)
+- [x] [[adam-smith|Adam]] — distribution (2026-04-02)
+- [x] [[emily|Emily]] — underwriting assistance (2026-03-30)
+- [x] [[anna|Anna]] — renewals/ops (2026-04-02)
+- [x] [[shreya|Shreya]] — ops/NOC automation (2026-04-02)
+- [x] [[fred-bush|Fred]] — underwriting assistant (2026-04-08)
+- [x] [[kirsty|Kirsty]] — analytics/Looker (2026-04-09)
+- [x] [[matt-lees|Matt Lees]] — Enterprise Engine (2026-04-02, 2026-04-07)
+- [x] [[jade-mounir|Jade]] — Finance (2026-04-07)
+
+### Still needed
+- [ ] Compliance / legal (Paul — governance angle)
+- [ ] Underwriting team (Darren's team)
 
 ### Stretch
 - [ ] Claims team

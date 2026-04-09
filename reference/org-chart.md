@@ -111,7 +111,7 @@ graph TD
     RG --> PW
 
     %% === Distribution (under Adam Smith) ===
-    AD_J["Alex Drybell<br/>Junior Broker Growth"]
+    AD_J["Alex Dyball<br/>Junior Broker Growth"]
     LT["Liam Thomson<br/>Senior Marketing Manager"]
     ML["Matthew Lees<br/>Enterprise Fleet Lead"]
     SD["Sophie Dodds<br/>Broker Distribution Manager"]

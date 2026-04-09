@@ -1,7 +1,7 @@
 ---
 title: Underwriting assistance AI
 created: 2026-03-27
-updated: 2026-03-30
+updated: 2026-04-09
 domain: operational-tooling
 type: initiative
 status: active
@@ -35,7 +35,7 @@ Reduce manual effort in the quoting process while maintaining quality and buildi
 
 - **Shreya Chowta**: most advanced — post-buying processes, driver referral authority, MTA authority
 - **Anna Spriggs**: experienced daily user, migrated ChatGPT prompts to Claude with better results
-- **Fred Bush**: newest team member, least AI-driven, still learning
+- **Fred Bush**: early AI journey but receptive. Uses Claude daily for VRN extraction and document parsing. Switched from ChatGPT to Claude (better at PDFs). Attended prompting workshops. Driver referrals identified as biggest manual gap (AI-011). HubSpot not yet connected to Claude.
 
 ## Dependencies
 
@@ -53,7 +53,7 @@ Reduce manual effort in the quoting process while maintaining quality and buildi
 
 - [x] Discovery conversation with Emily
 - [x] Join monthly AI/Automations sync
-- [ ] Speak to Shreya, Anna, and Fred individually (scheduled Tue/Wed)
+- [x] Speak to Shreya, Anna, and Fred individually
 - [ ] Understand Zapier setup and what's connected
 - [ ] Explore ChatGPT→Claude migration path for remaining use cases
 - [ ] Suggest Emily builds complaint resolution checking as a Claude skill (her to own)
@@ -86,3 +86,15 @@ Reduce manual effort in the quoting process while maintaining quality and buildi
   - Submissions/new business logging flagged as much larger project — needs dedicated meetings to scope
   - CC parsing: haulage portal Claude prompt reportedly faster than Abs's Retool version
   - Shreya's NOC workflow design: [[noc-cancellation-workflow]]
+
+### 2026-04-08
+
+- **Fred discovery**: Confirmed as early-stage AI user. Benefits from Anna's automated renewals (sees tickets, doesn't engage with AI directly for that). Uses Claude daily for VRN extraction and document parsing. Switched from ChatGPT — Claude better at PDFs.
+  - **Driver referrals** identified as biggest manual gap: 10-20/day, ~15min each, fully manual email→HubSpot template flow. No automation exists. Structured input/output = strong automation candidate. → AI-011
+  - New business submissions still partially manual (Gmail→Flock port), partially covered by existing skills
+  - HubSpot not connected to Claude yet — quick win to set up
+  - Emily encouraging team AI development — she's the right lever for this team
+
+### 2026-04-09
+
+- **Kirsty discovery**: Renewals Looker→HubSpot direct flow confirmed technically viable via MCP. Kirsty was unaware the team uses Zapier to push spreadsheet data back to HubSpot. Depends on cloud MCP deployment (AI-010). AI-007 now in-progress.

@@ -114,3 +114,15 @@ Client-facing value documents for new business and renewal opportunities:
 - HubSpot connector is next priority — store enriched data on company records, not deal records
 - Must back up Cowork files to Google Drive — laptop loss is the main risk today
 - Tom: 15 mins next week to review front end, share tips (PDF via Claude instead of Lovable, email templates, backup habits)
+
+### 2026-04-07 — Enterprise Engine Review 002
+
+- **HubSpot connected this morning** (Emily got it sorted). Read-only initially, will test write permissions incrementally
+- Confirmed direction: AI data goes on **company records**, not deal records (resolves AI-005)
+- Matt to align with Emily and Adam on data structure
+- Pipeline scheduling issue: tasks trigger on first login when laptop's asleep. Needs sleep mode disabled.
+- Pre-loaded target fleet list from a 12-month-old manual exercise — skips business search step, accelerates enrichment
+- Phasing: ~2 weeks max on enrichment, then pause and focus on churn of existing contacts
+- Reconsidering Lovable front-end — Claude already surfacing next 10 actions conversationally. May shift to HubSpot dashboard if data lives there.
+- Adam interested in replicating the agent workflow for broker contacts — pending HubSpot proof
+- Discussed Claude best practices: push files over memory, end-of-session encoding ritual, explain the *why* with priorities
