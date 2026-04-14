@@ -1,7 +1,7 @@
 ---
 title: Matthew Price
 created: 2026-03-27
-updated: 2026-03-27
+updated: 2026-04-14
 type: person
 role: Head of Product
 team: Product
@@ -38,3 +38,14 @@ Peer
 - Jaren doing time/motion study — PostHog DOM logs could feed AI analysis
 - Codifying business logic is the value, not just automation
 - Cognitive load discussion — immediate AI responses eliminating thinking time
+
+### 2026-04-14
+
+- AI adoption: three cohorts across non-prod teams (full-speed, interested-but-intimidated, observers). Need 1:1 applied guidance, not just workshops.
+- "Last mile" problem with LLM-generated metrics — numbers without interpretation. Kirsty's bullet-point summaries the right pattern.
+- Ollie pushing for senior product promotion; Jaren's domain expanding into everything; acquisition/expansion boundary needs clarifying
+- Claims metrics declining as team winds down — Ollie not explaining why
+- Matt was off last week — wants to establish standing metrics culture across his teams
+- Pioneer moving to Salesforce via Five Sigma — raises question of HubSpot investment
+- Tom in London next week Tue-Thu, beverages Wed
+- See: [[2026-04-14-matt-price-catchup]]

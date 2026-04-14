@@ -2,83 +2,78 @@
 
 ## Current task
 
-Board roadmap polish (AI-001) is the priority. Discovery round nearly complete — Sophie Dodds remaining. Week 16 starts Monday.
+AI session prep (AI-016) is urgent — draft structure needed by Thu 17 Apr morning for the prodtech offsite Wed 22 Apr. Board roadmap (AI-001) due Apr 20 also needs attention.
 
 ## Context
 
-Week 3 as Head of AI. Discovery round nearly complete — 20+ calls across 3 weeks. Vault now has:
-- 24 meeting notes + transcripts
-- 25+ people files
+Week 4 as Head of AI. Discovery round effectively complete — 21+ individual conversations across all departments. Vault now has:
+- 28+ meeting notes + transcripts
+- 27+ people files
 - 14 initiatives tracked across 4 domains
-- 12 issues (AI-001 to AI-012, AI-012 removed)
+- 16 issues (AI-001 to AI-016)
 - 1 decision record (004 — Looker MCP server selection)
-- Calendar skill and Granola ingestion workflows established
+- Calendar skill, Granola ingestion, and vector search established
 - gws CLI authenticated for calendar management
-- Vector database added for fuzzy search across vault
 
-**Key deadline: AI board roadmap for Pioneer board meeting 2026-04-20** (AI-001). 8 days out.
+## Monday 14 Apr — completed
 
-## Week 15 (W15) — completed
+### Meetings ingested
+- [x] Shreya Chowta — NOC skill walkthrough (08:31). Updated skill to check both ticket description and notes. Address blocker (Retool only). Growing confidence.
+- [x] Matt Price catch-up (09:05). AI adoption cohorts, HubSpot data quality, metrics "last mile" problem, acquisition/expansion boundary, Pioneer→Salesforce.
+- [x] Matt Dipre — AI discovery (12:00). Financial analyst, invoice automation broken by NetSuite update. Blocked on Looker + HubSpot AI access. Created person file.
+- [x] ProdTech Leadership Heartbeat (13:07). Offsite agenda (Wed 22 / Thu 23), 90-min AI session, J naming for safety product, Belbin assessment, roadmap → Linear.
 
-### Fri 10 Apr — 9 meetings ingested
-- [x] AI Breakfast — Matt demo'd sales outreach pipeline (10 agents, 89% email accuracy, 549 accounts). Kirsty demo'd AI driver tree dashboard. Ollie postponed scheduled briefing demo.
-- [x] Oli — acquisition strategy, team boundary with Jaren, 10x growth challenge, telematics as moat
-- [x] Jemima — AI adoption segmentation, personal OS comparison, style guides promised
-- [x] Paul O'Neill — compliance measurement gap thesis (can't deploy agents if data isn't captured), cultural metrics, delegated authority
-- [x] AI Workshops steering group — confidence before automation, 3-layer approach (company workshop + dept workshops + 1:1 pairing), Oli to lead Co-Work/MCP workshop, potential Apr 23 town hall slot
-- [x] Alex Dyball — pragmatic ChatGPT user, meeting self-scoring pattern, renewal nudge blocked by data quality
-- [x] Jonny Smith — connectivity ops, GPS fix data quality issue in MCP, Zapier+Looker automation self-built, HubSpot contact staleness
-- [x] Javier — acquisition AI vision, "surface everywhere" strategy, Flock API MCP exists (Chris built it), 2-week PoC target for HubSpot→Claude→Flock quoting
-- [x] Liam Thomson — one-person marketing team, Artlist for video, Lovable for decks, Flock ranks first for "connected fleet insurance" in AI search
+### Issues created
+- AI-014: Matt Dipre Looker access (due Fri 18 Apr)
+- AI-015: Matt Dipre HubSpot AI access
+- AI-016: Prepare 90-min AI session for offsite (due Thu 17 Apr) — **urgent**
 
-### Earlier in W15
-- [x] Matt Lees Enterprise Engine 002 (Mon 7 Apr)
-- [x] Fred AI discovery (Tue 8 Apr)
-- [x] Kirsty AI discovery (Wed 9 Apr)
-- [x] Looker MCP server research + Decision 004
+### Other
+- [x] AI-008 walkthrough with Shreya — done, updated issue with remaining blockers
+- [x] AI-003 discovery round — added Matt Dipre
+- [x] Booked Tom <> Eraaz: Intro — Thu 16 Apr 12:00–12:30 CEST
+- [x] Ollie Crowe's breakout tables suggestion captured in AI-016
 
-## Cross-cutting themes from discovery round
-
-1. **HubSpot data quality** — the single most repeated blocker. Contact staleness (Jonny, Alex), name mismatches (Jonny solved via deal IDs), stale deal owners, missing loss reasons. Affects Matt's pipeline, Jonny's automations, and any future agent work.
-2. **Confidence > automation** — the workshops group agreed: building confidence is the April priority, not automating the right things. Kirsty's cool dashboard has value because of what it did to Kirsty, not just the insights.
-3. **Telematics MCP needs domain education** — GPS fix thresholds, data quality indicators. Critical before customer-facing AI.
-4. **Flock API as MCP** — Chris already built a policy management MCP. Javier's 2-week PoC could be a breakthrough for the "surface everywhere" vision.
-5. **Insight loops** — dashboards that say the same thing every week become disengaging. Need insight-as-data feeding into future analysis.
-6. **Paul's measurement gap** — can't measure compliance if data isn't captured. Underwriting referrals, policy readership, meeting attendance — none systematically measured.
-
-## Monday 13 Apr
+## Tuesday 15 Apr — upcoming
 
 | CEST | UK | Who | Topic |
 |------|----|-----|-------|
-| 12:30-12:45 | 11:30-11:45 | Sophie Dodds | Discovery (distribution/broker management) |
+| 10:00-11:00 | 09:00-10:00 | Product review | Fortnightly |
+| 11:00-12:00 | 10:00-11:00 | G&T Retro + S&A standup | |
+| 12:00-12:45 | 11:00-11:45 | Monthly Ops AI/Automations Sync | Shreya demoing NOC skill |
+| 12:30-13:00 | 11:30-12:00 | Jordi/Tom — Underwriting + AI | Billy's interest |
+| 15:00-15:30 | 14:00-14:30 | Engineering drop-in | |
+
+### Prep for Tue/Wed
+- Ops AI sync: celebrate Shreya's demo, probe HubSpot data quality edge cases, ask who else is blocked by Retool
+- Jordi/Tom: Billy's underwriting AI interest, reframe "automate what we give UW assistants"
 
 ## Open issues
 
-| Issue | Priority | Status | Notes |
-|-------|----------|--------|-------|
-| **AI-001** Board roadmap | High | todo | **Due Apr 20. 8 days.** Draft in `ai-roadmap-draft.md` |
-| **AI-010** Looker MCP cloud | High | todo | Notion page received. Next: test `use_client_oauth`, deploy |
-| **AI-007** Renewals Looker→HubSpot | Medium | todo | Blocked on AI-010. Confirmed viable. |
-| **AI-008** Shreya NOC follow-up | Medium | todo | **Overdue.** Ping her async. |
-| **AI-009** Submissions scoping | Medium | todo | Not started |
-| **AI-003** Discovery round | High | in-progress | Sophie Dodds remaining, then complete |
-| **AI-011** Driver referral automation | Medium | backlog | Map HubSpot template, prototype |
-| **AI-002** Skills repo ownership | Medium | todo | Not progressed |
+| Issue | Priority | Status | Due | Notes |
+|-------|----------|--------|-----|-------|
+| **AI-016** Offsite AI session | Urgent | todo | Apr 17 | Draft structure by Thu morning |
+| **AI-001** Board roadmap | High | todo | Apr 20 | Incorporate discovery findings |
+| **AI-010** Looker MCP cloud | High | todo | | Test `use_client_oauth`, deploy |
+| **AI-014** Dipre Looker access | Medium | todo | Apr 18 | Resolve with Kirsty/Jaren |
+| **AI-015** Dipre HubSpot AI | Low | todo | | Check with Emily |
+| **AI-003** Discovery round | High | in-progress | | Underwriting team still needed |
+| **AI-007** Renewals Looker→HubSpot | Medium | todo | | Blocked on AI-010 |
+| **AI-009** Submissions scoping | Medium | todo | | Not started |
+| **AI-011** Driver referral automation | Medium | backlog | | Map HubSpot template |
+| **AI-002** Skills repo ownership | Medium | todo | | Not progressed |
 
 ## Waiting on
 
 - [ ] Kirsty: HTML dashboard file (promised on call)
 - [ ] Kirsty: ICP analysis results (testing Claude vs Adam's assumptions)
-- [ ] Shreya: NOC template test results (AI-008)
 - [ ] Matt Lees: HubSpot data structure alignment with Emily + Adam
 - [ ] Jemima: Three communication style guides
 - [ ] Rakhee: Apr 23 town hall slot confirmation for AI workshop
 - [ ] Javier: PoC progress on HubSpot→Claude→Flock API quoting (~by Apr 24)
+- [ ] Belbin assessment: complete before Thu 23 Apr morning
 
-## Next session priorities
+## Reminders
 
-- [ ] Sophie Dodds discovery (Mon 13 Apr)
-- [ ] Board roadmap polish — incorporate discovery round findings
-- [ ] Ping Shreya re NOC test
-- [ ] Ask Chris about policy management MCP server status
-- [ ] Run `/manifest` and commit
+- Look at Flock Roadmap DRAFT in Flock PbA Strategy in Notion (from heartbeat private note)
+- London next week: arrive Tue afternoon, in office Wed/Thu. Beverages Wed with Matt Price.

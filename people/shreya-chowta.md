@@ -1,7 +1,7 @@
 ---
 title: Shreya Chowta
 created: 2026-03-30
-updated: 2026-04-02
+updated: 2026-04-14
 type: person
 role: Underwriting Assistant
 team: Ops (reports to Emily Staton)
@@ -42,3 +42,22 @@ First spoke 2026-04-02. Proactive, keen, already designing automations independe
 - **Submissions/new business logging** flagged as much larger project — needs dedicated meetings to break into small goals
 - CC parsing: Retool version (Abs) still works, but haulage portal Claude prompt (CC→CSV) reportedly faster
 - Testing Claude + HubSpot NOC approach immediately after the call — will report back
+
+### 2026-04-13 — Slack update
+
+- Built a working Claude skill: "NOC letter generator" — pulls data from HubSpot accurately
+- Steps covered: find tickets → get company/deal info → parse ticket → calculate dates → fill template → save as .docx
+- No longer needs Google Drive — Claude edits the Word template directly
+- **Blocker**: steps 6-8 of original workflow still require manual Retool intervention
+- Demoing at Wednesday AI/Automations sync
+- Offered to schedule 15 mins tomorrow (Tue 14 Apr) to walk through how it works
+
+### 2026-04-14 — NOC skill walkthrough
+
+- Walked through skill editing together — updated to check both ticket description and notes for data
+- Listed explicit data points in skill (policy number, inception date, etc.) to reduce template parsing overhead
+- **Address blocker**: client addresses only in Retool, not HubSpot. Discussed migrating to HubSpot (supports broader Retool transition)
+- Downloads folder permission friction — exploring persistent folder options
+- Growing confidence: "I feel like I'm integrating Claude really well"
+- Inspired by Mima's CC generator and wake-up schedule skills
+- See: [[2026-04-14-shreya-chowta-noc-skill]]

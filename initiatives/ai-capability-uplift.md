@@ -1,7 +1,7 @@
 ---
 title: AI capability uplift programme
 created: 2026-03-30
-updated: 2026-04-09
+updated: 2026-04-12
 domain: ai-enablement
 type: initiative
 status: active
@@ -41,13 +41,46 @@ Every department uses AI tools confidently and independently. People design proc
 - Training without follow-up = forgotten within a week
 - Different departments at wildly different starting points — one-size-fits-all won't work
 
+## Workshop delivery strategy
+
+Three-layer approach agreed at AI Workshops steering group ([[2026-04-10-ai-workshops]]):
+
+1. **Company-wide workshops** — Oli leading Claude Co-Work + MCP connectors session. Target: April 23rd town hall (Rakhee checking slot availability).
+2. **Department workshops** — Two-part: discovery session → digest → implementation/training. Finance or People team first, late April/early May.
+3. **1:1 pairing** — Tom continues individual sessions. Most effective for hesitant/unsure people.
+
+Key principle: **confidence before automation**. Getting people to feel like Kirsty (confident, showing their work) matters more right now than automating the "right" things.
+
+### What already exists
+
+| What | Owner | Status |
+|---|---|---|
+| Beginner prompting workshops | Unknown | Delivered. Well-received but beginner-only |
+| Skills AI session 1 | Tom | Delivered 2026-03-27 |
+| AI Breakfast (weekly) | Ollie | Running — sharing tools, demos, best practices |
+| Business continuity workshop | Sam + Paul | Parked for later Q2 |
+| Emily's Monthly AI/Automations sync | Emily | Running — ops team reference model |
+| Jordi's EM+PM leadership workshop | Jordi | Proposed ([[2026-03-26-fergus-hoai-001]]) |
+
+### Adoption blockers
+
+- Distribution team (Alex, Sophie) can't attend existing workshops due to broker meeting conflicts
+- No underwriter has attended AI Breakfast
+- Mima's presentation skill communicated many times but still unknown to some — only 3 users
+- Saturation of the willing: people who were going to come have come. Focus shifts to the persuadable middle (open but confused — Anna, Shreya, Fred, Sophie)
+
 ## Next actions
 
 - [ ] Complete discovery round to understand each department's baseline
+- [ ] **Produce AI capability baseline report** — department-by-department snapshot of current AI maturity, tool usage, blockers, and readiness. Serves as: (1) measurable starting point to track progress, (2) foundation for the uplift strategy. → AI-013
 - [ ] Document Emily's ops team as the reference model
 - [ ] Design department-specific onboarding paths (not one-size-fits-all)
 - [ ] Work with Adam to define a distribution-specific AI toolkit — ready-made skills for slide decks, broker prioritisation, data interrogation. Keep lightweight for now. (from [[2026-04-02-adam-ai-discovery]])
 - [ ] Explore "teach the agent your job" framing as capability-building tool
+- [ ] Rakhee to confirm April 23rd town hall slot for Oli's Co-Work/MCP workshop (from [[2026-04-10-ai-workshops]])
+- [ ] Oli to prepare Claude Co-Work + connectors workshop and drop dates in the group channel (from [[2026-04-10-ai-workshops]])
+- [ ] Plan first department workshop — Finance or People team, late April/early May (from [[2026-04-10-ai-workshops]])
+- [ ] Work out how 1:1 pairing sessions feed into department workshops (from [[2026-04-10-ai-workshops]])
 
 ## Log
 
@@ -63,6 +96,12 @@ Every department uses AI tools confidently and independently. People design proc
 ### 2026-04-08
 
 - **Fred discovery**: Baseline established. Early-stage user, attended beginner prompting workshops. Key learning: "have a conversation with it" vs one-shotting. Previous employer actively discouraged AI — complete culture shift at Flock. Open and willing, needs direction not convincing. Emily is the right lever for pushing his team further.
+
+### 2026-04-12
+
+- Incorporated workshop delivery strategy from AI Workshops steering group ([[2026-04-10-ai-workshops]]). Three-layer approach: company-wide (Oli), department-specific (Finance/People first), 1:1 pairing (Tom). Consensus: confidence before automation.
+- Added Jordi's proposed EM+PM leadership workshop from Fergus conversation ([[2026-03-26-fergus-hoai-001]]).
+- Documented adoption blockers: distribution scheduling conflicts, underwriting no-shows, skill awareness gaps, saturation of the willing.
 
 ### 2026-04-09
 

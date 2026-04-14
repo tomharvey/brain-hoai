@@ -1,7 +1,7 @@
 ---
 title: Underwriting assistance AI
 created: 2026-03-27
-updated: 2026-04-09
+updated: 2026-04-13
 domain: operational-tooling
 type: initiative
 status: active
@@ -98,3 +98,8 @@ Reduce manual effort in the quoting process while maintaining quality and buildi
 ### 2026-04-09
 
 - **Kirsty discovery**: Renewals Looker→HubSpot direct flow confirmed technically viable via MCP. Kirsty was unaware the team uses Zapier to push spreadsheet data back to HubSpot. Depends on cloud MCP deployment (AI-010). AI-007 now in-progress.
+
+### 2026-04-13
+
+- **Shreya NOC update**: Built working Claude skill "NOC letter generator". Covers steps 1-6 of original workflow: ticket search → company/deal lookup → ticket parsing → date calculation → template fill → .docx output. Google Drive eliminated — Claude edits Word template directly. Steps 6-8 (Retool-dependent) still manual. Demoing at Wednesday AI/Automations sync. 15-min walkthrough offered for Tue 14 Apr.
+- **HubSpot data quality signal**: Shreya's skill pulls data "accurately" — but worth probing at Wednesday UWA meeting whether this holds across edge cases. HubSpot data quality is the most repeated blocker across discovery round.
