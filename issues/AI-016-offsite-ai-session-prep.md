@@ -55,7 +55,16 @@ tags: [offsite, ai-session, prodtech, workshop]
 - [ ] Ishmael — agent release / evals specifics
 - [ ] Fergus — personal OS demo, code review automation
 
+## Status
+
+**v4 locked 2026-04-17.** Three stations, three rounds × 24 mins, three threads (surface insight → encode fixes → self-healing). Real data at every station. Implementation plans produced in session, Claude builds during wrap-up. See [[offsite-ai-session-draft]].
+
+Next: pre-work (Mon-Tue), brief anchors individually, share plan with Fergus.
+
 ## Links
 
+- [[offsite-ai-session-draft]] — the draft itself
 - [[2026-04-14-prodtech-leadership-heartbeat]]
+- [[2026-04-16-fergus-tom-weekly]] — Fergus aligned on stations format
+- [[ai-native-engineering]] — pilot is Station 2's discussion + a candidate follow-on
 - [[ollie-crowe]]

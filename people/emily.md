@@ -1,7 +1,7 @@
 ---
 title: Emily Staton
 created: 2026-03-27
-updated: 2026-03-27
+updated: 2026-04-15
 type: person
 role: Head of Ops
 team: Ops — Underwriting assistance and customer support
@@ -49,3 +49,12 @@ Reports to Mollie Brownlow (Head of Operations). Not yet spoken to.
 ### 2026-04-02 (via Adam discovery)
 
 - Joint HubSpot clean-up project with Adam — restructuring broker account data to enable richer CRM→Claude integration
+
+### 2026-04-15 — Monthly Ops AI Sync
+
+- Using HubSpot connector for Q1 quote-to-price timeline analysis (OKR baseline) — average/median processing times across pipeline stages
+- Handles inconsistent underwriter stage progression automatically
+- Automated Monday Slack reminders to re-run Q2 data
+- Confirmed she's the go-to for HubSpot AI permissions (super admin) — CeeToo don't have access, redirect to her anyway. 30-second fix. "Just send people to me."
+- Idea: get Claude to auto-update monthly ops slides with fresh data
+- See: [[2026-04-15-monthly-ops-ai-sync]]

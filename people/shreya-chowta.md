@@ -61,3 +61,13 @@ First spoke 2026-04-02. Proactive, keen, already designing automations independe
 - Growing confidence: "I feel like I'm integrating Claude really well"
 - Inspired by Mima's CC generator and wake-up schedule skills
 - See: [[2026-04-14-shreya-chowta-noc-skill]]
+
+### 2026-04-15 — Monthly Ops AI Sync (demo)
+
+- Demo'd NOC letter generator to the team — first automated NOC sent on Monday
+- Creates drafts not emails (can't get Claude to create HubSpot email directly)
+- Confirmed address is not in HubSpot anywhere — Retool only
+- Emily meeting Kirsty tomorrow — will check if address data is in Looker
+- Sharing skill with the team
+- Offered to help Fred with driver referral automation — "it's probably similar to my NOC skill"
+- See: [[2026-04-15-monthly-ops-ai-sync]]

@@ -11,3 +11,10 @@ public/
 *.swo
 *~
 google-credentials.json
+tools/search/*.db
+tools/search/*.conf
+tools/search/__pycache__/
+tools/search/pkm_search/__pycache__/
+outbox/
+tools/datadog/secrets.txt
+outbox/datadog-exports/

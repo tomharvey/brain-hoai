@@ -44,3 +44,13 @@ Ops — reports to [[emily|Emily Staton]]
 - Open to more AI — "I'm sure there are ways, whether or not I'm creative enough to think of them"
 - Emily encouraging further AI development across the team
 
+### 2026-04-15 — Monthly Ops AI Sync
+
+- Quiet in the meeting but engaged when prompted on driver referrals
+- Confirmed it's "top of mind" — many components (convictions, age, etc.)
+- Shreya offered to pair with him on it — "probably similar to my NOC skill"
+- Fred acknowledged he's "probably halfway there" with existing VRN/CC work
+- Blocker: authority framework needs Darren's sign-off — expected within a month
+- Entering the "this is annoying" phase of skill building — team to support
+- See: [[2026-04-15-monthly-ops-ai-sync]]
+
