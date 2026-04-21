@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "pkm-search"
+version = "0.1.0"
+description = "Local search index for PKM vault"
+packages = [{include = "pkm_search"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyyaml = "^6.0"
+sqlite-vec = "^0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

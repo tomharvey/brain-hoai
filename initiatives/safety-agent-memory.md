@@ -1,7 +1,7 @@
 ---
 title: Safety agent with memory
 created: 2026-03-27
-updated: 2026-03-27
+updated: 2026-04-17
 domain: product-ai
 type: initiative
 status: active
@@ -20,9 +20,12 @@ An agent that improves accuracy over time by remembering human corrections — a
 
 ## Current state
 
-- Ishmael working on it within safety/claims domain
-- Chris discussed the pattern in the context of submissions (remember vehicle classification corrections)
-- Concept validated in conversation but unclear how far along implementation is
+- Ismael has a working safety agent deployed on Vercel (migrated from Strands)
+- Skills implemented via file-based system (claims, data accuracy, disconnected vehicles, fatigue, portal navigation)
+- Memory integrated via Bedrock Agent Core (summarization, semantic, user preference strategies)
+- DataDog integrated for LLM observability — issues pending (user info not surfacing, session grouping)
+- PromptFoo evals: ~110 test cases (golden set + red team), running manually
+- Production readiness: CI/CD automation planned, needs staging telemetry data
 
 ## Dependencies
 
@@ -45,3 +48,14 @@ An agent that improves accuracy over time by remembering human corrections — a
 ### 2026-03-27
 
 - Referenced in Chris AI conversation as a pattern worth expanding
+
+### 2026-04-17
+
+- **Major progress**: agent migrated from Strands to Vercel (frontend + backend). Chris approved — Vercel now the go-to TypeScript agent framework.
+- **DataDog integrated** for LLM observability — full conversation tracking. Issues: user ID/email/policy ID not surfacing in traces, input/output mapping showing empty, session grouping broken. Emailed DataDog Apr 14, no response.
+- **Skills implemented**: file-based system covering claims, data accuracy, disconnected vehicles, fatigue, portal navigation. Get-skill tool reads file and injects instructions.
+- **Memory via Bedrock Agent Core**: three strategies (summarization, semantic, user preference). Loads at conversation start, saves at end. Extracts structured memories, not full conversations.
+- **PromptFoo evals**: "golden set" + "red team" datasets (~50-60 tests each). Running manually, passing through compliance. Future: automate in CI/CD (needs staging telemetry data).
+- ~90% of Ismael's code is AI-generated via Claude Code
+- **S3 vs DataDog debate**: DataDog for monitoring, S3 for programmatic access. Tom showed S3 session storage — reloadable chats, automated improvement suggestions. Need DataDog API/MCP for meaningful analysis.
+- See [[2026-04-17-ismael-catchup]]

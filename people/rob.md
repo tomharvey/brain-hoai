@@ -1,7 +1,7 @@
 ---
 title: Rob Grice
 created: 2026-03-27
-updated: 2026-04-17
+updated: 2026-04-20
 type: person
 role: Software Engineer
 team: Engineering — Acquisition squad (Ollie Crowe / David Zamora)
@@ -44,3 +44,9 @@ First week at Flock (started w/c 14 Apr 2026). Met Tom 2026-04-17 with Ollie pre
 - Strong candidate for [[ai-native-engineering]] pilot — brand new, no legacy habits, already AI-native, on the right squad
 - Ollie discussed but not present — needs separate briefing on the pilot concept
 - See: [[2026-04-17-rob-ai-discovery]]
+
+### 2026-04-20 — Submission Processing Pipeline (group session)
+
+- Attended Fergus's architecture walkthrough
+- Part of tech-team audience for submission pipeline alignment
+- See: [[2026-04-20-submission-processing-pipeline]]

@@ -1,7 +1,7 @@
 ---
 title: Skills distribution and standardisation
 created: 2026-03-27
-updated: 2026-03-27
+updated: 2026-04-21
 domain: ai-enablement
 type: initiative
 status: active
@@ -71,3 +71,14 @@ A well-governed, discoverable catalogue of company skills that any team member �
 ### 2026-04-08
 
 - Eval testing regroup (Mima-led, Tom absent): 111 test cases now in Notion + GitHub (`redteam-evals` branch). Golden dataset (53), red team/security (49), PromptFoo plugins (9). New `/create-test-cases` skill on the branch. Paul reviewing for compliance gaps. Jordi investigating third-party security audit. See [[2026-04-08-eval-testing-regroup]].
+
+### 2026-04-21
+
+- **Codifying context session** (retention team): shared skills identified as the clearest first win
+  - Granola→Linear ticket creation, code review processes, ticket naming conventions
+  - Jacob's golden rules for DBT projects in markdown as example pattern
+- **Where do shared skills live?** — GitHub (version control) vs Notion (non-dev friendly, poor MCP) vs markdown (efficient, vector-searchable, distribution unclear). No resolution — the "where" is the hardest question.
+- **Developer bias risk flagged** (Stephen) — shared context approaches skew toward developer workflows
+- Retention team planning: team workshop Tue Apr 22 + cross-team session Thu Apr 24 with non-engineers
+- Authentication and distribution remain "roughest frontier" — AWS SSO, OAuth tokens, laptop dependency
+- See [[2026-04-21-codifying-context-retention-team]]

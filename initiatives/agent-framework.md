@@ -1,7 +1,7 @@
 ---
 title: Productionised agent framework
 created: 2026-03-30
-updated: 2026-03-30
+updated: 2026-04-17
 domain: engineering-workflows
 type: initiative
 status: active
@@ -82,3 +82,14 @@ Prodtech team deploys agentic systems as naturally as non-agentic. Agents are mo
   - Auth/user-isolation testing scoped for Playwright (separate from PromptFoo)
   - Longer-term: agents analysing stored conversations for higher-level insights
   - See [[2026-04-08-eval-testing-regroup]]
+
+### 2026-04-17
+
+- **DataDog integrated for LLM observability** (Ismael): full conversation traces, per-tool inputs/outputs visible
+  - Blocking issues: user ID/email/policy not surfacing, session grouping broken, input/output mapping empty
+  - Emailed DataDog Apr 14, no response — need to chase
+  - Need programmatic API/MCP access for meaningful analysis (web UI insufficient)
+- **Vercel now the go-to TypeScript agent framework** — replaced Strands for both frontend and backend
+- **S3 session storage vs DataDog**: Tom's reference implementation stores conversations as nested JSON in S3 — reloadable, analysable. DataDog for monitoring, S3 for deep programmatic access. Pattern: both, not either/or.
+- **PromptFoo eval infrastructure**: ~110 test cases (golden + red team), manual runs. CI/CD automation planned but needs staging telemetry data.
+- See [[2026-04-17-ismael-catchup]]

@@ -1,7 +1,7 @@
 ---
 title: Jordi Pallares Roset
 created: 2026-03-27
-updated: 2026-03-30
+updated: 2026-04-20
 type: person
 role: Head of Engineering
 team: Engineering
@@ -42,3 +42,13 @@ Replaced Tom after his time as interim Head of Engineering — handed over as a 
 - Skills: need public vs private governance, testing standards before company-wide sharing
 - Insights database: Tom framing 3-month vision for extracting insight from previously unanalysable data
 - "Other Tom" interested in automating things — catch-up in ~2 weeks
+
+### 2026-04-16 — Underwriting AI conversation (with Tom Rogers)
+
+- Joint session with Tom Rogers on underwriting and AI
+- See: [[2026-04-16-tom-rogers-underwriting-ai]]
+
+### 2026-04-20 — Weekly Kickoff (referenced)
+
+- KR2 kickoff with Adam, Tom, Darren — trading evolution, connectivity chicken/egg
+- Haulage fact find needed — Liam doesn't have current version, may need restart

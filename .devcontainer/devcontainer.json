@@ -13,9 +13,6 @@
 
 	"postCreateCommand": "npm install -g @googleworkspace/cli",
 
-	"containerEnv": {
-		"GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE": "${containerWorkspaceFolder}/google-credentials.json"
-	}
 
 	// 👇 Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],

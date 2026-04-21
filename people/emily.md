@@ -1,7 +1,7 @@
 ---
 title: Emily Staton
 created: 2026-03-27
-updated: 2026-04-15
+updated: 2026-04-20
 type: person
 role: Head of Ops
 team: Ops — Underwriting assistance and customer support
@@ -58,3 +58,9 @@ Reports to Mollie Brownlow (Head of Operations). Not yet spoken to.
 - Confirmed she's the go-to for HubSpot AI permissions (super admin) — CeeToo don't have access, redirect to her anyway. 30-second fix. "Just send people to me."
 - Idea: get Claude to auto-update monthly ops slides with fresh data
 - See: [[2026-04-15-monthly-ops-ai-sync]]
+
+### 2026-04-20 — Weekly Kickoff (referenced)
+
+- OKR3 authority framework — Emily leading, described as "hospital pass"
+- M and Andrew co-owning with tracking progress Q1-Q2
+- New platform improvements may help time-to-quote regardless of authority framework

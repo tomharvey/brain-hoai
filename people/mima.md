@@ -1,7 +1,7 @@
 ---
 title: Jemima Pitceathly
 created: 2026-03-27
-updated: 2026-03-27
+updated: 2026-04-21
 type: person
 role: Product Manager
 team: Product
@@ -48,3 +48,13 @@ Reports to Matt. AI skills champion.
 - Goal: document appears automatically in submission folder without Matt's involvement (~80% automated)
 - Assessing best path forward and locking in output format before building
 - See [[2026-04-08-value-statement-automation]]
+
+### 2026-04-21 — Codifying Context for Retention Team
+
+- Facilitated the session — brought team back to identifying minimal shared daily-use items
+- Proposed codifying team expertise into repo for auto-assignment and onboarding
+- Flagged "memory problem" — team repeatedly loses and rediscovers information from Slack and past conversations
+- Interested in Slack channel analysis for cross-team repetition/overlap detection
+- Vision: "Gandalf" — a team-level agent with portal/AWS/Slack access, simulating a human team member
+- Planning: team workshop tomorrow morning + cross-team session Thursday with non-engineers
+- See: [[2026-04-21-codifying-context-retention-team]]

@@ -1,7 +1,7 @@
 ---
 title: Fergus Doyle
 created: 2026-03-27
-updated: 2026-03-27
+updated: 2026-04-20
 type: person
 role: Interim CPTO
 team: Leadership
@@ -44,3 +44,21 @@ Reports-to. Tom reports directly to Fergus. They worked together years ago at an
 - **Post-call**: shifted to thumbs up. Wants Antton kept in the loop. Comfortable with current security posture at this stage.
 - Happy for Tom to run point — doesn't feel need to be involved beyond this conversation
 - Enterprise Engine could be the board story — most concrete AI ROI example
+
+### 2026-04-20 — Weekly Product + Tech Kickoff
+
+- Jay staging: PR ready with Opus 4.7 upgrade, need volunteers by Wednesday lunchtime
+- KR2 kickoff with Adam, Tom, Darren, Johnny — trading evolution, connectivity challenges
+- Haulage fact find needed ASAP — Liam doesn't have current version
+- BDM model opinions emerging — potential shift to GWP model for done deals
+- OKR3 authority framework: Emily leading, Darren/Andrew co-owning
+- David Stephens session Wednesday — Darren/Milan presenting power-up workstreams, Fergus monitoring
+
+### 2026-04-20 — Submission Processing Pipeline
+
+- Led walkthrough of 9,000-submission pipeline (~£40 total, ~50p/submission)
+- Three S3 bucket architecture: raw docs → OCR/JSON intermediary → final partitioned
+- Jacob wiring into Iceberg table. Only 6/9,000 too long for context window.
+- Data source decision needed: HubSpot tickets vs Google Drive
+- Integration opportunity with Javier's document classification work
+- See: [[2026-04-20-submission-processing-pipeline]]

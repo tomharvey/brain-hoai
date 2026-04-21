@@ -1,7 +1,7 @@
 ---
 title: AI capability uplift programme
 created: 2026-03-30
-updated: 2026-04-12
+updated: 2026-04-21
 domain: ai-enablement
 type: initiative
 status: active
@@ -106,3 +106,21 @@ Key principle: **confidence before automation**. Getting people to feel like Kir
 ### 2026-04-09
 
 - **Kirsty discovery**: Finance team's capability is higher than expected. Kirsty is a power user exemplar — self-started Looker→Claude MCP, producing AI-generated insights that change business decisions. Christian, Kevin, David trialling locally. Multiple business users requesting access. The spectrum now runs: Fred (needs enablement) → average user (needs toolkit) → Kirsty/Matt Lees (needs infrastructure + freedom).
+
+### 2026-04-16
+
+- **Eraaz Ali discovery** (Talent Acquisition): daily Claude user for documents/presentations/conversations. Self-describes as basic. Wants to learn co-work and MCP skills. Next workshop (co-work focused) will help.
+  - Built AI scorecard system with Jordi — automated feedback analysis, pros/cons, hiring recommendations
+  - Generated Rob's onboarding plan from interview feedback using Claude
+  - Building case for Ashby ATS — built-in AI screening, notes, reporting, same price as Lever
+  - First-time Claude user (previously ChatGPT only) — converted at Flock
+  - File organization challenge: inherited folders from Adam, wants co-work to help sort
+  - See [[2026-04-16-eraaz-intro]]
+
+### 2026-04-21
+
+- **Codifying context session**: retention team exploring shared context and skills distribution
+  - Team using AI individually across different tools — need to identify standardization opportunities
+  - Personal OS momentum: Tom, Jemima, Harvey, Fergus, Jacob all building personal operating systems
+  - Key question shifting from "should we use AI?" to "how do we share context across teams?"
+  - See [[2026-04-21-codifying-context-retention-team]]

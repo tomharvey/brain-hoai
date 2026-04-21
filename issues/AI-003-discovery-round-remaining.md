@@ -2,7 +2,7 @@
 title: Complete discovery round — remaining conversations
 id: AI-003
 created: 2026-03-27
-updated: 2026-04-14
+updated: 2026-04-21
 domain: ai-enablement
 type: issue
 status: in-progress
@@ -45,6 +45,8 @@ First week covered 7 meetings with prod-tech/engineering people. Need to expand 
 
 ### Completed (w/c 2026-04-14)
 - [x] [[matt-dipre|Matt Dipre]] — finance/invoicing (2026-04-14)
+- [x] [[eraaz-ali|Eraaz Ali]] — talent acquisition (2026-04-16)
+- [x] [[queency-gonsalves|Queency Gonsalves]] — AI chat (2026-04-17, no transcript captured)
 
 ### Still needed
 - [ ] Underwriting team (Darren's team, Billy)
