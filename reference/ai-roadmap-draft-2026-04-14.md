@@ -4,8 +4,8 @@ created: 2026-03-30
 updated: 2026-04-14
 domain: ai-enablement
 type: reference
-status: active
-tags: [roadmap, board, strategy, pioneer]
+status: completed
+tags: [roadmap, board, strategy, pioneer, superseded]
 ---
 
 # AI Roadmap — Draft for Pioneer Board (2026-04-20)

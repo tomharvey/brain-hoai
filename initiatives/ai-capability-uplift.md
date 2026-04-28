@@ -124,3 +124,11 @@ Key principle: **confidence before automation**. Getting people to feel like Kir
   - Personal OS momentum: Tom, Jemima, Harvey, Fergus, Jacob all building personal operating systems
   - Key question shifting from "should we use AI?" to "how do we share context across teams?"
   - See [[2026-04-21-codifying-context-retention-team]]
+
+### 2026-04-28
+
+- **Token spend culture**: despite explicit unlimited AI budget, team still hesitant to spend tokens. Ishmael was on Sonnet not Opus. Jordi received a $200 Cursor overage — Tom: "rounding error on headcount cost." Fergus runs submissions on all data; others afraid to spend. This is a company-wide cultural blocker, not a technical one.
+- **Jemima + Ishmael co-prompting**: shifted from PRD→handoff to back-and-forth partnership. Sharing code/DB structure files to refine requirements together. This is the target working pattern for the uplift programme.
+- **Jemima using personal OS for Linear**: ticket creation via Claude Code. Not yet using it to review/reprioritise — flagged as next step. Tom's experience: forcing prioritisation through the OS encodes *why* themes matter, feeds into roadmap rationale.
+- **Jay as adoption forcing function**: launching to ~20 test users. Risk of low usage killing momentum. Matt Price: "optimise for getting people to use it, not for cost." Consider AI-generated personalised demo conversations to seed adoption.
+- See [[2026-04-28-matt-price-1-1]], [[2026-04-28-jordi-1-1]], [[2026-04-28-jemima-1-1]]

@@ -2,12 +2,11 @@
 title: "Produce AI capability baseline report"
 id: AI-013
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-04-28
 domain: ai-enablement
 type: issue
-status: in-progress
+status: todo
 priority: high
-due: 2026-04-20
 assignee: tom
 origin: "[[ai-capability-uplift]]"
 tags: [capability, baseline, strategy, measurement]

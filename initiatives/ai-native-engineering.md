@@ -121,3 +121,17 @@ Corollary: engineering practices that were previously **implicit** get surfaced 
 - Javier's closing framing: *"A future where we sit down at a table, hit record, and by the time we leave the door it's done"* — context-capture as primary engineering artefact
 
 Full meeting note: [[2026-04-16-javier-ai-native-engineering]]
+
+### 2026-04-28 — Engineering AI adoption snapshot + pair prompting
+
+- **Jordi 1:1 — team AI adoption read**:
+  - Ishmael: most AI-native, likely not handcrafting code. Was on Sonnet not Opus — upgraded to 4.7.
+  - Harvey: using Claude Code, frustrated with frontend detail quality. Candidate for "pair prompt" session with Ollie.
+  - Rob: improving, likely enthusiastic for SDLC-of-the-future conversation.
+  - Jacob: uses AI as a harness, unclear if generating code.
+  - Sami (new hire): flagged by Jordi as not very AI-driven. 30-day goal set: AI is part of workflow, not a side project.
+  - Ollie: getting beaten up by Anton on direction, sees SDLC exploration as a distraction.
+- **Pair prompting concept**: Tom proposed Ollie + Harvey sit together and prompt their way to a solution live. Jordi enthusiastic ("worst thing is they learn"). → AI-023
+- **Jemima + Ishmael working pattern**: shifted from PRD→handoff→done to close back-and-forth partnership. Sharing files (DB structure, frontend code) to refine requirements together. Tom flagged John Cutler's co-prompting article as relevant.
+- **Jordi side project**: Claude-based cron job running in cloud that checks repo vulnerabilities and auto-raises PRs. Already running on personal repos, wants to apply to Flock platform repo. Tom's parallel: consolidate Dependabot PRs into single reviewed PR.
+- See [[2026-04-28-jordi-1-1]], [[2026-04-28-jemima-1-1]]

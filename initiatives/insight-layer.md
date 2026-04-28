@@ -1,7 +1,7 @@
 ---
 title: Insight layer across trips, claims, and quotes
 created: 2026-03-30
-updated: 2026-04-09
+updated: 2026-04-27
 domain: product-ai
 type: initiative
 status: proposed
@@ -83,3 +83,10 @@ Aggregated, pipeline-driven insight that customers and internal teams can act on
     1. **Insight into our own thinking** — can AI be more data-driven than our intuitions? Does what we *think* our ICP is match reality?
     2. **Recurring insight over time** — how does the ICP change year-on-year? The answer isn't a one-shot; it's a question that should be re-asked and compared against previous answers. This is exactly the persistent, self-referencing insight pattern discussed above.
   - This initiative should move from "Later" to "Next" on the roadmap — Kirsty's work is the anchor use case
+
+### 2026-04-27
+
+- **Submission scoring emerges as a concrete use case** via Ollie Crowe's conversion bet reframing.
+- Once submissions pipeline is ingesting and #underwriting-losses channel is structured, a scoring layer can predict conversion likelihood per submission. This is where Adam's pipelining ask and the pipeline MVP converge.
+- This is a specific, near-term instantiation of the insight layer concept — structured data in, actionable score out, persistent and self-improving.
+- See [[ollie-conversion-bets-2026-04-27]]
