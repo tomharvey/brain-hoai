@@ -5,6 +5,7 @@ updated: 2026-03-27
 type: person
 role: Head of Architecture
 team: Engineering
+email: chris@flockcover.com
 tags: [engineering, architecture, code-quality]
 ---
 

@@ -5,6 +5,7 @@ updated: 2026-03-27
 type: person
 role: VP of Finance
 team: Finance
+email: jade.mounir@flockcover.com
 tags: [finance, leadership]
 ---
 
