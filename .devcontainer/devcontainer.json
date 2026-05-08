@@ -12,6 +12,14 @@
 	},
 
 	"postCreateCommand": "npm install -g @googleworkspace/cli",
+	"postStartCommand": "gws auth status 2>/dev/null | grep -q 'token_valid.*true' || gws auth login",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"astx-jp.vscode-pptx-viewer"
+			]
+		}
+	},
 
 
 	// 👇 Use 'forwardPorts' to make a list of ports inside the container available locally.

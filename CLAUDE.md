@@ -116,6 +116,21 @@ Use conventional commits: `feat:`, `fix:`, `docs:`, `chore:`. Examples:
 
 ---
 
+## Tooling recovery
+
+### gws auth recovery
+
+If `gws` returns a 401 error:
+
+1. Run `gws auth status` — if `token_valid` is true, the encrypted credentials are fine and something else is wrong
+2. If `GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE` is set in the environment, unset it: `unset GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE`
+3. Re-run the failing command — gws will fall back to `~/.config/gws/credentials.enc`
+4. If the token is genuinely expired, run `gws auth login` to re-authenticate via browser
+
+The env var should **not** be set. It was removed from `/etc/environment`. If it reappears (e.g. after a rebuild), remove it again.
+
+---
+
 ## Skills
 
 Skills live in `.claude/skills/` as markdown files. Each describes when to use it and the steps to follow. Available skills:
