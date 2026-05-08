@@ -1,0 +1,188 @@
+# Granola name resolution
+# Used by /granola when resolving names in transcripts.
+#
+# Three sections:
+#   substitutions  — names Granola mishears (errors to correct)
+#   nicknames      — short forms that ARE correct (not errors)
+#   disambiguation — people who share a first name; use context to tell apart
+
+substitutions:
+  # Format:
+  #   heard:       what appears in the raw transcript (string or list)
+  #   person:      people/ filename (without .md)
+  #   phonetics:   why the error happens
+  #   guard:       condition under which this substitution applies (optional)
+  #   confirmed:   date first confirmed
+
+  - heard: "Harvey"
+    person: javier
+    phonetics: "'Javi' → 'Harvey' (Spanish J sounds like H to English speech-to-text)"
+    guard: "standalone only — 'Tom Harvey' and 'Tom H' are correct"
+    confirmed: 2026-04-28
+
+  - heard: ["Jaren", "Jarin"]
+    person: geran
+    phonetics: "phonetic reversal/transposition of 'Geran'"
+    confirmed: 2026-05-08
+
+  - heard: ["gerund", "General"]
+    person: geran
+    phonetics: "different garbling of 'Geran' — similar vowel sounds"
+    guard: "only when used as a proper noun referring to a person, not as a grammar term or military rank"
+    confirmed: 2026-05-08
+
+  - heard: "Holly"
+    person: ollie-crowe
+    phonetics: "'Ollie' → 'Holly' (leading H insertion, common with soft O)"
+    confirmed: 2026-05-08
+
+  - heard: ["naima", "Naima"]
+    person: mima
+    phonetics: "speech-to-text drops the 'Ji' from 'Jemima' and garbles '-mima' → 'naima'"
+    confirmed: 2026-05-08
+
+nicknames:
+  # Correct short forms — not transcription errors, just informal names
+  # Format:
+  #   nickname:  the informal name used in speech and transcript
+  #   person:    people/ filename
+  #   full_name: canonical full name
+
+  - nickname: "Mima"
+    person: mima
+    full_name: "Jemima Pitceathly"
+
+  - nickname: "Javi"
+    person: javier
+    full_name: "Javier Arranz"
+
+  - nickname: "Jordy"
+    person: jordi
+    full_name: "Jordi Pallares"
+
+  - nickname: "Jade"
+    person: jade-mounir
+    full_name: "Jade Mounir"
+
+  - nickname: "Kirsty"
+    person: kirsty
+    full_name: "Kirsty Alexandre"
+
+disambiguation:
+  # People who share a first name. When a first name is ambiguous,
+  # use team, domain, and topic context to decide which person is meant.
+  # Format:
+  #   name:       the ambiguous first name
+  #   candidates: list of possible people with context clues
+
+  - name: "Matt"
+    candidates:
+      - person: matt
+        full_name: "Matthew Price"
+        role: Head of Product
+        team: product
+        context_clues:
+          - product strategy
+          - PM team
+          - SLT
+          - Ollie's manager
+          - promotions
+          - roadmap prioritisation
+      - person: matt-lees
+        full_name: "Matt Lees"
+        role: Enterprise Fleet Lead
+        team: distribution
+        context_clues:
+          - enterprise fleet
+          - HubSpot
+          - Apollo
+          - distribution
+          - TCO / value statement
+          - agent pipeline
+
+  - name: "Adam"
+    candidates:
+      - person: abs
+        full_name: "Adam Smith"
+        role: Head of Distribution
+        team: distribution
+        context_clues:
+          - distribution
+          - brokers
+          - sales
+          - enterprise
+      - person: adam-smith
+        full_name: "Adam Smith (engineer)"
+        # Note: check which Adam is active in the org at time of meeting
+
+  - name: "Alex"
+    candidates:
+      - person: alex-dyball
+        full_name: "Alex Dyball"
+        role: Engineering / Product (claims/retention)
+        context_clues:
+          - claims
+          - retention
+          - engineering
+          - portal
+      - name_note: "Alex at Admiral Business (no people file yet)"
+        context_clues:
+          - Admiral Business
+          - Pioneer
+          - Ed Hill
+          - enterprise deal
+          - workshop
+
+  - name: "David"
+    candidates:
+      - person: david
+        full_name: "David Zamora"
+        role: Engineering Manager
+        team: engineering
+        context_clues:
+          - engineering
+          - submissions
+          - architecture documentation
+          - platform
+          - management
+
+  - name: "Sam"
+    candidates:
+      - person: sam
+        full_name: "Sam Adeniyi"
+        context_clues:
+          - ops
+          - governance
+          - invoicing
+          - haulage
+
+speaker_context:
+  # Known speaker traits that help resolve names in context.
+  # Accent and verbal patterns that cause specific transcription errors.
+
+  - person: javier
+    accent: Spanish (native)
+    notes: >
+      Spanish J pronounced as H — Granola consistently mishears 'Javi' as 'Harvey'.
+      When someone in a meeting refers to 'Harvey' doing engineering work, it is Javier.
+
+  - person: geran
+    accent: British
+    notes: >
+      Name 'Geran' is unusual — Granola has produced at least three variants:
+      'Jaren', 'gerund', 'General'. Always check context: data analyst, Snowflake,
+      PostHog, Streamlit apps.
+
+  - person: ollie-crowe
+    accent: British
+    notes: >
+      'Ollie' consistently transcribed as 'Holly'. Ollie is a Technical PM on the
+      acquisition team, reports to Matt Price. Context: conversion bets, WhatsApp bot,
+      Anton/Darren pressure.
+
+  - person: mima
+    accent: British
+    notes: >
+      'Jemima' often shortened to 'Mima' in speech — this is a correct nickname.
+      Full name 'Jemima' has been transcribed as 'naima' (Ji dropped, remainder garbled).
+      Context: J product, evals, submissions, skills distribution.

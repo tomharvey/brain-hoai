@@ -41,20 +41,20 @@ For each selected meeting, fetch in parallel:
 
 Before writing any meeting note, validate every person name that appears in the transcript against `people/` and the known team structure.
 
-**Why this matters:** Granola's speech-to-text makes systematic errors. Known substitutions:
-- "Harvey" (standalone, not "Tom Harvey") → **Javier** (Javi Arranz, engineer). "Javi" sounds like "Harvey" to speech-to-text.
-- "Jaren" → **Geran** (Geran Butcher, data analyst). Confirmed multiple times.
-- "Holly" → **Ollie** (Oliver Crowe, Technical PM). "Ollie" sounds like "Holly" to speech-to-text.
-- "gerund" or "General" (in isolation, not as a grammar term) → **Geran** (same person as above)
-- "naima" → **Mima** (Jemima Pitceathly). Speech-to-text drops the "Ji" prefix from "Jemima" and garbles "ma" → "naima".
-- Any name not matched in `people/` → flag it; check the attendee list, team structure, and phonetic similarity to known names before using it
+**Load the name resolution data store first:** Read `people/name-resolution.yaml`. It contains four sections:
+
+- `substitutions` — names Granola mishears (errors to correct). Each entry has a `heard` value (what appears in the raw transcript), a `person` (canonical `people/` filename), `phonetics` (why the error happens), and an optional `guard` condition. Apply every substitution whose guard condition is satisfied.
+- `nicknames` — correct short forms that are NOT errors. Map each to its canonical person.
+- `disambiguation` — people who share a first name. Use `context_clues` to decide which person is meant based on topic, team, and domain.
+- `speaker_context` — known accent and speech patterns per person. Use this to anticipate likely transcription errors even before they appear in the transcript.
 
 **How to resolve:**
-1. List all `people/` files — each filename is a canonical ID.
-2. For every name in the transcript, find a match by exact name, role, or team context. Use `people/<person>.md` to confirm role and team fit against what the transcript says about them.
-3. If a name has no match: glob `people/*.md` and look for phonetic neighbours. A name that sounds like a known person but differs by one phoneme is almost certainly a transcription error.
-4. Use the canonical name (from the `title:` field in `people/<person>.md`) in all meeting notes and issues.
-5. Do NOT silently accept a name that appears in no people file — surface it to the user.
+1. Read `people/name-resolution.yaml` and load all four sections.
+2. List all `people/` files — each filename is a canonical ID.
+3. For every name in the transcript: check substitutions first (apply if guard is met), then nicknames, then disambiguation.
+4. For any name with no match: glob `people/*.md` and look for phonetic neighbours. Use `speaker_context` accent notes to guide the search. A name that sounds like a known person but differs by one phoneme is almost certainly a transcription error.
+5. Use the canonical name (from the `title:` field in `people/<person>.md`) in all meeting notes and issues.
+6. Do NOT silently accept a name that appears in no people file — surface it to the user.
 
 ### 5. Create meeting notes
 
