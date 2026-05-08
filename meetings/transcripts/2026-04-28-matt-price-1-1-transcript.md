@@ -133,7 +133,7 @@ Me: Like yeah.
 
 Them: Like, I find it boring having to find one. I know that's rich coming from someone who's in product team. But, like. Like, at some point, can I just go, look, just trust me, we've got a complete blank hole in half of our pipeline. It's just make it better.
 
-Me: Philly Jaren spent the entirety of last year saying that to us and we were like no no no. No no no. Need to justify this work.
+Me: Philly Geran spent the entirety of last year saying that to us and we were like no no no. No no no. Need to justify this work.
 
 Them: Yeah.
 
@@ -229,7 +229,7 @@ Them: That, that I think is not perfect, but I think that's.
 
 Me: Was Darren working on? A few segments?
 
-Them: Taxi. And figuring out how to do finance and stuff like that. Jaren's linear is actually the most polished of all of them at the minute, so I can use that and tell you exactly. How he's doing admirable career. And policy admin stuff.
+Them: Taxi. And figuring out how to do finance and stuff like that. Geran's linear is actually the most polished of all of them at the minute, so I can use that and tell you exactly. How he's doing admirable career. And policy admin stuff.
 
 Me: What's this feedback loop?
 

@@ -26,7 +26,7 @@ tags: [discovery, finance, invoicing, netsuite, snowflake, looker, hubspot]
 Daily process, done by ~11am alongside bank recs:
 
 1. Check personal Google Sheet (list of installment policies with formulas for due dates)
-2. Look up policy in Snowflake Streamlit (built by [[geran|Jaren]]) for amounts due
+2. Look up policy in Snowflake Streamlit (built by [[geran|Geran]]) for amounts due
 3. Cross-check against [[quincy|Quincy's]] backup sheet (unclear data source — Retool? Snowflake?)
 4. Create invoice in NetSuite by copying/modifying previous month's
 5. Download PDF → HubSpot → email to broker → copy email link back to NetSuite for tracking
@@ -48,7 +48,7 @@ Lots of room for human error. Automation previously worked for one invoice befor
 
 ## Actions
 
-- [ ] Get Matt Dipre Looker access — resolve permissions with Kirsty and Jaren — Tom
+- [ ] Get Matt Dipre Looker access — resolve permissions with Kirsty and Geran — Tom
 - [ ] Check with Quincy on her backup sheet data source — Tom
 - [ ] Investigate NetSuite data availability in Looker/Snowflake — Tom
 - [ ] Get HubSpot AI permissions sorted — check with Emily — Tom/Matt Dipre

@@ -5,7 +5,7 @@ created: 2026-04-28
 updated: 2026-04-28
 domain: product-ai
 type: issue
-status: todo
+status: done
 priority: high
 assignee: tom
 due: 2026-04-30
@@ -28,7 +28,7 @@ Without this, Jay launches and nobody has instrumentation to learn from real use
 ## Notes
 
 - Tom already has the API keys and export script (packaged in `outbox/datadog-chat-export.zip` for Jemima)
-- Same gap exists for Jaren's submissions work — unclear where that instrumentation data lives
+- Same gap exists for Geran's submissions work — unclear where that instrumentation data lives
 - Raised independently in both the Matt Price and Jordi 1:1s on 2026-04-28
 
 ## Links

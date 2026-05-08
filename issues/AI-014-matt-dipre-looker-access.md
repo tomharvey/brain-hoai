@@ -19,7 +19,7 @@ Matt Dipre has a Looker account but no permissions to create or view dashboards.
 
 ## Acceptance criteria
 
-- [ ] Speak to Kirsty and Jaren about granting Matt granular Looker permissions
+- [ ] Speak to Kirsty and Geran about granting Matt granular Looker permissions
 - [ ] Confirm whether there's a license constraint or just permissions
 - [ ] Matt can create and view dashboards in Looker
 

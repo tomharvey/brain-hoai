@@ -26,7 +26,7 @@ First spoke 2026-04-14 (AI discovery round). Keen to experiment, already built a
 - Previously automated full invoice + broker commission workflow via Claude + NetSuite browser automation — broken by NetSuite update (no dual-browser sessions)
 - Currently uses Claude for Excel formatting (broker statements) and general time-saving
 - Has a personal Google Sheet tracking installment policies with formulas
-- Uses Jaren's Snowflake Streamlit for policy lookups
+- Uses Geran's Snowflake Streamlit for policy lookups
 - Daily routine: invoices + bank recs done by 11am, then projects
 - Building a Google Sheets dashboard for invoice metrics (volume, on-time %, improvement)
 - Blocked on Looker access (has account, no permissions) and HubSpot AI integration (needs admin approval)
@@ -39,5 +39,5 @@ First spoke 2026-04-14 (AI discovery round). Keen to experiment, already built a
 
 - See: [[2026-04-14-matt-dipre-ai-discovery]]
 - Key blockers: Looker permissions, HubSpot AI access, NetSuite dual-session restriction
-- Actions: resolve Looker with Kirsty/Jaren, check Quincy's data source, investigate NetSuite data in Looker/Snowflake
+- Actions: resolve Looker with Kirsty/Geran, check Quincy's data source, investigate NetSuite data in Looker/Snowflake
 - Encouraged to experiment with Claude HTML dashboards during project time

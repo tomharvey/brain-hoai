@@ -1,5 +1,5 @@
 ---
-title: "Pair prompt session — Ollie + Harvey (SDLC 2030)"
+title: "Pair prompt session — Ollie + Javier (SDLC 2030)"
 id: AI-023
 created: 2026-04-28
 updated: 2026-04-28
@@ -14,9 +14,9 @@ tags: [sdlc, pair-prompting, engineering, ai-adoption]
 
 ## Description
 
-Get Ollie and Harvey to pair prompt their way to a solution live — sit together, prompt Claude, build something real. Test whether the "SDLC of 2030" is something we can engage with today through doing, not theorising.
+Get Ollie and Javier to pair prompt their way to a solution live — sit together, prompt Claude, build something real. Test whether the "SDLC of 2030" is something we can engage with today through doing, not theorising.
 
-Broader ambition: pull Ollie, Ishmael, Harvey, and Rob into a session on what the SDLC looks like in 2030. But Ollie is getting beaten up by Anton regularly and sees this as a distraction. Harvey is using Claude Code but frustrated with frontend detail quality. Pairing them might break through both blockers.
+Broader ambition: pull Ollie, Ishmael, Harvey, and Rob into a session on what the SDLC looks like in 2030. But Ollie is getting beaten up by Anton regularly and sees this as a distraction. Harvey is using Claude Code but frustrated with frontend detail quality. Pairing them might break through both blockers. (Correction: Javier, not Harvey — Javier is already building the HubSpot→Claude→Flock PoC and is the natural pairing partner.)
 
 ## Context from Jordi
 
@@ -27,7 +27,7 @@ Broader ambition: pull Ollie, Ishmael, Harvey, and Rob into a session on what th
 
 ## Acceptance criteria
 
-- [ ] Session scheduled with Ollie + Harvey (and optionally Rob)
+- [ ] Session scheduled with Ollie + Javier (and optionally Rob)
 - [ ] Session run — real problem, live prompting, working output
 - [ ] Capture learnings: what worked, what didn't, would they do it again?
 

@@ -35,7 +35,7 @@ Peer
 - PMs using Cursor as primary IDE — non-engineers adopting VS Code forks
 - AI output verbose and unreadable — need agents to edit agent output
 - Style guides critical — can't rely on verbal communication
-- Jaren doing time/motion study — PostHog DOM logs could feed AI analysis
+- Geran doing time/motion study — PostHog DOM logs could feed AI analysis
 - Codifying business logic is the value, not just automation
 - Cognitive load discussion — immediate AI responses eliminating thinking time
 
@@ -43,7 +43,7 @@ Peer
 
 - AI adoption: three cohorts across non-prod teams (full-speed, interested-but-intimidated, observers). Need 1:1 applied guidance, not just workshops.
 - "Last mile" problem with LLM-generated metrics — numbers without interpretation. Kirsty's bullet-point summaries the right pattern.
-- Ollie pushing for senior product promotion; Jaren's domain expanding into everything; acquisition/expansion boundary needs clarifying
+- Ollie pushing for senior product promotion; Geran's domain expanding into everything; acquisition/expansion boundary needs clarifying
 - Claims metrics declining as team winds down — Ollie not explaining why
 - Matt was off last week — wants to establish standing metrics culture across his teams
 - Pioneer moving to Salesforce via Five Sigma — raises question of HubSpot investment

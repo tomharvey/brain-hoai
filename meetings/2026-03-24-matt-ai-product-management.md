@@ -29,7 +29,7 @@ tags: [product-management, tooling, workflows]
 ### Automation = codifying business logic
 - CTO at Electric Car Scheme example: AutoHotkey script automated 90-95% of underwriting — highest ROI project ever
 - The value isn't just automation, it's crystallising what we do
-- Jaren conducting time/motion study with video recordings of the new platform
+- Geran conducting time/motion study with video recordings of the new platform
 - PostHog activity tracking could feed AI analysis of workflows
 
 ### Cognitive load and burnout

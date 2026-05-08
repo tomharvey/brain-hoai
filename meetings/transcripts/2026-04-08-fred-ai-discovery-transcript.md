@@ -33,7 +33,7 @@ Them: But day to day, I mean, to be honest, my AI so far hasn't been particularl
 
 Me: And I know there's, like, sort of ad hoc. GPT or cloud usage where it's like upload a file and, like, parse out some data from it. Is that the kind of thing that you're doing with it, or is there other stuff? That you're using?
 
-Them: Pretty much. That is the day-to-day. So every day we. Will. Sorry. Every day we will. Be doing that. Yeah. So putting in. I know there's been some changes recently with what Jaren and abs and stuff have done with the whole haulage quoting system. But it's basically, yeah, putting in files or putting in information and just then extract these bets for us, basically.
+Them: Pretty much. That is the day-to-day. So every day we. Will. Sorry. Every day we will. Be doing that. Yeah. So putting in. I know there's been some changes recently with what Geran and abs and stuff have done with the whole haulage quoting system. But it's basically, yeah, putting in files or putting in information and just then extract these bets for us, basically.
 
 Me: And did someone show you how to do that? Is that just, like, part of the onboarding part of the team now or. Like,
 

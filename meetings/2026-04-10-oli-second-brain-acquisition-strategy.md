@@ -9,7 +9,7 @@ tags: [acquisition, strategy, second-brain, growth, telematics]
 
 # Second brain and acquisition strategy — [[ollie-crowe]]
 
-Informal 1:1. Oli wanted to think out loud about acquisition team strategy and overlap with Jaren's expansion team. Brief chat about second brain / PKM at the start.
+Informal 1:1. Oli wanted to think out loud about acquisition team strategy and overlap with Geran's expansion team. Brief chat about second brain / PKM at the start.
 
 ## Attendees
 
@@ -31,13 +31,13 @@ Informal 1:1. Oli wanted to think out loud about acquisition team strategy and o
 - Alex has joined the acquisition team, [[rob]] starting next week
 - Oli put together an opportunity solution tree around the current sales pipeline
 - **Key tension**: significant overlap with [[geran]]'s expansion team work — submission automation, SLAs, standard sales processes
-- Oli finds it frustrating working across two teams on such close areas; wants to resolve with Jaren directly
+- Oli finds it frustrating working across two teams on such close areas; wants to resolve with Geran directly
 
 ### Delineation suggestion (from me)
 - [[adam-smith]] is earlier in the pipeline (acquiring leads) → aligns with acquisition
 - Tom Rogers deals with renewals/retention/conversion → aligns with expansion
-- Proposed: Oli works closely with Adam, leaves Tom Rogers to Jaren
-- Framing for Jaren: "you can support, but this leads from acquisition"
+- Proposed: Oli works closely with Adam, leaves Tom Rogers to Geran
+- Framing for Geran: "you can support, but this leads from acquisition"
 
 ### 10x growth challenge
 - Fair challenge from "heavy" (Havey?) yesterday: nothing in current strategy looks like it gets to 10x growth
@@ -46,7 +46,7 @@ Informal 1:1. Oli wanted to think out loud about acquisition team strategy and o
 - **Oli's hypothesis**: integrated fleet management ecosystem beyond just telematics — fleets use multiple disconnected tools (damage tracking, spreadsheets etc). Build/buy an integrated offering that makes it very hard to leave, even at a premium price
 
 ### Potential pivot
-- Oli considering a U-turn away from pipeline automation (which Jaren is likely to cover) and towards the "Flock OS" concept at the bottom of his opportunity tree
+- Oli considering a U-turn away from pipeline automation (which Geran is likely to cover) and towards the "Flock OS" concept at the bottom of his opportunity tree
 - Matt's enterprise outreach pipeline (from AI Breakfast) falls squarely into acquisition — rich pickings for Oli to stay close to
 
 ### Data-driven insights from Kirsty
