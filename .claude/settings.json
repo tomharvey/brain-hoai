@@ -1,1 +1,15 @@
-{}
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"systemMessage\": \"Before closing — is WORKING.md up to date? (current task, context, next steps)\"}'",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
