@@ -46,6 +46,7 @@ Before writing any meeting note, validate every person name that appears in the 
 - "Jaren" → **Geran** (Geran Butcher, data analyst). Confirmed multiple times.
 - "Holly" → **Ollie** (Oliver Crowe, Technical PM). "Ollie" sounds like "Holly" to speech-to-text.
 - "gerund" or "General" (in isolation, not as a grammar term) → **Geran** (same person as above)
+- "naima" → **Mima** (Jemima Pitceathly). Speech-to-text drops the "Ji" prefix from "Jemima" and garbles "ma" → "naima".
 - Any name not matched in `people/` → flag it; check the attendee list, team structure, and phonetic similarity to known names before using it
 
 **How to resolve:**

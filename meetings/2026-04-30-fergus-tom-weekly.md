@@ -33,7 +33,7 @@ tags: [weekly, fergus, leadership, ai-adoption, token-spend, capability-cohorts,
 - Protect review Wednesday — Jordi's forcing function: "what are we going to show?"
 - Jemima (Mima) referenced as fully engaged — "cloud coding his way through life" (i.e. not writing a line manually)
 - Alex flagged as potentially picking up Jacob/Fergus support for submission output ahead of Wednesday — but hadn't communicated directly, which Fergus noted as a pattern problem
-- Isabelle (Ismael Jebril) and an unnamed colleague got Datadog skills — enables iteration loop on J product. **One name unresolved in transcript ("naima") — not matched in people/; flagged for follow-up.**
+- [[mima|Jemima Pitceathly]] and [[ishmael|Ismael Jebril]] got Datadog skills — enables iteration loop on J product ("naima" in transcript = Mima, speech-to-text drops the "Ji")
 - PostHog gap in submissions world noted — J team uses Datadog, not PostHog. MTA failures would have been caught earlier if PostHog alerts existed
 
 ### Token spend mindset — spend, don't limit
