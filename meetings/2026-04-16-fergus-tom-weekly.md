@@ -68,7 +68,7 @@ Big conversation thread. Fergus aligned with the direction:
 - **Feed-in question**: a one-line Linear ticket isn't enough — needs the 5 relevant Notion docs as context. Codifying institutional knowledge is the prerequisite.
 - **Cross-repo / dev environment**: harder than Tom's pet project. Tom thinks he has answers.
 - **Philosophical split**: agents augmenting **teams** vs agents augmenting **individuals**. Fergus's gut: team-level. Tom unsure — engagement/teaching loop may need individual ownership first. Discussed as live tension, not resolved.
-- **Telemetry/feature discovery pipeline** (Darren's work with Michael & Francesco) — Fergus thinks this is engineering-worthy, could become a self-healing pipeline of proposals. "Build a Harvey so Harvey can do the human judgment bit."
+- **Telemetry/feature discovery pipeline** (Darren's work with Michael & Francesco) — Fergus thinks this is engineering-worthy, could become a self-healing pipeline of proposals. "Build a Javier so Javier can do the human judgment bit."
 
 This conversation maps directly to [[ai-native-engineering]] initiative.
 
@@ -86,7 +86,7 @@ Tom noticed engineering drop-ins are mostly people/performance topics, product d
 
 - [ ] Tom: send AI cohort framework write-up to Fergus
 - [ ] Tom: draft 90-min offsite AI session — by end of today/tomorrow. Direction: stations + rotation, disparate topics
-- [ ] Tom: speak to Harvey about the telemetry feature-discovery pipeline (longer session, possibly next week in office)
+- [ ] Tom: speak to Javier about the telemetry feature-discovery pipeline (longer session, possibly next week in office)
 - [ ] Tom: pitch the AI-native engineering pilot to Acquisition squad ([[matt-lees|Matt Lees]] / Rob) as the sandbox — "try this for a month"
 - [ ] Tom: explore Dependabot auto-merge on green CI as a confidence-building step
 - [ ] Fergus: mull on engineering drop-in audience/cadence

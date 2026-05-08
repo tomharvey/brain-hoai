@@ -22,7 +22,7 @@ Key development since offsite: Ollie Crowe relayed Antton + Curtis conversations
 | **AI-016** Offsite AI session | Urgent | done | Apr 22 | Session happened — close formally |
 | **AI-021** Datadog access for Jay team | High | todo | Apr 30 | Mima + Ishmael need API access for feedback loop |
 | **AI-022** Jay security audit | Medium | in-progress | | Jordi engaging vendors, Samurai poor, 2 more to contact |
-| **AI-023** Pair prompt session | Medium | todo | | Ollie + Harvey, SDLC exploration |
+| **AI-023** Pair prompt session | Medium | todo | | Ollie + Javier, SDLC exploration |
 | **AI-024** Adam Granola→HubSpot | Medium | todo | | Sales team self-service transcript attachment |
 | **AI-020** Slack channel analysis | Medium | backlog | | |
 | **AI-019** Ashby ATS evaluation | Low | todo | | |

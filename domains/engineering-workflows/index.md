@@ -28,7 +28,7 @@ tags: [domain, strategy, engineering, sdlc, agents]
 - Whether Javi's pilot will produce evidence that quality improves (not just speed). The "slow month" expectation needs managing with Fergus and the team.
 - Where agent services sit in the platform architecture. Chris/Jordi decision outstanding.
 - Whether platform-architecture docs will be completed at the pace the agent framework needs.
-- How to bring Rob, Harvey, Jacob, and Sami into the SDLC-of-the-future conversation without it feeling like a distraction from OKR delivery.
+- How to bring Rob, Javier, Jacob, and Sami into the SDLC-of-the-future conversation without it feeling like a distraction from OKR delivery.
 - Whether the AI code review initiative (proposed) can be scoped as a Later candidate without causing confusion about priority.
 
 ---

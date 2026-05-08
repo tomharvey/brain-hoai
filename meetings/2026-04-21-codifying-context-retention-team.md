@@ -39,7 +39,7 @@ Personal communication styles, stakeholder opinions belong in personal OS. Team 
 
 ### Personal OS momentum
 
-Tom demoed his "orb" (Head of AI vault consuming Granola, updating people files and initiatives). Jemima has similar. Harvey touring around with developer OS. Fergus exploring. Jacob built automated documentation agents. Question: how do we go from personal OS to team?
+Tom demoed his "orb" (Head of AI vault consuming Granola, updating people files and initiatives). Jemima has similar. Javier touring around with developer OS. Fergus exploring. Jacob built automated documentation agents. Question: how do we go from personal OS to team?
 
 ### Authentication/infrastructure barrier
 

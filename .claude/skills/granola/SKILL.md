@@ -37,7 +37,23 @@ For each selected meeting, fetch in parallel:
 - `mcp__granola__get_meetings` (summary, private notes, attendees)
 - `mcp__granola__get_meeting_transcript` (verbatim transcript)
 
-### 4. Create meeting notes
+### 4. Resolve names against the org chart
+
+Before writing any meeting note, validate every person name that appears in the transcript against `people/` and the known team structure.
+
+**Why this matters:** Granola's speech-to-text makes systematic errors. Known substitutions:
+- "Harvey" (standalone, not "Tom Harvey") → **Javier** (Javi Arranz, engineer)
+- "Jaren" → **Geran** (Geran, data analyst)
+- Any name not matched in `people/` → flag it; check the attendee list, team structure, and phonetic similarity to known names before using it
+
+**How to resolve:**
+1. List all `people/` files — each filename is a canonical ID.
+2. For every name in the transcript, find a match by exact name, role, or team context. Use `people/<person>.md` to confirm role and team fit against what the transcript says about them.
+3. If a name has no match: glob `people/*.md` and look for phonetic neighbours. A name that sounds like a known person but differs by one phoneme is almost certainly a transcription error.
+4. Use the canonical name (from the `title:` field in `people/<person>.md`) in all meeting notes and issues.
+5. Do NOT silently accept a name that appears in no people file — surface it to the user.
+
+### 5. Create meeting notes
 
 For each selected meeting, create two files:
 
@@ -51,13 +67,13 @@ For each selected meeting, create two files:
 - Frontmatter: title (with "— transcript" suffix), meeting (filename of parent note), created, type: transcript
 - Raw transcript text as-is from Granola
 
-### 5. Naming
+### 6. Naming
 
 - Kebab-case the meeting title for filenames
 - If a meeting note already exists at that path, warn the user before overwriting
 - Use the meeting date from Granola, not today's date, for the filename and `created` field
 
-### 6. Create issues for actions
+### 7. Create issues for actions
 
 For each action item in the imported meeting notes, create an issue in `issues/` (AI-NNN format, sequential). Set:
 - `origin: "[[meeting-note-filename]]"`
@@ -65,7 +81,7 @@ For each action item in the imported meeting notes, create an issue in `issues/`
 - `status: todo`
 - Assign `domain` from the meeting note
 
-### 7. Synthesis pass
+### 8. Synthesis pass
 
 After all files are created, ask: does this meeting change what we believe?
 
@@ -75,7 +91,7 @@ After all files are created, ask: does this meeting change what we believe?
 - If the meeting introduces a brand-new strategic question not yet captured anywhere, add it to the domain's "What we're uncertain about" section.
 - Keep edits tight — one or two sentences per change. The goal is live documents, not rewrites.
 
-### 8. Confirm
+### 9. Confirm
 
 Report what was created:
 

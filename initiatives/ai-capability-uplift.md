@@ -121,7 +121,7 @@ Key principle: **confidence before automation**. Getting people to feel like Kir
 
 - **Codifying context session**: retention team exploring shared context and skills distribution
   - Team using AI individually across different tools — need to identify standardization opportunities
-  - Personal OS momentum: Tom, Jemima, Harvey, Fergus, Jacob all building personal operating systems
+  - Personal OS momentum: Tom, Jemima, Javier, Fergus, Jacob all building personal operating systems
   - Key question shifting from "should we use AI?" to "how do we share context across teams?"
   - See [[2026-04-21-codifying-context-retention-team]]
 

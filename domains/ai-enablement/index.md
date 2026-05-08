@@ -22,7 +22,7 @@ tags: [domain, strategy, enablement, capability]
 - **Rate limits are the next concrete unlock.** Matt Lees hit the Team plan cap running 9 agents. Enterprise deal removes this blocker and adds admin controls. This is now the strongest argument for accelerating the deal.
 - **Skills are the scaling mechanism.** The best capability uplift is a skill that embeds best practice and can be used by anyone, not a workshop that fades in a week. But skills built in isolation don't scale — skills need governance and visibility.
 - **Sprawl prevention must start now.** When building is free, the natural coordination mechanism (cost of creation) disappears. Flock is small enough to build the immune system before it needs retrofitting. The Amazon lesson: 247 tools in one division is what "too late" looks like.
-- **Personal OSes are spreading.** Tom, Jemima, Harvey, Fergus, Jacob all building personal operating systems. The next question is not "should I build one?" but "how do they talk to each other?"
+- **Personal OSes are spreading.** Tom, Jemima, Javier, Fergus, Jacob all building personal operating systems. The next question is not "should I build one?" but "how do they talk to each other?"
 
 ## What we're uncertain about
 
