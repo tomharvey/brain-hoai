@@ -57,12 +57,31 @@ For each selected meeting, create two files:
 - If a meeting note already exists at that path, warn the user before overwriting
 - Use the meeting date from Granola, not today's date, for the filename and `created` field
 
-### 6. Confirm
+### 6. Create issues for actions
+
+For each action item in the imported meeting notes, create an issue in `issues/` (AI-NNN format, sequential). Set:
+- `origin: "[[meeting-note-filename]]"`
+- `due` date if the action had a deadline or one can be inferred
+- `status: todo`
+- Assign `domain` from the meeting note
+
+### 7. Synthesis pass
+
+After all files are created, ask: does this meeting change what we believe?
+
+- Read the relevant `domains/<domain>/index.md`. If the meeting content confirms, challenges, or adds nuance to a belief bullet, update it in-place (add, revise, or move a bullet).
+- Scan `initiatives/` for any active initiatives touched by the meeting. Update `updated` date and add a one-line note if the meeting advances or changes status.
+- Check `issues/` for any open issues whose context this meeting adds to. Add a brief note if relevant.
+- If the meeting introduces a brand-new strategic question not yet captured anywhere, add it to the domain's "What we're uncertain about" section.
+- Keep edits tight — one or two sentences per change. The goal is live documents, not rewrites.
+
+### 8. Confirm
 
 Report what was created:
 
 ```
 Imported N meetings:
 - meetings/YYYY-MM-DD-title.md (+ transcript)
-- ...
+- issues/AI-NNN-action-item.md
+- Updated: domains/<domain>/index.md
 ```

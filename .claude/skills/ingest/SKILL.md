@@ -37,3 +37,9 @@ When `inbox/` has items that need sorting — flagged by `/morning` or noticed d
    - Multi-topic notes: split into separate files, one per topic.
    - Update wikilinks in other files if filenames change.
 7. Report what was moved and what remains in inbox.
+8. **Synthesis pass** — for each item processed, ask: does this change what we believe?
+   - Read the relevant `domains/<domain>/index.md`. If the ingested content confirms, challenges, or adds nuance to any belief bullet, update the doc in-place (add, revise, or move a bullet).
+   - Scan `initiatives/` for any active initiatives touched by the content. Update the initiative's `updated` date and add a one-line note if the content advances or changes its status.
+   - Check `issues/` for any open issues whose context this content adds to. Add a brief note to the issue body if relevant.
+   - If the content introduces a brand-new strategic question not yet captured anywhere, add it to the domain's "What we're uncertain about" section.
+   - Keep edits tight — one or two sentences per change. The goal is "live documents," not a full rewrite.
