@@ -2,12 +2,12 @@
 title: "Prepare 90-min AI session for prodtech offsite"
 id: AI-016
 created: 2026-04-14
-updated: 2026-04-14
+updated: 2026-04-28
 due: 2026-04-17
 origin: "[[2026-04-14-prodtech-leadership-heartbeat]]"
 domain: ai-enablement
 type: issue
-status: todo
+status: done
 priority: urgent
 assignee: tom
 tags: [offsite, ai-session, prodtech, workshop]

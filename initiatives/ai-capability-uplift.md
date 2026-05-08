@@ -1,7 +1,7 @@
 ---
 title: AI capability uplift programme
 created: 2026-03-30
-updated: 2026-04-21
+updated: 2026-05-08
 domain: ai-enablement
 type: initiative
 status: active
@@ -66,6 +66,8 @@ Key principle: **confidence before automation**. Getting people to feel like Kir
 
 - Distribution team (Alex, Sophie) can't attend existing workshops due to broker meeting conflicts
 - No underwriter has attended AI Breakfast
+- Finance team (Jade, Kirsty, Christian) capable but not making time — stuck in "too busy for the shortcut" pattern. Forcing-function session planned (AI-035)
+- Ollie and Javier adoption still slow — Anton pressure on Ollie making it hard to build momentum; Javier on Sonnet/premium but not maxing out
 - Mima's presentation skill communicated many times but still unknown to some — only 3 users
 - Saturation of the willing: people who were going to come have come. Focus shifts to the persuadable middle (open but confused — Anna, Shreya, Fred, Sophie)
 

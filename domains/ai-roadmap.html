@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Roadmap — Flock Q2 2026</title>
+<style>
+  :root {
+    --now: #1a7f37;
+    --now-bg: #dafbe1;
+    --next: #9a6700;
+    --next-bg: #fff8c5;
+    --later: #6e7781;
+    --later-bg: #eaeef2;
+    --border: #d0d7de;
+    --text: #1f2328;
+    --muted: #656d76;
+    --bg: #ffffff;
+    --card-bg: #ffffff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: #f6f8fa;
+    line-height: 1.5;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  header {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1.5rem;
+  }
+  header h1 { font-size: 1.75rem; font-weight: 700; }
+  header p { color: var(--muted); font-size: 0.875rem; margin-top: 0.25rem; }
+  .meta {
+    display: flex;
+    gap: 2rem;
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .meta span { display: flex; align-items: center; gap: 0.25rem; }
+
+  /* Framework legend */
+  .legend {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .legend-card {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-size: 0.8rem;
+  }
+  .legend-card.now { background: var(--now-bg); border-color: var(--now); }
+  .legend-card.next { background: var(--next-bg); border-color: var(--next); }
+  .legend-card.later { background: var(--later-bg); border-color: var(--later); }
+  .legend-card strong { display: block; font-size: 0.9rem; margin-bottom: 0.25rem; }
+
+  /* Section headers */
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 2rem 0 1rem;
+  }
+  .section-header h2 { font-size: 1.25rem; font-weight: 600; }
+  .section-header .badge {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .badge.initiatives { background: #ddf4ff; color: #0550ae; }
+  .badge.projects { background: #faf0f6; color: #8250df; }
+
+  /* Swim lanes */
+  .lanes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .lane {
+    min-height: 100px;
+  }
+  .lane-header {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px 6px 0 0;
+    color: white;
+  }
+  .lane-header.now { background: var(--now); }
+  .lane-header.next { background: var(--next); }
+  .lane-header.later { background: var(--later); }
+
+  .lane-body {
+    border: 1px solid var(--border);
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    padding: 0.5rem;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-height: 80px;
+  }
+
+  /* Cards */
+  .card {
+    padding: 0.6rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    font-size: 0.8rem;
+  }
+  .card:hover { border-color: #0969da; }
+  .card-title {
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-bottom: 0.2rem;
+  }
+  .card-meta {
+    color: var(--muted);
+    font-size: 0.7rem;
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .card-desc {
+    color: var(--muted);
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+  }
+  .domain-tag {
+    display: inline-block;
+    font-size: 0.65rem;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  .domain-tag.ew { background: #ddf4ff; color: #0550ae; }
+  .domain-tag.ot { background: #fff8c5; color: #6e5600; }
+  .domain-tag.pa { background: #faf0f6; color: #8250df; }
+  .domain-tag.ae { background: #dafbe1; color: #116329; }
+
+  .size { font-weight: 600; }
+
+  /* Divider */
+  hr { border: none; border-top: 1px solid var(--border); margin: 1rem 0; }
+
+  /* Key numbers */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .stat {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+  }
+  .stat .number { font-size: 1.75rem; font-weight: 700; color: var(--now); }
+  .stat .label { font-size: 0.75rem; color: var(--muted); }
+
+  /* Open questions */
+  .questions {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-top: 1.5rem;
+  }
+  .questions h3 { font-size: 0.9rem; margin-bottom: 0.5rem; }
+  .questions ul { padding-left: 1.25rem; font-size: 0.8rem; color: var(--muted); }
+  .questions li { margin-bottom: 0.25rem; }
+
+  footer {
+    margin-top: 2rem;
+    font-size: 0.7rem;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  @media print {
+    body { padding: 1rem; background: white; }
+    .card:hover { border-color: var(--border); }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>AI Roadmap</h1>
+  <p>Flock &mdash; Q2 2026 onwards</p>
+  <div class="meta">
+    <span>Owner: Tom Harvey (Head of AI)</span>
+    <span>Updated: 2026-04-29</span>
+    <span>Framework: Now / Next / Later</span>
+  </div>
+</header>
+
+<!-- Key numbers -->
+<div class="stats">
+  <div class="stat">
+    <div class="number">12</div>
+    <div class="label">Active initiatives</div>
+  </div>
+  <div class="stat">
+    <div class="number">4</div>
+    <div class="label">Domains</div>
+  </div>
+  <div class="stat">
+    <div class="number">21+</div>
+    <div class="label">Discovery conversations</div>
+  </div>
+  <div class="stat">
+    <div class="number">4</div>
+    <div class="label">Decisions recorded</div>
+  </div>
+</div>
+
+<!-- Framework legend -->
+<div class="legend">
+  <div class="legend-card now">
+    <strong>Now</strong>
+    Resourced or in progress. Aligned on this being the biggest-impact work.
+  </div>
+  <div class="legend-card next">
+    <strong>Next</strong>
+    Clear need, know how we'd measure success. Ready to go when capacity frees.
+  </div>
+  <div class="legend-card later">
+    <strong>Later</strong>
+    Candidates for prioritisation. Know why it matters, not yet how.
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- INITIATIVES — 9-month horizon -->
+<!-- ============================================ -->
+
+<div class="section-header">
+  <h2>Initiatives</h2>
+  <span class="badge initiatives">9-month horizon &middot; reviewed quarterly</span>
+</div>
+
+<div class="lanes">
+  <!-- NOW -->
+  <div class="lane">
+    <div class="lane-header now">Now</div>
+    <div class="lane-body">
+
+      <div class="card">
+        <div class="card-title">AI capability uplift</div>
+        <div class="card-meta">
+          <span class="domain-tag ae">enablement</span>
+          <span>Tom Harvey</span>
+        </div>
+        <div class="card-desc">Every dept designs processes with AI. Discovery done (20+ convos, 4 cohorts). Shifting to 1:1 pairing on real use cases.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">AI-native engineering</div>
+        <div class="card-meta">
+          <span class="domain-tag ew">eng workflows</span>
+          <span>Javier / Tom</span>
+        </div>
+        <div class="card-desc">Engineers shift from mechanical coding to architectural thinking. Javier piloting HubSpot&rarr;Claude&rarr;Flock API quoting on Acquisition squad.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Operational AI automation</div>
+        <div class="card-meta">
+          <span class="domain-tag ot">ops tooling</span>
+          <span>Emily / Tom</span>
+        </div>
+        <div class="card-desc">NOC letters, submissions, renewals, driver referrals. Shreya's NOC skill working E2E. Submissions pipeline live (~9k processed). Renewals mapped.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Claude standardisation</div>
+        <div class="card-meta">
+          <span class="domain-tag ae">enablement</span>
+          <span>Tom Harvey</span>
+        </div>
+        <div class="card-desc">One AI platform, company-wide. Enterprise deal needed &mdash; rate limits already a constraint (Matt Lees hit cap with 9 agents).</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- NEXT -->
+  <div class="lane">
+    <div class="lane-header next">Next</div>
+    <div class="lane-body">
+
+      <div class="card">
+        <div class="card-title">AI governance framework</div>
+        <div class="card-meta">
+          <span class="domain-tag ae">enablement</span>
+          <span>Tom + Sam + Paul</span>
+        </div>
+        <div class="card-desc">Registry, eval suite, sprawl prevention. Deferred to later Q2 &mdash; needs compliance measurement baseline first.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Productionised agent framework</div>
+        <div class="card-meta">
+          <span class="domain-tag ew">eng workflows</span>
+          <span>Tom + Chris + Jordi</span>
+        </div>
+        <div class="card-desc">Agents from laptops to production. Monitoring, deployment standards, backup. Enterprise Engine is the reference case.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Insight layer</div>
+        <div class="card-meta">
+          <span class="domain-tag pa">product ai</span>
+          <span>TBD</span>
+        </div>
+        <div class="card-desc">Queryable AI across data pools &mdash; CCs, telemetry, HubSpot, Granola, submissions. Needs narrow first use case.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- LATER -->
+  <div class="lane">
+    <div class="lane-header later">Later</div>
+    <div class="lane-body">
+
+      <div class="card">
+        <div class="card-title">AI as product interface</div>
+        <div class="card-meta">
+          <span class="domain-tag pa">product ai</span>
+        </div>
+        <div class="card-desc">Chat, visualisation, agent-driven workflows replace CRUD forms. WhatsApp bot + safety agent are early signals.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Process documentation at scale</div>
+        <div class="card-meta">
+          <span class="domain-tag ot">ops tooling</span>
+        </div>
+        <div class="card-desc">Load-bearing Google Sheets &rarr; governed knowledge. PostHog/DOM analysis could shortcut manual documentation.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Self-improving agents</div>
+        <div class="card-meta">
+          <span class="domain-tag pa">product ai</span>
+        </div>
+        <div class="card-desc">Memory pattern from safety agent generalises to underwriting + submissions. Corrections make agents better, not just faster.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Disconnected fleets</div>
+        <div class="card-meta">
+          <span class="domain-tag pa">product ai</span>
+        </div>
+        <div class="card-desc">Insurance for non-connected commercial fleets. Acquisition funnel or loss ratio play &mdash; would need a dedicated squad.</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- PROJECTS — 1-month horizon -->
+<!-- ============================================ -->
+
+<div class="section-header">
+  <h2>Projects</h2>
+  <span class="badge projects">1-month horizon &middot; always serves a Now initiative</span>
+</div>
+
+<div class="lanes">
+  <!-- NOW -->
+  <div class="lane">
+    <div class="lane-header now">Now</div>
+    <div class="lane-body">
+
+      <div class="card">
+        <div class="card-title">Board roadmap (AI-001)</div>
+        <div class="card-meta">
+          <span class="domain-tag ae">enablement</span>
+          <span>Tom</span>
+          <span class="size">S</span>
+          <span>Due: May 1</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Javier HubSpot&rarr;Claude&rarr;Flock PoC</div>
+        <div class="card-meta">
+          <span class="domain-tag ew">eng workflows</span>
+          <span>Javier</span>
+          <span class="size">M</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Enterprise deal negotiation</div>
+        <div class="card-meta">
+          <span class="domain-tag ae">enablement</span>
+          <span>Tom</span>
+          <span class="size">S</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">CC extraction handover</div>
+        <div class="card-meta">
+          <span class="domain-tag ot">ops tooling</span>
+          <span>Abs &rarr; TBD</span>
+          <span class="size">M</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- NEXT -->
+  <div class="lane">
+    <div class="lane-header next">Next</div>
+    <div class="lane-body">
+
+      <div class="card">
+        <div class="card-title">Looker MCP cloud deploy (AI-010)</div>
+        <div class="card-meta">
+          <span class="domain-tag ot">ops tooling</span>
+          <span>Tom</span>
+          <span class="size">L</span>
+        </div>
+        <div class="card-desc">Unblocks renewals (AI-007) + multi-user access.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Submissions scoping (AI-009)</div>
+        <div class="card-meta">
+          <span class="domain-tag ot">ops tooling</span>
+          <span>Tom</span>
+          <span class="size">M</span>
+        </div>
+        <div class="card-desc">Three groups independent. Reframe via Ollie's conversion bets.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Skills repo governance (AI-002)</div>
+        <div class="card-meta">
+          <span class="domain-tag ae">enablement</span>
+          <span>Tom</span>
+          <span class="size">M</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Shared context architecture (AI-018)</div>
+        <div class="card-meta">
+          <span class="domain-tag ae">enablement</span>
+          <span>Tom</span>
+          <span class="size">L</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Platform architecture docs</div>
+        <div class="card-meta">
+          <span class="domain-tag ew">eng workflows</span>
+          <span>Chris</span>
+          <span class="size">M</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Access + permissions audit (AI-014/015)</div>
+        <div class="card-meta">
+          <span class="domain-tag ae">enablement</span>
+          <span>Tom</span>
+          <span class="size">S</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- LATER -->
+  <div class="lane">
+    <div class="lane-header later">Later</div>
+    <div class="lane-body">
+
+      <div class="card">
+        <div class="card-title">Renewals Looker&rarr;HubSpot (AI-007)</div>
+        <div class="card-meta">
+          <span class="domain-tag ot">ops tooling</span>
+        </div>
+        <div class="card-desc">Blocked on AI-010 (Looker MCP).</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Driver referral automation (AI-011)</div>
+        <div class="card-meta">
+          <span class="domain-tag ot">ops tooling</span>
+        </div>
+        <div class="card-desc">2.5&ndash;5 hrs/day savings. Fred + Shreya.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">AI code review in CI</div>
+        <div class="card-meta">
+          <span class="domain-tag ew">eng workflows</span>
+        </div>
+        <div class="card-desc">Depends on arch docs maturity.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Slack channel analysis (AI-020)</div>
+        <div class="card-meta">
+          <span class="domain-tag ae">enablement</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">E-trading automation</div>
+        <div class="card-meta">
+          <span class="domain-tag pa">product ai</span>
+        </div>
+        <div class="card-desc">Fully automated quoting. AI replaces the 16-page broker form.</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Open questions -->
+<div class="questions">
+  <h3>Open questions</h3>
+  <ul>
+    <li>Who leads submissions automation after Abs departs? Three groups working independently.</li>
+    <li>Is there appetite/budget for a dedicated AI squad, or embedded in existing teams?</li>
+    <li>How much to invest in HubSpot given potential Five Sigma / Salesforce migration?</li>
+    <li>Submissions scoping &mdash; reframe around Ollie's three conversion bets (dev factor, submission scoring, driver data)?</li>
+    <li>Claude enterprise deal: timeline and commercial terms?</li>
+  </ul>
+</div>
+
+<footer>
+  Confidential &mdash; Flock Cover Ltd. Generated from vault on 2026-04-29. Now/Next/Later framework per ProdTech Q2 2026.
+</footer>
+
+</body>
+</html>

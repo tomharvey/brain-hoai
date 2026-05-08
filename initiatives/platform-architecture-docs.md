@@ -1,7 +1,7 @@
 ---
 title: Platform architecture documentation
 created: 2026-03-27
-updated: 2026-03-27
+updated: 2026-05-08
 domain: engineering-workflows
 type: initiative
 status: active
@@ -49,3 +49,12 @@ Claude Code works out of the box for platform services — knows where tests go,
 
 - Chris discussed approach in 1:1 — types done, architecture next
 - Also wants to try quote/adjustment screen abstraction as a big Claude Code task
+
+### 2026-05-08
+
+- Architecture hierarchy agreed: principles → patterns/architectures → libraries → services
+- David Zamora has written up initial documentation; Chris reviewing
+- Approach extended: GitHub comment mining → individual coding standard files (frontmatter + backlinks + ESLint suggestions). Hyper-linter model
+- Super repo structure agreed: nested repos in `source/` folder; CI/CD clones both and moves target repo into position
+- Chris to create the super repo on GitHub. Incremental — local validation before CI
+- See: [[2026-05-08-tom-chris-platform-ai-coding-standards]]

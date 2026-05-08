@@ -1,7 +1,7 @@
 ---
 title: Ollie Crowe
 created: 2026-03-30
-updated: 2026-03-30
+updated: 2026-04-27
 type: person
 role: Technical Product Manager
 team: Product (reports to Matt Price)
@@ -33,3 +33,12 @@ Met through engineering discussions. Built WhatsApp driver reporting bot indepen
 
 - Adam groups Ollie with Matt as an advanced AI user — doesn't need a framework, needs freedom
 - Had a session with Fergus and Adam ~6 months ago about AI usage in distribution
+
+### 2026-04-27 (Slack update)
+
+- Relayed two key conversations (Antton distribution sync, Curtis 1:1) that reframe the product-ai conversion narrative
+- Demonstrated strong stakeholder management: took hard pushback from Antton ("pricing sophistication won't get us there"), synthesised it with Curtis's underwriting-floor specifics, and reframed the sprint narrative without changing the sprint plan
+- Identified development factor (~30% uplift, legacy Andi book) as the hero conversion bet — pipeline-enabled, data-grounded
+- Running parallel spikes independently (Adam's pipelining tool, #underwriting-losses structuring) using Claude-Cowork, not eng time — consistent with self-starter pattern
+- Owes Antton: five ranked conversion bets grounded in data
+- See [[ollie-conversion-bets-2026-04-27]]

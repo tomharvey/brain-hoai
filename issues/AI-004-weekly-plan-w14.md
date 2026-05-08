@@ -2,10 +2,10 @@
 title: "Week 14 plan (2026-03-30 to 2026-04-03)"
 id: AI-004
 created: 2026-03-27
-updated: 2026-03-27
+updated: 2026-04-28
 domain: ai-enablement
 type: issue
-status: todo
+status: done
 priority: high
 assignee: tom
 tags: [planning, weekly]

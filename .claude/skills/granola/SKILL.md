@@ -42,8 +42,10 @@ For each selected meeting, fetch in parallel:
 Before writing any meeting note, validate every person name that appears in the transcript against `people/` and the known team structure.
 
 **Why this matters:** Granola's speech-to-text makes systematic errors. Known substitutions:
-- "Harvey" (standalone, not "Tom Harvey") → **Javier** (Javi Arranz, engineer)
-- "Jaren" → **Geran** (Geran, data analyst)
+- "Harvey" (standalone, not "Tom Harvey") → **Javier** (Javi Arranz, engineer). "Javi" sounds like "Harvey" to speech-to-text.
+- "Jaren" → **Geran** (Geran Butcher, data analyst). Confirmed multiple times.
+- "Holly" → **Ollie** (Oliver Crowe, Technical PM). "Ollie" sounds like "Holly" to speech-to-text.
+- "gerund" or "General" (in isolation, not as a grammar term) → **Geran** (same person as above)
 - Any name not matched in `people/` → flag it; check the attendee list, team structure, and phonetic similarity to known names before using it
 
 **How to resolve:**

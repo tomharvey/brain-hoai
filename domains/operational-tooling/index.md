@@ -21,6 +21,8 @@ tags: [domain, strategy, operations, automation, ops]
 - **Kirsty's Looker→Claude connection is the Finance AI story.** Self-started, already producing business decisions from AI-generated insights. Cloud MCP deployment (AI-010) will expand this to the wider Finance team and unlock the renewals automation.
 - **Process documentation is a prerequisite for reliable automation.** You can't automate what you haven't mapped. "Load-bearing Google Sheets" risk is real — automating on top of fragile undocumented processes embeds the fragility.
 - **The renewals process is mapped but blocked.** Four manual steps that should be one. Blocked on Looker MCP cloud deployment (AI-010). Once that's deployed, this can move.
+- **Installments has three distinct layers that need separate plans.** (1) Today's manual process — just needs managing reliably. (2) A more palatable interim version that codifies existing business logic out of spreadsheets. (3) A 3–5 year first-class loan management platform. Conflating these causes confusion. Fergus's view: if installments blocks a deal, swallow the manual cost; question is scalability, not correctness.
+- **Finance AI adoption is a forcing-function problem, not a capability problem.** Jade's team (Kirsty, Christian) are capable but not making time. The intervention is a structured session that creates immediate wins, not more demos or self-directed learning.
 
 ## What we're uncertain about
 
@@ -29,6 +31,8 @@ tags: [domain, strategy, operations, automation, ops]
 - When Looker MCP cloud deployment (AI-010) will land — overdue since Apr 18, blocking renewals and expanding Finance AI access.
 - How far the operational tooling model extends. Finance (Jade discovery Mon 11 May) and other functions still being assessed.
 - Whether process documentation can happen systematically (PostHog/DOM analysis via Geran) or remains manual case-by-case.
+- **Geran data quality risk:** Geran is pulling from Snowflake, the data lake, and platform DB without a clear understanding of which sources are clean. Telemetry quality has stabilised, so errors are now detectable in isolation — but Geran's cross-source assumptions may mix reliable and unreliable data silently (Fergus: "hospital pass").
+- What the FinOps automation programme looks like in Q3 — Jade's paper has a laundry list; the question is what to address in Q3 vs Q4, and what gets traded off if finance work is pulled ahead.
 
 ---
 

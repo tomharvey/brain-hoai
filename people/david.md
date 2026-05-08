@@ -5,6 +5,7 @@ updated: 2026-03-27
 type: person
 role: Engineering Manager
 team: Engineering
+email: david.zamora@flockcover.com
 tags: [engineering, management]
 ---
 
