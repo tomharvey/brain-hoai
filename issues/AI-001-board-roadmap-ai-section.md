@@ -2,10 +2,10 @@
 title: AI section of board roadmap for April 20th Pioneer meeting
 id: AI-001
 created: 2026-03-27
-updated: 2026-04-28
+updated: 2026-05-11
 domain: ai-enablement
 type: issue
-status: in-progress
+status: done
 priority: high
 due: 2026-05-01
 assignee: tom
@@ -51,3 +51,5 @@ Earlier draft moved to [[ai-roadmap-draft-2026-04-14]] in `reference/` — super
 ## Notes
 
 Original deadline was Apr 3 for the Apr 20 board meeting. Slipped — now due end of W18 (May 1).
+
+Closed 2026-05-11: replaced by [[ai-initiative-roadmap]] (initiative-level, 9-month) and [[ai-project-roadmap]] (project-level, 1-month). Those two documents are the live artefacts going forward.

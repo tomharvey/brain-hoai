@@ -2,12 +2,12 @@
 title: "Deploy Looker MCP to cloud infrastructure"
 id: AI-010
 created: 2026-04-09
-updated: 2026-04-09
+updated: 2026-05-11
 due: 2026-04-18
 origin: "[[2026-04-09-kirsty-ai-discovery]]"
 domain: operational-tooling
 type: issue
-status: todo
+status: done
 priority: high
 assignee: tom
 tags: [looker, mcp, cloud, infrastructure, kirsty]
