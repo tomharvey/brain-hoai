@@ -1,7 +1,7 @@
 ---
 title: Underwriting assistance AI
 created: 2026-03-27
-updated: 2026-04-13
+updated: 2026-05-11
 domain: operational-tooling
 type: initiative
 status: active
@@ -103,3 +103,22 @@ Reduce manual effort in the quoting process while maintaining quality and buildi
 
 - **Shreya NOC update**: Built working Claude skill "NOC letter generator". Covers steps 1-6 of original workflow: ticket search → company/deal lookup → ticket parsing → date calculation → template fill → .docx output. Google Drive eliminated — Claude edits Word template directly. Steps 6-8 (Retool-dependent) still manual. Demoing at Wednesday AI/Automations sync. 15-min walkthrough offered for Tue 14 Apr.
 - **HubSpot data quality signal**: Shreya's skill pulls data "accurately" — but worth probing at Wednesday UWA meeting whether this holds across edge cases. HubSpot data quality is the most repeated blocker across discovery round.
+
+### 2026-04-16 — Tom Rogers discovery (Motor Underwriting)
+
+See [[2026-04-16-tom-rogers-underwriting-ai]].
+
+- **First motor underwriting conversation** — Tom Rogers, Head of Motor Underwriting, reached out via Jordi. Not defensive, actively seeking help.
+- **Primary ask: claims listing analysis automation.** PDFs arrive via HubSpot + G Drive → manually unlocked/reformatted → Google Sheet → pivot tables. Hundreds to thousands of claim lines. Tom wants: driver trends, date/time correlation, causation trends, days-to-report, peril split, excess modelling (MAX() formula for own-damage claims). If AI collapses time cost, same analysis applies to smaller cases currently skipped on cost grounds.
+- **Actuarial template (>£500k risks)**: Milan/Michael fill in development tables, claims summaries, variable assumptions, "what do we need to believe" block. Tom thinks it's still manual — worth scoping before Milan catchup. → AI-029
+- **Trust gating**: ChatGPT has let Tom down on complex Excel (wrong returns, misaligned rows on PDF unlock). Claude needs to clear that bar visibly. He's a Looker power user with SQL comfort — strong technical baseline.
+- **Strategic framing**: if AI frees UW assistant time, Tom would train them into underwriters. Scale to £400M requires more UW resource; internal training keeps "the Flock way." Already sold on why — wants concrete small wins.
+- **HIB haulage campaign (side project)**: Tom has ~£150M of old fleet contacts (6 years old). Wants to correlate names → current operator licenses → enrich via Companies House → outbound campaign list for HIB partnership. Would pair with Mima. Scoped, clear output, strong PoC candidate.
+- **Signal on Darren**: Tom confirms Darren is using AI more than he lets on — screenshots summarising broker performance, triangulating telemetry/loss-rate data.
+
+**Open actions from this meeting:**
+- [ ] Chase Tom Rogers — did he share client folder links (PDF claim formats) in Slack?
+- [ ] Prototype claims-listing → Google Sheet extraction + trend analysis on a real example (Claude, not ChatGPT — rebuild trust visibly)
+- [ ] Connect Tom Rogers with [[mima|Jemima]] on HIB haulage pipeline PoC
+- [ ] Loop back to Billy Bone — originally interested, didn't make the call
+- [ ] Direct Darren discovery conversation (now warranted given Tom's signal)
