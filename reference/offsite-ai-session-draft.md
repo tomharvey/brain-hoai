@@ -20,10 +20,9 @@ Three stations. Three groups of ~6. Three rounds of 24 minutes. Every group visi
 Each station has named anchor(s) who stay put, carry context between rounds, and guide the progression. Tom co-anchors Station B with Ollie.
 
 ```
-5 min     Intro — three threads, iterative model, what "hard output" means
-72 min    3 rounds × 24 mins (groups rotate between stations)
-6 min     Station report-outs (2 min each, final group presents)
-7 min     Follow-on commitments + live demo (Claude building the plans)
+5 min     Intro — framework, teams, stations
+60 min    3 rounds × 20 mins (groups rotate between stations)
+25 min    Wrap-up — station report-outs + synthesis
 ─────
 90 min
 ```
@@ -64,7 +63,7 @@ Each station arrives at Round 1 with **pre-work already done** — LLM analysis 
 
 **Domain**: Engineering → Code. What does the developer experience look like when the agent handles implementation and the engineer handles judgment?
 
-**Pre-work**: Before Wednesday, generate a batch of draft PRs from real Linear tickets using Claude Code. Then run an LLM review: compare each draft PR to its source ticket. Categorise: what was missing from the ticket? What did the implementation get wrong? What would a reviewer flag?
+**Pre-work**: Generate a batch of draft PRs from real Linear tickets using Claude Code (in progress). The LLM review of draft PRs vs source tickets happens live in Round 1 — the group does the analysis, not pre-work.
 
 | Round | Prompt | Artefact |
 |---|---|---|
@@ -76,13 +75,13 @@ Each station arrives at Round 1 with **pre-work already done** — LLM analysis 
 
 ---
 
-## Station C — Context that travels: quality in, quality out
+## Station C — Last Mile: quality in, quality out
 
 **Anchors**: Liam + Matt Price
 
 **Domain**: PM ↔ Engineering ↔ External. The context that feeds everything — tickets, specs, docs, stakeholder comms. AI is making it easier to produce plausible-looking garbage. How do we make it easier to produce good work instead?
 
-**Pre-work**: Pull real examples from the last month — Linear tickets (good and bad), Notion docs sent to stakeholders, press releases, broker comms, proposal docs. Include at least 2-3 that are clearly AI-generated slop. Include 2-3 that are polished (Liam's haulage press release, a well-written ticket). Anonymise if sensitive.
+**Pre-work**: Matt Price pulling real examples from the last month — Linear tickets (good and bad), Notion docs sent to stakeholders, press releases, broker comms, proposal docs. Include at least 2-3 that are clearly AI-generated slop. Include 2-3 that are polished (Liam's haulage press release, a well-written ticket). Anonymise if sensitive.
 
 | Round | Prompt | Artefact |
 |---|---|---|
@@ -105,12 +104,12 @@ Three threads run through every station:
 
 Each group builds on what the previous group left. By the time the third group finishes, each station should have an implementation plan specific enough that Claude can start building it while we do the wrap-up. That's the bar."
 
-## Wrap-up (13 min, Tom)
+## Wrap-up (25 min, Tom)
 
-- 2 min per station: final group's anchor presents what the station produced across all three rounds (6 min total)
-- Tom synthesises: "Three domains, one methodology. The pattern is the same everywhere — surface, encode, self-heal." (2 min)
-- Live: open Claude Code, paste the three plans, start building. The room watches their 90 minutes of work turn into code. (3 min)
-- Follow-on commitments: who owns each station's output going forward? (2 min)
+- Station report-outs: each anchor presents what their station produced across all three rounds
+- Tom synthesises: "Three domains, one methodology. The pattern is the same everywhere — surface, encode, self-heal."
+- Live: open Claude Code, paste the three plans, start building. The room watches their 90 minutes of work turn into code.
+- Follow-on commitments: who owns each station's output going forward?
 
 ## Pre-work checklist
 
@@ -168,7 +167,7 @@ Rob hits Station B in Round 2 (brings week-2 engineer perspective after seeing S
 
 - **Pre-work is the make-or-break.** Without the LLM pre-analysis, Round 1 at every station is cold reading. Protect Mon-Tue for prep.
 - **Ollie anchoring his own problem** could go defensive. Frame it as "you're closest to this, so you're the right person to fix it" not "we're calling you out."
-- **24 minutes per round** is generous for the first round (reading + reacting) but may feel tight for Round 3 (designing a system). Anchors need to manage the clock — don't let Round 1 eat into Round 2.
+- **20 minutes per round** is enough for focused work but tight for Round 3 (designing a system). Anchors need to manage the clock — don't let Round 1 eat into Round 2.
 - **Claude building during wrap-up** depends on wifi and laptop. Have a backup plan (screenshot the plans, commit to building them Thursday morning).
 - **Alerts workshop follows** — Jordi is pre-grouping alerts with AI. The mindset from this session should carry directly into that one. Worth Tom saying explicitly in the wrap: "You've just spent 90 minutes surfacing insight, encoding fixes, and designing self-healing systems. Jordi's alerts session is the same methodology applied to operational data."
 

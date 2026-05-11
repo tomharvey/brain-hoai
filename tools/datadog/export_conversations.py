@@ -90,8 +90,21 @@ def extract_service(span):
     return "unknown"
 
 
+def parse_tags(tags):
+    """Convert tag list ['key:value', ...] into a dict."""
+    result = {}
+    for tag in (tags or []):
+        if ":" in tag:
+            key, value = tag.split(":", 1)
+            result[key] = value
+        else:
+            result[tag] = True
+    return result
+
+
 def simplify_span(span):
     attrs = span.get("attributes", {})
+    tags = parse_tags(attrs.get("tags"))
     return {
         "span_id": attrs.get("span_id"),
         "parent_id": attrs.get("parent_id"),
@@ -106,6 +119,7 @@ def simplify_span(span):
         "metrics": attrs.get("metrics"),
         "model_name": attrs.get("model_name"),
         "model_provider": attrs.get("model_provider"),
+        "tags": tags,
     }
 
 
