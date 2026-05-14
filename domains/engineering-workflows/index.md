@@ -32,6 +32,7 @@ tags: [domain, strategy, engineering, sdlc, agents]
 - Whether platform-architecture docs will be completed at the pace the agent framework needs.
 - How to bring Rob, Javier, Jacob, and Sami into the SDLC-of-the-future conversation without it feeling like a distraction from OKR delivery.
 - Whether the AI code review initiative (proposed) can be scoped as a Later candidate without causing confusion about priority.
+- **David goes on paternity leave ~2026-05-19.** His skills and context need capturing this week. Alex Smith (team) also leaving around the same time. Super repo creation is now time-sensitive. ([[2026-05-12-david-ai-engineering]])
 - Where the coding standards hyper-linter ends and principled architecture begins — Chris sees these as distinct; the hyper-linter is the first step. Whether the two artifacts (human-readable principles doc + AI-readable backlinks) stay separate or merge over time.
 - How to bring the wider engineering team into the coding standards repo without it becoming AI slop at scale — when to open it up vs curate it longer.
 

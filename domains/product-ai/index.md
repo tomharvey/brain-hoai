@@ -24,7 +24,8 @@ tags: [domain, strategy, product, jay, submissions, conversion]
 
 ## What we're uncertain about
 
-- Whether Jay's launch will get enough usage to generate signal. Matt Price's concern: launches to small group, gets 5 chats/week, luster fades. Tonic agency (already paid) running against Jay to roleplay fleet manager scenarios.
+- Whether Jay's launch will get enough usage to generate signal. Matt Price's concern: launches to small group, gets 5 chats/week, luster fades. Tonic agency (already paid) running against Jay to roleplay fleet manager scenarios. 8 days since last GTM channel update as of 2026-05-12 — pace is concerning. Tom softening on J; Matt wants quiet GA now to iron out bugs rather than a delayed big launch.
+- **Haulage safety is a late-stage year-end risk.** If not addressed soon, Flock exits the year without a haulage safety proposition — more directly tied to retention than J. Immediate opportunity: 16% of submissions contain telematics data, TSB in 10%. Apply existing submission analysis before building new tools. ([[2026-05-12-matt-price-1-1]])
 - Whether the development factor is testable with data Milan already has. Discovery call is the gate.
 - Whether the conversion bets framing will break the Anton/Darren deadlock. Ollie is caught between conflicting SLT direction. Matt Price's view: show up with data, change the conversation.
 - What the insight layer looks like as a first use case. Cloud MCP deployment needed first; no narrow anchor yet.

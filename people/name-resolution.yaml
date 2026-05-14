@@ -20,7 +20,7 @@ substitutions:
     guard: "standalone only — 'Tom Harvey' and 'Tom H' are correct"
     confirmed: 2026-04-28
 
-  - heard: ["Jaren", "Jarin"]
+  - heard: ["Jaren", "Jarin", "Jera"]
     person: geran
     phonetics: "phonetic reversal/transposition of 'Geran'"
     confirmed: 2026-05-08
@@ -102,7 +102,7 @@ disambiguation:
 
   - name: "Adam"
     candidates:
-      - person: abs
+      - person: adam-smith
         full_name: "Adam Smith"
         role: Head of Distribution
         team: distribution
@@ -112,7 +112,7 @@ disambiguation:
           - sales
           - enterprise
       - person: adam-smith
-        full_name: "Adam Smith (engineer)"
+        full_name: "Adam Smith"
         # Note: check which Adam is active in the org at time of meeting
 
   - name: "Alex"

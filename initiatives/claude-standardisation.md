@@ -1,7 +1,7 @@
 ---
 title: Claude standardisation
 created: 2026-03-27
-updated: 2026-03-27
+updated: 2026-05-14
 domain: ai-enablement
 type: initiative
 status: active
@@ -44,6 +44,20 @@ Claude as the default AI tool across all departments. Enterprise deal in place. 
 - [ ] Evaluate ChatGPT removal and migration path
 - [ ] Negotiate enterprise deal — rate limits now a concrete argument
 - [ ] Evaluate Claude API as overflow for heavy agent users ($130/month Sonnet estimate from Matt Lees)
+
+## Vendor lock-in position (as of 2026-05-14)
+
+Discussed with Ed (CEO) in 1:1. Position: not locked in, but approaching a fork.
+
+- **Vercel** is an abstraction layer — can swap models in theory
+- **Bedrock** is a second abstraction layer between Flock and Anthropic
+- We're using Anthropic but not to its full depth, which also means we're not locked in
+- Anthropic is ~9 months ahead of OpenAI on business tools; just announced Console on AWS
+- The place most at risk: **operational stuff / underwriting assistance** — not J, and not skills/MCPs (which should be portable)
+- Agreed: hold current position, don't push deeper into Anthropic-specific features without clear reason
+- Tom applied for o3 Codex preview out of curiosity — may hear back
+
+([[2026-05-14-ed-tom-121]])
 
 ## Log
 
