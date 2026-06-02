@@ -6,6 +6,9 @@ type: person
 role: Head of Ops
 team: Ops — Underwriting assistance and customer support
 tags: [ops, underwriting, leadership]
+ai_activation_stage: 4
+ai_activation_confidence: high
+ai_activation_assessed: 2026-05-26
 ---
 
 ## Role
@@ -31,6 +34,17 @@ Reports to Mollie Brownlow (Head of Operations). Not yet spoken to.
 - Runs a monthly AI/Automations sync with her team — Tom now invited
 - No pushback on AI — team is keen and uses tools daily
 - Flock's "official unofficial" complaints handler
+
+## AI Activation
+**Stage**: 4 — Multi-agent orchestration (ops ceiling)  
+**Confidence**: high  
+**Assessed**: 2026-05-26  
+**Evidence**: Zapier power user; designs new processes with AI from the start; ChatGPT + Claude daily (PDF data extraction, complaint resolution compliance checking, Excel formulas); HubSpot + Zapier for underwriter deviation tracking and audit trails; automated Slack reminders and slide updates; runs monthly AI/Automations sync with team. Reference model for ops activation across the company.
+
+**Not Stage 3**: Designs processes with AI in mind from the start — that's architectural thinking, not tactical tool use. Multiple interconnected automations running in coordination across different systems. The reference model framing matters: she's the person others are benchmarked against within ops.  
+**Not Stage 5 (ops equivalent)**: Stage 5 for ops means engineering the automation decision framework — formalising when to automate vs where a human checkpoint must stay, detecting when automations degrade or drift, designing for failure. Emily is operating excellent automations, but the meta-layer (monitoring, degradation detection, explicit boundary decisions) is less evidenced.  
+**To progress**: Make explicit the decision framework she's been applying intuitively. When does a task go to an agent vs a human? How does she know when an automation has started producing bad output? Formalising this thinking is the step that tips Stage 4 ops into Stage 5.  
+**Framework note**: The ops Stage 5 definition needs sharpening. "Process design and automation decisions" is less precise than the dev Stage 5 equivalent. Emily's situation is a good worked example to develop it from.
 
 ## 1:1 Log
 

@@ -1,7 +1,7 @@
 ---
 title: Domain — Operational Tooling
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-06-02
 domain: operational-tooling
 type: reference
 tags: [domain, strategy, operations, automation, ops]
@@ -22,7 +22,9 @@ tags: [domain, strategy, operations, automation, ops]
 - **Process documentation is a prerequisite for reliable automation.** You can't automate what you haven't mapped. "Load-bearing Google Sheets" risk is real — automating on top of fragile undocumented processes embeds the fragility.
 - **The renewals process is mapped but blocked.** Four manual steps that should be one. Blocked on Looker MCP cloud deployment (AI-010). Once that's deployed, this can move.
 - **Installments has three distinct layers that need separate plans.** (1) Today's manual process — just needs managing reliably. (2) A more palatable interim version that codifies existing business logic out of spreadsheets. (3) A 3–5 year first-class loan management platform. Conflating these causes confusion. Fergus's view: if installments blocks a deal, swallow the manual cost; question is scalability, not correctness.
-- **Finance AI adoption is a forcing-function problem, not a capability problem.** Jade's team (Kirsty, Christian) are capable but not making time. The intervention is a structured session that creates immediate wins, not more demos or self-directed learning.
+- **Finance AI adoption is a forcing-function problem, not a capability problem.** Jade's team (Kirsty, Christian) are capable but not making time. The intervention is a structured session that creates immediate wins, not more demos or self-directed learning. Finance tech day 2026-06-02 is that intervention.
+- **First concrete Finance automation project underway: MOSS API wrapper.** [[anneliese-vanwijk|Anneliese]] has generated API keys; Tom building a month-end consistency checker (invoice coding patterns, recurring invoice detection, accrual gaps). Distributable as a skill. See [[AI-069]]. Finance has 12+ months of MOSS history — enough data for pattern detection without teaching it explicitly.
+- **FinOps Q3 automation scope agreed in principle.** The finops/prodtech discussion (2026-05-21) landed on: (1) pick 1–2 of the six automation areas Jade stack-ranked, (2) scope exclusively to upfront policies not installments, (3) run parallel track on Stripe premium finance as a longer-horizon buy option. Matt Duprey's capacity is the near-term constraint — he is the sole installments expert and can't scale further manually. → [[AI-079]], [[AI-080]], [[AI-081]] ([[2026-05-21-finops-prodtech-discussion]])
 
 ## What we're uncertain about
 
@@ -32,7 +34,9 @@ tags: [domain, strategy, operations, automation, ops]
 - How far the operational tooling model extends. Finance (Jade discovery Mon 11 May) and other functions still being assessed.
 - Whether process documentation can happen systematically (PostHog/DOM analysis via Geran) or remains manual case-by-case.
 - **Geran data quality risk:** Geran is pulling from Snowflake, the data lake, and platform DB without a clear understanding of which sources are clean. Telemetry quality has stabilised, so errors are now detectable in isolation — but Geran's cross-source assumptions may mix reliable and unreliable data silently (Fergus: "hospital pass").
-- What the FinOps automation programme looks like in Q3 — Jade's paper has a laundry list; the question is what to address in Q3 vs Q4, and what gets traded off if finance work is pulled ahead.
+- What the FinOps automation programme looks like in Q3 — Jade's paper has a laundry list; the question is what to address in Q3 vs Q4, and what gets traded off if finance work is pulled ahead. Stack-rank session with Jade needed before scope is fixed. → [[AI-079]]
+- Whether Stripe's premium finance product is mature enough to inform the Q3/Q4 build-vs-buy decision. Documentation doesn't yet exist; early adopter risk is real. → [[AI-080]]
+- Anneliese flagged NetSuite MCP write-access risk: Claude connected to NetSuite could modify invoices. Need to confirm a safe read-only path before any MCP integration proceeds. Ivan's pattern (export to flat file → Claude analysis) is the model to follow. → [[AI-083]] ([[2026-05-11-anneliese-ai-discovery]])
 
 ---
 

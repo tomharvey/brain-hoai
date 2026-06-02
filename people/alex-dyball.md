@@ -11,7 +11,7 @@ tags: [distribution, broker-relations, ai-user]
 
 # Alex Dyball
 
-Distribution team member focused on broker relationships and sales. Recently joined [[ollie-crowe]]'s acquisition team alongside [[rob]] (starting next week).
+Distribution team member focused on broker relationships and sales. Reports to [[adam-smith]]. BDM role — broker-facing, field-based.
 
 ## AI profile
 
@@ -28,6 +28,18 @@ Distribution team member focused on broker relationships and sales. Recently joi
 - Wants renewal nudge automation but blocked by underwriting data quality
 - Won't use Granola in face-to-face broker meetings (feels invasive)
 
+## Current state (2026-05-26)
+
+- HubSpot + Granola + Looker all connected to Claude (Kirsty helped with Looker MCP)
+- Broker outreach: AI drafts content, saves 15 min/outreach (~45 min Fridays). Human-in-loop by choice.
+- LinkedIn automation running in background to bulk out network (insurance brokers)
+- Looker "naughty and nice list": submission volume vs conversion by broker. Investigating wholesalers vs retail theory.
+- Post-meeting coaching: Claude more direct/brutal than ChatGPT. Learned preferences through memory.
+- Open-ended query: "tell me the most important information I haven't asked for" — occasionally surfaces leads
+- Wants to scale inactive broker re-engagement via Liam in marketing → [[AI-064]]
+- Granola sentiment + Looker cross-reference: concept discussed, not yet structured
+
 ## Meetings
 
 - [[2026-04-10-alex-dyball-ai-discovery]]
+- [[2026-05-26-alex-dyball-ai-catchup]]

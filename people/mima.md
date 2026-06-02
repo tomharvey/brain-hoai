@@ -6,6 +6,9 @@ type: person
 role: Product Manager
 team: Product
 tags: [product, skills, ai-champion]
+ai_activation_stage: 4
+ai_activation_confidence: high
+ai_activation_assessed: 2026-05-26
 ---
 
 ## Role
@@ -26,6 +29,17 @@ Reports to Matt. AI skills champion.
 - Has markdown-based workflow in VS Code (similar to Tom)
 - Maintains personal notes on stakeholders and how to communicate with them
 - Proactive AI adopter — referenced positively in multiple conversations
+
+## AI Activation
+**Stage**: 4 — Multi-agent orchestration  
+**Confidence**: high  
+**Assessed**: 2026-05-26  
+**Evidence**: Built Flock deck builder skill; markdown-based workflow in VS Code (mirrors Tom's setup); built `/create-test-cases` skill (stakeholders describe tests conversationally → skill formats into PromptFoo config); driving PromptFoo evals (111 test cases: golden set 53, red team/security 49, plugins 9); vision of "Gandalf" — team-level agent with portal/AWS/Slack access. Most activated PM in the company.
+
+**Not Stage 3**: Not just using tools — building them. The deck builder and create-test-cases skills are infrastructure, not usage. Running PromptFoo evals means she's measuring agent behaviour empirically, which is a Stage 5 concept applied within her domain.  
+**Not Stage 5**: Single-domain focus. The evals and skills are all in service of J, not her own personal workflow orchestration. No evidence of multi-repo/multi-agent work or the persuasion/adherence spectrum engineering problems in her own practice.  
+**To progress**: The Gandalf vision is Stage 5 thinking — start building toward it incrementally. Move from individual skills to multi-agent coordination. Apply context quality measurement to her own workflows, not just J.  
+**Framework note**: Jemima builds evals and skills for a product she manages — this is Stage 5 behaviour applied to her product domain rather than her personal practice. The framework doesn't currently distinguish "building AI infrastructure for a product" from "operating at Stage 5 in your personal practice." These may need to be tracked separately.
 
 ## 1:1 Log
 

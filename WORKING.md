@@ -2,15 +2,36 @@
 
 ## Current task
 
-W20 session start. W19 wrap-up complete. No active interrupted work.
+W20 session complete. W20 granola ingest done. Git commit pending.
 
-## W19 summary (what was done)
+## W20 summary (what was done)
 
-- **5 meetings ingested** (Apr 30 – May 8): Apr 30 Fergus weekly, May 5 ProdTech kickoff, May 5 Matt Price 1:1, May 5 multiplayer second brain, May 8 Fergus weekly, May 8 Tom <> Chris coding standards
-- **Issues created**: AI-033 (Looker permissions audit), AI-034 (Admiral enterprise terms), AI-035 (finance AI forcing function), AI-036 (Admiral Business workshop), AI-037 (Matt Price coaching angle for Fergus)
-- **Domain docs updated**: ai-enablement (medallion architecture, finance adoption pattern, Jemima vector encoding), engineering-workflows (coding standards hyper-linter, super repo pattern), operational-tooling (installments three layers, Geran data quality risk)
-- **Name resolution system**: created `people/name-resolution.yaml` (substitutions, nicknames, disambiguation, speaker context); `/granola` skill updated to reference it
-- **W19 review created** at `reviews/2026-W19.md` — domain progress and open loops populated; three wins / next week focus / energy left blank (not filled by human)
+- **18 meetings ingested** (May 11 – May 29): full granola import across W20
+  - Meetings: CEO AI catchup, Anneliese AI discovery, monthly ops AI sync, Rob Grice catchup, dev AI practices, product team context, finance team AI workshop, Sophie Dodds (BDM), FinOps prodtech discussion + many more
+  - All 18 meeting notes + transcripts written
+
+- **Issues created**: AI-071 through AI-085 (15 new issues):
+  - AI-071: Granola BDM summary skill (Sophie)
+  - AI-072: BDM team AI workshop (due 2026-06-13)
+  - AI-073: Jade finance AI check-ins
+  - AI-074: Pace onboarding materials (Francesco)
+  - AI-075: Squad job philosophy conversations (Steve "babysitter" concern)
+  - AI-076: Jacob OnCover check PR follow-up
+  - AI-077: Admiral / LexisNexis timeline (Tom Coxon)
+  - AI-078: Incident management process (Jordi)
+  - AI-079: AI June engineering sprint (due 2026-06-30)
+  - AI-080: Rules-based coding standards
+  - AI-081: FinOps / Jade Q3 priorities meeting
+  - AI-082: Stripe premium finance exploration (backlog)
+  - AI-083: Policy configuration blacklist (Geran)
+  - AI-084: Looker daily auth fix (ops team)
+  - AI-085: NetSuite MCP write-access risk assessment
+
+- **Synthesis pass**: domains/ai-enablement, domains/engineering-workflows, domains/operational-tooling updated; initiatives/ai-native-engineering, initiatives/ai-capability-uplift updated; people/sophie-dodds, people/jade-mounir, people/jordi updated
+
+- **MANIFEST rebuilt** to include all 85 issues, all meetings
+
+- **Cleanup done**: 15 duplicate wrong-named issue files deleted (were created before AI-069/AI-070 conflict was detected)
 
 ## Current state
 
@@ -19,22 +40,17 @@ W20 session start. W19 wrap-up complete. No active interrupted work.
 - `inbox/ai-workshop-2026-04-21.pdf`
 
 **Open issues (priority)**:
-- AI-037: Matt Price coaching angle for Fergus — needs real thought before next 1:1
-- AI-035: Finance team AI forcing function — high priority, due 2026-05-20
-- AI-034: Admiral enterprise Anthropic terms — waiting on Fergus intro to Alex
-- AI-033: Looker permissions audit (Billy/Thom)
-- AI-036: Admiral Business AI workshop
-- AI-010: Looker MCP cloud deploy — overdue (was Apr 18)
-- AI-001: Board roadmap — overdue (was May 1)
-
-**Today (Mon 11 May)**:
-- Jade FinOps session 15:00 (with Fergus + Jordi) — attend or self-invite
-- CEO AI catchup 15:15 — Ed, Jordi, Ollie, Jemima, Tom. Casual. Prep: [[2026-05-11-ceo-ai-catchup-prep]]
+- AI-079: AI June engineering sprint — due 2026-06-30
+- AI-072: BDM team AI workshop — due 2026-06-13
+- AI-081: FinOps / Jade Q3 priorities meeting
+- AI-083: Policy configuration blacklist (Geran + Anton/Darren)
+- AI-085: NetSuite MCP write-access risk assessment
+- AI-084: Looker daily auth fix (ops team)
+- AI-075: Squad job philosophy conversations (Steve "babysitter" concern)
 
 ## Next actions
 
 - [ ] Triage inbox PDFs (AI workshop and ProdTech roadmaps)
-- [ ] Think through Matt Price coaching angle (AI-037) before next Fergus 1:1
-- [ ] Install GitHub app on tomharvey/brain-hoai (unblocks CoS scheduled trigger)
-- [ ] Fix Looker session timeout (15-min Lambda expiry)
-- [ ] Ingest today's meetings after they happen
+- [ ] AI June sprint — coordinate with Rob/engineering team (AI-079)
+- [ ] BDM workshop prep (AI-072, due Jun 13)
+- [ ] NetSuite MCP risk assessment (AI-085)

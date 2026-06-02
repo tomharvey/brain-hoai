@@ -41,6 +41,17 @@ substitutions:
     phonetics: "speech-to-text drops the 'Ji' from 'Jemima' and garbles '-mima' → 'naima'"
     confirmed: 2026-05-08
 
+  - heard: ["Jebodi", "jebodi"]
+    person: jordi
+    phonetics: "Granola garbles 'Jordi' — soft Spanish J + 'di' ending → 'Jebodi'"
+    confirmed: 2026-05-18
+
+  - heard: ["raki", "Raki"]
+    person: rakhee
+    phonetics: "'Rakhee' → 'raki' — drops the '-hee' suffix, leaves the root"
+    guard: "only when used as a person's name (not the drink)"
+    confirmed: 2026-05-27
+
 nicknames:
   # Correct short forms — not transcription errors, just informal names
   # Format:

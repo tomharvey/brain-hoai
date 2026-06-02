@@ -6,6 +6,9 @@ type: person
 role: Technical Product Manager
 team: Product (reports to Matt Price)
 tags: [product, whatsapp, prototype, advanced-ai-user]
+ai_activation_stage: 4
+ai_activation_confidence: medium
+ai_activation_assessed: 2026-05-26
 ---
 
 ## Role
@@ -26,6 +29,17 @@ Met through engineering discussions. Built WhatsApp driver reporting bot indepen
 - Deployed to render.com with Twilio + SQLite database
 - Comfortable shipping fast — "shadow prod-tech" deployed to a production-ish environment
 - Tom advised: test with 1-2 fleets via Ben, lean into forgiveness over permission, but don't expand beyond that without telling engineering
+
+## AI Activation
+**Stage**: 4 — Multi-agent orchestration  
+**Confidence**: medium  
+**Assessed**: 2026-05-26  
+**Evidence**: Built and deployed WhatsApp bot prototype independently (Render + Twilio + SQLite); running parallel research spikes with Claude independently (Adam's pipelining tool, #underwriting-losses structuring) without eng time; classified as "advanced AI user" by peers; consistent self-starter pattern across multiple unsolicited initiatives.
+
+**Not Stage 3**: Built and deployed a complete working product without being asked — that's well past plan interrogation. Running parallel research spikes simultaneously using Claude without eng support. The behaviour is autonomous delegation, not assisted generation.  
+**Not Stage 5**: Single-agent applications, not multi-agent orchestration. No evidence of context engineering at the meta level or architectural design of agent systems. The self-starter pattern is consistent but each initiative appears to run independently.  
+**To progress**: Connect the parallel spikes into coordinated context rather than running them independently. The natural next step is a context-loaded project that spans his product domain — so each spike informs the next rather than starting cold.  
+**Framework note**: Ollie is a TPM who builds things — the product vs dev split in the framework doesn't cleanly contain him. He's following the dev pathway more than the PM pathway. Worth noting that role title isn't a reliable indicator of which activation pathway applies.
 
 ## 1:1 Log
 

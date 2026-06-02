@@ -6,6 +6,9 @@ type: person
 role: Engineering Manager
 team: Engineering
 tags: [engineering, management, portal, claims]
+ai_activation_stage: 5
+ai_activation_confidence: high
+ai_activation_assessed: 2026-05-26
 ---
 
 ## Role
@@ -31,6 +34,17 @@ Engineering
 - ~90% AI-generated code via Claude Code
 - Integrated DataDog for LLM observability
 - Memory via Bedrock Agent Core
+
+## AI Activation
+**Stage**: 5 — Extended orchestration  
+**Confidence**: high  
+**Assessed**: 2026-05-26  
+**Evidence**: ~90% AI-generated code via Claude Code; PromptFoo evals with golden/red-team datasets (~50–60 tests each); DataDog LLM observability (full conversation tracking); Bedrock Agent Core memory (summarization, semantic, user preference strategies); switched agent framework from Strands to Vercel; deliberate non-deterministic vs deterministic architectural choices. Operating at the current engineering ceiling.
+
+**Not Stage 4**: Multi-agent orchestration is table stakes for Ishmael — he's past that. He's building production observability infrastructure, running empirical evals against his own systems, and designing memory architectures. He's measuring and improving agent behaviour, not just directing it.  
+**At the current ceiling**: Stage 5 is the defined top of the framework. The questions he's actively grappling with — adherence measurement, memory strategy, agent framework selection — are frontier problems with no settled answers. What comes next isn't yet characterised.  
+**To progress**: Framework doesn't define beyond Stage 5. Likely frontier: multi-model orchestration, self-improving context loops, organisational-scale agent coordination. Ishmael is the right person to help define what Stage 6 looks like.  
+**Framework note**: Stage 5 needs a description of what the frontier looks like from the inside — what are the open problems, what does progression look like when there's no defined next stage?
 
 ## 1:1 Log
 

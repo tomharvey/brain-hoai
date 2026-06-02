@@ -6,6 +6,9 @@ type: person
 role: Interim CPTO
 team: Leadership
 tags: [leadership, strategy]
+ai_activation_stage: 3
+ai_activation_confidence: low
+ai_activation_assessed: 2026-05-26
 ---
 
 ## Role
@@ -25,6 +28,17 @@ Reports-to. Tom reports directly to Fergus. They worked together years ago at an
 - Strategic thinker, comfortable with ambiguity
 - Thinks about board-level concerns (roadmap, 24-month outlook)
 - Pragmatic about re-teaming friction — expects people to "come out the other end"
+
+## AI Activation
+**Stage**: 3 — Plan mode / conversational fluency  
+**Confidence**: low  
+**Assessed**: 2026-05-26  
+**Evidence**: Led 9,000-submission pipeline analysis (three S3 bucket architecture); strong strategic endorser of AI harness direction (CI/CD analogy, "technology initiative on the priority stack"). In Dev AI Practices transcript, engages thoughtfully but doesn't demo personal daily AI tooling. Low confidence — may be higher; assessment based on observed behaviour rather than demonstrated practice.
+
+**Not Stage 2**: Led a technically substantial pipeline project. In Dev AI Practices engaged with architectural implications, not surface-level interest. The quality of his strategic thinking suggests he's past the "context + tools" stage — he understands what the tools can do.  
+**Not Stage 4**: No demonstrated personal daily AI tooling. The pipeline may reflect technical leadership and architecture rather than personal agentic practice. Insufficient data to confirm Stage 4 behaviours.  
+**To progress**: Unknown — insufficient data to prescribe specific next steps. Priority action is a 1:1 focused on his personal AI practice rather than strategy and direction. He may already be Stage 4 and this score is wrong.  
+**Framework note**: Fergus is the clearest confidence problem in the sample. Low confidence at Stage 3 means this assessment could be wrong by two stages in either direction. The framework needs a way to express this — a low-confidence Stage 3 is a very different thing from a high-confidence Stage 3. Currently only the map notes this; it should be more prominent in the person file.
 
 ## 1:1 Log
 

@@ -1,7 +1,7 @@
 ---
 title: AI capability uplift programme
 created: 2026-03-30
-updated: 2026-05-08
+updated: 2026-06-02
 domain: ai-enablement
 type: initiative
 status: active
@@ -126,6 +126,15 @@ Key principle: **confidence before automation**. Getting people to feel like Kir
   - Personal OS momentum: Tom, Jemima, Javier, Fergus, Jacob all building personal operating systems
   - Key question shifting from "should we use AI?" to "how do we share context across teams?"
   - See [[2026-04-21-codifying-context-retention-team]]
+
+### 2026-05-20 — Philosophical AI workshop design (with Ollie)
+
+- Developed a non-technical workshop format addressing role identity and AI's impact on work — not a capability primer, but a session about judgment, identity, and what the job actually is.
+- Lead frame for mixed/non-technical audiences: the spreadsheet moment (abstraction layer shift, not tool change) and the K-curve (upper arm = going broader/deeper; lower arm = commodity layer disappearing).
+- Core exercise: *"If you were hiring yourself into this role today — with AI at current capability — what would the JD say? What would you not bother putting in it?"* The gap between current JD and this new one is where AI is landing.
+- Critical thinking theme: the citation principle, Fergus's "indexing for differential thinking" framing, and the Rob problem (delegating without knowing what good looks like first).
+- Closing exercise: each person writes *"My job is actually to \_\_\_."* Range of answers is the most valuable output of the room.
+- See: [[philosophical-ai-workshop]]
 
 ### 2026-04-28
 

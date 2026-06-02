@@ -1,7 +1,7 @@
 ---
 title: Sophie Dodds
 created: 2026-04-02
-updated: 2026-04-13
+updated: 2026-05-29
 type: person
 role: Broker Distribution Manager
 team: Distribution (reports to Adam Smith)
@@ -43,7 +43,25 @@ Discovery call completed 2026-04-13. Engaged, pragmatic, open to guidance.
 4. Attend Ollie's Claude Co-Work workshop
 5. Send update notes to Tom early next week
 
+## Prep notes (for 2026-05-28 call)
+
+- Six weeks since discovery — no follow-up received; unclear if any actions completed
+- Check laptop situation first — was the blocker in April
+- **Accelerator brokers** = one tier in a 4-tier broker segmentation Adam introduced: champion / accelerator / potential / foundation. Accelerators are short-term high potential — the team is laser-focused on them. Adam has a Notion dashboard for them. No need to ask Sophie about the term.
+- Ask where the broker map CSV was exported from
+- Ask what came of her outreach to Ollie about a daily briefing tool
+- Goal: get one concrete win in the call itself (HubSpot live query) rather than another homework list
+- Framing: 3 useful tasks in a context-fuelled Claude project by end of June (Ed's activation threshold goal)
+
 ## 1:1 Log
+
+### 2026-05-29 — AI Catchup
+- [[2026-05-29-sophie-dodds-ai-catchup]]
+- Laptop situation resolved. HubSpot connected and working. Showed Tom live query of her broker accounts.
+- Clear use case crystallised: custom Granola summary skill for BDM calls (current AI summary is too generic, doesn't extract next steps/broker intent/follow-up commitments). → [[AI-069]]
+- Interest in broker prioritisation tool (daily briefing style) — who to call, when to call, based on HubSpot engagement data.
+- BDM team workshop proposed for week of 2026-06-08. Sophie to coordinate scheduling. → [[AI-070]]
+- Progress since April: clearly crossed the activation threshold. Using Granola + HubSpot MCP daily. Confident and self-directing now.
 
 ### 2026-04-13 — AI Discovery
 - [[2026-04-13-sophie-dodds-ai-discovery]]

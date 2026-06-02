@@ -95,6 +95,19 @@ Client-facing value documents for new business and renewal opportunities:
 - **Not yet connected to HubSpot** — pipeline entirely in local JSON. Biggest gap and easiest governance win.
 - Self-describes as "a layman" — he's not, but powerful framing for the capability uplift story
 
+## Current state (2026-05-26)
+
+**Major strategic shift since April:**
+- TCO value docs: now only for deals >£500k on request (was all deals meeting threshold). Strategic change led by Adam and Tom.
+- Enterprise prospecting email automation: **abandoned**. Single-digit response rates despite compelling Admiral story. Pivoted to phone calls as primary outreach.
+- AI role: now "chief of staff" — daily briefs, accountability coaching, task prioritisation. Claude Co-Work project with full role context.
+- Target list: **600 companies** (was 64 in April). Refreshed periodically. Prioritisation: renewal timing, telematics investments, fleet size 500–2,000 vehicles.
+- £2M deal example: Claude built a layman's model of excess options + connectivity requirements → Matt challenged underwriting/pricing from an informed position.
+- Wants automated Granola ingestion from Google Calendar → [[AI-063]]
+- Distribution second brain: saw the value, asked the right question ("what's the team use case?"). Not yet clear.
+- Adam's read: Matt has a tendency to over-engineer. Told him directly to start basic.
+- Underwriters reluctant to document in HubSpot — flagged as cross-team adoption challenge.
+
 ## 1:1 Log
 
 ### 2026-04-02 (Slack)
@@ -136,3 +149,16 @@ Client-facing value documents for new business and renewal opportunities:
 - Reconsidering Lovable front-end — Claude already surfacing next 10 actions conversationally. May shift to HubSpot dashboard if data lives there.
 - Adam interested in replicating the agent workflow for broker contacts — pending HubSpot proof
 - Discussed Claude best practices: push files over memory, end-of-session encoding ritual, explain the *why* with priorities
+
+### 2026-05-26 — AI Catchup
+
+- TCO value docs narrowed to >£500k on request. Email pipeline abandoned (single-digit response rates). Pivoted to phone calls + AI chief of staff.
+- 600 target companies; cherry-picked by renewal timing, telematics signals, fleet size 500–2,000
+- Claude Co-Work project: daily briefs, accountability coaching, task prioritisation
+- £2M deal: layman's model of excess options built by Claude → challenged underwriting/pricing
+- Distribution second brain concept raised; team-level use case unresolved
+- Wants Granola auto-ingestion from Google Calendar as a scheduled task → [[AI-063]]
+- Underwriters reluctant to document in HubSpot — flagged as adoption gap
+- Tom's note: tool-sharpening risk now spreads company-wide. Anton's pragmatic grounding is valuable.
+- Adam's read (2026-05-27): Matt over-engineers. Told him directly to start basic.
+- See [[2026-05-26-matt-lees-ai-catchup]]
