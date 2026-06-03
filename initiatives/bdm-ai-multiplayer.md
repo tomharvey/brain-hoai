@@ -30,22 +30,62 @@ A 4-person sales team with:
 
 ---
 
-## Conversion hypothesis requirement
+## Anton's challenge
 
-> **Anton's signal (2026-06-03 Prodtech demo):** Three parallel efforts are running on conversion improvement with no coordination, no roadmap, no stack-ranked experiment list. His explicit frustration: initiatives get built, value is promised at 9–18 months, but no one can explain how it improves conversion *now*. The BDM brain must not be that project.
+> Anton is the standing challenger for this initiative. Every decision — feature, hypothesis, scope change — must pass his test before it moves forward.
 
-**This initiative must ship a named set of conversion hypotheses before or alongside the main workshop.** Not "this will help BDMs close more deals" — specific, testable statements:
+Anton's posture at the 2026-06-03 Prodtech demo: three parallel efforts running on conversion improvement, no coordination, no roadmap, no stack-ranked experiment list. His words: *"I've not been in a workshop to talk about it. I've not seen any roadmap. I've not seen an experiment list we can stack rank based on value. Let's start there."* His deeper frustration: initiatives get built, value is promised at 9–18 months, but no one can explain how it improves conversion *now*.
 
-- *"BDMs who can instantly surface a prospect's last 3 touchpoints before a call will have higher conversion on that call"*
-- *"Surfacing 'ghost' accounts (warm signals, no recent contact) will recover deals that would otherwise drop out of pipeline"*
-- *"Reducing time-to-context at the start of a call reduces the time BDMs spend recapping and increases time on needs/objections"*
+Anton is also Matt Lees's pragmatic grounding. Matt described it directly: *"Anton is always very crystal clear on what I should be doing — don't get lost in what the tools can do that might jeopardize the real objectives."* ([[2026-05-26-matt-lees-ai-catchup]]) Tom's read: *"this is the point at which you've just sharpened your tool away to nothing."* Matt is Flock's most capable AI user in distribution. Anton's check is what stopped him disappearing into tooling. The same check applies here.
 
-These hypotheses should:
-1. Be agreed with Adam and Oli before the workshop
-2. Drive the acceptance tests (Step 4 workshop query list)
-3. Be the frame against which the brain is evaluated at 30/60/90 days post-launch
+### The Anton gate — run this against every design decision
 
-**The question to answer at every design decision:** *"Which conversion hypothesis does this serve?"* If the answer is "none of them", it's out of scope.
+1. **What is the OKR that counts?** Name the specific conversion metric this moves. Not "better context" — a decision made differently, a deal that closes or doesn't stall.
+2. **Can Matt already do this today?** If yes, the answer is a rollout programme, not a brain. A rollout programme means: document what Matt does, train the team, done. The brain is only justified where the capability is genuinely team-level — where no individual setup can produce the signal.
+3. **Is this "more context" or "a better decision"?** Context doesn't convert deals; decisions do. The test: can you name the specific moment in the sales process where a BDM acts differently because of this? If not, it's context, not capability.
+4. **Is this proactive or reactive?** Reactive (BDM asks, brain answers) is table stakes. The brain earns its existence over individual setups by being proactive — surfacing things BDMs didn't know to ask.
+
+---
+
+## Conversion hypotheses
+
+*Must be agreed with Adam and Oli before the workshop. These drive the acceptance tests and the 30/60/90-day evaluation frame.*
+
+Candidate hypotheses (to be validated):
+- *"A BDM who knows what a colleague discussed with a prospect last week will open the call in a different place — reducing recap time and moving faster to need/objection"* — team-level signal, individual setup can't produce this
+- *"Surfacing 'ghost' accounts (warm signals, no recent contact across the team) will recover deals that would otherwise drop out of pipeline without anyone noticing"* — requires cross-BDM visibility
+- *"When a new deal lands (e.g. Pegasus Couriers), proactively identifying 10 similar businesses in the target list will produce faster follow-on prospecting than waiting for the BDM to notice"* — Matt named this explicitly as the proactivity he wants ([[2026-05-26-matt-lees-ai-catchup]])
+- *"BDMs who receive a daily brief before their first call will make fewer avoidable mistakes (wrong context, missed follow-up, duplicate outreach) than those who reconstruct context manually"*
+
+Each hypothesis must pass the Anton gate: which decision does it change, in which moment, measurably?
+
+---
+
+## The rollout vs brain distinction
+
+If a hypothesis passes the Anton gate but Matt can already do it individually, the right answer is a **rollout programme**: document the practice, get the team doing it, measure the result. This is lower cost, faster, and should be done first regardless.
+
+The brain is the right answer only when the capability requires:
+- **Team-level signal** — one BDM's context combined with another's to produce something neither has alone
+- **Proactivity** — the brain notices something before the BDM does, because the BDM can't maintain awareness across all signals simultaneously
+- **Cross-team pattern recognition** — e.g. same prospect contacted by two BDMs, or a broker signal appearing across multiple accounts at once
+
+If a proposed feature doesn't require any of these, it belongs in the rollout programme, not the brain.
+
+---
+
+## Proactivity as core differentiator
+
+Matt identified proactivity as the specific thing he wants that his individual setup doesn't reliably deliver: *"for me, that more feels like proactivity — whether on an individual basis or on a team collective basis."* Example: *"if we've just picked up Pegasus Couriers, could it proactively notify me and identify 10 other businesses that fit that customer profile?"*
+
+This is the structural advantage a shared brain has over individual setups: it has the full picture (all BDM activity, all pipeline signals, all Granola transcripts) without any individual BDM having to maintain it. Tight schedules (check every N hours) feel like proactivity when the brain surfaces something before the BDM noticed it.
+
+Proactive outputs the brain should aim to deliver:
+- New deal landed → 10 similar prospects surfaced automatically
+- Prospect goes quiet → flag to owning BDM before they notice
+- Two BDMs independently approaching same account → surface the collision
+- Broker signal appearing across multiple accounts → surface as emerging pattern
+- BDM hasn't followed up on an action from a Granola transcript → reminder before the window closes
 
 ---
 
