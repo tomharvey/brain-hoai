@@ -1,7 +1,7 @@
 ---
 title: Prototype claims listing analysis for Tom Rogers (Motor Underwriting)
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-06-03
 domain: operational-tooling
 type: issue
 status: todo
@@ -39,3 +39,7 @@ Tom Rogers was going to share client folder links (PDF claim formats) in Slack. 
 - [ ] Build extraction → Google Sheet equivalent → trend analysis prompt in Claude
 - [ ] Show Tom the output side-by-side with what he'd do manually
 - [ ] If it works: scope the >£500k actuarial template separately (→ AI-029 context)
+
+## 2026-06-03 update
+
+Tom Rogers was mentioned by Anton at the Prodtech demo as someone who should be in the conversion improvement coordination workshop ([[AI-088]]). Flagged as not yet having had an AI follow-up since April. Tom also surfaced as a candidate for AI culture group sessions. Worth combining the prototype check-in with a broader AI conversation — see people/tom-rogers.md.
