@@ -41,9 +41,9 @@ Anton is also Matt Lees's pragmatic grounding. Matt described it directly: *"Ant
 ### The Anton gate — run this against every design decision
 
 1. **What is the OKR that counts?** Name the specific conversion metric this moves. Not "better context" — a decision made differently, a deal that closes or doesn't stall.
-2. **Can Matt already do this today?** If yes, the answer is a rollout programme, not a brain. A rollout programme means: document what Matt does, train the team, done. The brain is only justified where the capability is genuinely team-level — where no individual setup can produce the signal.
+2. **Who benefits and how?** Two valid answers: (a) this makes what Matt does available to the whole team — the brain is the mechanism for spreading his practice, not an individual setup; (b) this is a genuinely team-level capability nobody has yet. One invalid answer: this adds sophistication to something that's already working well enough.
 3. **Is this "more context" or "a better decision"?** Context doesn't convert deals; decisions do. The test: can you name the specific moment in the sales process where a BDM acts differently because of this? If not, it's context, not capability.
-4. **Is this proactive or reactive?** Reactive (BDM asks, brain answers) is table stakes. The brain earns its existence over individual setups by being proactive — surfacing things BDMs didn't know to ask.
+4. **Is this proactive or reactive?** Reactive (BDM asks, brain answers) is table stakes. The brain earns its existence by being proactive — surfacing things BDMs didn't know to ask.
 
 ---
 
@@ -58,19 +58,6 @@ Candidate hypotheses (to be validated):
 - *"BDMs who receive a daily brief before their first call will make fewer avoidable mistakes (wrong context, missed follow-up, duplicate outreach) than those who reconstruct context manually"*
 
 Each hypothesis must pass the Anton gate: which decision does it change, in which moment, measurably?
-
----
-
-## The rollout vs brain distinction
-
-If a hypothesis passes the Anton gate but Matt can already do it individually, the right answer is a **rollout programme**: document the practice, get the team doing it, measure the result. This is lower cost, faster, and should be done first regardless.
-
-The brain is the right answer only when the capability requires:
-- **Team-level signal** — one BDM's context combined with another's to produce something neither has alone
-- **Proactivity** — the brain notices something before the BDM does, because the BDM can't maintain awareness across all signals simultaneously
-- **Cross-team pattern recognition** — e.g. same prospect contacted by two BDMs, or a broker signal appearing across multiple accounts at once
-
-If a proposed feature doesn't require any of these, it belongs in the rollout programme, not the brain.
 
 ---
 
