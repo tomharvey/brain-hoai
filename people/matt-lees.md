@@ -6,6 +6,9 @@ type: person
 role: Enterprise Fleet Lead
 team: Distribution (reports to Adam Smith)
 tags: [distribution, enterprise, ai-advanced, lovable, skills, agents, apollo]
+ai_activation_stage: 4
+ai_activation_confidence: high
+ai_activation_assessed: 2026-06-02
 ---
 
 ## Role
@@ -107,6 +110,18 @@ Client-facing value documents for new business and renewal opportunities:
 - Distribution second brain: saw the value, asked the right question ("what's the team use case?"). Not yet clear.
 - Adam's read: Matt has a tendency to over-engineer. Told him directly to start basic.
 - Underwriters reluctant to document in HubSpot — flagged as cross-team adoption challenge.
+
+## AI Activation
+
+**Stage**: 4 — Multi-agent orchestration (non-engineering ceiling)
+**Confidence**: high
+**Assessed**: 2026-06-02
+**Evidence**: 9 scheduled autonomous agents managing a full enterprise sales pipeline (600 companies, MEDDPICC scoring, £2M deal decision support). MCP connectors: Gmail, Slack, Granola, Apollo, Google Drive, Notion. CoWork "chief of staff" project for daily briefs, coaching, and task prioritisation. Built and adapted the Enterprise Engine based on what actually works (abandoned email automation, pivoted to phone + AI prep). Adam's read: has a tendency to over-engineer — told him directly to start basic.
+
+**Not Stage 3**: Scheduling, coordination, and autonomous operation across 9 agents is well past conversational fluency. The pipeline runs without his involvement — that's delegation at scale.
+**Not Stage 5**: No evidence of adherence measurement or context quality testing. Adam's note (over-engineers) suggests he hasn't yet hit the meta-level thinking of Stage 5 — he's building prolifically but not measuring whether the builds adhere correctly.
+**To progress**: Apply empirical context testing to the Enterprise Engine — does changing the prompt actually improve agent output quality, or does it just feel better? That measurement step is the Stage 4→5 transition. Moving from "it works" to "I know why it works."
+**Framework note**: Highest Stage 4 outside the engineering team. The coaching/chief-of-staff use case is the clearest "secretary → strategic partner" progression in the company. The 9-agent pipeline is an impressive build; the over-engineering tendency is the thing that keeps it at Stage 4.
 
 ## 1:1 Log
 

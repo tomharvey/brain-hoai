@@ -30,6 +30,46 @@ A 4-person sales team with:
 
 ---
 
+## Brain roles
+
+The brain is not one thing. It can act under eight roles across four modes — not all of them in Phase 1, but all of them in scope for this initiative. The full-context substrate (the clean ontology + MCP) is what makes all eight possible.
+
+See: `[[reference/roles.png]]` — full taxonomy diagram.
+
+### Handle the work
+| Role | What it means for BDMs | Phase |
+|------|------------------------|-------|
+| **Secretary** | Tracks commitments from Granola transcripts, flags missed follow-ups, manages outstanding actions across the team | 1 |
+| **Librarian** | Answers "what do we know about Acme?" — federated search across Notion and HubSpot, single query surface | 1 |
+
+### Make me better
+| Role | What it means for BDMs | Phase |
+|------|------------------------|-------|
+| **Coach** | Surfaces patterns in what's working and not working, connects current deal to similar past deals, supports skill development. Francesco's performance coach pattern is prior art. | 2 |
+| **Forecaster** | Predicts outcomes: ghost account detection (warm signals, no recent contact), conversion likelihood scoring, pipeline risk flags — before the BDM notices | 1 |
+
+### Think with me
+| Role | What it means for BDMs | Phase |
+|------|------------------------|-------|
+| **Strategy partner** | Synthesis mode — the brain integrates what it knows (account history, deal signals, team context) and helps a BDM arrive at a direction. Additive and collaborative. Pre-call brief is the clearest example: "I'm about to call Acme, what do I know and what should I lead with?" Architecturally: read + synthesise. | 1 |
+| **Sparring partner** | Adversarial mode — the brain holds a position and pushes back. Challenges deal assumptions, stress-tests pricing reasoning, plays devil's advocate on proposals. Requires the brain to have formed a *view*, not just retrieved facts — meaning it needs to have absorbed enough context to have an informed opinion. Harder to do well. | 2 |
+
+> **Strategy vs sparring:** strategy partner is *with* you (it adds to your thinking); sparring partner is *against* you (it tests your thinking). Both are "Think with me" modes, but the second requires more context depth and a brain confident enough to disagree. That's a Phase 2 capability.
+
+Adam's pattern in practice: the Admiral paper work ([[2026-05-27-adam-ai-catchup]]) is strategy partner — three-stakeholder navigation, fed Granola transcripts + paper objectives, brain *"helped shape thinking and acted as council."* Tom's framing from that same conversation: *"as a coach, as a strategic partner and as a sort of secretary"* — this pattern emerged independently across Adam, Matt Lees, and Alex Dyball without prompting.
+
+### Maintain + grow itself
+| Role | What it means for BDMs | Phase |
+|------|------------------------|-------|
+| **Caretaker** | Enforces write-gate lint rules, flags stale records, keeps controlled vocabularies clean without the team having to police each other | 1 |
+| **Apprentice** | Self-inspection using telemetry — learns what queries recur, what gaps keep appearing, suggests schema and vocabulary improvements. Requires Phase 1 usage data to fuel it. | 3 |
+
+Phase 1 delivers: Librarian, Secretary, Forecaster, Strategy partner, Caretaker — the brain is immediately useful.
+Phase 2 adds: Coach, Sparring partner — the brain starts making the team better, not just informed.
+Phase 3: Apprentice — the brain improves itself.
+
+---
+
 ## Anton's challenge
 
 > Anton is the standing challenger for this initiative. Every decision — feature, hypothesis, scope change — must pass his test before it moves forward.
@@ -74,6 +114,20 @@ Proactive outputs the brain should aim to deliver:
 - Broker signal appearing across multiple accounts → surface as emerging pattern
 - BDM hasn't followed up on an action from a Granola transcript → reminder before the window closes
 
+### Delivery mechanism (open design gap)
+
+Proactive outputs are not reactive — they require a scheduler. Each output type has a different trigger:
+
+| Output | Trigger type | Cadence |
+|--------|-------------|---------|
+| Similar prospects | Event-triggered | New deal lands (HubSpot webhook?) |
+| Ghost accounts | Scheduled | Daily |
+| BDM collision | Scheduled | Every N hours |
+| Broker pattern | Scheduled | Daily |
+| Follow-up reminder | Scheduled + threshold | N days since Granola action logged |
+
+**Open question (see Open decisions #7):** where do scheduled tasks run, and how does output reach BDMs — Slack DM, HubSpot task, or email? This is not in the Phase 1 spec and must be before build starts.
+
 ---
 
 ## Architecture (strawman)
@@ -91,6 +145,20 @@ Phased delivery:
 - **Phase 2** — brain searches well: AWS derived index (OpenSearch + Bedrock) if federation isn't enough
 - **Phase 3** — brain improves itself: self-inspection + improvement suggestions once usage data exists
 
+Every interaction is logged with a `role` classification (inferred from intent) against the eight-role taxonomy. The observability layer evaluates responses against the expected role mode — a strategy-partner request that gets a librarian response is a failure, not a success. See `[[reference/shared-brain/strawman-observability-self-improvement]]` for the full capture schema, role-alignment rubric, and inspection patterns.
+
+### MCP capability surface — open questions
+
+How capabilities like "find similar prospects" or "ghost account detection" actually surface through the MCP is not yet resolved. The strawman specifies the MCP as a write gate and query federator, but not how richer, composed capabilities are exposed. Candidates:
+
+- **One MCP tool per capability** — the MCP exposes discrete tools (e.g. `find_similar_prospects`, `detect_ghosts`) and Claude calls them directly. Simple, but bakes logic into the MCP and couples the tool surface to every capability change.
+- **Fat skills loaded by an agent** — capabilities live as Claude-native skills that an agentic client loads on demand; the MCP is purely data access. This is how J works, but J's client is Claude Code + skills files. It's not clear this applies cleanly to a BDM using a web interface.
+- **Resolvers** — named, composable query handlers inside the MCP that fan out across Notion + HubSpot and merge results. Likely the right concept for cross-store queries regardless of which capability pattern wins.
+
+**Unresolved. See Open decisions #8.**
+
+The deeper question underneath this (see Open decisions #9): is the MCP client agentic at all? If the BDM is just prompting Claude directly, the "skill surface" question is moot — Claude decides what to call based on the tool list. Answering #9 first narrows the answer to #8.
+
 ---
 
 ## Open decisions (gating Phase 1)
@@ -103,6 +171,9 @@ These must be resolved in the technical pre-workshop before the main team sessio
 4. **Thin MCP shape & hosting** — tool surface, hosting, auth, stateless design, bus-factor plan
 5. **Controlled vocabularies** — stages, roles, statuses, angles (team owns these)
 6. **Write workflow & gate strictness** — which rules block vs. warn
+7. **Proactivity delivery mechanism** — where scheduled tasks run (Lambda? cron on the MCP server?), what triggers event-based tasks (HubSpot webhook?), and how output reaches BDMs (Slack DM? HubSpot task?). Must be resolved before Phase 1 build starts — proactivity without a delivery path is just a reactive query with a scheduler nobody checks.
+8. **MCP capability surface** — how are richer capabilities (multi-step queries, composed outputs) exposed: discrete MCP tools, Claude-native skills loaded by an agent, named resolvers, or something else? Answering #9 first will constrain the answer here.
+9. **Is the MCP client agentic?** — So far the design assumes a BDM prompts Claude, which calls MCP tools reactively. That is not an agent loop; it's a structured interface. Does Phase 1 need autonomous agent behaviour (plan → act → observe → continue) or is reactive tool-calling sufficient? Proactivity (scheduled tasks running without a BDM prompt) implies *some* agentic loop exists — but it may live in the scheduler, not in the client Claude instance. This distinction matters for architecture and for what the BDMs actually experience.
 
 ---
 
@@ -160,4 +231,5 @@ Adam's framing: *"an AI manager/coach to shape thinking, broker strategies, acti
 
 - 2026-06-03: Initiative created. Strawman design set imported from `electron-1/pkm` PR #2 into `reference/shared-brain/`.
 - 2026-06-03: Adam Smith confirmed onboard via Slack. Targets confirmed: qualified submissions, conversion, GWP. Tom and Oli to get tech foundations together before coming back with a structured proposal.
+- 2026-06-04: Fergus briefed on the BDM brain design (Fergus weekly). He endorsed the company-wide vision: "everyone using Claude to interface with Notion should have it, regardless of whether they're building the team OS or contributing content." BDM-first is the right start; Flock-layer then BDM-layer distinction acknowledged. MCP read/write governance gap flagged as adjacent risk — same session. → [[2026-06-04-fergus-weekly]], [[AI-096]]
 - Next: book prep session with Oli Crowe.

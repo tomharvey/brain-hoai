@@ -63,7 +63,7 @@ Anton raised concern: the team's stated mission is conversion improvement, but t
 
 **Anton's ask:** A workshop and roadmap for conversion improvement experiments — stack rank by impact, decide what's good enough, resource accordingly. Current experimental approach may not address the immediate commercial challenge.
 
-- [ ] Tom / Darren: Convene conversion improvement coordination workshop (Anton's explicit request)
+- [ ] Tom Rogers / Darren: Convene conversion improvement coordination workshop (Anton's explicit request)
 
 ### 4. End-to-End Testing Framework ([[alex-smith|Alex Smith]])
 

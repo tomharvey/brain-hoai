@@ -2,50 +2,62 @@
 title: "Company-wide workshop prep: Claude / Cowork / Claude Code"
 id: AI-068
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-06-03
 domain: ai-enablement
 type: issue
-status: backlog
-priority: medium
+status: in-progress
+priority: high
 assignee: Tom
+due: 2026-06-16
 origin:
 tags: [workshop, enablement, claude, cowork]
 ---
 
 ## Description
 
-Plan and deliver a 90-minute company-wide workshop on when and how to use Claude, Cowork, and Claude Code. The hook: most people are only scratching the surface of what's available. The session gives attendees a clear mental model and a routing heuristic they can use immediately.
+90-minute company-wide workshop on when and how to use Claude, Cowork, and Claude Code. Booked: **Tue 16 June, 11:30, in-person + remote**.
 
 Core mental model:
 - **Claude** — thinking partner. Conversational, exploratory, one-off tasks.
 - **Cowork** — virtual employee. Scheduled autonomous agents, runs without you.
-- **Claude Code** — building partner. File-aware, long-running, lives in the terminal.
+- **Claude Code** — building partner. File-aware, long-running, lives in the terminal (signposted as next step only, not demoed).
 
 Key insight to land: friction comes from routing work to the wrong tool, not from the models themselves.
 
+## Agenda (confirmed)
+
+- **0:00–0:30 — Framing** (30 min): Three-tool spectrum + real stories from people who've moved between them. Plants do double duty here — stories in framing, not a separate show & tell.
+- **0:30–0:40 — Cowork demo** (10 min): Live scheduled agents in use today. Demo owner TBC (Matt Lees pipeline candidate).
+- **0:40–1:15 — CoWorking** (35 min): Pairs (breakout rooms for remote) explore what they'd want to build with Cowork.
+- **1:15–1:30 — Wrap** (15 min): Commitments for the week, common gotchas, Claude Code framed as the next level.
+
 ## Acceptance criteria
 
-- [ ] Opener slide built and saved to Google Drive (`Flock / Presentations`)
-- [ ] Full slide deck built covering the three-tool mental model
-- [ ] Cowork schedules demo prepared (Matt's Enterprise Engine or simplified version)
-- [ ] Claude Code demo prepared (bulk doc generation use case)
-- [ ] "What would I schedule?" activity prompt cards written
-- [ ] Tool routing decision tree slide built
-- [ ] Workshop booked in calendars with Cowork install link in invite
-- [ ] Facilitator run-sheet written (90-min timeline with timings)
+- [ ] Slide deck built (framing block + gotchas + wrap)
+- [ ] Cowork demo coordinated (confirm with Matt or equivalent)
+- [ ] Plants identified and briefed (real stories for framing block)
+- [ ] Activity prompt for CoWorking pairs written
+- [ ] Calendar invite sent with Cowork install link
+- [ ] Facilitator run-sheet written
+
+## Potential plants
+
+Living list — not all will be available on the day. Aim for 2-3 in the framing block + Kevin for the Code signpost if available. Expand this list as more people surface between now and Jun 16.
+
+| Person | Story | Best block |
+|--------|-------|------------|
+| [[matt-lees]] | 9 scheduled agents, enterprise pipeline | Demo + Framing |
+| [[francesco-venerandi]] | 3 live schedules (Granola, Calendar, performance coach), non-engineer | Framing |
+| [[adam-smith]] | Inbox cleaner + broker briefings, already aware of the workshop | Framing |
+| [[ivan-boix]] | Credit control report → made the Cowork leap 2026-06-02 (fresh convert) | Framing |
+| [[kevin-berg]] | Claude → Cowork → Code arc, honest about friction | Code signpost |
+| [[emily]] | Ops Stage 4, process-first AI, Zapier pipelines | Framing |
+| [[shreya-chowta]] | Built and shipped NOC skill independently, fastest non-engineer progressor | Framing |
+
+Next step: reach out to confirm availability for Tue 16 Jun 11:30. Brief them on: ~3-4 min story, framing angle (routing to the right tool), no need to prepare slides.
 
 ## Notes
 
-Workshop structure (90 min):
-- 0:00 Show of hands / framing
-- 0:05 Mental model (the three tools as a spectrum)
-- 0:15 Live demo: Cowork schedules
-- 0:25 Pair activity: "What would I schedule?"
-- 0:40 Live demo: Claude Code
-- 0:50 Hands-on: route your own task
-- 1:05 Show & tell
-- 1:15 The gotchas (laptop sleep, learning curve)
-- 1:25 Named next action + pairing slots offered
-
-Opener slide brief is ready — build via claude.ai flock-deck-builder skill.
-Research on mental models done — best framing is the "routing" angle: friction = wrong tool, not bad AI.
+Slack invite sent 2026-06-03. Activation framework kept backstage — use routing framing only for general audience.
+Code is a signpost only: "the next level for those who want it" — no demo.
+Hybrid: in-person + remote. Breakout rooms needed for CoWorking activity.

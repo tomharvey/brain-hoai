@@ -6,6 +6,9 @@ type: person
 role: Broker Distribution Manager
 team: Distribution (reports to Adam Smith)
 tags: [distribution, broker-management]
+ai_activation_stage: 2
+ai_activation_confidence: high
+ai_activation_assessed: 2026-06-02
 ---
 
 ## Role
@@ -42,6 +45,18 @@ Discovery call completed 2026-04-13. Engaged, pragmatic, open to guidance.
 3. Try doing normal HubSpot tasks in Claude (broker searches)
 4. Attend Ollie's Claude Co-Work workshop
 5. Send update notes to Tom early next week
+
+## AI Activation
+
+**Stage**: 2 — Context and tools (activation threshold crossed)
+**Confidence**: high
+**Assessed**: 2026-06-02
+**Evidence**: Explicitly noted as having "clearly crossed the activation threshold" (2026-05-29). Using Granola + HubSpot MCP daily. Confident and self-directing. Live HubSpot query demonstrated in the call. Wants a custom Granola summary skill for BDM calls. Interest in a broker prioritisation tool (daily briefing style).
+
+**Not Stage 1**: Multiple MCPs in daily use, clear use cases, self-directing — well past single-task wins.
+**Not Stage 3**: Not yet iterating on outputs systematically or building tools independently. Wants a custom skill but hasn't built one yet. The interest in tools is Stage 2 top end; building them independently is Stage 3.
+**To progress**: Build the custom Granola summary skill herself rather than having it built for her. That's the Stage 2→3 transition — from using tools others built to building tools for herself.
+**Framework note**: Strong, confident Stage 2. The coaching framing resonates with her. The BDM team workshop (week of 2026-06-08) is the natural context for a Stage 3 push.
 
 ## Prep notes (for 2026-05-28 call)
 

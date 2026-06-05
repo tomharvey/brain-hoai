@@ -1,7 +1,7 @@
 ---
 title: Domain — AI Enablement
 created: 2026-05-08
-updated: 2026-06-02
+updated: 2026-06-04
 domain: ai-enablement
 type: reference
 tags: [domain, strategy, enablement, capability]
@@ -40,6 +40,10 @@ tags: [domain, strategy, enablement, capability]
 - **Finance AI workshop design has surfaced a useful exercise format.** Jade's team: individual work + roaming tutors + core exercise (write down job objectives → Granola records conversation about role → feed to Claude → ask how it can help). Precedent: tech hackathon team talked, Granola recorded, Claude built it. Adaptable to other non-technical departments.
 - **BDM team (Sophie) represents a high-leverage, underserved cohort.** Sophie is motivated, does many customer calls, but the default Granola summary format doesn't match what BDMs need (next steps, broker intent, follow-up commitments). A custom summary skill + team workshop is the unlock — team AI adoption at zero, single internal champion in place. → [[AI-069]], [[AI-070]] ([[2026-05-29-sophie-dodds-ai-catchup]])
 - Whether group workshops can work at scale or whether it's all 1:1 pairing from here. Ed has endorsed Flock o'clock format and wants to co-run — this may be the answer, but curriculum design is still open.
+- **"Right application" is the next evolution of the activation message, replacing "burn tokens."** Fergus (2026-06-04) confirmed the current "just dive in" message is not landing with the half of the company doing nothing or avoiding AI. The shift for Q3: use-case specificity per team/person, not company-wide workshops. The unlock for stragglers is guided identification of *their* outcome — not examples from someone else's use case. Skills tick-boxing risk is real ("I have built a skill" ≠ "this skill is doing what I need"). → [[2026-06-04-fergus-weekly]]
+- **MCP read/write governance is not yet in the company's vernacular.** More staff are connecting to HubSpot, Notion, Granola via standard connectors — good for sense-making, dangerous for inadvertent writes or deletes. The rest of the org doesn't have an engineering staging/prod mental model. A quick answer (can we block HubSpot deletes entirely?) and a longer-term governance framework are both needed. → [[AI-096]], [[2026-06-04-fergus-weekly]]
+- **BDM AI Brain is ready to pitch.** Custom MCP proxying Notion with a validation layer — semantic layer of BDM-world first-class objects, HubSpot + Granola integration, self-improvement loop. Not standard Notion MCP slop. The vision is BDM-first then company-wide spread. Fergus confirmed the company-wide framing is compelling; Flock-layer vs BDM-layer distinction noted. → [[bdm-ai-multiplayer]], [[2026-06-04-fergus-weekly]]
+- **Skill personalisation pattern is confirmed.** Fred took Emily's Driver Referral skill and immediately created a Fred-specific version — this is the right instinct. Team-wide skill adoption is valuable; personal divergence from team skill is equally valuable if it captures individual corrections. "Weekly bake-in" cadence (take what you learned in a long chat and fold it back into the skill) is the maintenance habit. → [[2026-06-03-fred-thomas-ai-catchup]]
 - Whether the enterprise deal will land before rate limits become a serious productivity blocker.
 - **Underwriting is now on the board.** [[jake-wood|Jake Wood]] built a HubSpot deal-tracking system after seeing a peer demo at AI breakfast — spent all of Friday building it unprompted. First concrete underwriter-built AI tool. Pattern: 10 months of domain context was the prerequisite before use cases became obvious. Peer demos (not workshops) were the trigger. Darren's team not yet spoken to. ([[2026-06-01-jake-thomas-ai-uw]])
 - Whether the capability baseline report (AI-013) will get done — it's a precondition for measuring progress.

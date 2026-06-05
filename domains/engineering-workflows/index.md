@@ -1,7 +1,7 @@
 ---
 title: Domain — Engineering Workflows
 created: 2026-05-08
-updated: 2026-06-02
+updated: 2026-06-04
 domain: engineering-workflows
 type: reference
 tags: [domain, strategy, engineering, sdlc, agents]
@@ -37,6 +37,9 @@ tags: [domain, strategy, engineering, sdlc, agents]
 ## What we're uncertain about
 
 - Whether Javi's pilot will produce evidence that quality improves (not just speed). The "slow month" expectation needs managing with Fergus and the team. Fergus was in the Dev AI Practices session (2026-05-18) and endorsed the direction — the failure mode concern (harness engineering instead of shipping) was acknowledged and accepted as the lesser risk right now.
+- **Lean units model is being explored as an alternative to platform team vs. product squad tension.** Fergus (2026-06-04) is considering: 2–3 people, single big-hairy-audacious objective, all obstacles removed. Prototype: [[ivan-boix]] + [[ishmael-jebril]] on J. Similar case for submission automation (2–3 people, rapid ground coverage). Risk: two-tier system (exciting sprint vs. "boring" maintenance). Proposed safety valve: a team goes "bankrupt on bug budget" and temporarily becomes platform-focused until stable. Key question unresolved: what does the lean unit look like once the sprint phase matures into maintenance? → [[2026-06-04-fergus-weekly]]
+- **Platform reliability noise is mainly a comms and structural problem, not a velocity problem.** Platform was over-sold as fixing legacy bugs; reality is hypercare was never explained. Structural gaps: no systematic release approach, limited automated testing, no unit test coverage metrics (explicitly decided against tracking during Admiral DD). Fergus: "not entirely explained by the Fergus speedrun." → [[2026-06-04-fergus-weekly]]
+- **Adversarial review is the emerging gold standard for AI code quality.** Rob's pattern (from AI engineering group therapy, 2026-06-04): Grill Me skill → generate code with Flock standards embedded → Codex adversarial review pass. Reframe for brain-rot resistance: you're an engineering manager picking among smart people's opinions, not a coder who forgot how to code. → [[2026-06-04-ai-engineering-group-therapy]]
 - Where agent services sit in the platform architecture. Chris/Jordi decision outstanding.
 - Whether platform-architecture docs will be completed at the pace the agent framework needs.
 - How to bring Rob, Javier, Jacob, and Sami into the SDLC-of-the-future conversation without it feeling like a distraction from OKR delivery. Rob specifically needs a different approach — tends to delegate everything to AI without architecture-first thinking. Targeted support plan needed. ([[AI-055]])

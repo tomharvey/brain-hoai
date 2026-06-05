@@ -6,6 +6,9 @@ type: person
 role: Underwriting Assistant
 team: Ops (reports to Emily Staton)
 tags: [underwriting, ops, ai-user, zapier, hubspot, cancellations]
+ai_activation_stage: 3
+ai_activation_confidence: high
+ai_activation_assessed: 2026-06-02
 ---
 
 ## Role
@@ -31,6 +34,18 @@ First spoke 2026-04-02. Proactive, keen, already designing automations independe
 - Key observation: "We're relying more on Claude now than tech automation"
 - Connected HubSpot to Claude live during discovery call — immediately productive
 - Had already designed a full NOC automation workflow and pitched it to Sam before Tom arrived
+
+## AI Activation
+
+**Stage**: 3 — Conversational fluency / tool building
+**Confidence**: high
+**Assessed**: 2026-06-02
+**Evidence**: Built and shipped a working NOC letter generator skill used by the whole team (8-step workflow: HubSpot pull → template fill → .docx export). Connected HubSpot to Claude live during discovery call. Designs Zapier workflows independently. "We're relying more on Claude now than tech automation." Growing confidence and sharing work proactively across the team.
+
+**Not Stage 2**: Not just using tools — building them for others. The NOC skill is a shared team resource, not a personal automation. Stage 2 is "I have tools connected"; Stage 3 is "I built something that runs."
+**Not Stage 4**: Single skill, single domain. The NOC workflow is powerful but isolated. No evidence yet of multi-step pipeline orchestration or delegating whole workflows end-to-end.
+**To progress**: The driver referral automation she offered to help Fred with is the natural Stage 3→4 test — can she build something end-to-end in a new domain independently? Extending to a second skill without guidance is the signal.
+**Framework note**: One of the fastest progressors in the company. Assessment from April but evidence is strong and unlikely to have reversed.
 
 ## 1:1 Log
 

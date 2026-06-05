@@ -6,6 +6,9 @@ type: person
 role: Staff Engineer
 team: Prod-tech
 tags: [engineering, security, governance, phd]
+ai_activation_stage: 2
+ai_activation_confidence: medium
+ai_activation_assessed: 2026-06-02
 ---
 
 ## Role
@@ -27,6 +30,18 @@ Formerly a direct report.
 - "Riding a power bike at 200 mph as an amateur" — great adoption, no framework
 - Also working on platform frontend patterns (skills)
 - Wants to be involved in governance/guidelines work
+
+## AI Activation
+
+**Stage**: 2 — Context and tools
+**Confidence**: medium
+**Assessed**: 2026-06-02
+**Evidence**: Used Claude to scrape Notion and consolidate all existing AI initiatives into a filterable board. Working on PromptFoo evals definition and documentation for AI readability. Risk and governance mindset — thinks about the system level, not just individual tasks. Part-time PhD on secure AI systems.
+
+**Not Stage 1**: Built a working Notion scraper with Claude — moved beyond single task queries into system-level thinking.
+**Not Stage 3**: Jordi noted he struggles with execution on large undefined projects — start small, measurable goals. The CoP proposal was impressive but over-engineered. Stage 3 requires iterative refinement in practice, not just in theory.
+**To progress**: The evals work is the right vehicle — it requires iterative refinement and measuring whether changes improve output, exactly the Stage 3 pattern. Delivering a working PromptFoo setup is the Stage 2→3 signal.
+**Framework note**: Unusual profile — high conceptual sophistication with execution patterns more typical of Stage 2. The governance/PhD lens is a genuine differentiator. Watch evals delivery as the Stage 3 indicator.
 
 ## 1:1 Log
 

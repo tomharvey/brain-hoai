@@ -6,6 +6,9 @@ type: person
 role: Financial Analyst
 team: Finance (reports to Anneliene)
 tags: [finance, invoicing, netsuite, snowflake, ai-user]
+ai_activation_stage: 2
+ai_activation_confidence: medium
+ai_activation_assessed: 2026-06-02
 ---
 
 ## Role
@@ -32,6 +35,18 @@ First spoke 2026-04-14 (AI discovery round). Keen to experiment, already built a
 - Blocked on Looker access (has account, no permissions) and HubSpot AI integration (needs admin approval)
 - Good candidate for quick wins once access is unblocked
 - Interested in recreating invoice automation as a reusable Claude skill
+
+## AI Activation
+
+**Stage**: 2 — Context and tools (access-blocked)
+**Confidence**: medium
+**Assessed**: 2026-06-02
+**Evidence**: Previously built a complete invoice + broker commission automation workflow via Claude + NetSuite browser automation — broken by a NetSuite update. Currently using Claude for Excel formatting and general tasks. Actively building a metrics dashboard. Clear mental model of what he wants to rebuild. Blocked on Looker access and HubSpot AI integration.
+
+**Not Stage 1**: Previously demonstrated Stage 3 capability (end-to-end workflow automation). Multiple current use cases.
+**Not Stage 3**: Current practice is simpler than peak capability due to access blockers. The automation regression means day-to-day behaviour is Stage 2, even though his ceiling is higher.
+**To progress**: Unblock Looker and HubSpot access. The invoice automation skill he wants to rebuild is a natural Stage 3 goal. He has the mental model — access is the constraint.
+**Framework note**: Assessment reflects current state, not peak capability. Access blockers are the limiting factor. Once unblocked, likely to jump directly to Stage 3 rebuilding.
 
 ## 1:1 Log
 

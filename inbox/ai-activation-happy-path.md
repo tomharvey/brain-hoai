@@ -4,6 +4,7 @@ created: 2026-05-22
 updated: 2026-05-22
 domain: ai-enablement
 type: inbox
+status: ingested
 tags: [activation, enablement, developer, draft]
 ---
 

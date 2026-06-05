@@ -2,36 +2,38 @@
 
 ## Current task
 
-W20 session complete. W20 granola ingest done. Git commit pending.
+W21 Granola ingest complete. MANIFEST rebuilt. Commit pending.
 
-## W20 summary (what was done)
+## W21 summary (what was done)
 
-- **18 meetings ingested** (May 11 – May 29): full granola import across W20
-  - Meetings: CEO AI catchup, Anneliese AI discovery, monthly ops AI sync, Rob Grice catchup, dev AI practices, product team context, finance team AI workshop, Sophie Dodds (BDM), FinOps prodtech discussion + many more
-  - All 18 meeting notes + transcripts written
+- **13 meetings ingested** (June 1–4):
+  - 2026-06-01: Anneliese / Thomas, Jake / Thomas AI UW, Ollie / Tom Weekly
+  - 2026-06-02: People Team AI Workshop, Tom <> Jordi Weekly, Matt Price 1:1
+  - 2026-06-03: AI Culture Group Session (Jacob/Aleks/Stephen), 2W Prodtech Demo, Fred / Thomas AI Catch-up
+  - 2026-06-04: AI Engineering Group Therapy (Rob/Ismael/Javier), Granola / Flockcover, Fergus <> Tom Weekly, Cloud Code check-in
 
-- **Issues created**: AI-071 through AI-085 (15 new issues):
-  - AI-071: Granola BDM summary skill (Sophie)
-  - AI-072: BDM team AI workshop (due 2026-06-13)
-  - AI-073: Jade finance AI check-ins
-  - AI-074: Pace onboarding materials (Francesco)
-  - AI-075: Squad job philosophy conversations (Steve "babysitter" concern)
-  - AI-076: Jacob OnCover check PR follow-up
-  - AI-077: Admiral / LexisNexis timeline (Tom Coxon)
-  - AI-078: Incident management process (Jordi)
-  - AI-079: AI June engineering sprint (due 2026-06-30)
-  - AI-080: Rules-based coding standards
-  - AI-081: FinOps / Jade Q3 priorities meeting
-  - AI-082: Stripe premium finance exploration (backlog)
-  - AI-083: Policy configuration blacklist (Geran)
-  - AI-084: Looker daily auth fix (ops team)
-  - AI-085: NetSuite MCP write-access risk assessment
+- **People file created**: phoebe-woodman.md
 
-- **Synthesis pass**: domains/ai-enablement, domains/engineering-workflows, domains/operational-tooling updated; initiatives/ai-native-engineering, initiatives/ai-capability-uplift updated; people/sophie-dodds, people/jade-mounir, people/jordi updated
+- **Issues created**: AI-086 through AI-096 (11 new issues):
+  - AI-086: AI culture group sessions — next cohorts
+  - AI-087: AI better-not-faster narrative
+  - AI-088: Conversion improvement coordination workshop
+  - AI-089: Flock O'Clock automation — Phoebe (People Team)
+  - AI-090: Notion workflow sidebar — Rakhee (People Team)
+  - AI-091: Engagement survey automation — Rakhee (due end-June)
+  - AI-092: AI Workshop June 16 logistics (due 2026-06-16)
+  - AI-093: Expansion team freelancer candidates (Jordi)
+  - AI-094: Confirm Granola Teams plan subscription
+  - AI-095: London visit — half-day workshop with Fergus (due ~2026-07-13)
+  - AI-096: MCP read/write governance — define approach for core systems
 
-- **MANIFEST rebuilt** to include all 85 issues, all meetings
+- **Synthesis pass**: domains/ai-enablement, domains/engineering-workflows, domains/product-ai updated; initiatives/bdm-ai-multiplayer updated
 
-- **Cleanup done**: 15 duplicate wrong-named issue files deleted (were created before AI-069/AI-070 conflict was detected)
+- **MANIFEST rebuilt** to include all 96 issues, all meetings through 2026-06-04
+
+## Unresolved name flag
+
+In the Jordi 1:1 transcript (2026-06-02), "Christian" appears in a garbled passage: *"I spoke the other day with Ismail and Christian with me that now with my mother they are working"* — "my mother" = Mima (known substitution), but "Christian" has no match in people files. Could be garbling of Javier, Ivan, or a real person named Christian. The meeting note was written without this reference as the passage is too garbled to use. Flagged here for awareness.
 
 ## Current state
 
@@ -39,18 +41,21 @@ W20 session complete. W20 granola ingest done. Git commit pending.
 - `inbox/ProdTech Roadmaps Q2 2026.pdf`
 - `inbox/ai-workshop-2026-04-21.pdf`
 
-**Open issues (priority)**:
+**Priority open issues**:
+- AI-092: AI Workshop June 16 logistics — due 2026-06-16
 - AI-079: AI June engineering sprint — due 2026-06-30
 - AI-072: BDM team AI workshop — due 2026-06-13
-- AI-081: FinOps / Jade Q3 priorities meeting
-- AI-083: Policy configuration blacklist (Geran + Anton/Darren)
-- AI-085: NetSuite MCP write-access risk assessment
-- AI-084: Looker daily auth fix (ops team)
-- AI-075: Squad job philosophy conversations (Steve "babysitter" concern)
+- AI-091: Engagement survey automation — due end-June
+- AI-096: MCP read/write governance (high priority)
+- AI-088: Conversion improvement coordination workshop
+- AI-095: London visit week after Cardiff (~2026-07-13)
+- AI-094: Granola Teams plan quote incoming
 
 ## Next actions
 
 - [ ] Triage inbox PDFs (AI workshop and ProdTech roadmaps)
+- [ ] Confirm Granola Teams plan quote from Will (AI-094)
+- [ ] AI Workshop June 16 — confirm logistics and invite (AI-092)
+- [ ] BDM workshop prep — book session with Oli Crowe (AI-072, due Jun 13)
 - [ ] AI June sprint — coordinate with Rob/engineering team (AI-079)
-- [ ] BDM workshop prep (AI-072, due Jun 13)
-- [ ] NetSuite MCP risk assessment (AI-085)
+- [ ] MCP read/write governance — quick answer on HubSpot deletes (AI-096)

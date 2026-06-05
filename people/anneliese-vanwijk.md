@@ -4,6 +4,9 @@ created: 2026-06-01
 updated: 2026-06-01
 type: person
 tags: [finance, moss, operational-tooling]
+ai_activation_stage: 2
+ai_activation_confidence: medium
+ai_activation_assessed: 2026-06-02
 ---
 
 # Anneliese Vanwijk
@@ -24,6 +27,18 @@ Only she and [[queency-gonsalves|Queency]] use MOSS on the finance team.
 - Primary AI goal: automate month-end MOSS consistency checking — invoice coding, cost centres, recurring pattern detection, missing invoice identification.
 - Generated MOSS API keys 2026-06-01 in prep for finance tech day.
 - Concern about junior team members feeling displaced by AI — understands the reframe needed.
+
+## AI Activation
+
+**Stage**: 2 — Context and tools (day one)
+**Confidence**: medium
+**Assessed**: 2026-06-02
+**Evidence**: Set up 8 Claude connectors in one session (Notion, Slack, Granola, Looker, Flock custom, Gmail, Google Drive, Google Calendar). Clear target use case: automate MOSS month-end consistency checking. Generated MOSS API keys same day in prep. Understands the AI displacement concern for junior team members — conceptually ahead of where practice is.
+
+**Not Stage 1**: Has a clear target use case, has set up the full tooling infrastructure, and is moving toward building — past the "one task, done" stage.
+**Not Stage 3**: Assessment made on day 1 of active engagement. No workflows built yet. Context loaded; nothing running.
+**To progress**: The MOSS consistency checker is the natural Stage 2→3 project. Building it will require iterative refinement of prompts and logic — that's Stage 3 in the making.
+**Framework note**: Very fresh assessment (2026-06-01). Data will compound quickly. Reassess after finance tech day.
 
 ## Notes
 

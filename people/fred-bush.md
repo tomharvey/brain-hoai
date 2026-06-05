@@ -6,6 +6,9 @@ type: person
 role: Underwriting Assistant
 team: Ops (reports to Emily Staton)
 tags: [underwriting, ops]
+ai_activation_stage: 1
+ai_activation_confidence: medium
+ai_activation_assessed: 2026-06-02
 ---
 
 ## Role
@@ -31,6 +34,18 @@ Ops — reports to [[emily|Emily Staton]]
 - Uses Claude daily for VRN extraction and document parsing
 - Emily wants to get him further on the AI journey
 - HubSpot not yet connected to Claude
+
+## AI Activation
+
+**Stage**: 1 — First genuine wins
+**Confidence**: medium
+**Assessed**: 2026-06-02
+**Evidence**: Daily Claude user for VRN extraction and document parsing. Switched from ChatGPT to Claude (better PDF extraction — found this himself). Attended workshops. Key takeaway: "have a conversation, don't one-shot it." Identifies driver referrals as biggest manual gap and is thinking about automation.
+
+**Not Stage 0**: Daily returning user with multiple task wins. Has made a tool switch based on quality assessment — not just dipping in.
+**Not Stage 2**: Single-task, single-shot use. HubSpot not connected. No context loading. The "have a conversation" lesson from workshops hasn't yet translated into practice.
+**To progress**: Connect HubSpot to Claude — the driver referral automation is the natural Stage 2 entry point. The day he builds the referral workflow is the day context loading becomes necessary. Shreya has offered to pair with him on it.
+**Framework note**: Data from April 2026. Emily and Shreya are well-placed to accelerate him. Driver referral automation is the forcing function.
 
 ## 1:1 Log
 

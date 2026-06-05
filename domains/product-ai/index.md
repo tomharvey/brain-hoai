@@ -1,7 +1,7 @@
 ---
 title: Domain — Product AI
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-06-04
 domain: product-ai
 type: reference
 tags: [domain, strategy, product, jay, submissions, conversion]
@@ -24,7 +24,7 @@ tags: [domain, strategy, product, jay, submissions, conversion]
 
 ## What we're uncertain about
 
-- Whether Jay's launch will get enough usage to generate signal. Matt Price's concern: launches to small group, gets 5 chats/week, luster fades. Tonic agency (already paid) running against Jay to roleplay fleet manager scenarios. 8 days since last GTM channel update as of 2026-05-12 — pace is concerning. Tom softening on J; Matt wants quiet GA now to iron out bugs rather than a delayed big launch.
+- Whether Jay's launch will get enough usage to generate signal. Matt Price's concern: launches to small group, gets 5 chats/week, luster fades. Tonic agency (already paid) running against Jay to roleplay fleet manager scenarios. 8 days since last GTM channel update as of 2026-05-12 — pace is concerning. Tom softening on J; Matt wants quiet GA now to iron out bugs rather than a delayed big launch. **Update 2026-06-04:** Digital engagement → retention correlation now statistically confirmed in Mima's stats pack. Hypothesis: generate enough timely insight per 24-hour period that there's value in coming back once a working day. Users at daily active status → higher policy retention at end of period (causal direction plausible, error bars large). The activation journey for J users mirrors the company AI framework: monthly → weekly → daily active. Moving users up that chain is the measurable goal. Waiting for Liam to return from the World Cup before wider push. Tom reconsidered broader push after Matt 1:1: "engagement is great but requires Ben to talk to them." → [[2026-06-02-matt-price-1-1]]
 - **Haulage safety is a late-stage year-end risk.** If not addressed soon, Flock exits the year without a haulage safety proposition — more directly tied to retention than J. Immediate opportunity: 16% of submissions contain telematics data, TSB in 10%. Apply existing submission analysis before building new tools. ([[2026-05-12-matt-price-1-1]])
 - Whether the development factor is testable with data Milan already has. Discovery call is the gate.
 - Whether the conversion bets framing will break the Anton/Darren deadlock. Ollie is caught between conflicting SLT direction. Matt Price's view: show up with data, change the conversation. Anton raised explicitly at 2026-06-03 Prodtech demo: no workshop, no roadmap, no prioritised experiment list exists. Three parallel efforts (manual UW, existing pricing model, new extraction pipeline) are uncoordinated. → [[AI-088]]

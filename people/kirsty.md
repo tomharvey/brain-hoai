@@ -6,6 +6,9 @@ type: person
 role: Senior Analytics Engineer
 team: Finance (reports to Christian Nielsen, CFO)
 tags: [data, finance, visualisation]
+ai_activation_stage: 3
+ai_activation_confidence: medium
+ai_activation_assessed: 2026-06-02
 ---
 
 ## Role
@@ -34,6 +37,18 @@ Finance
 - Consulting background — thinks in financial models and driver trees
 - Technically capable — can hack things together but needs infrastructure support for production
 - Wants help productionising her work, not direction on what to build
+
+## AI Activation
+
+**Stage**: 3 — Tool building and infrastructure
+**Confidence**: medium
+**Assessed**: 2026-06-02
+**Evidence**: Built Looker→Claude MCP integration used by the whole finance and distribution team. Auto-generates review packs and insight paragraphs from trading data. Built HTML dashboards from hand-drawn wireframe photos. Presents at AI Breakfasts. Adam wants his team to book sessions with her. "Absolutely obsessed with Claude." Self-directed — "wants help productionising, not direction on what to build."
+
+**Not Stage 2**: Not just using connected tools — building infrastructure for others. The review pack auto-generation and Looker integration are systems that other people rely on.
+**Not Stage 4**: Single-domain integration (Looker/finance data). No evidence of multi-agent orchestration or coordinated pipelines. Assessment is 6 weeks stale — she may have progressed significantly.
+**To progress**: Connect the Looker pipeline to a multi-step automated workflow (query → synthesise → format → distribute to right people). That's the Stage 3→4 transition for her domain.
+**Framework note**: Data from April 2026. She moves fast and has infrastructure ambitions. Cloud MCP deployment would unlock her. Reassessment recommended — likely understated.
 
 ## 1:1 Log
 
