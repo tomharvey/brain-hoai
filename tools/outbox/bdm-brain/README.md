@@ -36,8 +36,32 @@ In Claude co:work (desktop app): New project → name it "[Name]'s Brain".
 
 ### Step 1.5 — Configure filesystem MCP server
 
-Session logs are written to a local `logs/` directory, not Notion.
-This requires the filesystem MCP server in Claude desktop.
+Session logs live in a `logs/` directory **inside the project folder on Google Drive**.
+Google Drive for Desktop syncs this to each BDM's machine as a local path, so the
+filesystem MCP server reads and writes it like any local directory — but every BDM's
+logs are visible from every machine. This is what makes cross-BDM aggregation work
+in the weekly pulse without any extra infrastructure.
+
+**Structure:**
+```
+Google Drive / BDM Brain /         ← the shared project folder
+├── logs/
+│   ├── matt-lees/                 ← BDM-namespaced subdirectories
+│   │   └── 2026-06-16-0800-morning-brief.md
+│   ├── alex-dyball/
+│   │   └── 2026-06-16-0800-morning-brief.md
+│   └── weekly-summary-2026-W25.md
+├── skills/                        ← skill files (same ones in project knowledge)
+└── project-instructions.md
+```
+
+**Find your synced path:**
+
+| OS | Typical path |
+|----|-------------|
+| macOS (Drive for Desktop) | `~/Library/CloudStorage/GoogleDrive-[email]/My Drive/BDM Brain` |
+| macOS (older Backup & Sync) | `~/Google Drive/BDM Brain` |
+| Windows | `G:\My Drive\BDM Brain` (or whichever letter Drive mounts on) |
 
 In Claude desktop settings → MCP servers, add:
 
@@ -48,18 +72,18 @@ In Claude desktop settings → MCP servers, add:
     "args": [
       "-y",
       "@modelcontextprotocol/server-filesystem",
-      "/path/to/bdm-brain/logs"
+      "/path/to/Google Drive/BDM Brain/logs"
     ]
   }
 }
 ```
 
-Replace `/path/to/bdm-brain/logs` with the actual path where logs should live.
-All BDM projects on this machine share the same `logs/` root — subdirectories
-are namespaced by BDM name (`logs/matt-lees/`, `logs/alex-dyball/`, etc.).
+Replace the path with your actual synced Drive path from the table above.
+The filesystem server only needs access to the `logs/` subdirectory — scope it tightly.
 
-The filesystem server only needs read+write access to the `logs/` directory.
-Do not give it access to broader paths.
+**One config per machine.** Each BDM sets this up once on their own machine, pointing at
+the same Google Drive path. Because Drive sync keeps the folder in sync, the weekly pulse
+deep mode can glob `logs/**/*.md` and see every BDM's session logs — not just its own.
 
 ---
 
@@ -75,9 +99,8 @@ Skill files must be named exactly as they appear here — the project instructio
 reference them by name.
 
 Also add the following Notion pages to project knowledge (paste links):
-- BDM Directory
+- BDM Directory (read dynamically via MCP — do not snapshot, it must stay live)
 - Shared Activity Log
-- Broker Ownership
 - Sales Playbook
 - Broker Tiers
 - OKRs (current quarter)
@@ -86,8 +109,12 @@ Also add the following Notion pages to project knowledge (paste links):
 - My Shortcuts (this BDM's page)
 - My Development Focus (this BDM's page)
 
-Note: Brain Health Log is no longer a Notion page — observability data lives
-in local `logs/` files. See Step 1.5.
+Notes:
+- BDM Directory must be read via Notion MCP at session time, not as a static file —
+  it needs to reflect additions (new BDM joins) without requiring project re-setup.
+- Broker Ownership is not needed — HubSpot is the ownership oracle.
+  If a broker isn't in HubSpot, the EOD nudge flags it for the BDM to add.
+- Observability logs live in Google Drive / BDM Brain / logs/ — see Step 1.5.
 
 ### Step 4 — Connect MCP tools
 
@@ -127,19 +154,26 @@ detects patterns, generates ranked improvement suggestions with specific skill f
 rewrites, and Slacks Adam.
 
 ```
-Session → /session-close → Brain Health Log entry
-  (roles used, tool hits/misses, role alignment score, gap, improvement suggestion)
+Session → /session-close → logs/[bdm-name]/YYYY-MM-DD-HHMM-[type].md
+  written to Google Drive / BDM Brain / logs/
+  Drive sync pushes to all machines automatically
 
-Weekly pulse (Monday) → brain-health deep mode →
+Weekly pulse (Monday, any BDM's project) → brain-health deep mode →
+  reads logs/**/*.md via filesystem MCP (Drive-synced, sees all BDMs) →
   pattern detection across all sessions + BDMs →
   top 3 improvements with specific rewrites →
-  Slack to Adam
+  writes logs/weekly-summary-YYYY-WNN.md →
+  Slacks Adam
 
 Adam reviews Friday →
-  accept / reject suggestions →
-  apply accepted changes to skill files →
-  re-upload to all projects
+  opens logs/weekly-summary-YYYY-WNN.md →
+  accepts / rejects suggestions →
+  updates status: in session log files →
+  accepted → Tom applies to skill files → re-uploads to all projects
 ```
+
+Drive sync is the only infrastructure required for cross-BDM aggregation.
+No admin project, no shared server, no extra tooling.
 
 **Log directory layout:**
 
@@ -185,14 +219,15 @@ Weekly summaries aggregate across all BDMs.
 
 ## Notion pages to create before setup
 
-Layer 1 (shared teamspace — all BDMs access these):
+Layer 1 (shared Notion teamspace — all BDMs access these):
 - BDM Directory
 - Shared Activity Log
-- Broker Ownership
 - Sales Playbook (may already exist)
 - Broker Tiers (may already exist)
 
-Observability: no Notion page needed — logs live in local `logs/` directory (Step 1.5)
+Not needed:
+- Broker Ownership — HubSpot is the ownership oracle; this page is redundant
+- Brain Health Log — observability lives in Google Drive / BDM Brain / logs/ (Step 1.5)
 
 Layer 2 (each BDM's own space — one set per person):
 - My Accounts

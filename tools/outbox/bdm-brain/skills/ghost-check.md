@@ -76,6 +76,26 @@ Handle each one the BDM wants to act on.
 
 ---
 
+### Step 5b — HubSpot data quality (run alongside recovery actions)
+
+For each account checked in Steps 2–3, also flag any data quality issues:
+
+| Issue | Check | Offer |
+|-------|-------|-------|
+| No contacts on company | Company has 0 contact records | Search Gmail for email addresses at that domain; offer to add contacts |
+| Missing contact email | Contact record exists but no email field | Search Gmail sent/received for their address; offer to update |
+| No owner assigned | `owner_id` is null | Check BDM Directory; offer to assign to correct BDM |
+| Stale deal stage | Stage not Won/Lost but last activity >30 days | Pull Granola for current status; offer to update stage |
+| Company name mismatch | Name in HubSpot differs from how it appears in Granola/Gmail | Flag to BDM — they decide which is canonical |
+
+Present data quality findings alongside ghost findings:
+> **Data quality flags:**
+> - [Company]: no contacts on record — found 2 email addresses in Gmail. Want me to add them?
+> - [Company]: deal stage is "Discovery" but your last Granola transcript is from [date]
+>   and sounds like you're in Proposal. Want me to update it?
+
+---
+
 ### Step 6 — Team ghosts (optional)
 
 If [BDM_NAME] asks "what about the whole team?" or "are there unowned accounts?":

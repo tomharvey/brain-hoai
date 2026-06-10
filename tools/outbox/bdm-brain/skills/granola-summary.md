@@ -144,6 +144,25 @@ Send only on confirmation.
 
 ---
 
+### Step 6b — HubSpot data quality check (from this transcript)
+
+The transcript just captured live deal state. Use it to spot stale or missing HubSpot data:
+
+- **New contact introduced?** Someone attended who isn't in HubSpot → offer to add them
+  (extract name, role, email if mentioned; search Gmail for email if not)
+- **Deal stage mismatch?** What stage did the conversation imply vs. what HubSpot shows?
+  If different, offer to update the deal stage
+- **Company details corrected?** Broker mentioned company name, size, or HQ differently
+  from HubSpot → flag the discrepancy, offer to update
+- **New opportunity emerged?** Conversation implied a new deal that isn't in HubSpot yet
+  → offer to create it
+
+Present each as a specific offer before writing anything:
+> "I noticed [Name] attended but isn't in HubSpot. I found their email in your Gmail
+> thread from last week. Want me to add them as a contact on [Company]?"
+
+---
+
 ### Step 7 — HubSpot engagement note (optional)
 
 Ask:
