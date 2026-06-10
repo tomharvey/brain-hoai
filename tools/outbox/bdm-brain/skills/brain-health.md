@@ -30,13 +30,14 @@ Check Shared Activity Log:
 
 ### Step 2 — Gap detection
 
-Read Brain Health Log entries for [BDM_NAME] from the last 7 days.
+Read all `.md` files in `logs/[bdm-kebab-name]/` from the last 7 days.
+Filter by `date:` frontmatter field.
 
 Tally:
-- Sessions with data completeness score ≥ 2 → note what caused the gap
-- Sessions with role alignment score ≥ 2 → note which role mismatched
+- Files with `data_completeness: 2` or `3` → note what caused the gap
+- Files with `role_alignment: 2` or `3` → note which role mismatched
 - Tool misses: which connector had the most empty returns?
-- Improvement suggestions with status "new" → list them (not yet reviewed)
+- Files with `status: new` → list improvement suggestions not yet reviewed
 
 ---
 
@@ -58,23 +59,26 @@ Tally:
 
 Run when invoked as `/brain-health deep`, or called from the weekly pulse.
 
-### Step D1 — Read all Brain Health Log entries this week
+### Step D1 — Read all session log files this week
 
-Read the Brain Health Log (Notion). Filter for entries from the last 7 days.
-If running as part of the weekly pulse: read the last 7 days.
-If running manually mid-week: read since last Monday.
+Read all `.md` files under `logs/*/` that have a `date:` frontmatter field
+from the last 7 days (or since last Monday if running mid-week).
 
-For each entry, extract:
-- BDM name
-- Session type
-- Roles used
-- Tool call hits/misses per connector
-- Data completeness score (1/2/3)
-- Role alignment score (1/2/3)
-- Proactivity score (1/2)
-- Gap description
-- Improvement suggestion (text + applies-to field)
-- Status
+Each BDM has their own subdirectory: `logs/matt-lees/`, `logs/alex-dyball/`, etc.
+Glob: `logs/**/*.md` — read all, filter by date in frontmatter.
+
+For each file, extract from frontmatter + body:
+- BDM name (`bdm:`)
+- Session type (`session_type:`)
+- Roles used (`roles:`)
+- Tool call hits/misses (from body — parse the Tool calls section)
+- Data completeness score (`data_completeness:`)
+- Role alignment score (`role_alignment:`)
+- Proactivity score (`proactivity:`)
+- Gap description (from body — the **Gap:** line)
+- Improvement suggestion (from body — full text)
+- Applies to (`improvement_applies_to:`)
+- Status (`status:`)
 
 ---
 
@@ -159,41 +163,53 @@ Effort: [5 min]
 
 ---
 
-### Step D5 — Write weekly summary
+### Step D5 — Write weekly summary file
 
-Compose a Brain Health Log weekly summary entry:
+Write to: `logs/weekly-summary-YYYY-WNN.md` (ISO week number,
+e.g. `logs/weekly-summary-2026-W24.md`).
+If the file already exists (re-run mid-week): overwrite it.
 
-```
-## Weekly summary — week of [date]
+```markdown
+---
+week: YYYY-WNN
+generated: YYYY-MM-DD
+bdms_covered: [comma-separated list]
+sessions_total: [N]
+top_improvements: [count]
+status: awaiting-review
+---
 
-**Sessions logged this week:** [total count across all BDMs]
-**BDMs with sessions:** [names]
+## Weekly brain health summary — week of [date]
+
+**Sessions logged:** [N] across [BDMs]
 
 **Top patterns:**
-- [pattern 1]: seen in [N] sessions — [one line description]
-- [pattern 2]: seen in [N] sessions — [one line description]
+- [pattern]: seen in [N] sessions — [one line]
+- [pattern]: seen in [N] sessions — [one line]
 
 **Tool call health:**
-- HubSpot: [total hits] hits / [total misses] misses — [dominant miss reason if any]
-- Notion: [total hits] hits / [total misses] misses
-- Granola: [total hits] hits / [total misses] misses
+- HubSpot: [total hits] / [total misses] — [dominant miss reason]
+- Notion: [total hits] / [total misses]
+- Granola: [total hits] / [total misses]
 
-**Role alignment:** [N] sessions matched / [N] close / [N] mismatch
+**Role alignment:** [N] matched / [N] close / [N] mismatch
 **Proactivity rate:** [N]% of sessions scored proactive
 
-**Top 3 improvements (ranked):**
-1. [Improvement #1 — one line summary]
-   Applies to: [filename]
-   Evidence: [N] sessions
-2. [Improvement #2]
-3. [Improvement #3]
+**Top 3 improvements:**
 
-**Backlog:** [N] suggestions pending review
-**Status:** awaiting Adam / Tom review
+### 1. [short title] — [N] sessions
+[full formatted improvement with current text + suggested rewrite]
+
+### 2. [short title] — [N] sessions
+[full formatted improvement]
+
+### 3. [short title] — [N] sessions
+[full formatted improvement]
+
+**Backlog:** [N] session log files with status: new
 ```
 
-Show to BDM (or send directly if running as part of weekly pulse — see weekly-pulse.md).
-Write to Brain Health Log on confirmation.
+Write directly (no confirmation needed for weekly pulse run).
 
 ---
 
@@ -210,9 +226,9 @@ Send the top 3 improvements to Adam via Slack DM:
 2. [one line]
 3. [one line]
 
-Full detail in Brain Health Log: [Notion link]
+Full detail in logs/weekly-summary-[YYYY-WNN].md
 
-[N] other suggestions in the backlog.
+[N] other suggestions in session logs.
 ```
 
 Show draft. Send on confirmation (or automatically if this is the weekly pulse run).

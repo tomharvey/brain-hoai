@@ -157,50 +157,72 @@ If no clear improvement can be articulated → "No specific improvement this ses
 
 ---
 
-### Step 9 — Write to Brain Health Log
+### Step 9 — Write to local log file
 
-Compose the log entry:
+**File path:** `logs/[bdm-kebab-name]/YYYY-MM-DD-HHMM-[session-type].md`
 
-```
-## Session — [date] — [BDM_NAME]
+Examples:
+- `logs/matt-lees/2026-06-10-0930-ad-hoc.md`
+- `logs/matt-lees/2026-06-10-1745-granola.md`
+- `logs/matt-lees/2026-06-10-0800-morning-brief.md`
 
-**Session type:** [ad-hoc / skill: /granola / skill: /ghost-check / scheduled: morning-brief / etc.]
+Use the kebab-case version of [BDM_NAME] for the directory.
+Use 24-hour time in the filename. Use the session type slug (ad-hoc, granola,
+ghost-check, morning-brief, eod-nudge, weekly-pulse).
+
+If a file already exists at that path (rare): append `-2` to the filename.
+
+**File contents:**
+
+```markdown
+---
+date: YYYY-MM-DD
+time: HH:MM
+bdm: [BDM_NAME]
+session_type: [ad-hoc / granola / ghost-check / morning-brief / eod-nudge / weekly-pulse]
+roles: [comma-separated list]
+data_completeness: [1 / 2 / 3]
+role_alignment: [1 / 2 / 3]
+proactivity: [1 / 2]
+gap_type: [data / prompt / role / tool / write / none]
+improvement_applies_to: [filename:section or none]
+status: new
+---
+
+## Session — [date] [time] — [BDM_NAME]
+
 **Primary intent:** [one line]
-**Topics / brokers covered:** [list]
+**Topics / brokers:** [list]
 
-**Roles used:** [comma-separated list]
-**Role alignment:** [matched / close / mismatch per role used]
+**Roles used:**
+[For each role used: role name — matched / close / mismatch]
 
-**Tool call summary:**
-- HubSpot: [N] calls, [N] hits, [N] misses
-- Notion: [N] calls, [N] hits, [N] misses
-- Granola: [N] calls, [N] hits, [N] misses
-- [others]
+**Tool calls:**
+- HubSpot: [N] calls — [N] hits / [N] misses [miss reason if any]
+- Notion: [N] calls — [N] hits / [N] misses
+- Granola: [N] calls — [N] hits / [N] misses
+- Slack: [N] sent
+- GCal: [N] calls — [N] hits / [N] misses
 
-**Scores:**
-- Data completeness: [1/2/3]
-- Role alignment: [1/2/3]
-- Proactivity: [1=proactive / 2=reactive]
-
-**Biggest gap:** [one sentence, or "None"]
+**Gap:** [one sentence, or "None"]
 
 **Improvement suggestion:**
-[formatted suggestion from Step 7, or "None this session"]
-
-**Status:** new
+[full formatted suggestion from Step 7, or "None this session"]
 ```
 
 Show the entry to the BDM:
-> Here's the session log I'll write to the Brain Health Log:
+> Here's the session log I'll write to `logs/[bdm-kebab-name]/[filename]`:
 > [entry]
 > Shall I log it?
 
-Write on confirmation. Do not skip this confirmation — the BDM should see what's being recorded.
+Write on confirmation for interactive sessions.
+For scheduled tasks (morning-brief, eod-nudge, weekly-pulse): write directly,
+no confirmation needed.
 
 ---
 
 ### Step 10 — Close
 
-> Session logged. [If improvement found: "I've flagged one improvement — it'll come up in the weekly review."]
+> Session logged. [If improvement found: "Flagged one improvement for the weekly review."]
 >
 > See you [tomorrow morning / next session].

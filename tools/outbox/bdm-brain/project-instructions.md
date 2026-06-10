@@ -37,7 +37,6 @@ session that touches a broker or team-wide pattern.
 - **Sales Playbook** — objection handling, messaging, ICP definitions (read-only)
 - **Broker Tiers** — broker classification by relationship quality (read-only)
 - **OKRs** — current quarter targets: qualified submissions, conversion, GWP (read-only)
-- **Brain Health Log** — weekly improvement suggestions from the Apprentice role
 
 ### Layer 2 — [BDM_NAME]'s own context
 
@@ -76,6 +75,19 @@ Available skills:
 | `/ghost-check` | `ghost-check.md` | On-demand: which accounts have gone quiet? |
 | `/session-close` | `session-close.md` | End of every session — observability log, improvement suggestion |
 | `/brain-health` | `brain-health.md` | Quick: this BDM's stale records. Deep: cross-BDM pattern analysis |
+
+---
+
+## Observability — local log files
+
+Session logs are written to the local filesystem via the filesystem MCP server.
+Do not write observability data to Notion.
+
+Log path for this BDM: `logs/[bdm-kebab-name]/`
+Weekly summaries: `logs/weekly-summary-YYYY-WNN.md`
+
+File naming: `YYYY-MM-DD-HHMM-[session-type].md`
+Session type slugs: `ad-hoc`, `granola`, `ghost-check`, `morning-brief`, `eod-nudge`, `weekly-pulse`
 
 ---
 

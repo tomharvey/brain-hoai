@@ -34,6 +34,35 @@ the skill files and Notion pages are shared.
 
 In Claude co:work (desktop app): New project → name it "[Name]'s Brain".
 
+### Step 1.5 — Configure filesystem MCP server
+
+Session logs are written to a local `logs/` directory, not Notion.
+This requires the filesystem MCP server in Claude desktop.
+
+In Claude desktop settings → MCP servers, add:
+
+```json
+{
+  "filesystem": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@modelcontextprotocol/server-filesystem",
+      "/path/to/bdm-brain/logs"
+    ]
+  }
+}
+```
+
+Replace `/path/to/bdm-brain/logs` with the actual path where logs should live.
+All BDM projects on this machine share the same `logs/` root — subdirectories
+are namespaced by BDM name (`logs/matt-lees/`, `logs/alex-dyball/`, etc.).
+
+The filesystem server only needs read+write access to the `logs/` directory.
+Do not give it access to broader paths.
+
+---
+
 ### Step 2 — Add project instructions
 
 Copy `project-instructions.md` into the project instructions field.
@@ -52,11 +81,13 @@ Also add the following Notion pages to project knowledge (paste links):
 - Sales Playbook
 - Broker Tiers
 - OKRs (current quarter)
-- Brain Health Log
 - My Accounts (this BDM's page)
 - My Commitments (this BDM's page)
 - My Shortcuts (this BDM's page)
 - My Development Focus (this BDM's page)
+
+Note: Brain Health Log is no longer a Notion page — observability data lives
+in local `logs/` files. See Step 1.5.
 
 ### Step 4 — Connect MCP tools
 
@@ -110,36 +141,36 @@ Adam reviews Friday →
   re-upload to all projects
 ```
 
-**Brain Health Log — Notion schema:**
+**Log directory layout:**
 
-| Field | Type | Values |
-|-------|------|--------|
-| Date | Date | session date |
-| BDM | Select | team members |
-| Session type | Select | ad-hoc / skill:granola / skill:ghost-check / scheduled:morning-brief / etc. |
-| Roles used | Multi-select | librarian / secretary / forecaster / strategy-partner / coach / sparring / caretaker / apprentice |
-| Data completeness | Select | 1-full / 2-partial / 3-gap |
-| Role alignment | Select | 1-matched / 2-close / 3-mismatch |
-| Proactivity | Select | 1-proactive / 2-reactive |
-| Tool: HubSpot | Text | "N hits / N misses" |
-| Tool: Notion | Text | "N hits / N misses" |
-| Tool: Granola | Text | "N hits / N misses" |
-| Gap description | Text | one sentence |
-| Improvement suggestion | Text | full formatted suggestion |
-| Applies to | Text | skill filename + section |
-| Status | Select | new / under-review / accepted / applied / rejected |
+```
+logs/
+├── matt-lees/
+│   ├── 2026-06-16-0800-morning-brief.md
+│   ├── 2026-06-16-1430-granola.md
+│   └── 2026-06-16-1745-eod-nudge.md
+├── alex-dyball/
+│   └── 2026-06-16-0800-morning-brief.md
+└── weekly-summary-2026-W25.md
+```
+
+Each session log is a markdown file with YAML frontmatter (date, bdm, session_type,
+scores, gap_type, improvement_applies_to, status) and a structured body.
+Weekly summaries aggregate across all BDMs.
+
+**Requires:** filesystem MCP server configured in Claude desktop, pointed at the
+`logs/` directory (or its parent). See Step 1.5 in setup below.
 
 **What Adam looks for on Friday:**
-- Improvement suggestions with status "new" — accept or reject each one
+- Open `logs/weekly-summary-YYYY-WNN.md` — the ranked improvements are there
+- Accept or reject each suggestion; update `status:` in the relevant session log file
 - Any data gaps (broker missing from HubSpot, stale Notion page) — assign to fix
 - Any "Tom to decide" suggestions — flag for next session
 
 **What Tom looks for monthly:**
-- Accepted suggestions: have they been applied to skill files?
-- Recurring improvement types: if the same category of gap keeps appearing after fixes,
-  the fix wasn't deep enough — revisit the underlying skill design
-- Role distribution: are all 8 roles getting used? Unused roles may be undiscoverable
-  (project instructions gap) or genuinely unneeded (Phase question)
+- Accepted suggestions: have they been applied to skill files and re-uploaded to projects?
+- Recurring improvement types: same gap category persisting after fixes = deeper design issue
+- Role distribution across session logs: unused roles may be undiscoverable or genuinely unneeded
 
 ---
 
@@ -158,9 +189,10 @@ Layer 1 (shared teamspace — all BDMs access these):
 - BDM Directory
 - Shared Activity Log
 - Broker Ownership
-- Brain Health Log
 - Sales Playbook (may already exist)
 - Broker Tiers (may already exist)
+
+Observability: no Notion page needed — logs live in local `logs/` directory (Step 1.5)
 
 Layer 2 (each BDM's own space — one set per person):
 - My Accounts
