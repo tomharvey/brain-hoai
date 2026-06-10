@@ -88,6 +88,61 @@ In co:work project settings → Scheduled tasks:
 
 ---
 
+## Observability — the self-improving loop
+
+Every session ends with `/session-close`. The agent writes a structured entry to the
+Brain Health Log in Notion. The Monday weekly pulse reads all entries from the week,
+detects patterns, generates ranked improvement suggestions with specific skill file
+rewrites, and Slacks Adam.
+
+```
+Session → /session-close → Brain Health Log entry
+  (roles used, tool hits/misses, role alignment score, gap, improvement suggestion)
+
+Weekly pulse (Monday) → brain-health deep mode →
+  pattern detection across all sessions + BDMs →
+  top 3 improvements with specific rewrites →
+  Slack to Adam
+
+Adam reviews Friday →
+  accept / reject suggestions →
+  apply accepted changes to skill files →
+  re-upload to all projects
+```
+
+**Brain Health Log — Notion schema:**
+
+| Field | Type | Values |
+|-------|------|--------|
+| Date | Date | session date |
+| BDM | Select | team members |
+| Session type | Select | ad-hoc / skill:granola / skill:ghost-check / scheduled:morning-brief / etc. |
+| Roles used | Multi-select | librarian / secretary / forecaster / strategy-partner / coach / sparring / caretaker / apprentice |
+| Data completeness | Select | 1-full / 2-partial / 3-gap |
+| Role alignment | Select | 1-matched / 2-close / 3-mismatch |
+| Proactivity | Select | 1-proactive / 2-reactive |
+| Tool: HubSpot | Text | "N hits / N misses" |
+| Tool: Notion | Text | "N hits / N misses" |
+| Tool: Granola | Text | "N hits / N misses" |
+| Gap description | Text | one sentence |
+| Improvement suggestion | Text | full formatted suggestion |
+| Applies to | Text | skill filename + section |
+| Status | Select | new / under-review / accepted / applied / rejected |
+
+**What Adam looks for on Friday:**
+- Improvement suggestions with status "new" — accept or reject each one
+- Any data gaps (broker missing from HubSpot, stale Notion page) — assign to fix
+- Any "Tom to decide" suggestions — flag for next session
+
+**What Tom looks for monthly:**
+- Accepted suggestions: have they been applied to skill files?
+- Recurring improvement types: if the same category of gap keeps appearing after fixes,
+  the fix wasn't deep enough — revisit the underlying skill design
+- Role distribution: are all 8 roles getting used? Unused roles may be undiscoverable
+  (project instructions gap) or genuinely unneeded (Phase question)
+
+---
+
 ## Updating
 
 - **New BDM joins**: add to BDM Directory Notion page. All projects pick it up on next run.

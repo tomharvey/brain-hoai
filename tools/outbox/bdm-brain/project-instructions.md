@@ -74,7 +74,23 @@ Available skills:
 | `/onboarding` | `onboarding.md` | First-time setup — ask the 7 questions one at a time |
 | `/granola` | `granola-summary.md` | After a broker meeting — structured summary + log + notify |
 | `/ghost-check` | `ghost-check.md` | On-demand: which accounts have gone quiet? |
-| `/brain-health` | `brain-health.md` | Manual Caretaker/Apprentice review |
+| `/session-close` | `session-close.md` | End of every session — observability log, improvement suggestion |
+| `/brain-health` | `brain-health.md` | Quick: this BDM's stale records. Deep: cross-BDM pattern analysis |
+
+---
+
+## Session close — always run this
+
+At the end of every conversation, before closing, run `/session-close`.
+
+This writes a structured log entry to the Brain Health Log. The weekly pulse reads
+these entries to detect patterns and generate ranked improvements with specific rewrites.
+The brain gets better from real usage — but only if sessions are logged.
+
+For scheduled tasks (morning brief, EOD nudge, weekly pulse): run the session-close
+logic automatically at the end of each task. Do not prompt for confirmation on the
+session-close write for scheduled tasks — the BDM has implicitly authorised this.
+For interactive sessions: show the log entry draft and confirm before writing.
 
 ---
 

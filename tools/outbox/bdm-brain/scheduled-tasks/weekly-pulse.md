@@ -31,11 +31,14 @@ Monday morning pulse for [BDM_NAME]. Team-wide patterns + personal priorities
    - Any dropped threads in the Activity Log (next action logged >14 days ago, no follow-up)?
    Flag these quietly in the pulse — don't make them alarming.
 
-5. **Apprentice suggestion** (1 item max)
-   Based on last week's sessions: what one thing would make the brain more useful?
-   Write it to the Brain Health Log in Notion (no confirmation needed for this write —
-   it's an internal maintenance log).
-   If the suggestion requires Tom's input: include it in the pulse with a note.
+5. **Apprentice deep pass** — run brain-health.md deep mode steps D1–D6 in full:
+   - Read all Brain Health Log session entries from the last 7 days
+   - Detect patterns across sessions and BDMs
+   - Rank top 3 improvements with specific rewrites
+   - Write the weekly Brain Health Log summary entry
+   - Send the top 3 improvements to Adam via Slack DM (send directly — no confirmation needed
+     for the weekly summary, the BDM has implicitly authorised this via the weekly pulse setup)
+   The pulse should not run without this step — it's the core of the self-improving loop.
 
 6. **Compose pulse**
    Format:
