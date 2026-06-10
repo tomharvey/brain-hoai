@@ -37,6 +37,12 @@ derived plane.
    pre-workshop and the main team workshop, with exercises, timings, and the
    decided/recommend/needs-the-group split.
 
+**`cowork-implementation.md`** — **Phase 1 build sheet** (co:work as delivery mechanism,
+replacing the thin MCP for initial deployment). Covers: 3-layer context structure, BDM
+Directory, Granola skill with BDM mention detection, 4 scheduled tasks, cross-BDM
+notification logic via HubSpot, Caretaker/Apprentice maintenance loop, onboarding prompt,
+rollout plan. Read this first if you're building, not designing.
+
 **`references.md`** — sources and prior art behind the set (Notion/HubSpot/AWS/MCP docs,
 the Skills-over-MCP charter + SEP-2640, and the internal vault patterns this reuses), so the
 design is auditable.

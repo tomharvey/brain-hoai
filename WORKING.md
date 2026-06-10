@@ -2,7 +2,7 @@
 
 ## Current task
 
-W21 Granola ingest complete. MANIFEST rebuilt. Commit pending.
+BDM brain co:work implementation design complete. W22 meetings need ingesting. Commit pending.
 
 ## W21 summary (what was done)
 
@@ -51,11 +51,28 @@ In the Jordi 1:1 transcript (2026-06-02), "Christian" appears in a garbled passa
 - AI-095: London visit week after Cardiff (~2026-07-13)
 - AI-094: Granola Teams plan quote incoming
 
+## BDM brain — co:work implementation (designed 2026-06-10)
+
+Phase 1 delivery is co:work, not thin MCP. Build sheet: `reference/shared-brain/cowork-implementation.md`.
+
+Key elements:
+- **BDM Directory** in Notion — names, Slack handles, HubSpot owner IDs (Adam maintains)
+- **HubSpot as ownership oracle** — query company owner at write time, map to BDM Directory
+- **Granola skill** — sales template + BDM mention scan + Activity Log write + cross-BDM Slack DM
+- **4 scheduled tasks**: 8am brief, 30-min pre-meeting, 5:30pm EOD nudge, Monday pulse
+- **Caretaker/Apprentice**: weekly pulse writes to Brain Health Log; Adam reviews Fridays
+- **Next step**: pilot with Matt Lees — Adam confirmed he's the right first person
+
+Adam 1:1 key outputs: trading pack data quality is urgent blocker; wants proactivity; new BDM joining 2026-07-21.
+
 ## Next actions
 
+- [ ] Ingest W22 meetings (Matt Price 1:1, Ollie weekly, Rakhee AI Workshops, group therapy session 3, Adam BDM brain)
+- [ ] Create Adam BDM brain meeting note (transcript fetched: meeting ID 39bb1471)
+- [ ] Set up co:work pilot with Matt Lees — use `tools/outbox/bdm-brain/` (project built, follow README setup steps)
 - [ ] Triage inbox PDFs (AI workshop and ProdTech roadmaps)
 - [ ] Confirm Granola Teams plan quote from Will (AI-094)
-- [ ] AI Workshop June 16 — confirm logistics and invite (AI-092)
-- [ ] BDM workshop prep — book session with Oli Crowe (AI-072, due Jun 13)
+- [ ] AI Workshop June 16 — confirm logistics and invite (AI-092, **due in 6 days**)
+- [ ] BDM workshop with team — Oli Crowe alignment done; schedule team session (AI-072)
 - [ ] AI June sprint — coordinate with Rob/engineering team (AI-079)
 - [ ] MCP read/write governance — quick answer on HubSpot deletes (AI-096)

@@ -1,7 +1,7 @@
 ---
 title: BDM AI Multiplayer
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-06-10
 domain: ai-enablement
 type: initiative
 status: active
@@ -132,6 +132,8 @@ Proactive outputs are not reactive — they require a scheduler. Each output typ
 
 ## Architecture (strawman)
 
+**Phase 1 delivery: co:work implementation** — see `[[reference/shared-brain/cowork-implementation]]` for the full build sheet (scheduled tasks, Granola skill, notification logic, Caretaker loop, onboarding prompt, rollout plan). The thin-MCP architecture below remains the Phase 2 target.
+
 Three planes — see `[[reference/shared-brain/README]]` for full design set:
 
 | Plane | What | Tools |
@@ -232,4 +234,13 @@ Adam's framing: *"an AI manager/coach to shape thinking, broker strategies, acti
 - 2026-06-03: Initiative created. Strawman design set imported from `electron-1/pkm` PR #2 into `reference/shared-brain/`.
 - 2026-06-03: Adam Smith confirmed onboard via Slack. Targets confirmed: qualified submissions, conversion, GWP. Tom and Oli to get tech foundations together before coming back with a structured proposal.
 - 2026-06-04: Fergus briefed on the BDM brain design (Fergus weekly). He endorsed the company-wide vision: "everyone using Claude to interface with Notion should have it, regardless of whether they're building the team OS or contributing content." BDM-first is the right start; Flock-layer then BDM-layer distinction acknowledged. MCP read/write governance gap flagged as adjacent risk — same session. → [[2026-06-04-fergus-weekly]], [[AI-096]]
-- Next: book prep session with Oli Crowe.
+- 2026-06-09: Prep session with Oli Crowe. → [[2026-06-09-ollie-weekly]]
+- 2026-06-10: Adam Smith 1:1 — BDM team AI. Adam confirmed: trading pack data integrity is urgent, HubSpot messiness (Brown & Brown), wants activity tracking dashboard, proactivity explicitly named, three coaching layers. New BDM joining July 21. Primary metric: qualified submissions. → [[2026-06-10-adam-thomas-bdm-team-ai]]
+- 2026-06-10: **Phase 1 implementation scoped to co:work** — downscoped from thin MCP to co:work desktop app. Full build sheet: [[reference/shared-brain/cowork-implementation]]. Key decisions:
+  - HubSpot is the ownership oracle (query company owner at write time, no manual table)
+  - BDM Directory is the canonical roster (names, Slack handles, HubSpot owner IDs) — maintained by Adam
+  - Granola skill with sales-specific template + BDM mention detection
+  - 4 scheduled tasks: morning brief, pre-meeting brief, EOD nudge, Monday weekly pulse
+  - Caretaker/Apprentice maintenance loop starts Week 1 via weekly pulse + Brain Health Log
+  - Cross-BDM notification: HubSpot owner query → BDM Directory → Slack DM (show draft first)
+- Next: ingest W22 meetings (Ollie, Matt Price, Rakhee AI Workshops, group therapy session 3), then set up co:work pilot with Matt Lees.
