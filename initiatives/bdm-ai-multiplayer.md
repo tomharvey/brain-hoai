@@ -229,6 +229,61 @@ Adam's framing: *"an AI manager/coach to shape thinking, broker strategies, acti
 
 ---
 
+## Data architecture confirmed (2026-06-10)
+
+From Adam's direct description:
+
+- **FP&A / Looker ([[kirsty]])**: source of truth for trading numbers — converted deals, GWP, segment performance. Platform feeds HubSpot; FP&A cleanses it for reporting. *"Everyone should be singing off the same FP&A sheet."*
+- **HubSpot**: activity and detail layer — lost reasons, broker submissions, contact-level data, phone call logs (aspirationally). Messy in practice; Brown & Brown has 60 child companies with contacts scattered across parent/child records.
+- **Notion**: strategy and playbook only — accelerator dashboards, sales playbook, processes. Not a data store.
+
+Implications for the brain:
+- Forecaster role pulling conversion signals should reference FP&A data via Kirsty's Looker connection, not raw HubSpot numbers
+- HubSpot is the right store for activity (who called whom, when) but needs cleaning first
+- The HubSpot repair capability (Gmail + Granola → surface missing contacts) directly addresses the Brown & Brown problem Adam named
+
+---
+
+## Quick call logging gap (confirmed 2026-06-10)
+
+A structural gap in the brain's data coverage: phone calls — quick check-ins, mobile callbacks — don't get logged anywhere. Adam confirmed this directly (*"I've got a callback straight after this. I won't log it."*).
+
+The EOD voice wrap-up pattern was proposed and received well: after a call, open Granola and narrate a 2-minute summary. Adam: *"Perfect. Yeah, exactly that sort of stuff."*
+
+**Design implication**: the EOD nudge scheduled task should explicitly prompt: *"Any phone calls today you want to just talk me through?"* — voice wrap-up as capture, `/granola` skill as processing. The skill currently assumes a transcript exists; this extends it to narrated summaries.
+
+---
+
+## Three coaching layers (confirmed 2026-06-10)
+
+Adam sees coaching as three distinct things, not one:
+
+1. **Personal development** (individual, private) — e.g. Sophie's concise communication coaching. *"She could use something like that really, really well."*
+2. **Performance feedback** (post-meeting) — did you hit your objectives for this meeting? What could you have done better? Instant feedback on broker review sessions.
+3. **Sales playbook coaching** (team-wide) — are you following the playbook? Connects individual session behaviour to the shared Notion strategy layer.
+
+Maps directly to the Coach role (layers 1–2) and Sparring partner role (layer 3). The Sales Playbook Notion page is the grounding for team-wide coaching.
+
+---
+
+## Distribution → Underwriting signal flow (end-state vision)
+
+Adam explicitly named the end-state: *"This broker's converting really well — we should tell underwriting so that on their priority dashboard, that can go up."*
+
+[[jake-wood]]'s underwriting prioritisation dashboard is the destination for this signal. Currently these tools are isolated — distribution strategy doesn't feed underwriting priority. The shared context layer (Activity Log, account data) is what makes the link possible.
+
+This is out of scope for Phase 1 but shapes the architecture: the Shared Activity Log should capture enough structure (broker, outcome, conversion signal) to eventually feed the underwriting prioritisation model.
+
+---
+
+## Toolkit framing (2026-06-10)
+
+Adam's language for what the team needs: *"When you go into a broker review meeting, do this. When you want to understand your panel's performance, do this. How do we build really specific tools?"*
+
+Not a second brain. Not a free-for-all. A **toolkit** — specific workflows for specific moments. The co:work scheduled tasks and skills are exactly this pattern: `/granola` after meetings, morning brief before the day, `/ghost-check` for panel diagnosis. The language to use with the team should match Adam's framing, not the "shared brain" language used internally.
+
+---
+
 ## Status notes
 
 - 2026-06-03: Initiative created. Strawman design set imported from `electron-1/pkm` PR #2 into `reference/shared-brain/`.

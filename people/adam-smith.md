@@ -85,6 +85,19 @@ Accelerator brokers have a Notion dashboard. Currently static PDF; Adam wants it
 - Semantic/naming consistency across systems is a prerequisite
 - Tom to act as bridge between advanced users and broader team
 
+### 2026-06-10 — BDM Team AI
+
+- Trading pack data integrity issue: discrepancies in June SLT pack. Adam to share skill + discrepancy transcript; Tom to review prompts and suggest SQL query persistence pattern; Kirsty to validate queries → [[AI-097]]
+- Team toolkit vision: wants 2–3 common workflows everyone runs consistently, not more individual exploration. Ollie's broker pulse, Jake's UW dashboard, EOD activity briefs, quarterly review packs are the candidates.
+- Activity dashboard built over weekend: BDM activity index (meetings, face-to-face, calls) by broker tier. Calendar-sourced (non-Google-Meet location = face-to-face). Wants team logging phone calls in HubSpot but without double-entry burden.
+- HubSpot architecture confirmed: FP&A/Looker (Kirsty) = trading number source of truth. HubSpot = activity detail layer. Notion = strategy/playbook only. HubSpot is genuinely messy — Brown & Brown has 60 child companies with scattered contacts.
+- Quick call gap: won't log a mobile callback. EOD Granola voice wrap-up was well received.
+- Three coaching layers: (1) personal development / communication style, (2) post-meeting performance feedback, (3) sales playbook alignment (team-wide).
+- End-state: distribution broker performance signals feed into Jake's underwriting priority dashboard. Can't get there while tools are isolated.
+- New BDM joining 21 July — wants AI-first onboarding; Tom flagged as co:work onboarding experiment → [[AI-095]]
+- Tripartite session needed: Tom + Adam + Ollie before team session → [[AI-072]]
+- See [[2026-06-10-adam-thomas-bdm-team-ai]]
+
 ### 2026-05-27 — AI Catchup
 - Trading review project live and shared with SLT trading team — "amazing" quality
 - AI-as-coach usage confirmed (independently, same as Matt Lees and Alex Dyball)
