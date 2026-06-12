@@ -1,7 +1,7 @@
 ---
 title: Domain — AI Enablement
 created: 2026-05-08
-updated: 2026-06-04
+updated: 2026-06-12
 domain: ai-enablement
 type: reference
 tags: [domain, strategy, enablement, capability]
@@ -51,6 +51,10 @@ tags: [domain, strategy, enablement, capability]
 - How personal OSes federate. The product team session (2026-05-18) gave a clearer direction: sneaker-net files first → validate that cross-team context actually changes decisions → then build shared infrastructure. The clearest multiplayer value is cross-pollination of Granola transcripts (Ollie's acquisition calls are useful to Geran; Mima's J data is useful to everyone). The ideal end state is post-processing that auto-routes relevant conversations to the right person based on shared OKR context — but that requires the shared strategy layer first.
 - Whether the multiplayer second brain use case (manager using their OS to coach reports) is a viable adoption path for leadership layer, or whether it needs to be demonstrated at SLT level first.
 - What the right governance model is for a company-wide transcript service — RBAC approach, which conversations are in scope, and who defines the "lenses" for each team.
+- **Finance team may be brittle around AI — over-reliance on one person.** Geran's read (2026-06-10): Macd (finance/installments) has been pulled so far ahead that the team is fragile without him. Jay (Javier?) attributes weak output to the platform, not team capability. This is a different failure mode from "not yet adopted" — it's a single-point-of-failure dependency. The right intervention is lateral skill transfer within the team, not more Tom-led workshops. ([[2026-06-10-ai-strategy-geran]])
+- **AI enablement is not yet an explicit OKR for Q3/Q4.** Geran agrees it needs to be. Without it, department heads have no structural reason to prioritise AI adoption in their teams — it stays side-of-desk. → [[AI-106]] ([[2026-06-10-ai-strategy-geran]])
+- **Ed's "AI-first company" message is landing as "you're behind," not "here's the path."** Rakhee (2026-06-09) surfaced this directly: the job security/bloodbath framing is counterproductive. The 4-level activation framework (asking questions → understanding tools/context → full problem-solving conversations → goal-directed with AI pushing back) is the reframe — it gives people a ladder to climb, not a judgment they've failed. → [[AI-107]] ([[2026-06-09-ai-workshops-rakhee]])
+- **Underwriting AI adoption is broadening.** Jake is now pushing AI directly to underwriters (Mat, Curtis). Billy/Belly also starting independently. Peer-to-peer diffusion is working; Tom's workshops are secondary to this. The Rakhee question: whose job is it to coordinate this? → [[2026-06-09-ai-workshops-rakhee]]
 
 ---
 

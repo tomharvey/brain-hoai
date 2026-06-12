@@ -1,65 +1,45 @@
 # Manifest
 
-> Auto-generated. Rebuild with `/manifest`. Last updated: 2026-06-04.
+> Auto-generated. Rebuild with `/manifest`. Last updated: 2026-06-12.
 
 ## Recent (last 7 days)
 
 ### Meetings
-- [[2026-06-04-ai-engineering-group-therapy]] — AI Engineering Group Therapy
-- [[2026-06-04-fergus-weekly]] — Fergus <> Tom — Weekly
-- [[2026-06-04-granola-flockcover]] — Granola / Flockcover
-- [[2026-06-04-cloud-code-checkin]] — Quick check-in — Cloud Code and local dev setup
-- [[2026-06-03-ai]] — AI Culture Group Session (Jacob / Aleks / Stephen)
-- [[2026-06-03-2w-prodtech-demo]] — 2W Prodtech Demo
-- [[2026-06-03-fred-thomas-ai-catchup]] — Fred / Thomas — AI Catch-up
-- [[2026-06-02-people-team-ai-workshop]] — People Team AI Workshop — Lunch & Learn
-- [[2026-06-02-jordi-weekly]] — Tom <> Jordi — Weekly 1:1
-- [[2026-06-02-matt-price-1-1]] — Thomas / Matthew 1:1
-- [[2026-06-01-anneliese-thomas]] — Anneliese / Thomas
-- [[2026-06-01-jake-thomas-ai-uw]] — Jake / Thomas — AI use cases in UW
-- [[2026-06-01-ollie-tom-weekly]] — Ollie / Tom — AI: The New Frontier Weekly
-- [[2026-05-29-sophie-dodds-ai-catchup]] — Sophie Dodds AI Catch-up
-- [[2026-05-29-jade-thomas-ai-use]] — Jade / Thomas — AI use
-- [[2026-05-29-ollie-onboarding-discussion]] — Ollie — Onboarding Discussion
-- [[2026-05-29-ai-breakfast]] — AI Breakfast
+- [[2026-06-11-fergus-tom-weekly]] — Fergus <> Tom: Weekly
+- [[2026-06-11-ollie-tom-bdm-enablement]] — Ollie / Tom — BDM Enablement
+- [[2026-06-11-tom-jordi-weekly]] — Tom <> Jordi: Weekly 1:1
+- [[2026-06-10-adam-thomas-bdm-team-ai]] — Adam / Thomas — BDM Team AI
+- [[2026-06-10-ai-engineering-group-therapy]] — AI — Engineering Group Therapy (Chris / Sam / Alex)
+- [[2026-06-10-ai-strategy-geran]] — AI Strategy — Tom + Geran
+- [[2026-06-09-ai-workshops-rakhee]] — AI Workshops — Tom + Rakhee
+- [[2026-06-09-ollie-tom-weekly]] — Ollie / Tom — Weekly
+- [[2026-06-09-thomas-matthew-1-1]] — Thomas / Matthew 1:1
 
-### Initiatives
+### Initiatives (updated)
 - [[bdm-ai-multiplayer]] — BDM AI Multiplayer (active)
+- [[ai-native-engineering]] — AI-native engineering — developer harness pilot (active)
 
 ### Issues (new this week)
-- [[AI-089-flock-oclock-automation-phoebe]] — Flock O'Clock automation — Phoebe (todo)
-- [[AI-090-notion-workflow-rakhee]] — Notion workflow sidebar — Rakhee (todo)
-- [[AI-091-engagement-survey-automation-rakhee]] — Engagement survey automation — Rakhee (todo)
-- [[AI-092-ai-workshop-june-16-logistics]] — AI Workshop June 16 logistics (todo)
-- [[AI-093-expansion-team-freelancer-candidates]] — Expansion team freelancer candidates (todo)
-- [[AI-094-granola-teams-plan-confirmation]] — Confirm Granola Teams plan (todo)
-- [[AI-095-london-visit-workshop-july]] — London visit — half-day workshop with Fergus (todo)
-- [[AI-096-mcp-read-write-governance]] — MCP read/write governance (todo)
-- [[AI-086-ai-culture-group-sessions-next-cohorts]] — AI culture group sessions — next cohorts (todo)
-- [[AI-087-ai-better-not-faster-narrative]] — AI better-not-faster narrative (todo)
-- [[AI-088-conversion-improvement-coordination-workshop]] — Conversion improvement coordination workshop (todo)
-
-### People (new)
-- [[phoebe-woodman]] — Phoebe Woodman
-- [[ben-allen]] — Ben Allen
-- [[daisy-mae-baker]] — Daisy-Mae Baker
-- [[ivan-boix]] — Ivan Boix
-- [[kevin-berg]] — Kevin Berg
-- [[sami]] — Sami
+- [[AI-109-public-telemetry-endpoint-office-display]] — Public telemetry endpoint for office display (todo)
+- [[AI-108-map-workshops-rest-of-year]] — Map AI workshops for rest of year — Tom + Rakhee (todo)
+- [[AI-107-share-activation-framework-ed-rakhee]] — Share 4-level activation framework with Ed and Rakhee (todo)
+- [[AI-106-ai-enablement-explicit-q3-q4-okr]] — AI enablement as explicit Q3/Q4 OKR (todo)
+- [[AI-105-underwriting-task-inventory-ai-suitability]] — Underwriting assistance — task inventory for AI suitability (todo)
+- [[AI-104-coding-os-baseline-chris-tom]] — Coding OS baseline — Chris + Tom collaboration (todo)
+- [[AI-103-team-level-ai-coding-standard]] — Team-level AI coding standard — define and codify (todo)
+- [[AI-102-conversational-architectural-review-pattern]] — Conversational architectural review pattern — document and share (todo)
+- [[AI-101-cowork-artifact-data-view-convention]] — Co:work artifact convention — data layer + view layer (todo)
+- [[AI-100-broadcast-engineering-ai-via-spotlight]] — Broadcast engineering AI conversation via Spotlight (todo)
+- [[AI-099-ai-workshop-framing-intent-ownership]] — AI workshop framing — intent + output ownership (todo)
+- [[AI-098-claude-native-api-endpoint-pattern]] — Claude-native API endpoint — share and expand pattern (todo)
+- [[AI-097-trading-pack-data-integrity]] — Trading pack data integrity review (todo)
 
 ### Domain indexes (updated)
 - [[domains/ai-enablement/index]] — Domain: AI Enablement
 - [[domains/engineering-workflows/index]] — Domain: Engineering Workflows
-- [[domains/product-ai/index]] — Domain: Product AI
 
-### Reference (new)
-- [[reference/shared-brain/README]] — BDM Shared Brain — Architecture Overview
-- [[reference/shared-brain/strawman-observability-self-improvement]] — Shared Brain — Observability and Self-Improvement
-- [[reference/shared-brain/strawman-notion-schemas]] — Shared Brain — Notion Schemas
-- [[reference/shared-brain/strawman-sales-ontology]] — Shared Brain — Sales Ontology
-- [[reference/shared-brain/strawman-stack-decisions]] — Shared Brain — Stack Decisions
-- [[reference/shared-brain/strawman-workshop-plan]] — Shared Brain — Workshop Plan
-- [[reference/activation-pathway]] — AI Activation Pathway
+### Decisions (new)
+- [[005-bdm-brain-scheduling-architecture]] — 005 — BDM Brain scheduling and filesystem architecture
 
 ---
 
@@ -111,6 +91,7 @@
 - [[002-governance-timing]] — 002: Governance timing
 - [[003-board-roadmap-ownership]] — 003: Board roadmap ownership
 - [[004-looker-mcp-server-selection]] — 004: Looker MCP server selection
+- [[005-bdm-brain-scheduling-architecture]] — 005: BDM Brain scheduling and filesystem architecture
 
 ---
 
@@ -206,6 +187,19 @@
 - [[AI-094-granola-teams-plan-confirmation]] — Confirm Granola Teams plan
 - [[AI-095-london-visit-workshop-july]] — London visit — half-day workshop with Fergus
 - [[AI-096-mcp-read-write-governance]] — MCP read/write governance
+- [[AI-097-trading-pack-data-integrity]] — Trading pack data integrity review
+- [[AI-098-claude-native-api-endpoint-pattern]] — Claude-native API endpoint — share and expand pattern
+- [[AI-099-ai-workshop-framing-intent-ownership]] — AI workshop framing — intent + output ownership
+- [[AI-100-broadcast-engineering-ai-via-spotlight]] — Broadcast engineering AI conversation via Spotlight
+- [[AI-101-cowork-artifact-data-view-convention]] — Co:work artifact convention — data layer + view layer
+- [[AI-102-conversational-architectural-review-pattern]] — Conversational architectural review pattern — document and share
+- [[AI-103-team-level-ai-coding-standard]] — Team-level AI coding standard — define and codify
+- [[AI-104-coding-os-baseline-chris-tom]] — Coding OS baseline — Chris + Tom collaboration
+- [[AI-105-underwriting-task-inventory-ai-suitability]] — Underwriting assistance — task inventory for AI suitability
+- [[AI-106-ai-enablement-explicit-q3-q4-okr]] — AI enablement as explicit Q3/Q4 OKR
+- [[AI-107-share-activation-framework-ed-rakhee]] — Share 4-level activation framework with Ed and Rakhee
+- [[AI-108-map-workshops-rest-of-year]] — Map AI workshops for rest of year — Tom + Rakhee
+- [[AI-109-public-telemetry-endpoint-office-display]] — Public telemetry endpoint for office display
 
 ### Closed
 - [[AI-001-board-roadmap-ai-section]] — Board roadmap AI section (done)
@@ -220,6 +214,15 @@
 ## Meetings
 
 ### June 2026
+- [[2026-06-11-fergus-tom-weekly]] — Fergus <> Tom: Weekly
+- [[2026-06-11-ollie-tom-bdm-enablement]] — Ollie / Tom — BDM Enablement
+- [[2026-06-11-tom-jordi-weekly]] — Tom <> Jordi: Weekly 1:1
+- [[2026-06-10-adam-thomas-bdm-team-ai]] — Adam / Thomas — BDM Team AI
+- [[2026-06-10-ai-engineering-group-therapy]] — AI — Engineering Group Therapy (Chris / Sam / Alex)
+- [[2026-06-10-ai-strategy-geran]] — AI Strategy — Tom + Geran
+- [[2026-06-09-ai-workshops-rakhee]] — AI Workshops — Tom + Rakhee
+- [[2026-06-09-ollie-tom-weekly]] — Ollie / Tom — Weekly
+- [[2026-06-09-thomas-matthew-1-1]] — Thomas / Matthew 1:1
 - [[2026-06-04-ai-engineering-group-therapy]] — AI Engineering Group Therapy
 - [[2026-06-04-fergus-weekly]] — Fergus <> Tom — Weekly
 - [[2026-06-04-granola-flockcover]] — Granola / Flockcover
@@ -413,7 +416,7 @@
 - [[ollie-conversion-bets-2026-04-27]] — Ollie Conversion Bets
 
 ### BDM Shared Brain
-- [[reference/shared-brain/README]] — Shared Brain — Architecture Overview
+- [[reference/shared-brain/cowork-implementation]] — BDM Shared Brain — co:work Implementation
 - [[reference/shared-brain/strawman-observability-self-improvement]] — Shared Brain — Observability and Self-Improvement
 - [[reference/shared-brain/strawman-notion-schemas]] — Shared Brain — Notion Schemas
 - [[reference/shared-brain/strawman-sales-ontology]] — Shared Brain — Sales Ontology

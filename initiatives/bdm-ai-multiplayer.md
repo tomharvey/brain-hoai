@@ -1,7 +1,7 @@
 ---
 title: BDM AI Multiplayer
 created: 2026-06-03
-updated: 2026-06-10
+updated: 2026-06-12
 domain: ai-enablement
 type: initiative
 status: active
@@ -299,3 +299,4 @@ Not a second brain. Not a free-for-all. A **toolkit** — specific workflows for
   - Caretaker/Apprentice maintenance loop starts Week 1 via weekly pulse + Brain Health Log
   - Cross-BDM notification: HubSpot owner query → BDM Directory → Slack DM (show draft first)
 - Next: ingest W22 meetings (Ollie, Matt Price, Rakhee AI Workshops, group therapy session 3), then set up co:work pilot with Matt Lees.
+- 2026-06-11: BDM enablement session with Ollie. Key confirmations: co:work scheduled tasks are **client-side only** — the app must be open for them to run (Ollie has 123 runs; confirmed this is how Gary Tan's version works too, though Gary's is cloud-based — different infrastructure). Non-deterministic conversion definitions surfaced from HubSpot MCP queries — the same question returns different answers across runs; this is a data quality / prompt design issue to resolve before the brain is trusted for conversion analysis. Semantic/ontology MCP layer discussed: the right way to prevent sloppy prose is a validation layer with a controlled vocabulary of BDM-world first-class objects (brokers, conversations, accelerators), not just schema enforcement. → [[2026-06-11-ollie-tom-bdm-enablement]]

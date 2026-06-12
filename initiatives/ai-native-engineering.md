@@ -1,7 +1,7 @@
 ---
 title: AI-native engineering — developer harness pilot
 created: 2026-04-16
-updated: 2026-06-02
+updated: 2026-06-12
 domain: engineering-workflows
 type: initiative
 status: active
@@ -156,6 +156,16 @@ Cross-team conversations in the office surfaced a detailed picture of the activa
 - Jordi + Chris to write engineering target state document ([[AI-054]]).
 - Rob needs targeted critical-thinking scaffolding — different support from Chris/Ishmael ([[AI-055]]).
 - Job security concern named explicitly by Tom. Room accepted the framing: lean into novel skills, recognise what's being commoditised.
+
+### 2026-06-10 — Engineering group therapy: coding OS + conversational review
+
+AI engineering group therapy with Chris, Sam, Alex. Three themes crystallised:
+
+- **Coding OS**: feed LLM the team's principles + respected third-party repos + existing codebase → generate style guide iteratively → encode rules as linters. Tom + Chris to prototype. → [[AI-104]]
+- **Conversational architectural review**: long threads where the model accumulates context produce better decisions than point-in-time code review. Named as a distinct practice worth documenting and scaling. → [[AI-102]]
+- **Team-level AI coding standard**: no shared standard exists; drift visible across the team. Draft needed — covers when to use AI, how to review AI-generated code, judgment calls. → [[AI-103]]
+
+All three connect to the same root: the engineering practice is evolving faster than the explicit conventions that govern it. ([[2026-06-10-ai-engineering-group-therapy]])
 
 ### 2026-04-28 — Engineering AI adoption snapshot + pair prompting
 

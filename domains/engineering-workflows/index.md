@@ -1,7 +1,7 @@
 ---
 title: Domain — Engineering Workflows
 created: 2026-05-08
-updated: 2026-06-04
+updated: 2026-06-12
 domain: engineering-workflows
 type: reference
 tags: [domain, strategy, engineering, sdlc, agents]
@@ -47,6 +47,10 @@ tags: [domain, strategy, engineering, sdlc, agents]
 - **David goes on paternity leave ~2026-05-19.** His skills and context need capturing this week. Alex Smith (team) also leaving around the same time. Super repo creation is now time-sensitive. ([[2026-05-12-david-ai-engineering]])
 - Where the coding standards hyper-linter ends and principled architecture begins — Chris sees these as distinct; the hyper-linter is the first step. Whether the two artifacts (human-readable principles doc + AI-readable backlinks) stay separate or merge over time.
 - How to bring the wider engineering team into the coding standards repo without it becoming AI slop at scale — when to open it up vs curate it longer.
+- **The "coding OS" concept needs a prototype.** Feed the LLM the team's principles, respected third-party repos, and the existing codebase; generate a style guide through iterative conversation; encode the resulting rules in linters. Tom + Chris to prototype on a slice of the codebase. → [[AI-104]] ([[2026-06-10-ai-engineering-group-therapy]])
+- **Conversational architectural review is a distinct and underused mode.** Long threads where the model accumulates context produce better architectural decisions than point-in-time code review or single-shot prompts. The value compounds across the conversation. Worth documenting as a named practice. → [[AI-102]] ([[2026-06-10-ai-engineering-group-therapy]])
+- **Claude-native API endpoint is an emerging pattern.** Chris is building an endpoint with no frontend — Claude is the sole consumer. The interface is designed for an LLM, not a human: simpler, cleaner, no pagination niceties. Worth naming and broadcasting as a convention. → [[AI-098]] ([[2026-06-11-tom-jordi-weekly]])
+- **Two AI failure modes that workshop content must address.** Fergus (2026-06-11): (1) over-engineering — jumping to hi-fi without iterating through conversation first; (2) fire-and-forget — accepting output without owning it. Both are visible in the engineering team. → [[AI-099]] ([[2026-06-11-fergus-tom-weekly]])
 
 ---
 
