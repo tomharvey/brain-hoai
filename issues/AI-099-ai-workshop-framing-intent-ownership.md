@@ -4,7 +4,7 @@ created: 2026-06-12
 updated: 2026-06-12
 domain: ai-enablement
 type: issue
-status: todo
+status: cancelled
 priority: high
 origin: "[[2026-06-11-fergus-tom-weekly]]"
 tags: []

@@ -12,21 +12,56 @@ tags: [activation, people, enablement]
 Stage distribution across the company, based on observed behaviour in meetings and 1:1s. See [[activation-pathway]] for full stage definitions and [[ai-activation]] for the initiative tracking the June deadline.
 
 **Confidence markers:** (M) = medium, (L) = low. No marker = high confidence.  
-Last updated: 2026-06-02.
+Last updated: 2026-06-12.
 
 ---
 
 ## Stage × Department
 
-|  | Engineering | Product | Operations | Finance / Pricing | Distribution | Leadership |
-|--|-------------|---------|------------|-------------------|--------------|------------|
-| **5 · Extended orchestration** | [[ishmael]] | | | | | |
-| **4 · Multi-agent** | [[javier]] (M) · [[stephen-millington]] · [[jordi]] (M) | [[mima]] · [[ollie-crowe]] (M) | [[emily]] | [[francesco-venerandi]] | [[matt-lees]] · [[adam-smith]] | |
-| **3 · Plan mode / fluency** | [[rob]] (M) · [[chris]] (M) · [[david]] (L, paternity) · [[jacob-holland]] (M) · [[ivan-boix]] · [[kevin-berg]] | [[matt]] (M) | [[shreya-chowta]] (H) · [[anna]] (M) | [[kirsty]] (M) | [[alex-dyball]] (M) · [[jake-wood]] (M) | [[fergus]] (L) |
-| **2 · Context + tools** | [[sam]] (M) | [[geran]] (M) | [[jonny-smith]] (L) | [[jade-mounir]] (M) · [[matt-dipre]] (M) · [[milan-chavda]] (L) · [[anneliese-vanwijk]] (M) | [[sophie-dodds]] | [[ed]] |
-| **1 · First genuine win** | | | [[fred-bush]] (M) | [[queency-gonsalves]] (M) | | |
-| **0 · Search mode** | | | | | | |
-| **?** | [[sami]] · Aleks | [[eraaz-ali]] | | David P | [[ben-allen]] (L) · [[daisy-mae-baker]] (L) | Antton · [[darren]] · [[paul]] · [[rakhee]] |
+|  | Engineering | Product | Operations | Finance / Pricing | Distribution | Underwriting | People | Leadership |
+|--|-------------|---------|------------|-------------------|--------------|--------------|--------|------------|
+| **5 · Orchestration** | [[ishmael]] | | | | | | | |
+| **4 · Delegation** | [[javier]] (M) · [[stephen-millington]] · [[jordi]] (M) | [[mima]] · [[ollie-crowe]] (M) | [[emily]] | [[francesco-venerandi]] | [[matt-lees]] · [[adam-smith]] | | | |
+| **3 · Fluency** | [[rob]] (M) · [[chris]] (M) · [[david]] (L) · [[jacob-holland]] (M) · [[ivan-boix]] · [[kevin-berg]] | [[matt]] (M) | [[shreya-chowta]] · [[anna]] (M) | [[kirsty]] (M) | [[alex-dyball]] (M) · [[jake-wood]] (M) | | | [[fergus]] (L) |
+| **2 · Context+tools** | [[sam]] (M) | [[geran]] (M) | [[jonny-smith]] (L) | [[jade-mounir]] (M) · [[matt-dipre]] (M) · [[milan-chavda]] (L) · [[anneliese-vanwijk]] (M) | [[sophie-dodds]] · Liam (M) | [[tom-rogers]] (M) | | [[ed]] |
+| **1 · First win** | | | [[fred-bush]] (M) | [[queency-gonsalves]] (M) | | | | |
+| **0 · Search** | | | | | | | | |
+| **?** | [[sami]] · [[aleks-yanova\|Aleks]] · [[abs]] | | | David P · Pavel | [[ben-allen]] (L) · [[daisy-mae-baker]] (L) | Darren N · Lawrence · Michael M · Andrew · Billy · Curtis · Matt S · Harry | [[eraaz-ali]] · [[phoebe-woodman]] | Antton · [[darren]] · Christian · [[paul]] · [[rakhee]] |
+
+*David (engineering) on paternity leave. Connie + Navani on maternity leave. Alex Smith left.*
+
+---
+
+## Distribution (current)
+
+```mermaid
+xychart-beta
+    title "AI Activation Stage Distribution — Jun 2026"
+    x-axis ["0 · Search", "1 · First win", "2 · Context+tools", "3 · Fluency", "4 · Delegation", "5 · Orchestration"]
+    y-axis "People" 0 --> 15
+    bar [0, 2, 11, 13, 9, 1]
+```
+
+*Assessed: ~36 people. Unassessed / insufficient data: ~20. On leave: 3. Company size: ~70.*
+
+---
+
+## Progression — movers with before/after evidence
+
+People where multiple conversations show measurable stage movement this year.
+
+| Person | Start | Now | Movement | Key moment |
+|--------|-------|-----|----------|------------|
+| [[shreya-chowta]] | Stage 1 (Apr 2) | Stage 3 | +2 in 6 weeks | Built + shipped NOC skill independently — Apr 14. Fastest non-engineering progression. |
+| [[kirsty]] | Stage 2 (Apr 9) | Stage 3 | +1 | Built Looker→Claude MCP; distributed across finance + distribution. Tool with reach. |
+| [[ivan-boix]] | Stage 2 (May 13) | Stage 3 | +1 | Made the co:work conceptual leap — Jun 2. Credit control cycle now runs daily. |
+| [[alex-dyball]] | Stage 2 (Apr 10) | Stage 3 | +1 | Coaching others on AI use by May 26. |
+| [[adam-smith]] | Stage 3 (Apr 2) | Stage 4 | +1 | Secretary → coach → strategic partner pattern confirmed May 27. Using AI on complex stakeholder navigation. |
+| [[jake-wood]] | unassessed | Stage 3 | — | Zero to building a HubSpot deal-tracking system in one day (Jun 1), unprompted. Peer demo was the trigger. |
+| [[sophie-dodds]] | Stage 1 (Apr 13) | Stage 2 | +1 | Motivated; progressing with support. Custom Granola template is the unlock. |
+| [[jade-mounir]] | Stage 1 (May) | Stage 2 | +1 | Finance workshop May 19; team-based learning approach working. |
+
+**Pattern:** Stage 2 → 3 is the most common movement. The trigger is consistently a concrete task win in their own domain, not a workshop. Peer demos (Jake) and pairing (Ivan, Shreya) outperform generic sessions.
 
 ---
 
@@ -46,6 +81,9 @@ Last updated: 2026-06-02.
 - **Kirsty** built Looker→Claude MCP used across finance and distribution — data from April, likely progressed.
 - **Jake Wood** built a HubSpot deal-tracking automation in a single day (unprompted, post-demo). Peer demo was the trigger — confirms underwriter activation pattern.
 - **Anna** (ops) data from April — likely Stage 3 by now given ops team trajectory. Reassess soon.
+- **Tom Rogers** is Stage 2 (medium confidence, Apr 16): power Looker user, uses AI personally (loaded 5-6 years of claims data), active seeker — but team is "amateur level" and he's burned by ChatGPT on Excel. The claims-listing analysis prototype is the trust-rebuilding moment. Not defensive; concrete ask in hand.
+- **Liam Thomson** is Stage 2 (medium confidence, Apr 10): thoughtful multi-tool user (ChatGPT with custom instructions, Claude for complex thinking, Lovable for decks), never uses output directly, tests rigorously. No pipelines — generalist role makes automation harder to identify. Deck creation is the clearest next unlock.
+- **Darren McCauley** is using AI more than he lets on — Tom Rogers confirmed: screenshots summarising broker performance, triangulating telemetry/loss-rate data. The strategic skeptic framing may be overstated. Still unassessed directly.
 
 ---
 
@@ -53,14 +91,26 @@ Last updated: 2026-06-02.
 
 People in the **?** row have insufficient data for a reliable assessment.
 
-**Files created, need direct conversations:**
+**Priority conversations — strategic or structural importance:**
+- **Antton Pena** (CCO, Leadership) — Fergus routes comms through him; no AI data. Second most senior person in the company.
+- **Darren McCauley** (CUO, Leadership) — Tom Rogers confirmed he's using AI more than he lets on (screenshots, data triangulation). The strategic skeptic framing may be overstated. Highest-priority unassessed person for the underwriting activation.
+- **Darren Nightingale** (Head of Underwriting) — no direct conversation; leads all underwriters day-to-day.
+- **Lawrence Tanner** (Claims Operations) — no AI usage data; claims team is a whole-team gap.
+- **Michael Matthews** (Head of Actuarial) — no AI usage data; actuarial team unassessed.
+- **Christian Nielsen** (CFO, Leadership) — no AI data; finance AI adoption is already advanced in his team but not at his level.
+- **Paul O'Neill** (Head of Risk and Compliance) — no AI usage data at all; risk/compliance lens on AI governance is a gap.
 - **[[sami]]** (Engineering) — Jordi flagged as not AI-driven Apr 2026; 30-day goal was set. Follow up with Jordi on outcome, then 1:1.
-- **[[ben-allen]]** / **[[daisy-mae-baker]]** — team-level Granola setup confirmed but no data on personal practice. Stage 2 is an inference.
-- **[[ivan-boix]]** / **[[kevin-berg]]** — files created from meeting notes; Stage 3 scored with high confidence.
 
-**Thin files, no conversation:**
-- **Darren McCauley** (CUO, Leadership) — cynical disposition, doing AI work (siloed), no direct assessment. Highest-priority unassessed person strategically.
-- **Eraaz Ali** (Talent/People) — Stage 2 assessed from file data; no direct 1:1 since April.
-- **Paul O'Neill** (Risk/Compliance) — no AI usage data at all.
-- **Rakhee Gohil** (People) — no AI usage data; people-partner role relevant to adoption culture.
-- **Antton** (Leadership) — Fergus routes comms through him; no AI data.
+**Files created, some inference:**
+- **[[ben-allen]]** / **[[daisy-mae-baker]]** — team-level Granola setup confirmed but no data on personal practice. Stage 2 is an inference.
+- **[[eraaz-ali]]** (Talent/People) — Stage 2 assessed from file data; no direct 1:1 since April.
+- **[[phoebe-woodman]]** (People) — no AI usage data; people-partner adjacent role.
+- **Rakhee Gohil** (People) — met Jun 9; discussed adoption culture and framing. No personal AI practice assessment yet.
+
+**Whole-team gaps — no individual data at all:**
+- **Claims team** (Lawrence, Adam Sandle) — no conversations with anyone in this team.
+- **Underwriting ICs** (Billy Bone, Curtis Bailey, Matt Smith, Andrew Dodd, Harry Dowrick) — Jake Wood is the only assessed underwriter IC; these five have no data.
+- **Finance ICs** (David Pilley, Pavel Souliman) — junior finance; Kevin/Ivan/Anneliese assessed but not these two.
+- **IT** (Craig Hill, Interim IT Manager) — no data; could be relevant for infrastructure/tooling conversations.
+
+*Ivan Boix and Kevin Berg are now assessed (Stage 3, high confidence) — moved out of this section.*

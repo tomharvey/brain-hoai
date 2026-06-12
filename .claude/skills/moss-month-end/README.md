@@ -34,23 +34,26 @@ If nothing happens, download and install Python from **[python.org/downloads](ht
 
 ---
 
-## Step 2 — Install dependencies
+## Step 2 — Copy the files and create a virtual environment
 
-In Terminal, navigate to the folder containing these files:
-
-```
-cd ~/Downloads/moss-month-end
-```
-
-(Adjust the path if you unzipped the folder somewhere else.)
-
-Then run:
+In Terminal, run these commands one at a time:
 
 ```
-pip3 install -r requirements.txt
+mkdir -p ~/mcp-servers/moss-mcp-server
+cp ~/Downloads/moss-month-end/* ~/mcp-servers/moss-mcp-server/
+cd ~/mcp-servers/moss-mcp-server
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
 ```
 
-You should see it download and install `fastmcp` and `requests`. This only needs to be done once.
+What each line does:
+1. Creates the folder `~/mcp-servers/moss-mcp-server/`
+2. Copies the server files into it
+3. Changes into that folder
+4. Creates an isolated Python environment (`.venv`) so the dependencies don't affect anything else on your Mac
+5. Installs `fastmcp` and `requests` into that environment
+
+This only needs to be done once.
 
 ---
 
@@ -67,15 +70,15 @@ You should see it download and install `fastmcp` and `requests`. This only needs
 
 ---
 
-## Step 4 — Find the full path to server.py
+## Step 4 — Find your username
 
 In Terminal, run:
 
 ```
-echo "$(pwd)/server.py"
+echo $HOME
 ```
 
-Copy the output — it will look something like `/Users/anneliese/Downloads/moss-month-end/server.py`. You'll need this in the next step.
+The output will look like `/Users/anneliese`. Note down the part after `/Users/` — that's your username. You'll need it in the next step.
 
 ---
 
@@ -99,14 +102,14 @@ echo '{}' > ~/Library/Application\ Support/Claude/claude_desktop_config.json && 
 
 ### Edit the file
 
-Replace the entire contents of the file with the following — filling in your own values for the three placeholders:
+Replace the entire contents of the file with the following — substituting your username and API keys:
 
 ```json
 {
   "mcpServers": {
     "moss": {
-      "command": "python3",
-      "args": ["/Users/anneliese/Downloads/moss-month-end/server.py"],
+      "command": "/Users/your-username/mcp-servers/moss-mcp-server/.venv/bin/python",
+      "args": ["/Users/your-username/mcp-servers/moss-mcp-server/server.py"],
       "env": {
         "MOSS_API_PUBLIC_KEY": "kid_your_key_id_here",
         "MOSS_API_SECRET_KEY": "sk_your_secret_key_here"
@@ -117,9 +120,11 @@ Replace the entire contents of the file with the following — filling in your o
 ```
 
 Replace:
-- `/Users/anneliese/Downloads/moss-month-end/server.py` → the path you copied in Step 4
+- `your-username` (in both places) → your username from Step 4, e.g. `anneliese`
 - `kid_your_key_id_here` → your Key ID from MOSS
 - `sk_your_secret_key_here` → your Secret Key from MOSS
+
+The `command` points directly at the Python inside your virtual environment, which ensures the right packages are always used.
 
 Save the file (`Cmd + S`) and close TextEdit.
 
@@ -168,8 +173,8 @@ Send your colleague this zip file and ask them to follow this guide from Step 1.
 **"MOSS authentication failed"**
 - Your keys are wrong or expired. Return to MOSS → API Keys, generate a new pair, and update the config file. Restart Claude Desktop.
 
-**"python3: command not found" or similar**
-- Python isn't installed, or the wrong Python is being used. Try replacing `"command": "python3"` with `"command": "/usr/local/bin/python3"` (or run `which python3` in Terminal to find the right path).
+**"python3: command not found" or "No such file or directory"**
+- The path to the virtual environment Python is wrong. In Terminal, run `ls ~/mcp-servers/moss-mcp-server/.venv/bin/python` — if you get an error, the venv wasn't created. Go back to Step 2 and re-run the setup commands.
 
 **Claude runs the check but shows "Unknown" for vendors or categories**
 - The field names in your MOSS account may differ slightly. Note which values are showing as Unknown and share with Tom to update the script.

@@ -23,6 +23,10 @@ Do not edit the onboarding skill itself unless you want to change the interactio
 - Confirm you found the right record: "I found Brown & Brown — last HubSpot activity was
   [date], owner [name]. Is that the one?"
 - Write broker names to My Accounts (if not already there)
+- **Capture HubSpot company ID**: after the BDM confirms the correct record, extract the
+  company ID from the HubSpot response. Store it in My Accounts as `HubSpot ID: [id]`
+  alongside the broker name. Future lookups use this ID directly — eliminates name
+  matching fragility (Brown & Brown vs B&B vs "Brown and Brown Ltd" all break name search).
 - These become the pre-loaded Layer 3 context for morning briefs
 
 ---

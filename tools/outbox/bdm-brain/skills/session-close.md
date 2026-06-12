@@ -4,8 +4,9 @@ End-of-session observability pass. The agent reviews its own performance,
 classifies roles used, checks tool call outcomes, and writes a structured
 entry to the Brain Health Log.
 
-Run at the end of every conversation. The EOD nudge reminds the BDM to do this.
-For scheduled tasks (morning brief, etc.), run automatically after the task completes.
+Run at the end of every interactive conversation. The EOD nudge reminds the BDM to do this.
+Do NOT run for scheduled tasks (morning brief, pre-meeting brief, EOD nudge, weekly pulse) —
+those tasks are server-side and cannot write to the local filesystem.
 
 ---
 
@@ -215,9 +216,7 @@ Show the entry to the BDM:
 > [entry]
 > Shall I log it?
 
-Write on confirmation for interactive sessions.
-For scheduled tasks (morning-brief, eod-nudge, weekly-pulse): write directly,
-no confirmation needed.
+Write on confirmation.
 
 ---
 

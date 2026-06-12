@@ -5,20 +5,23 @@ updated: 2026-06-12
 domain: ai-enablement
 type: issue
 status: todo
-priority: high
+priority: urgent
+due: 2026-06-30
 origin: "[[2026-06-09-ai-workshops-rakhee]]"
 tags: []
 ---
 
-The 4-level activation framework (asking questions → understanding tools/context → full problem-solving conversations → goal-directed with AI pushing back) needs to be shared with Ed and Rakhee as a structured way to think about where individuals and teams are on the journey.
+The activation framework and its companion frameworks need to be shared with Ed and Rakhee as a structured way to think about where individuals and teams are on the journey — and crucially, what they're aiming for.
+
+Three frameworks together: individual activation levels, utility vs companion mode, and implementer path vs systems thinker path. See [[ai-adoption-frameworks]].
 
 ## Action
 
-- Write up the 4-level framework clearly (reference doc or one-pager)
-- Share with Ed as context for his "AI-first company" mandate — it gives the mandate a ladder, not just a destination
-- Share with Rakhee as a tool for designing workshops that meet people where they are
-- Consider whether this becomes the basis for a company-wide self-assessment
+- Distil [[ai-adoption-frameworks]] into a one-pager or short deck
+- Share with Ed: gives his "AI-first company" mandate a ladder and a destination. The implementer path in particular answers "what does activated look like for a BDM or ops person?" without expecting everyone to become an engineer.
+- Share with Rakhee: the implementer path reframes workshop design — the output of a session is "can maintain a tool," not "can write prompts." Curriculum changes accordingly.
+- Consider whether the utility/companion distinction becomes a self-assessment question ("are you working in utility mode or companion mode?")
 
 ## Context
 
-Rakhee's concern: Ed's message lands as "you're behind" rather than "here's the path forward." The activation framework reframes it as a progression, not a judgment.
+Rakhee's concern: Ed's message lands as "you're behind" rather than "here's the path forward." The frameworks reframe it as a progression with a clear, achievable target for each role. The implementer path is the key addition — it's a less demanding and more concrete target than "become a systems thinker," and it's the right goal for the majority of the company.

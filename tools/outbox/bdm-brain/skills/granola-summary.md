@@ -108,15 +108,20 @@ Write only on confirmation.
 
 After writing the Activity Log entry:
 
-1. Query HubSpot: `search_companies(name=[broker name])`
-2. Get owner_id from the result
-3. Look up owner_id in BDM Directory
-4. If owner != [BDM_NAME]:
+1. Check My Accounts for a stored HubSpot company ID for this broker.
+   If found → `get_company(id=[stored_id])` directly.
+   If not found → `search_companies(name=[broker name])`.
+2. Get owner_id from the result.
+3. **If company found and no HubSpot ID yet stored in My Accounts**: extract the company ID
+   and add it to My Accounts as `HubSpot ID: [id]` — this prevents name-matching fragility
+   in all future lookups.
+4. Look up owner_id in BDM Directory.
+5. If owner != [BDM_NAME]:
    - Note: "[Broker] is owned by [Owner name] in HubSpot."
-   - Go to Step 6 for notification
-5. If broker not in HubSpot:
+   - Go to Step 6 for notification.
+6. If broker not in HubSpot:
    - Flag: "[Broker] isn't in HubSpot yet. Want me to add them?"
-   - If yes: offer to create the Company record (show draft, confirm before creating)
+   - If yes: offer to create the Company record (show draft, confirm before creating).
 
 ---
 

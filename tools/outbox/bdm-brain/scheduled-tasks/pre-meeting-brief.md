@@ -32,7 +32,10 @@ If unclear: use the attendee's email domain as the company name for lookups.
 ## Step 3 — Pull Layer 3 context
 
 Run these in parallel:
-- HubSpot: search_companies(name=[broker]) → get stage, last_activity_date, open tasks, last note
+- HubSpot: check My Accounts for a stored HubSpot company ID for this broker.
+  If found → get_company(id=[stored_id]) directly.
+  If not found → search_companies(name=[broker]). If multiple matches, use the best fit
+  and note "HubSpot: matched on name only — [N] results" in the brief.
 - Granola: search for most recent 2–3 meetings with this broker
 - Gmail: recent threads with this broker's email domain (last 5)
 - Activity Log: has any other BDM touched this broker this week?

@@ -4,7 +4,7 @@ created: 2026-06-12
 updated: 2026-06-12
 domain: operational-tooling
 type: issue
-status: todo
+status: cancelled
 priority: low
 origin: "[[2026-06-09-thomas-matthew-1-1]]"
 tags: []

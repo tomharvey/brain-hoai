@@ -31,14 +31,15 @@ Monday morning pulse for [BDM_NAME]. Team-wide patterns + personal priorities
    - Any dropped threads in the Activity Log (next action logged >14 days ago, no follow-up)?
    Flag these quietly in the pulse — don't make them alarming.
 
-5. **Apprentice deep pass** — run brain-health.md deep mode steps D1–D6 in full:
-   - Read all Brain Health Log session entries from the last 7 days
-   - Detect patterns across sessions and BDMs
-   - Rank top 3 improvements with specific rewrites
-   - Write the weekly Brain Health Log summary entry
-   - Send the top 3 improvements to Adam via Slack DM (send directly — no confirmation needed
-     for the weekly summary, the BDM has implicitly authorised this via the weekly pulse setup)
-   The pulse should not run without this step — it's the core of the self-improving loop.
+5. **Apprentice nudge**
+   Include one line in the pulse prompting Adam to run the brain-health review:
+
+   > Brain improvement review: run `/brain-health deep` to see improvement suggestions
+   > from this week's sessions.
+
+   Do NOT run brain-health deep mode automatically. It reads from the local filesystem
+   (Google Drive-synced log files) and requires the desktop app to be open. Adam runs
+   it manually after the pulse lands in Slack.
 
 6. **Compose pulse**
    Format:
@@ -58,8 +59,8 @@ Monday morning pulse for [BDM_NAME]. Team-wide patterns + personal priorities
    > **To tidy up:**
    > [overdue commitments / HubSpot gaps / dropped threads — keep to max 3]
    >
-   > **Brain improvement this week:**
-   > [1 suggestion, or "Nothing this week — brain's in good shape"]
+   > **Brain improvement:**
+   > Run `/brain-health deep` to see improvement suggestions from this week's sessions.
 
    Keep the whole pulse to under 200 words. It's a Monday scan, not a report.
 

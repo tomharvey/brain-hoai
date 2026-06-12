@@ -21,6 +21,8 @@ from datetime import date
 from pathlib import Path
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 from fastmcp import FastMCP
 
 # ── Constants ──────────────────────────────────────────────────────────────
@@ -55,10 +57,52 @@ class MossClient:
         self._token: str | None = None
         self._token_expiry: float = 0.0
 
+        # Session with built-in 429 retry.
+        # respect_retry_after_header=True (default) makes urllib3 sleep for
+        # exactly the Retry-After value before each retry — no custom logic needed.
+        # backoff_factor is the fallback when no Retry-After header is present:
+        # sleep = backoff_factor * 2^(attempt-1) → 1s, 2s, 4s, 8s, 16s
+        _retry = Retry(
+            total=6,
+            status_forcelist=[429],
+            backoff_factor=1,
+            respect_retry_after_header=True,
+            raise_on_status=False,  # return the last response; we raise below
+        )
+        self._session = requests.Session()
+        self._session.mount("https://", HTTPAdapter(max_retries=_retry))
+
+        # Proactive rate-limit state per scope ("read" / "write")
+        self._rl: dict[str, dict[str, int | None]] = {
+            "read":  {"remaining": None, "reset": None},
+            "write": {"remaining": None, "reset": None},
+        }
+
+    def _update_rate_limit(self, headers: requests.structures.CaseInsensitiveDict) -> None:
+        scope = headers.get("X-RateLimit-Scope", "read").lower()
+        if scope not in self._rl:
+            scope = "read"
+        remaining = headers.get("X-RateLimit-Remaining")
+        reset     = headers.get("X-RateLimit-Reset")
+        if remaining is not None:
+            self._rl[scope]["remaining"] = int(remaining)
+        if reset is not None:
+            self._rl[scope]["reset"] = int(reset)
+
+    def _throttle(self, scope: str = "read") -> None:
+        """Sleep proactively if we've exhausted the current window."""
+        info      = self._rl.get(scope, {})
+        remaining = info.get("remaining")
+        reset_ts  = info.get("reset")
+        if remaining is not None and remaining <= 1 and reset_ts:
+            wait = max(0.0, reset_ts - time.time()) + 0.5  # 0.5 s buffer
+            if wait > 0:
+                time.sleep(wait)
+
     def _ensure_token(self) -> None:
         if self._token and time.time() < self._token_expiry - 60:
             return
-        resp = requests.post(
+        resp = self._session.post(
             f"{BASE_URL}/oauth2/token",
             headers={"Content-Type": "application/x-www-form-urlencoded"},
             data={
@@ -77,20 +121,19 @@ class MossClient:
 
     def get(self, path: str, params: dict | None = None) -> dict | list:
         self._ensure_token()
-        for attempt in range(3):
-            resp = requests.get(
-                f"{BASE_URL}{path}",
-                headers={"Authorization": f"Bearer {self._token}"},
-                params=params or {},
-                timeout=30,
-            )
-            if resp.status_code == 429:
-                wait = int(resp.headers.get("Retry-After", 10 * (attempt + 1)))
-                time.sleep(wait)
-                continue
-            resp.raise_for_status()
-            return resp.json()
-        raise RuntimeError("MOSS API rate limit exceeded after 3 retries.")
+        self._throttle("read")
+        resp = self._session.get(
+            f"{BASE_URL}{path}",
+            headers={"Authorization": f"Bearer {self._token}"},
+            params=params or {},
+            timeout=30,
+        )
+        self._update_rate_limit(resp.headers)
+        if resp.status_code == 429:
+            # Retry adapter exhausted all attempts
+            raise RuntimeError("MOSS API read rate limit exceeded after retries.")
+        resp.raise_for_status()
+        return resp.json()
 
     def fetch_expenses(self, start: str, end: str) -> list[dict]:
         all_items: list[dict] = []

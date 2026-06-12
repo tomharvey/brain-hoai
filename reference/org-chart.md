@@ -1,7 +1,7 @@
 ---
 title: Organisation Chart
 created: 2026-03-27
-updated: 2026-03-27
+updated: 2026-06-12
 type: reference
 tags: [org-chart, people, structure]
 ---
@@ -20,7 +20,6 @@ graph TD
     %% === Direct reports to Antton ===
     FD["Fergus Doyle<br/>Interim CPTO"]
     GP["Gina Payne<br/>Executive Assistant"]
-    MB["Mollie Brownlow<br/>Head of Operations"]
     RG["Rakhee Gohil<br/>Senior People Business Partner"]
     AS_D["Adam Smith<br/>Head of Distribution"]
     CN["Christian Nielsen<br/>Chief Financial Officer"]
@@ -28,7 +27,7 @@ graph TD
 
     AP --> FD
     AP --> GP
-    AP --> MB
+    AP --> ES
     AP --> RG
     AP --> AS_D
     AP --> CN
@@ -63,14 +62,14 @@ graph TD
     %% Under David Zamora
     AY["Aleks Yaneva<br/>Software Engineer"]
     AXS["Alex Smith<br/>Senior Software Engineer"]
-    NN["Navani Navaratnarajah<br/>Software Engineer"]
+    NN["Navani Navaratnarajah<br/>Software Engineer — maternity leave"]
 
     DZ --> AY
     DZ --> AXS
     DZ --> NN
 
     %% Under Ishmael
-    CF["Connie Fitzpatrick<br/>Senior Analytics Engineer"]
+    CF["Connie Fitzpatrick<br/>Senior Analytics Engineer — maternity leave"]
     JH["Jacob Holland<br/>Principal Data Engineer"]
     SM["Ste Millington<br/>Lead Data Engineer"]
 
@@ -91,8 +90,7 @@ graph TD
     ES["Emily Staton<br/>Senior Underwriting Operations Manager"]
     JS["Jonny Smith<br/>Connectivity Operations Manager"]
 
-    MB --> ES
-    MB --> JS
+    ES --> JS
 
     %% Under Emily
     ASP["Anna Spriggs<br/>Senior Underwriting Assistant"]
