@@ -23,12 +23,12 @@ Last updated: 2026-06-12.
 | **5 · Orchestration** | [[ishmael]] | | | | | | | |
 | **4 · Delegation** | [[javier]] (M) · [[stephen-millington]] · [[jordi]] (M) | [[mima]] · [[ollie-crowe]] (M) | [[emily]] | [[francesco-venerandi]] | [[matt-lees]] · [[adam-smith]] | | | |
 | **3 · Fluency** | [[rob]] (M) · [[chris]] (M) · [[david]] (L) · [[jacob-holland]] (M) · [[ivan-boix]] · [[kevin-berg]] | [[matt]] (M) | [[shreya-chowta]] · [[anna]] (M) | [[kirsty]] (M) | [[alex-dyball]] (M) · [[jake-wood]] (M) | | | [[fergus]] (L) |
-| **2 · Context+tools** | [[sam]] (M) | [[geran]] (M) | [[jonny-smith]] (L) | [[jade-mounir]] (M) · [[matt-dipre]] (M) · [[milan-chavda]] (L) · [[anneliese-vanwijk]] (M) | [[sophie-dodds]] · Liam (M) | [[tom-rogers]] (M) | | [[ed]] |
+| **2 · Context+tools** | [[sam]] (M) · [[aleks-yanova\|Aleks]] (L) | [[geran]] (M) | [[jonny-smith]] (L) | [[jade-mounir]] (M) · [[matt-dipre]] (M) · [[milan-chavda]] (L) · [[anneliese-vanwijk]] (M) | [[sophie-dodds]] · Liam (M) | [[tom-rogers]] (M) | | [[ed]] |
 | **1 · First win** | | | [[fred-bush]] (M) | [[queency-gonsalves]] (M) | | | | |
 | **0 · Search** | | | | | | | | |
-| **?** | [[sami]] · [[aleks-yanova\|Aleks]] · [[abs]] | | | David P · Pavel | [[ben-allen]] (L) · [[daisy-mae-baker]] (L) | Darren N · Lawrence · Michael M · Andrew · Billy · Curtis · Matt S · Harry | [[eraaz-ali]] · [[phoebe-woodman]] | Antton · [[darren]] · Christian · [[paul]] · [[rakhee]] |
+| **?** | [[sami]] | | | David P · Pavel | [[ben-allen]] (L) · [[daisy-mae-baker]] (L) | Darren N · Lawrence · Michael M · Andrew · Billy · Curtis · Matt S · Harry | [[eraaz-ali]] · [[phoebe-woodman]] | Antton · [[darren]] · Christian · [[paul]] · [[rakhee]] |
 
-*David (engineering) on paternity leave. Connie + Navani on maternity leave. Alex Smith left.*
+*David (engineering) on paternity leave. Connie + Navani on maternity leave. Alex Smith + Abs Lamzini left.*
 
 ---
 
@@ -84,6 +84,7 @@ People where multiple conversations show measurable stage movement this year.
 - **Tom Rogers** is Stage 2 (medium confidence, Apr 16): power Looker user, uses AI personally (loaded 5-6 years of claims data), active seeker — but team is "amateur level" and he's burned by ChatGPT on Excel. The claims-listing analysis prototype is the trust-rebuilding moment. Not defensive; concrete ask in hand.
 - **Liam Thomson** is Stage 2 (medium confidence, Apr 10): thoughtful multi-tool user (ChatGPT with custom instructions, Claude for complex thinking, Lovable for decks), never uses output directly, tests rigorously. No pipelines — generalist role makes automation harder to identify. Deck creation is the clearest next unlock.
 - **Darren McCauley** is using AI more than he lets on — Tom Rogers confirmed: screenshots summarising broker performance, triangulating telemetry/loss-rate data. The strategic skeptic framing may be overstated. Still unassessed directly.
+- **Aleks Yaneva** is Stage 2 (low confidence) — cynical about AI but is using it. Transcripts exist; formal assessment pending. The cynicism-but-using pattern is consistent with the engineering "understand vs trust" tension (AI monitoring as "babysitting", code you can't read). Group therapy session attendee Jun 3.
 
 ---
 
@@ -111,6 +112,12 @@ People in the **?** row have insufficient data for a reliable assessment.
 - **Claims team** (Lawrence, Adam Sandle) — no conversations with anyone in this team.
 - **Underwriting ICs** (Billy Bone, Curtis Bailey, Matt Smith, Andrew Dodd, Harry Dowrick) — Jake Wood is the only assessed underwriter IC; these five have no data.
 - **Finance ICs** (David Pilley, Pavel Souliman) — junior finance; Kevin/Ivan/Anneliese assessed but not these two.
-- **IT** (Craig Hill, Interim IT Manager) — no data; could be relevant for infrastructure/tooling conversations.
+
+**Out of scope / exempt:**
+- Craig Hill (IT Manager), Gina Payne (EA) — not included in activation programme scope.
+
+**Left the company:**
+- Abs Lamzini (Engineering), Alex Smith (Engineering)
 
 *Ivan Boix and Kevin Berg are now assessed (Stage 3, high confidence) — moved out of this section.*
+*Aleks Yaneva moved to Stage 2 (L) — transcripts exist, formal assessment pending.*

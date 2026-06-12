@@ -57,7 +57,7 @@ graph TD
     JP --> IJ
     JP --> JA
     JP --> SA
-    JP --> AL
+    %% AL (Abs Lamzini) left the company
 
     %% Under David Zamora
     AY["Aleks Yaneva<br/>Software Engineer"]
@@ -202,3 +202,5 @@ graph TD
 - Darren McCauley = Chief Underwriting Officer (leadership). Darren Nightingale = Head of Underwriting (reports to McCauley). Two Darrens.
 - Jemima Pitceathly is often referred to as "Mima" or "Jem" in meetings and notes.
 - Aleks Yaneva is often referred to in meetings as "Alex with a K" to differentiate her from Alex Smith.
+- Abs Lamzini left the company (2026-06). Alex Smith also left.
+- Craig Hill (IT Manager) and Gina Payne (EA to Antton) are out of scope for the AI activation programme.

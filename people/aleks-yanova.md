@@ -1,7 +1,7 @@
 ---
 title: Aleks Yanova
 created: 2026-03-27
-updated: 2026-03-27
+updated: 2026-06-12
 type: person
 role: Data Engineer
 team: Prod-tech
@@ -26,6 +26,12 @@ Formerly a direct report.
 - Doesn't like change — expressed concerns about re-teaming
 - Worried about losing David as line manager and data opportunities in new team
 - Confirmed frequent collaboration with others, which helped address concerns
+
+## AI practice
+
+**Stage 2 (low confidence)** — cynical about AI but is using it. Multiple transcripts exist; formal assessment pending.
+
+The cynicism fits the "understand vs trust" pattern seen in engineering: AI monitoring framed as "babysitting", discomfort shipping code she can't read. This is a philosophical position, not a capability block — she's using the tools despite the reservations. Attended AI culture group therapy session Jun 3.
 
 ## 1:1 Log
 
