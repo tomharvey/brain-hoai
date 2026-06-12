@@ -78,6 +78,12 @@ These surfaced in the first scoring pass and should be resolved before rolling o
 
 ## Log
 
+### 2026-06-12 — Underwriting activation strategy
+
+Darren Nightingale identified as the number one cynic in the company. Engagement strategy is explicitly bottom-up: activate his ICs (Billy Bone, Curtis Bailey, Andrew Dodd, Matt Smith) before approaching Darren N directly. Jake Wood is the internal champion — already pushing AI to Billy and Curtis independently. When Darren N's own team is demonstrably using it, his ability to push back is structurally undermined. Do not approach Darren N until the IC layer is assessed and partially activated.
+
+Priority conversations next week: Harry Dowrick (1:1 booked), Michael Matthews (1:1 booked), Ben Allen, Daisy Mae Baker, Billy Bone, Curtis Bailey. Group session (Jake as host) is the likely format for the underwriting ICs.
+
 ### 2026-05-26 — First scoring pass
 Applied the framework to ~13 people across all departments. Surfaced 9 refinements. Distribution confirms the top of the company (Ishmael, Emily, Adam, Mima, Stephen) is well ahead; middle layer (ops, finance, distribution) is at Stage 1–3 with clear paths forward; leadership layer (Ed, Fergus, Matt) has high conceptual understanding but lagging practice.
 
