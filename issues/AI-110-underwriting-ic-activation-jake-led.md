@@ -21,9 +21,14 @@ Format: Jake shows what he built and how he uses it. Tom facilitates but stays i
 
 ## Actions
 
-- [ ] Brief Jake on the format and ask him to host — he owns the demo, Tom facilitates
-- [ ] Identify a slot next week (w/c Jun 16) — 45–60 min, in-person or Zoom
-- [ ] Invite: Billy Bone, Curtis Bailey, Andrew Dodd, Matt Smith
+- [ ] **Mon Jun 16 — Jake 1:1**: brief Jake on hosting. Key questions:
+  - Has he shown anyone what he built? Does Darren N know?
+  - How has the HubSpot system held up since Jun 1?
+  - Frame the ask: "you lead it, I'll be there" — recognition not task
+  - Check on Granola / post-call narration (his Stage 3→4 unlock)
+  - Billy's paternity leave — did the handover session happen?
+- [ ] Identify a slot w/c Jun 16 or Jun 23 — 45–60 min, Zoom or in-person
+- [ ] Invite: Billy Bone (if not yet on leave), Curtis Bailey, Andrew Dodd, Matt Smith
 - [ ] Use the session to assess all four ICs against the activation framework
 - [ ] After session: update [[ai-activation-map]] with assessments
 - [ ] After IC layer is active: schedule separate conversation with Darren Nightingale
