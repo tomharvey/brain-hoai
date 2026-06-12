@@ -22,8 +22,8 @@ Last updated: 2026-06-12.
 |--|-------------|---------|------------|-------------------|--------------|--------------|--------|------------|
 | **5 · Orchestration** | [[ishmael]] | | | | | | | |
 | **4 · Delegation** | [[javier]] (M) · [[stephen-millington]] · [[jordi]] (M) | [[mima]] · [[ollie-crowe]] (M) | [[emily]] | [[francesco-venerandi]] | [[matt-lees]] · [[adam-smith]] | | | |
-| **3 · Fluency** | [[rob]] (M) · [[chris]] (M) · [[david]] (L) · [[jacob-holland]] (M) · [[ivan-boix]] · [[kevin-berg]] | [[matt]] (M) | [[shreya-chowta]] · [[anna]] (M) | [[kirsty]] (M) | [[alex-dyball]] (M) · [[jake-wood]] (M) | | | [[fergus]] (L) |
-| **2 · Context+tools** | [[sam]] (M) · [[aleks-yanova\|Aleks]] (L) | [[geran]] (M) | [[jonny-smith]] (L) | [[jade-mounir]] (M) · [[matt-dipre]] (M) · [[milan-chavda]] (L) · [[anneliese-vanwijk]] (M) | [[sophie-dodds]] · Liam (M) | [[tom-rogers]] (M) | | [[ed]] |
+| **3 · Fluency** | [[rob]] (M) · [[chris]] (M) · [[david]] (L) · [[jacob-holland]] (M) · [[ivan-boix]] · [[kevin-berg]] · [[aleks-yanova\|Aleks]] (M) | [[matt]] (M) | [[shreya-chowta]] · [[anna]] (M) | [[kirsty]] (M) | [[alex-dyball]] (M) · [[jake-wood]] (M) | | | [[fergus]] (L) |
+| **2 · Context+tools** | [[sam]] (M) | [[geran]] (M) | [[jonny-smith]] (L) | [[jade-mounir]] (M) · [[matt-dipre]] (M) · [[milan-chavda]] (M) · [[anneliese-vanwijk]] (M) | [[sophie-dodds]] · Liam (M) | [[tom-rogers]] (M) | | [[ed]] |
 | **1 · First win** | | | [[fred-bush]] (M) | [[queency-gonsalves]] (M) | | | | |
 | **0 · Search** | | | | | | | | |
 | **?** | [[sami]] | | | David P · Pavel | [[ben-allen]] (L) · [[daisy-mae-baker]] (L) | Darren N · Lawrence · Michael M · Andrew · Billy · Curtis · Matt S · Harry | [[eraaz-ali]] · [[phoebe-woodman]] | Antton · [[darren]] · Christian · [[paul]] · [[rakhee]] |
@@ -84,7 +84,8 @@ People where multiple conversations show measurable stage movement this year.
 - **Tom Rogers** is Stage 2 (medium confidence, Apr 16): power Looker user, uses AI personally (loaded 5-6 years of claims data), active seeker — but team is "amateur level" and he's burned by ChatGPT on Excel. The claims-listing analysis prototype is the trust-rebuilding moment. Not defensive; concrete ask in hand.
 - **Liam Thomson** is Stage 2 (medium confidence, Apr 10): thoughtful multi-tool user (ChatGPT with custom instructions, Claude for complex thinking, Lovable for decks), never uses output directly, tests rigorously. No pipelines — generalist role makes automation harder to identify. Deck creation is the clearest next unlock.
 - **Darren McCauley** is using AI more than he lets on — Tom Rogers confirmed: screenshots summarising broker performance, triangulating telemetry/loss-rate data. The strategic skeptic framing may be overstated. Still unassessed directly.
-- **Aleks Yaneva** is Stage 2 (low confidence) — cynical about AI but is using it. Transcripts exist; formal assessment pending. The cynicism-but-using pattern is consistent with the engineering "understand vs trust" tension (AI monitoring as "babysitting", code you can't read). Group therapy session attendee Jun 3.
+- **Aleks Yaneva** is Stage 3 (medium confidence, Jun 12 assessment) — ran multi-agent document processing pipelines for 1.5 days, daily Cursor + Claude Code use, strong critical thinking about AI limitations (demands sources, challenges outputs). Cynicism is philosophical ("I don't want to be a prompt jockey", grief not fear), not a capability block. Failure mode: in unfamiliar domains, trusts Claude 100% without verification — same structural gap as Rob but different cause. Group therapy session attendee Jun 3.
+- **Milan Chavda** is Stage 2 (medium confidence, Jun 12 assessment, two 1:1s) — daily co-work use, built actuarial/triangle skills, team whiteboard session on automation opportunities. Thoughtful and critical about AI (reads emails/articles in full; resists brain rot). Blocker is time and setup, not mindset. Second brain/personal OS is the identified next step; Jun 16 workshop is the unlock.
 
 ---
 
@@ -119,5 +120,6 @@ People in the **?** row have insufficient data for a reliable assessment.
 **Left the company:**
 - Abs Lamzini (Engineering), Alex Smith (Engineering)
 
-*Ivan Boix and Kevin Berg are now assessed (Stage 3, high confidence) — moved out of this section.*
-*Aleks Yaneva moved to Stage 2 (L) — transcripts exist, formal assessment pending.*
+*Ivan Boix and Kevin Berg: assessed Stage 3 (high confidence) — moved out of this section.*
+*Aleks Yaneva: moved to Stage 3 (M) following transcript review Jun 12.*
+*Milan Chavda: confidence upgraded from (L) to (M) following second 1:1 Jun 12.*
