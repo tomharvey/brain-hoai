@@ -35,7 +35,7 @@ Key insight: friction comes from routing work to the wrong tool — and both fai
 | 0:30–0:35 | Activity setup | 5 min | Tom |
 | 0:35–1:05 | CoWorking pairs | 30 min | Pairs |
 | 1:05–1:15 | Debrief | 10 min | Tom |
-| 1:15–1:30 | Wrap | 15 min | Tom + Kevin |
+| 1:15–1:30 | Wrap | 15 min | Tom |
 
 **Why no demo:** Matt's role is the cautionary tale — showing his 9-agent pipeline right after saying "don't over-build" contradicts the message. The activity is the hands-on moment. Stories land harder and last longer than watching an agent run. Freed 10 minutes goes into pairs working time.
 
@@ -161,20 +161,19 @@ Watch for over-ambitious version zeros ("a full dashboard for my team"). Reframe
 
 ---
 
-## Wrap (15 min) · Tom + Kevin
+## Wrap (15 min) · Tom
 
-**Commitments (5 min):** Each person writes one thing they'll do this week. Not "explore co:work" — a specific intent and a version zero.
+**Commitments (8 min):** Call on 2–3 pairs to share their intent sentence. Then everyone writes one thing they'll do this week — specific intent and version zero, not "explore co:work." This is the most important 8 minutes of the session.
 
-**Common gotchas (5 min):**
-- AI keeps starting from zero → context isn't loaded; it belongs in the project
-- Got a bad answer → before rewriting the prompt, improve the context
-- Project doing too many things → split it; one intent per project
-- Built something, don't know how to maintain it → that's next week's problem; ship version zero first
+**Two gotchas only — fast (3 min):**
+- Bad answer? Fix the context, not the prompt.
+- Too many things in one project? Split it — one intent per project.
 
-**Claude Code signpost — Kevin (3 min):**
-Kevin tells the Claude → co:work → Code arc honestly, including the friction. *"The next level for those who want it."* No demo, no pressure.
+*(Gotchas as a leave-behind if helpful. Don't spend time on defensive content when the room should be energised to act.)*
 
-**Close (2 min):** Workshop is the start, not the event. The install link is in the calendar invite.
+**Close (4 min):** Install link is in the calendar invite. If you get stuck, ask someone whose story you heard today — they're in this room. One sentence on Code: *"There's a next level for those who want it — find me or Kevin after if that's you."*
+
+*Kevin is not a formal plant. Drop from programme. Available informally after the session for anyone curious about Claude Code.*
 
 ---
 
@@ -248,19 +247,9 @@ Story structure per [[flock-communication-playbook]]: **Beginning** (real proble
 
 ---
 
-### Kevin Berg — 3 min · Wrap
+### Kevin Berg — informal only
 
-**Brief to send:**
-
-> Kevin — I'd like you to close the workshop with an honest version of your journey from Claude to co:work to Claude Code. Three minutes, no slides.
->
-> **Beginning:** Started using Claude for queries and analysis. Got value.
->
-> **Middle:** Moved to co:work to build something that ran without you. Then wanted to go further — tried Claude Code.
->
-> **End:** Honest about the friction at each step and what you got from pushing through. Not a pitch — the real version. "The next level for those who want it."
->
-> The point isn't to sell Claude Code. It's to show there's a progression and it's achievable — from someone who's done it.
+Not a formal plant. Ask him to be available after the session for anyone who wants to ask about Claude Code. One mention from Tom in the close: *"Find me or Kevin after if Claude Code is the next thing for you."*
 
 ---
 
@@ -271,7 +260,7 @@ Story structure per [[flock-communication-playbook]]: **Beginning** (real proble
 - [ ] Ivan Boix briefed — confirm 2 min story
 - [ ] Shreya / UWA team member briefed — confirm 2 min story
 - [ ] Adam Smith briefed — confirm 2 min story
-- [ ] Kevin Berg briefed — confirm 3 min wrap story
+- [ ] Kevin Berg — ask to be available informally after session for Code questions (not a formal plant)
 - [ ] Activity prompt printed / shared for remote
 - [ ] Calendar invite sent with co:work install link
 
