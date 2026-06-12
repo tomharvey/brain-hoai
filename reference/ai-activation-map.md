@@ -97,7 +97,7 @@ People in the **?** row have insufficient data for a reliable assessment.
 - **Antton Pena** (CCO, Leadership) — Fergus routes comms through him; no AI data. Second most senior person in the company.
 - **Darren McCauley** (CUO, Leadership) — Tom Rogers confirmed he's using AI more than he lets on (screenshots, data triangulation). The strategic skeptic framing may be overstated. Highest-priority unassessed person for the underwriting activation.
 - **Darren Nightingale** (Head of Underwriting) — no direct conversation; leads all underwriters day-to-day.
-- **Lawrence Tanner** (Claims Operations) — no AI usage data; claims team is a whole-team gap.
+- **Lawrence Tanner** (Claims Operations) — leaving the business soon; drop from evaluation scope.
 - **Michael Matthews** (Head of Actuarial) — no AI usage data; actuarial team unassessed.
 - **Christian Nielsen** (CFO, Leadership) — no AI data; finance AI adoption is already advanced in his team but not at his level.
 - **Paul O'Neill** (Head of Risk and Compliance) — no AI usage data at all; risk/compliance lens on AI governance is a gap.
@@ -110,7 +110,7 @@ People in the **?** row have insufficient data for a reliable assessment.
 - **Rakhee Gohil** (People) — met Jun 9; discussed adoption culture and framing. No personal AI practice assessment yet.
 
 **Whole-team gaps — no individual data at all:**
-- **Claims team** (Lawrence, Adam Sandle) — no conversations with anyone in this team.
+- **Claims team** (Adam Sandle) — Lawrence Tanner leaving; Adam Sandle is the remaining claims associate. Low priority given team size.
 - **Underwriting ICs** (Billy Bone, Curtis Bailey, Matt Smith, Andrew Dodd, Harry Dowrick) — Jake Wood is the only assessed underwriter IC; these five have no data.
 - **Finance ICs** (David Pilley, Pavel Souliman) — junior finance; Kevin/Ivan/Anneliese assessed but not these two.
 
