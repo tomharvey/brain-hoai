@@ -35,10 +35,14 @@ First spoke 2026-04-02. Positive, collaborative, wants structured support for hi
 
 ## AI Activation
 
-**Stage**: 4 — Multi-agent orchestration (high end)
+**Stage**: 4 — Delegation
 **Confidence**: high
-**Assessed**: 2026-05-27
-**Evidence**: Built a Claude trading review project for SLT + trading team; runs scheduled inbox cleanup automation; uses Claude as strategic partner for complex stakeholder navigation (Admiral paper, leadership coaching via Granola transcripts). Independently developed AI-as-coach usage pattern — confirmed same pattern in Matt Lees and Alex Dyball without prompting from Tom. Operates at secretary + coach + strategic partner levels simultaneously.
+**Assessed**: 2026-06-19
+**Evidence**: Built a Claude trading review project for SLT + trading team; runs scheduled inbox cleanup automation; uses Claude as strategic partner for complex stakeholder navigation (Admiral paper, leadership coaching via Granola transcripts). Independently developed AI-as-coach usage pattern. **Quality concern (Jun 11)**: Fergus reported that at a trading meeting, "almost on every slide, it was like those numbers don't look right" — the trading pack had data integrity issues presented to SLT. This is the "output ownership" failure mode: delegating without sufficient validation of the output.
+
+**Not Stage 3**: Running scheduled automations and delegating whole workflows (inbox, trading pack, coaching). Well past fluency.
+**Not Stage 5**: The Jun 11 data integrity failure shows he's not yet measuring or validating AI output systematically. He's delegating at scale but the quality assurance layer is missing.
+**To progress**: Instrument the trading pack with validation queries — SQL persistence + Kirsty sign-off before presenting to SLT. The "output ownership" lesson is the most important one for Q3.
 
 ## Broker segmentation (as of 2026-05-27)
 

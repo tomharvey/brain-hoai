@@ -6,9 +6,9 @@ type: person
 role: Staff Engineer
 team: Prod-tech
 tags: [engineering, security, governance, phd]
-ai_activation_stage: 2
+ai_activation_stage: 4
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-02
+ai_activation_assessed: 2026-06-19
 ---
 
 ## Role
@@ -30,18 +30,19 @@ Formerly a direct report.
 - "Riding a power bike at 200 mph as an amateur" — great adoption, no framework
 - Also working on platform frontend patterns (skills)
 - Wants to be involved in governance/guidelines work
+- Jordi flagged in April 2026 as "not very AI driven" with a 30-day goal set — has since progressed significantly by June
 
 ## AI Activation
 
-**Stage**: 2 — Context and tools
+**Stage**: 4 — Delegation
 **Confidence**: medium
-**Assessed**: 2026-06-02
-**Evidence**: Used Claude to scrape Notion and consolidate all existing AI initiatives into a filterable board. Working on PromptFoo evals definition and documentation for AI readability. Risk and governance mindset — thinks about the system level, not just individual tasks. Part-time PhD on secure AI systems.
+**Assessed**: 2026-06-18
+**Evidence**: Jun 2026 group therapy session: "treats Claude as another more senior engineer that thinks faster than me" — interrogates output line by line, asks "why did you do it like that." Used Claude to pull all AI initiatives from Notion for CoP proposal. Risk and governance mindset. Part-time PhD on secure AI systems.
 
-**Not Stage 1**: Built a working Notion scraper with Claude — moved beyond single task queries into system-level thinking.
-**Not Stage 3**: Jordi noted he struggles with execution on large undefined projects — start small, measurable goals. The CoP proposal was impressive but over-engineered. Stage 3 requires iterative refinement in practice, not just in theory.
-**To progress**: The evals work is the right vehicle — it requires iterative refinement and measuring whether changes improve output, exactly the Stage 3 pattern. Delivering a working PromptFoo setup is the Stage 2→3 signal.
-**Framework note**: Unusual profile — high conceptual sophistication with execution patterns more typical of Stage 2. The governance/PhD lens is a genuine differentiator. Watch evals delivery as the Stage 3 indicator.
+**Not Stage 3**: Delegates complex coding tasks daily as part of the engineering team — confirmed by Head of AI direct observation. Treats Claude as "a senior engineer that thinks faster than me" and interrogates output with judgment. Past fluency into routine delegation.
+**Not Stage 5**: No evidence of directing multi-agent systems or measuring adherence. The governance/security PhD lens is a differentiator that could accelerate Stage 5 thinking.
+**To progress**: Channel the governance mindset into defining guardrails and adherence measurements. His security research background makes him a natural candidate for building the team's quality assurance framework for AI-generated code.
+**Framework note**: Biggest individual mover in the company: Stage 1 (April, Jordi's "not AI driven" flag) → Stage 4 (June) in 2 months. Key Jun quote is second-hand (Tom recapping to Jordi) but corroborated by group therapy session behaviour.
 
 ## 1:1 Log
 

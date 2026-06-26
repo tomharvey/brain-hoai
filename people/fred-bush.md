@@ -6,9 +6,9 @@ type: person
 role: Underwriting Assistant
 team: Ops (reports to Emily Staton)
 tags: [underwriting, ops]
-ai_activation_stage: 1
+ai_activation_stage: 2
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-02
+ai_activation_assessed: 2026-06-18
 ---
 
 ## Role

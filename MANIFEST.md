@@ -1,410 +1,387 @@
 # Manifest
 
-> Auto-generated. Rebuild with `/manifest`. Last updated: 2026-06-12.
+> Auto-generated. Rebuild with `/manifest`. Last updated: 2026-06-25.
 
 ## Recent (last 7 days)
 
-- [[ai-native-engineering]] — AI-native engineering — developer harness pilot (active)
+- [[2026-06-25-fergus-tom-weekly]] — Fergus / Tom weekly Jun 25
+- [[2026-06-25-liam-thomson-ai-discovery]] — Liam Thomson AI discovery
+- [[2026-06-25-netsuite-mcp-ivan]] — NetSuite MCP — Tom / Ivan
+- [[2026-06-25-people-team-checkin-ai-update]] — People team check-in: AI update
+- [[2026-06-25-pgr-skills]] — PGR Skills
+- [[2026-06-24-ai-group-therapy]] — AI Group Therapy Jun 24
+- [[2026-06-24-ai-phoebe]] — AI — Phoebe
+- [[2026-06-24-david-pilley-ai-discovery]] — David Pilley AI discovery
+- [[2026-06-24-ed-tom-ai-wrap-up]] — Ed / Tom AI wrap-up Jun 24
+- [[2026-06-24-matt-lees-ai-discovery]] — Matt Lees AI discovery Jun 24
+- [[2026-06-24-q3-okr-bonanza]] — Q3 2026 OKR Bonanza
+- [[2026-06-23-christian-leth-nielsen-ai-discovery]] — Christian Leth Nielsen AI discovery
+- [[2026-06-23-francesco-pgr-ai]] — Francesco PGR / AI
+- [[2026-06-23-rakhee-people-ai]] — Rakhee — People AI
+- [[2026-06-23-sophie-dodds-ai]] — Sophie Dodds AI
+- [[2026-06-22-adam-sandle-ai-discovery]] — Adam Sandle AI discovery
+- [[2026-06-22-adam-smith-ai-discovery]] — Adam Smith AI discovery
+- [[2026-06-22-ollie-tom-weekly]] — Ollie / Tom weekly Jun 22
+- [[2026-06-22-tom-rogers-ai-discovery]] — Tom Rogers AI discovery Jun 22
+- [[ai-activation]] — Company-wide AI Activation (active)
+- [[ai-activation-map]] — AI Activation Map
 - [[bdm-ai-multiplayer]] — BDM AI Multiplayer (active)
-- [[AI-110-underwriting-ic-activation-jake-led]] — Underwriting IC activation — Jake-led group session (todo)
-- [[AI-109-public-telemetry-endpoint-office-display]] — Public telemetry endpoint for office display (cancelled)
-- [[AI-108-map-workshops-rest-of-year]] — Map AI workshops for rest of year — Tom + Rakhee (todo)
-- [[AI-107-share-activation-framework-ed-rakhee]] — Share 4-level activation framework with Ed and Rakhee (todo)
-- [[AI-106-ai-enablement-explicit-q3-q4-okr]] — AI enablement as explicit Q3/Q4 OKR (todo)
-- [[AI-105-underwriting-task-inventory-ai-suitability]] — Underwriting assistance — task inventory for AI suitability (todo)
-- [[AI-104-coding-os-baseline-chris-tom]] — Coding OS baseline — Chris + Tom collaboration (todo)
-- [[AI-103-team-level-ai-coding-standard]] — Team-level AI coding standard — define and codify (todo)
-- [[AI-102-conversational-architectural-review-pattern]] — Conversational architectural review pattern — document and share (todo)
-- [[AI-101-cowork-artifact-data-view-convention]] — Co:work artifact convention — data layer + view layer (todo)
-- [[AI-100-broadcast-engineering-ai-via-spotlight]] — Broadcast engineering AI conversation via Spotlight (todo)
-- [[AI-099-ai-workshop-framing-intent-ownership]] — AI workshop framing — intent + output ownership (cancelled)
-- [[AI-098-claude-native-api-endpoint-pattern]] — Claude-native API endpoint — share and expand pattern (todo)
-- [[AI-097-trading-pack-data-integrity]] — AI-097 — Trading pack data integrity review (todo)
-- [[2026-06-11-tom-jordi-weekly]] — Tom <> Jordi: Weekly 1:1
-- [[2026-06-11-ollie-tom-bdm-enablement]] — Ollie / Tom — BDM Enablement
-- [[2026-06-11-fergus-tom-weekly]] — Fergus <> Tom: Weekly
-- [[2026-06-10-ai-strategy-geran]] — AI Strategy — Tom + Geran
-- [[2026-06-10-ai-engineering-group-therapy]] — AI — Engineering Group Therapy (Chris / Sam / Alex)
-- [[2026-06-10-adam-thomas-bdm-team-ai]] — Adam / Thomas — BDM Team AI
-- [[2026-06-09-thomas-matthew-1-1]] — Thomas / Matthew 1:1
-- [[2026-06-09-performance-management-francesco-oli]] — Performance Management: Francesco / Oli → Rakhee / Eraaz
-- [[2026-06-09-ollie-tom-weekly]] — Ollie / Tom — Weekly
-- [[2026-06-09-ai-workshops-rakhee]] — AI Workshops — Tom + Rakhee
-- [[005-bdm-brain-scheduling-architecture]] — 005 — BDM Brain scheduling and filesystem architecture (active)
-- [[ai-enablement-index]] — Domain — AI Enablement
-- [[engineering-workflows-index]] — Domain — Engineering Workflows
-- [[ai-adoption-frameworks]] — AI Adoption Frameworks
-- [[org-chart]] — Organisation Chart
-- [[cowork-implementation]] — BDM Brain — co:work Implementation Design
-- [[aleks-yanova]] — Aleks Yanova
-- [[milan-chavda]] — Milan Chavda
+- [[domains/ai-enablement/index]] — Domain — AI Enablement
+- [[domains/engineering-workflows/index]] — Domain — Engineering Workflows
+- [[liam-thomson]] — Liam Thomson
+- [[fergus]] — Fergus
+- [[eraaz-ali]] — Eraaz Ali
+- [[rakhee]] — Rakhee
+- [[phoebe-woodman]] — Phoebe Woodman
+- [[christian-leth-nielsen]] — Christian Leth Nielsen
+- [[david-pilley]] — David Pilley
+- [[tom-rogers]] — Tom Rogers
 
 ---
 
 ## By domain
 
+### AI Enablement
+
+- [[domains/ai-enablement/index]] — Domain — AI Enablement
+- [[ai-activation]] — Company-wide AI Activation (active)
+- [[ai-capability-uplift]] — AI Capability Uplift (active)
+- [[ai-governance-framework]] — AI Governance Framework (active)
+- [[claude-standardisation]] — Claude Standardisation (active)
+- [[skills-distribution]] — Skills Distribution (active)
+- [[bdm-ai-multiplayer]] — BDM AI Multiplayer (active)
+
 ### Engineering Workflows
 
-- [[ai-native-engineering]] — AI-native engineering — developer harness pilot (active)
-- [[agent-framework]] — Productionised agent framework (active)
-- [[platform-architecture-docs]] — Platform architecture documentation (active)
-- [[engine-room-triage-automation]] — Engine Room triage automation (active)
-- [[ai-code-review]] — AI-assisted code review (proposed)
-
-#### Issues
-
-- [[AI-103-team-level-ai-coding-standard]] — Team-level AI coding standard — define and codify (todo)
-- [[AI-104-coding-os-baseline-chris-tom]] — Coding OS baseline — Chris + Tom collaboration (todo)
-- [[AI-102-conversational-architectural-review-pattern]] — Conversational architectural review pattern — document and share (todo)
-- [[AI-098-claude-native-api-endpoint-pattern]] — Claude-native API endpoint — share and expand pattern (todo)
-- [[AI-096-mcp-read-write-governance]] — MCP read/write governance — define approach for core systems (todo)
-- [[AI-080-rules-based-coding-standards]] — Rules-based coding standards approach (todo)
-- [[AI-079-ai-june-engineering-sprint]] — AI June: two-week focused AI enablement sprint for engineering (todo)
-- [[AI-078-incident-management-process]] — Jordi to draft incident management process (todo)
-- [[AI-076-jacob-oncover-check-pr]] — Follow up with Jacob on OnCover check PR status (todo)
-- [[AI-061-incident-management-process]] — Implement lightweight incident management process (todo)
-- [[AI-058-engineering-ai-discussion-cadence]] — Establish regular engineering AI discussion cadence (todo)
-- [[AI-057-stephen-monitoring-broader-adoption]] — Evaluate Stephen's Databricks monitoring system for broader adoption (todo)
-- [[AI-055-rob-critical-thinking-ai-support]] — Targeted AI support plan for Rob — critical thinking scaffolding (todo)
-- [[AI-054-engineering-target-state-document]] — Define and document engineering AI target state (todo)
-- [[AI-053-endorsements-e2e-automation-pilot]] — Endorsements as first isolated end-to-end workflow automation pilot (todo)
-- [[AI-044-david-skills-backup]] — Collect David's skills before paternity leave (todo)
-- [[AI-043-super-repo-shared-context]] — Create super repo for shared engineering context (todo)
-- [[AI-031-chris-platform-ai-coding-standards]] — Chris Fothergill — platform AI harness + coding standards from PRs (in-progress)
-- [[AI-023-pair-prompt-sdlc-session]] — Pair prompt session — Ollie + Javier (SDLC 2030) (todo)
-- [[AI-017-datadog-agent-observability]] — Resolve DataDog LLM observability integration issues (in-progress)
-- [[AI-002-skills-repo-ownership]] — Take ownership of central skills directory (todo)
+- [[domains/engineering-workflows/index]] — Domain — Engineering Workflows
+- [[ai-native-engineering]] — AI-Native Engineering (active)
+- [[agent-framework]] — Agent Framework (active)
+- [[platform-architecture-docs]] — Platform Architecture Docs (active)
+- [[ai-code-review]] — AI Code Review (proposed)
+- [[engine-room-triage-automation]] — Engine Room Triage Automation (active)
+- [[submissions-automation]] — Submissions Automation (active)
 
 ### Operational Tooling
 
-- [[submissions-automation]] — Submissions automation (active)
-- [[underwriting-assistance-ai]] — Underwriting assistance AI (active)
-- [[posthog-workflow-analysis]] — PostHog/DOM log workflow analysis (proposed)
-- [[process-documentation]] — Process documentation for agent automation (proposed)
-
-#### Issues
-
-- [[AI-105-underwriting-task-inventory-ai-suitability]] — Underwriting assistance — task inventory for AI suitability (todo)
-- [[AI-101-cowork-artifact-data-view-convention]] — Co:work artifact convention — data layer + view layer (todo)
-- [[AI-085-netsuite-mcp-write-access-risk]] — Assess NetSuite MCP write-access risk and investigate safe read-only path (todo)
-- [[AI-084-looker-daily-auth-fix]] — Fix Looker daily authentication issue for ops team (todo)
-- [[AI-083-policy-configuration-blacklist]] — Define and publish blacklist of unsupported policy configurations (todo)
-- [[AI-082-stripe-premium-finance-exploration]] — Explore Stripe premium finance integration timeline and maturity (backlog)
-- [[AI-081-finops-jade-q3-priorities]] — Matt and Jordi meet Jade to stack-rank Q3 automation requirements (todo)
-- [[AI-077-admiral-lexisnexis-timeline]] — Connect with Tom Coxon (Admiral) on LexisNexis timeline (todo)
-- [[AI-069-moss-api-month-end-consistency-checker]] — Build MOSS API month-end consistency checker skill (in-progress)
-- [[AI-038-tom-rogers-claims-listing-prototype]] — Prototype claims listing analysis for Tom Rogers (todo)
-- [[AI-024-adam-granola-hubspot]] — Help Adam's sales team attach Granola transcripts to HubSpot (todo)
-- [[AI-020-slack-channel-analysis-agent]] — Slack channel analysis agent (backlog)
-- [[AI-019-ashby-ats-evaluation]] — Ashby ATS evaluation — AI-native recruitment system (todo)
-- [[AI-011-driver-referral-automation]] — Automate driver referral process (backlog)
-- [[AI-009-submissions-scoping]] — Scope submissions automation into small achievable goals (todo)
-- [[AI-007-renewals-looker-hubspot]] — Explore Looker→HubSpot direct flow for renewals (todo)
-- [[AI-010-looker-mcp-cloud-deployment]] — Deploy Looker MCP to cloud infrastructure (done)
-- [[AI-008-shreya-noc-followup]] — Follow up with Shreya on Claude NOC test results (done)
-- [[AI-006-kirsty-looker-claude]] — Understand Kirsty's Looker→Claude connection (done)
-- [[AI-005-hubspot-enterprise-engine]] — Assess HubSpot architecture for Enterprise Engine integration (done)
+- [[domains/operational-tooling/index]] — Domain — Operational Tooling
+- [[cc-extraction-handover]] — CC Extraction Handover
+- [[whatsapp-driver-reporting]] — WhatsApp Driver Reporting
+- [[process-documentation]] — Process Documentation
+- [[posthog-workflow-analysis]] — PostHog Workflow Analysis
+- [[insight-layer]] — Insight Layer
+- [[safety-agent-memory]] — Safety Agent Memory
 
 ### Product AI
 
-- [[safety-agent-memory]] — Safety agent with memory (active)
-- [[cc-extraction-handover]] — CC extraction tool handover (active)
-- [[insight-layer]] — Insight layer across trips, claims, and quotes (proposed)
-- [[whatsapp-driver-reporting]] — WhatsApp driver reporting flow (paused)
-
-#### Issues
-
-- [[AI-109-public-telemetry-endpoint-office-display]] — Public telemetry endpoint for office display (cancelled)
-- [[AI-088-conversion-improvement-coordination-workshop]] — Facilitate conversion improvement coordination workshop (cancelled)
-- [[AI-051-j-feedback-pipeline-improvement]] — Improve J feedback transcript pipeline — persistent memory and broader scope (todo)
-- [[AI-042-cambridge-grads-claude-access]] — Cambridge grads — Flock login and Claude access (todo)
-- [[AI-041-haulage-safety-proposition]] — Haulage safety proposition — risk of exiting year without one (todo)
-- [[AI-040-renewal-risk-dashboard]] — Ship renewal risk dashboard to Ben and Daisy (todo)
-- [[AI-027-underwriter-bdm-joint-strategies]] — Explore joint strategies with underwriters / BDM (todo)
-- [[AI-026-post-product-review-catchups]] — Post-product-review catchups (Ollie et al) (todo)
-- [[AI-025-geran-streamlit-catchup]] — Catch up with Geran re Streamlit apps (todo)
-- [[AI-022-jay-security-audit]] — Jay AI security / prompt injection audit (in-progress)
-- [[AI-021-datadog-access-jay-team]] — Datadog access for Jay team (Mima + Ishmael) (done)
-
-### AI Enablement
-
-- [[ai-activation]] — Company-wide AI Activation (active)
-- [[bdm-ai-multiplayer]] — BDM AI Multiplayer (active)
-- [[ai-capability-uplift]] — AI capability uplift programme (active)
-- [[claude-standardisation]] — Claude standardisation (active)
-- [[ai-governance-framework]] — AI governance framework (active)
-- [[skills-distribution]] — Skills distribution and standardisation (active)
-
-#### Issues
-
-- [[AI-110-underwriting-ic-activation-jake-led]] — Underwriting IC activation — Jake-led group session (todo)
-- [[AI-108-map-workshops-rest-of-year]] — Map AI workshops for rest of year — Tom + Rakhee (todo)
-- [[AI-107-share-activation-framework-ed-rakhee]] — Share 4-level activation framework with Ed and Rakhee (todo)
-- [[AI-106-ai-enablement-explicit-q3-q4-okr]] — AI enablement as explicit Q3/Q4 OKR (todo)
-- [[AI-100-broadcast-engineering-ai-via-spotlight]] — Broadcast engineering AI conversation via Spotlight (todo)
-- [[AI-099-ai-workshop-framing-intent-ownership]] — AI workshop framing — intent + output ownership (cancelled)
-- [[AI-097-trading-pack-data-integrity]] — Trading pack data integrity review (todo)
-- [[AI-095-london-visit-workshop-july]] — London visit — Ed update + wider company engagement (Jul 8) (todo)
-- [[AI-094-granola-teams-plan-confirmation]] — Confirm Granola Teams plan subscription (todo)
-- [[AI-093-expansion-team-freelancer-candidates]] — Expansion team freelancer — keep eye out for candidates (todo)
-- [[AI-092-ai-workshop-june-16-logistics]] — AI Workshop June 16 — confirm logistics and send invite (todo)
-- [[AI-091-engagement-survey-automation-rakhee]] — Engagement survey automation — Rakhee (todo)
-- [[AI-090-notion-workflow-rakhee]] — Notion workflow sidebar — Rakhee (todo)
-- [[AI-089-flock-oclock-automation-phoebe]] — Flock O'Clock automation — Phoebe test run (todo)
-- [[AI-087-ai-better-not-faster-narrative]] — Develop and socialise "AI better not faster" internal narrative (todo)
-- [[AI-086-ai-culture-group-sessions-next-cohorts]] — Run next round of AI culture group sessions — expand and mix cohorts (todo)
-- [[AI-075-squad-job-philosophy-conversations]] — Squad-by-squad job philosophy conversations about AI and engineering identity (todo)
-- [[AI-074-pace-onboarding-materials]] — Get Francesco Venerandi to share Pace onboarding materials (todo)
-- [[AI-073-jade-finance-ai-checkins]] — Establish regular AI check-ins with Jade's finance team (todo)
-- [[AI-072-bdm-team-ai-workshop]] — Run AI workshop with BDM team (todo)
-- [[AI-071-granola-bdm-summary-skill]] — Custom Granola summary skill for BDM meeting notes (todo)
-- [[AI-070-jake-granola-uw-workflow]] — Jake — Granola post-call narration workflow for underwriting (todo)
-- [[AI-068-claude-cowork-code-workshop-prep]] — Company-wide workshop prep: Claude / Cowork / Claude Code (in-progress)
-- [[AI-067-shreya-finance-cancellations-pairing]] — Ask Emily if Shreya can join finance workshop / pair on cancellations (todo)
-- [[AI-066-jade-finance-ai-workshop]] — Finance AI workshop — Jade running, Tom attending (todo)
-- [[AI-065-trading-pack-data-sources-kirsty]] — Verify trading pack data sources with Kirsty (todo)
-- [[AI-064-inactive-broker-scaling-marketing]] — Inactive broker re-engagement — scale via marketing (Liam) (todo)
-- [[AI-063-granola-auto-ingest-skill]] — Build Granola auto-ingestion skill triggered from Google Calendar (todo)
-- [[AI-062-ai-job-security-team-sessions]] — Address AI job security concerns — 1:1s and team sessions (todo)
-- [[AI-060-pricing-automation-hackathon]] — Schedule Francesco + Javier pricing automation hackathon (todo)
-- [[AI-059-performance-coach-repo-access]] — Get access to performance coach repo and evaluate for wider adoption (todo)
-- [[AI-056-netsuite-mcp-integration]] — NetSuite MCP integration for finance team (todo)
-- [[AI-052-product-team-sneakernet-context-files]] — Sneaker-net strategy context files across product team second brains (todo)
-- [[AI-050-granola-enterprise-api-transcript-repository]] — Explore Granola Enterprise API for company-wide transcript repository (todo)
-- [[AI-049-book-ed-inperson-rollout]] — Book in-person time with Ed to design company-wide rollout (todo)
-- [[AI-048-plan-group-workshops]] — Plan group workshops in Flock o'clock format (todo)
-- [[AI-047-define-activation-threshold]] — Define activation threshold and plan for 80% by end of June (todo)
-- [[AI-046-fix-mcp-auth-ed]] — Fix MCP auth for Ed — Slack, Notion, Telemetry requiring approval on every action (todo)
-- [[AI-045-add-ed-to-cursor-org]] — Add Ed to Cursor organisation (todo)
-- [[AI-039-pricing-team-ai-workshop]] — Schedule pricing team AI workshop (with Tom) (todo)
-- [[AI-037-matt-price-coaching-angle]] — Think through Matt Price coaching angle for Fergus (todo)
-- [[AI-036-admiral-business-ai-workshop]] — Plan Admiral Business AI workshop / joint session (todo)
-- [[AI-035-finance-team-ai-forcing-function]] — Run a dedicated AI forcing-function session for the finance team (todo)
-- [[AI-034-admiral-enterprise-anthropic-terms]] — Run point on Admiral enterprise Anthropic terms conversation (todo)
-- [[AI-033-looker-permissions-audit-billy-thom]] — Audit Looker permissions for Billy and Thom (underwriting) (todo)
-- [[AI-032-ceo-catchup-prep]] — CEO AI catchup — prep and talking points (todo)
-- [[AI-030-jade-ai-discovery-followup]] — AI discovery follow-up — Jade Mounir (Finance) (in-progress)
-- [[AI-029-milan-ai-discovery]] — AI discovery — Milan Chavda (Pricing Intelligence) (in-progress)
-- [[AI-028-update-roadmap-visualisation]] — Update initiatives/projects roadmap chart (todo)
-- [[AI-018-shared-context-architecture]] — Define shared context architecture for teams (todo)
-- [[AI-015-matt-dipre-hubspot-ai-access]] — Get Matt Dipre HubSpot AI integration access (todo)
-- [[AI-014-matt-dipre-looker-access]] — Get Matt Dipre Looker access and permissions (todo)
-- [[AI-013-ai-capability-baseline-report]] — Produce AI capability baseline report (todo)
-- [[AI-003-discovery-round-remaining]] — Complete discovery round — remaining conversations (in-progress)
-- [[AI-016-offsite-ai-session-prep]] — Prepare 90-min AI session for prodtech offsite (done)
-- [[AI-001-board-roadmap-ai-section]] — AI section of board roadmap for April 20th Pioneer meeting (done)
-- [[AI-004-weekly-plan-w14]] — Week 14 plan (2026-03-30 to 2026-04-03) (done)
+- [[domains/product-ai/index]] — Domain — Product AI
+- [[underwriting-assistance-ai]] — Underwriting Assistance AI
 
 ---
 
 ## Initiatives
 
-- [[bdm-ai-multiplayer]] — BDM AI Multiplayer (active)
-- [[ai-native-engineering]] — AI-native engineering — developer harness pilot (active)
 - [[ai-activation]] — Company-wide AI Activation (active)
-- [[submissions-automation]] — Submissions automation (active)
-- [[ai-capability-uplift]] — AI capability uplift programme (active)
-- [[claude-standardisation]] — Claude standardisation (active)
-- [[ai-governance-framework]] — AI governance framework (active)
-- [[safety-agent-memory]] — Safety agent with memory (active)
-- [[cc-extraction-handover]] — CC extraction tool handover (active)
-- [[platform-architecture-docs]] — Platform architecture documentation (active)
-- [[agent-framework]] — Productionised agent framework (active)
-- [[underwriting-assistance-ai]] — Underwriting assistance AI (active)
-- [[engine-room-triage-automation]] — Engine Room triage automation (active)
-- [[skills-distribution]] — Skills distribution and standardisation (active)
-- [[insight-layer]] — Insight layer across trips, claims, and quotes (proposed)
-- [[posthog-workflow-analysis]] — PostHog/DOM log workflow analysis (proposed)
-- [[process-documentation]] — Process documentation for agent automation (proposed)
-- [[ai-code-review]] — AI-assisted code review (proposed)
-- [[whatsapp-driver-reporting]] — WhatsApp driver reporting flow (paused)
+- [[ai-capability-uplift]] — AI Capability Uplift (active)
+- [[ai-code-review]] — AI Code Review (proposed)
+- [[ai-governance-framework]] — AI Governance Framework (active)
+- [[ai-native-engineering]] — AI-Native Engineering (active)
+- [[agent-framework]] — Agent Framework (active)
+- [[bdm-ai-multiplayer]] — BDM AI Multiplayer (active)
+- [[cc-extraction-handover]] — CC Extraction Handover
+- [[claude-standardisation]] — Claude Standardisation (active)
+- [[engine-room-triage-automation]] — Engine Room Triage Automation (active)
+- [[insight-layer]] — Insight Layer
+- [[platform-architecture-docs]] — Platform Architecture Docs (active)
+- [[posthog-workflow-analysis]] — PostHog Workflow Analysis
+- [[process-documentation]] — Process Documentation
+- [[safety-agent-memory]] — Safety Agent Memory
+- [[skills-distribution]] — Skills Distribution (active)
+- [[submissions-automation]] — Submissions Automation (active)
+- [[underwriting-assistance-ai]] — Underwriting Assistance AI
+- [[whatsapp-driver-reporting]] — WhatsApp Driver Reporting
 
 ---
 
 ## Decisions
 
-- [[005-bdm-brain-scheduling-architecture]] — 005 — BDM Brain scheduling and filesystem architecture (active)
-- [[004-looker-mcp-server-selection]] — Looker MCP server selection: googleapis/mcp-toolbox over Ultrathink (active)
-- [[001-submissions-approach]] — 001 — Submissions: holistic approach not piecemeal intervention (accepted)
-- [[002-governance-timing]] — 002 — AI governance: important but not urgent, defer to later Q2 (accepted)
-- [[003-board-roadmap-ownership]] — 003 — Tom owns the AI section of the board roadmap (accepted)
+- [[decisions/001-submissions-approach]] — 001 — Submissions Approach
+- [[decisions/002-governance-timing]] — 002 — Governance Timing
+- [[decisions/003-board-roadmap-ownership]] — 003 — Board Roadmap Ownership
+- [[decisions/004-looker-mcp-server-selection]] — 004 — Looker MCP Server Selection
+- [[decisions/005-bdm-brain-scheduling-architecture]] — 005 — BDM Brain Scheduling Architecture
 
 ---
 
-## Meetings
+## Issues (selected open / recent)
 
-- [[2026-06-11-tom-jordi-weekly]] — Tom <> Jordi: Weekly 1:1
-- [[2026-06-11-ollie-tom-bdm-enablement]] — Ollie / Tom — BDM Enablement
-- [[2026-06-11-fergus-tom-weekly]] — Fergus <> Tom: Weekly
-- [[2026-06-10-ai-strategy-geran]] — AI Strategy — Tom + Geran
-- [[2026-06-10-ai-engineering-group-therapy]] — AI — Engineering Group Therapy (Chris / Sam / Alex)
-- [[2026-06-10-adam-thomas-bdm-team-ai]] — Adam / Thomas — BDM Team AI
+### AI-130s–147
+
+- [[AI-130]] — Underwriting team AI show and tell
+- [[AI-131]] — Adam Sandle fortnightly AI check-ins
+- [[AI-132]] — BDM AI brain Slack channel
+- [[AI-133]] — Submissions MCP v0 ticket
+- [[AI-134]] — Sophie daily brief BDM brain skill
+- [[AI-135]] — PGR prompt with Francesco / Rakhee
+- [[AI-136]] — PGR named group commitment
+- [[AI-137]] — Drata MCP fix / finance workshop
+- [[AI-138]] — Finance MI dashboard Google Drive
+- [[AI-139]] — Shared dashboards Google Drive
+- [[AI-140]] — DR hackathon AWS / Nvidia
+- [[AI-141]] — Flock O'Clock Slack trial
+- [[AI-142]] — Formalise Claude spend policy
+- [[AI-143]] — Verify Bedrock fallback
+- [[AI-144]] — PGR co:work prompt workshop
+- [[AI-145]] — NetSuite data pull automation
+- [[AI-146]] — Vibe check Javier / Ishmael
+- [[AI-147]] — Q3 AI workshop roadmap
+
+### AI-110s–129
+
+- [[AI-110]] — Underwriting IC activation Jake-led
+- [[AI-111]] — BDM brain workshop prep file structure setup
+- [[AI-112]] — BDM brain team setup instructions
+- [[AI-113]] — Share AI benchmark Rakhee
+- [[AI-114]] — Ed proactive AI comms
+- [[AI-115]] — New hire AI baseline onboarding
+- [[AI-116]] — Publish Notion AI philosophy guide
+- [[AI-117]] — Rerun standalone AI survey
+- [[AI-118]] — Flock O'Clock AI slot format
+- [[AI-119]] — Pricing Google Drive permissions
+- [[AI-120]] — Pricing canonical file home
+- [[AI-121]] — Deterministic reporting pricing
+- [[AI-122]] — Michael Matthews daily AI habit
+- [[AI-123]] — Engineering team AI practice
+- [[AI-124]] — Engineering state of art alignment
+- [[AI-125]] — AI maturity benchmarking survey Rakhee
+- [[AI-126]] — Book Ed pre/post Cardiff Thursday
+- [[AI-127]] — AI partnering team Q3 pilot
+- [[AI-128]] — AI framework new hire assessment
+- [[AI-129]] — Speaking opportunities Liam Cardiff insurers
+
+### AI-090s–109
+
+- [[AI-096]] — MCP read/write governance
+- [[AI-099]] — AI workshop framing intent ownership
+- [[AI-104]] — Coding OS baseline Chris Tom
+- [[AI-106]] — AI enablement explicit Q3/Q4 OKR
+- [[AI-107]] — Share activation framework Ed Rakhee
+- [[AI-109]] — Public telemetry endpoint office display
+
+*See issues/ directory for full AI-001–089 list.*
+
+---
+
+## Meetings (newest first)
+
+### June 2026
+
+- [[2026-06-25-fergus-tom-weekly]] — Fergus / Tom weekly Jun 25
+- [[2026-06-25-liam-thomson-ai-discovery]] — Liam Thomson AI discovery
+- [[2026-06-25-netsuite-mcp-ivan]] — NetSuite MCP — Tom / Ivan
+- [[2026-06-25-people-team-checkin-ai-update]] — People team check-in: AI update
+- [[2026-06-25-pgr-skills]] — PGR Skills
+- [[2026-06-24-ai-group-therapy]] — AI Group Therapy Jun 24
+- [[2026-06-24-ai-phoebe]] — AI — Phoebe
+- [[2026-06-24-david-pilley-ai-discovery]] — David Pilley AI discovery
+- [[2026-06-24-ed-tom-ai-wrap-up]] — Ed / Tom AI wrap-up Jun 24
+- [[2026-06-24-matt-lees-ai-discovery]] — Matt Lees AI discovery Jun 24
+- [[2026-06-24-q3-okr-bonanza]] — Q3 2026 OKR Bonanza
+- [[2026-06-23-christian-leth-nielsen-ai-discovery]] — Christian Leth Nielsen AI discovery
+- [[2026-06-23-francesco-pgr-ai]] — Francesco PGR / AI
+- [[2026-06-23-rakhee-people-ai]] — Rakhee — People AI
+- [[2026-06-23-sophie-dodds-ai]] — Sophie Dodds AI
+- [[2026-06-22-adam-sandle-ai-discovery]] — Adam Sandle AI discovery
+- [[2026-06-22-adam-smith-ai-discovery]] — Adam Smith AI discovery
+- [[2026-06-22-ollie-tom-weekly]] — Ollie / Tom weekly Jun 22
+- [[2026-06-22-tom-rogers-ai-discovery]] — Tom Rogers AI discovery
+- [[2026-06-19-fergus-tom-weekly]] — Fergus / Tom weekly Jun 19
+- [[2026-06-17-ai-provocation-engineering]] — AI Provocation — Engineering
+- [[2026-06-17-harry-dowrick-ai-hackathon]] — Harry Dowrick AI hackathon
+- [[2026-06-17-michael-matthews-ai]] — Michael Matthews AI
+- [[2026-06-15-ai-catch-up-rakhee]] — AI catch-up — Rakhee
+- [[2026-06-15-bdm-dashboards]] — BDM Dashboards
+- [[2026-06-15-jake-thomas-ai-tooling-across-more-people]] — Jake / Thomas AI tooling across more people
+- [[2026-06-15-ollie-tom-weekly]] — Ollie / Tom weekly Jun 15
+- [[2026-06-11-fergus-tom-weekly]] — Fergus / Tom weekly Jun 11
+- [[2026-06-11-ollie-tom-bdm-enablement]] — Ollie / Tom BDM enablement
+- [[2026-06-11-tom-jordi-weekly]] — Tom / Jordi weekly Jun 11
+- [[2026-06-10-adam-thomas-bdm-team-ai]] — Adam / Thomas BDM team AI
+- [[2026-06-10-ai-engineering-group-therapy]] — AI Engineering Group Therapy Jun 10
+- [[2026-06-10-ai-strategy-geran]] — AI Strategy — Geran
+- [[2026-06-09-ai-workshops-rakhee]] — AI Workshops — Rakhee
+- [[2026-06-09-ollie-tom-weekly]] — Ollie / Tom weekly Jun 9
+- [[2026-06-09-performance-management-francesco-oli]] — Performance management — Francesco / Oli
 - [[2026-06-09-thomas-matthew-1-1]] — Thomas / Matthew 1:1
-- [[2026-06-09-performance-management-francesco-oli]] — Performance Management: Francesco / Oli → Rakhee / Eraaz
-- [[2026-06-09-ollie-tom-weekly]] — Ollie / Tom — Weekly
-- [[2026-06-09-ai-workshops-rakhee]] — AI Workshops — Tom + Rakhee
-- [[2026-06-04-granola-flockcover]] — Granola / Flockcover
-- [[2026-06-04-fergus-weekly]] — Fergus <> Tom — Weekly
-- [[2026-06-04-cloud-code-checkin]] — Quick check-in — Cloud Code and local dev setup
-- [[2026-06-04-ai-engineering-group-therapy]] — AI — Engineering Group Therapy
-- [[2026-06-03-fred-thomas-ai-catchup]] — Fred / Thomas — AI Catch-up
-- [[2026-06-03-ai]] — AI Culture Discussion — Group Session 1
-- [[2026-06-03-2w-prodtech-demo]] — 2W: Prodtech Demo — Submissions Pipeline, E2E Testing, J Connectivity
-- [[2026-06-02-people-team-ai-workshop]] — People Team AI Workshop — Lunch & Learn
-- [[2026-06-02-matt-price-1-1]] — Thomas / Matthew 1:1
-- [[2026-06-02-jordi-weekly]] — Tom <> Jordi — Weekly 1:1
-- [[2026-06-01-ollie-tom-weekly]] — Ollie / Tom Weekly — AI Frontier (Jun 1)
-- [[2026-06-01-jake-thomas-ai-uw]] — Jake / Thomas — AI use cases in underwriting
-- [[2026-06-01-anneliese-thomas]] — Anneliese / Thomas — Claude setup & MOSS integration
-- [[2026-05-29-sophie-dodds-ai-catchup]] — Sophie / Thomas — AI catchup (May 29)
-- [[2026-05-29-ollie-onboarding-discussion]] — Oliver / Thomas — Onboarding goals for a team member (May 29)
-- [[2026-05-29-jade-thomas-ai-use]] — Jade / Thomas — AI use (May 29)
-- [[2026-05-29-ai-breakfast]] — AI Breakfast (May 29)
-- [[2026-05-27-jade-ai-workshop-planning]] — Tom / Jade — Finance AI Workshop Planning 2026-05-27
-- [[2026-05-27-adam-ai-catchup]] — Adam Smith / Tom — AI Catchup 2026-05-27
-- [[2026-05-26-sophie-dodds-reschedule]] — Sophie Dodds / Tom — Reschedule call 2026-05-26
-- [[2026-05-26-prodtech-leadership-heartbeat]] — ProdTech Leadership Heartbeat (May 26)
-- [[2026-05-26-ollie-tom-weekly]] — Ollie / Tom Weekly — AI Frontier (May 26)
-- [[2026-05-26-matt-price-1-1]] — Thomas / Matthew 1:1 (May 26)
-- [[2026-05-26-matt-lees-ai-catchup]] — Matt Lees / Tom — AI Catchup 2026-05-26
-- [[2026-05-26-jordi-weekly]] — Tom <> Jordi Weekly 1:1 — 2026-05-26
-- [[2026-05-26-alex-dyball-ai-catchup]] — Alex Dyball / Tom — AI Catchup 2026-05-26
-- [[2026-05-22-aleksandra-ai-catchup]] — Aleksandra / Thomas — AI catchup (May 22)
-- [[2026-05-21-finops-prodtech-discussion]] — FinOps Discussion — ProdTech Next Steps (May 21)
-- [[2026-05-19-stephen-millington]] — Stephen Millington — AI catchup
-- [[2026-05-19-matthew-price]] — Matthew Price — 1:1
-- [[2026-05-19-jordi-weekly]] — Tom <> Jordi — Weekly 1:1
-- [[2026-05-19-francesco-ai-catchup]] — Francesco Venerandi — AI catchup
-- [[2026-05-19-finance-team-ai-workshop]] — Finance Team AI Workshop
-- [[2026-05-18-product-team-context]] — Product Team Context — Multiplayer AI
-- [[2026-05-18-dev-ai-practices]] — Dev AI Practices — Engineering Future Environment
-- [[2026-05-14-rob-hubspot-pipeline]] — Rob — HubSpot pipeline code review (May 14)
-- [[2026-05-14-rob-grice-catchup]] — Rob Grice catchup (May 14)
-- [[2026-05-14-kevin-berg-ai-discovery]] — Kevin / Thomas — AI discovery (May 14)
-- [[2026-05-14-ed-tom-121]] — Ed <> Tom: 1:1
-- [[2026-05-13-monthly-ops-ai-sync]] — Monthly Operations Automation & AI Sync (May 13)
-- [[2026-05-13-ivan-ai-discovery]] — Tom <> Ivan: AI Discovery (May 13)
-- [[2026-05-12-matt-price-1-1]] — Tom <> Matt Price: 1:1
-- [[2026-05-12-jordi-weekly]] — Tom <> Jordi Weekly 1:1 (May 12)
-- [[2026-05-12-david-ai-engineering]] — Tom <> David: AI Engineering — Super Repo, Coding Standards, Agent Harness
-- [[2026-05-11-weekly-prodtech-kickoff]] — Weekly Product + Tech Kickoff (May 11)
-- [[2026-05-11-milan-ai-discovery]] — Tom <> Milan: AI Discovery
-- [[2026-05-11-anneliese-ai-discovery]] — Anneliese / Thomas — AI discovery (May 11)
-- [[2026-05-11-ceo-ai-catchup-prep]] — Prep: CEO CATCHUP SESSION — AI Developments
-- [[2026-05-08-tom-chris-platform-ai-coding-standards]] — Tom <> Chris — Platform AI + Coding Standards
-- [[2026-05-08-fergus-tom-weekly]] — Fergus <> Tom — Weekly
-- [[2026-05-05-weekly-prodtech-kickoff]] — Weekly Product + Tech Kickoff
-- [[2026-05-05-multiplayer-second-brain]] — Multiplayer Second Brain Strategy
-- [[2026-05-05-matt-price-1-1]] — Matt Price 1:1
-- [[2026-04-30-fergus-tom-weekly]] — Fergus <> Tom — Weekly
-- [[2026-04-28-matt-price-1-1]] — Matt Price 1:1
-- [[2026-04-28-jordi-1-1]] — Tom <> Jordi: Weekly 1:1
-- [[2026-04-28-jemima-1-1]] — Jemima / Thomas
+- [[2026-06-04-ai-engineering-group-therapy]] — AI Engineering Group Therapy Jun 4
+- [[2026-06-04-cloud-code-checkin]] — Cloud Code check-in
+- [[2026-06-04-fergus-weekly]] — Fergus weekly Jun 4
+- [[2026-06-04-granola-flockcover]] — Granola / Flock Cover
+- [[2026-06-03-2w-prodtech-demo]] — 2-week ProdTech demo
+- [[2026-06-03-ai]] — AI Group Therapy Jun 3
+- [[2026-06-03-fred-thomas-ai-catchup]] — Fred / Thomas AI catch-up
+- [[2026-06-02-jordi-weekly]] — Jordi weekly Jun 2
+- [[2026-06-02-matt-price-1-1]] — Matt Price 1:1 Jun 2
+- [[2026-06-02-people-team-ai-workshop]] — People team AI workshop
+- [[2026-06-01-anneliese-thomas]] — Anneliese / Thomas
+- [[2026-06-01-jake-thomas-ai-uw]] — Jake / Thomas AI underwriting
+- [[2026-06-01-ollie-tom-weekly]] — Ollie / Tom weekly Jun 1
+
+### May 2026
+
+- [[2026-05-29-ai-breakfast]] — AI Breakfast May 29
+- [[2026-05-29-jade-thomas-ai-use]] — Jade / Thomas AI use
+- [[2026-05-29-ollie-onboarding-discussion]] — Ollie onboarding discussion
+- [[2026-05-29-sophie-dodds-ai-catchup]] — Sophie Dodds AI catch-up
+- [[2026-05-27-adam-ai-catchup]] — Adam AI catch-up
+- [[2026-05-27-jade-ai-workshop-planning]] — Jade AI workshop planning
+- [[2026-05-26-alex-dyball-ai-catchup]] — Alex Dyball AI catch-up
+- [[2026-05-26-jordi-weekly]] — Jordi weekly May 26
+- [[2026-05-26-matt-lees-ai-catchup]] — Matt Lees AI catch-up
+- [[2026-05-26-matt-price-1-1]] — Matt Price 1:1 May 26
+- [[2026-05-26-ollie-tom-weekly]] — Ollie / Tom weekly May 26
+- [[2026-05-26-prodtech-leadership-heartbeat]] — ProdTech leadership heartbeat May 26
+- [[2026-05-22-aleksandra-ai-catchup]] — Aleksandra AI catch-up
+- [[2026-05-21-finops-prodtech-discussion]] — FinOps / ProdTech discussion
+- [[2026-05-19-finance-team-ai-workshop]] — Finance team AI workshop
+- [[2026-05-19-francesco-ai-catchup]] — Francesco AI catch-up
+- [[2026-05-19-jordi-weekly]] — Jordi weekly May 19
+- [[2026-05-19-matthew-price]] — Matthew Price May 19
+- [[2026-05-19-stephen-millington]] — Stephen Millington May 19
+- [[2026-05-18-dev-ai-practices]] — Dev AI Practices
+- [[2026-05-18-product-team-context]] — Product team context
+- [[2026-05-14-ed-tom-121]] — Ed / Tom 1:1 May 14
+- [[2026-05-14-kevin-berg-ai-discovery]] — Kevin Berg AI discovery
+- [[2026-05-14-rob-grice-catchup]] — Rob Grice catch-up
+- [[2026-05-14-rob-hubspot-pipeline]] — Rob HubSpot pipeline
+- [[2026-05-13-ivan-ai-discovery]] — Ivan AI discovery
+- [[2026-05-13-monthly-ops-ai-sync]] — Monthly ops AI sync May 13
+- [[2026-05-12-david-ai-engineering]] — David AI engineering
+- [[2026-05-12-jordi-weekly]] — Jordi weekly May 12
+- [[2026-05-12-matt-price-1-1]] — Matt Price 1:1 May 12
+- [[2026-05-11-anneliese-ai-discovery]] — Anneliese AI discovery
+- [[2026-05-11-ceo-ai-catchup-prep]] — CEO AI catch-up prep
+- [[2026-05-11-milan-ai-discovery]] — Milan AI discovery
+- [[2026-05-08-fergus-tom-weekly]] — Fergus / Tom weekly May 8
+- [[2026-05-08-tom-chris-platform-ai-coding-standards]] — Tom / Chris platform AI coding standards
+- [[2026-05-05-matt-price-1-1]] — Matt Price 1:1 May 5
+- [[2026-05-05-multiplayer-second-brain]] — Multiplayer second brain
+
+### April 2026
+
+- [[2026-04-30-fergus-tom-weekly]] — Fergus / Tom weekly Apr 30
 - [[2026-04-28-dotwork-demo]] — Dotwork demo
+- [[2026-04-28-jemima-1-1]] — Jemima 1:1
+- [[2026-04-28-jordi-1-1]] — Jordi 1:1
+- [[2026-04-28-matt-price-1-1]] — Matt Price 1:1
+- [[2026-04-21-codifying-context-retention-team]] — Codifying context retention team
 - [[2026-04-21-context-sharing-meeting]] — Context sharing meeting
-- [[2026-04-21-codifying-context-retention-team]] — Codifying context for retention team
-- [[2026-04-20-weekly-prodtech-kickoff]] — Weekly Product + Tech kickoff
-- [[2026-04-20-submission-processing-pipeline]] — Submission processing pipeline — alignment session
-- [[2026-04-17-rob-ai-discovery]] — Rob Grice — AI Discovery / Introduction
-- [[2026-04-17-queency-ai-chat]] — Queency — AI chat
-- [[2026-04-17-jordi-tom-weekly]] — Jordi <> Tom — Weekly
-- [[2026-04-17-ismael-catchup]] — Ismael — agent demo and dev tooling
-- [[2026-04-17-geran-ai-discovery]] — Tom <> Geran — AI Discovery
-- [[2026-04-16-tom-rogers-underwriting-ai]] — Tom Rogers — Underwriting & AI benefit conversation
-- [[2026-04-16-javier-ai-native-engineering]] — Javier — AI-native engineering followup
-- [[2026-04-16-fergus-tom-weekly]] — Fergus <> Tom — Weekly
-- [[2026-04-16-eraaz-intro]] — Eraaz Ali — intro and AI discovery
-- [[2026-04-15-monthly-ops-ai-sync]] — Monthly Operations Automation & AI Sync
-- [[2026-04-14-shreya-chowta-noc-skill]] — Shreya Chowta — NOC skill walkthrough
-- [[2026-04-14-prodtech-leadership-heartbeat]] — ProdTech Leadership Heartbeat
+- [[2026-04-20-submission-processing-pipeline]] — Submission processing pipeline
+- [[2026-04-20-weekly-prodtech-kickoff]] — Weekly ProdTech kickoff Apr 20
+- [[2026-04-17-geran-ai-discovery]] — Geran AI discovery
+- [[2026-04-17-ismael-catchup]] — Ishmael catch-up
+- [[2026-04-17-jordi-tom-weekly]] — Jordi / Tom weekly
+- [[2026-04-17-queency-ai-chat]] — Queency AI chat
+- [[2026-04-17-rob-ai-discovery]] — Rob AI discovery
+- [[2026-04-16-eraaz-intro]] — Eraaz intro
+- [[2026-04-16-fergus-tom-weekly]] — Fergus / Tom weekly Apr 16
+- [[2026-04-16-javier-ai-native-engineering]] — Javier AI-native engineering
+- [[2026-04-16-tom-rogers-underwriting-ai]] — Tom Rogers underwriting AI
+- [[2026-04-15-monthly-ops-ai-sync]] — Monthly ops AI sync Apr 15
+- [[2026-04-14-matt-dipre-ai-discovery]] — Matt DiPré AI discovery
 - [[2026-04-14-matt-price-catchup]] — Matt Price catch-up
-- [[2026-04-14-matt-dipre-ai-discovery]] — Matt Dipre — AI Discovery
-- [[2026-04-13-sophie-dodds-ai-discovery]] — Sophie Dodds — AI Discovery
-- [[2026-04-10-paul-ai-discovery]] — Paul O'Neill — AI Discovery
-- [[2026-04-10-oli-second-brain-acquisition-strategy]] — Second brain and acquisition strategy exploration with Oli
-- [[2026-04-10-liam-ai-discovery]] — Liam Thomson — AI Discovery
-- [[2026-04-10-jonny-smith-ai-discovery]] — Jonny Smith — AI Discovery
-- [[2026-04-10-jemima-catchup]] — Tom <> Jemima — AI adoption and personal OS
-- [[2026-04-10-javier-acquisition-ai-vision]] — Javier — Acquisition AI Vision
-- [[2026-04-10-alex-dyball-ai-discovery]] — Alex Dyball — AI Discovery
-- [[2026-04-10-ai-workshops]] — AI Workshops — steering group alignment
-- [[2026-04-10-ai-workshops-prep]] — AI Workshops — meeting prep
-- [[2026-04-10-ai-breakfast]] — AI Breakfast
-- [[2026-04-09-kirsty-ai-discovery]] — Kirsty AI Discovery
-- [[2026-04-08-value-statement-automation]] — AI Workshop: Automating Value Statement
-- [[2026-04-08-fred-ai-discovery]] — Fred AI Discovery
+- [[2026-04-14-prodtech-leadership-heartbeat]] — ProdTech leadership heartbeat Apr 14
+- [[2026-04-14-shreya-chowta-noc-skill]] — Shreya Chowta NOC skill
+- [[2026-04-13-sophie-dodds-ai-discovery]] — Sophie Dodds AI discovery
+- [[2026-04-10-ai-breakfast]] — AI Breakfast Apr 10
+- [[2026-04-10-ai-workshops]] — AI Workshops Apr 10
+- [[2026-04-10-alex-dyball-ai-discovery]] — Alex Dyball AI discovery
+- [[2026-04-10-javier-acquisition-ai-vision]] — Javier acquisition AI vision
+- [[2026-04-10-jemima-catchup]] — Jemima catch-up
+- [[2026-04-10-jonny-smith-ai-discovery]] — Jonny Smith AI discovery
+- [[2026-04-10-liam-ai-discovery]] — Liam AI discovery Apr 10
+- [[2026-04-10-paul-ai-discovery]] — Paul AI discovery
+- [[2026-04-09-kirsty-ai-discovery]] — Kirsty AI discovery
 - [[2026-04-08-eval-testing-regroup]] — Eval testing regroup
-- [[2026-04-07-matt-lees-enterprise-engine-002]] — Matt Lees: Enterprise Engine Review 002
-- [[2026-04-02-shreya-ai-discovery]] — Tom <> Shreya: AI Discovery
-- [[2026-04-02-matt-lees-enterprise-engine]] — Matt Lees: Enterprise Engine + Distribution AI
-- [[2026-04-02-anna-ai-discovery]] — Tom <> Anna: AI Discovery
-- [[2026-04-02-adam-ai-discovery]] — Tom <> Adam: AI Discovery
-- [[2026-03-30-sam-ai-cop]] — Sam talking about the AI CoP
-- [[2026-03-30-jordi-head-of-ai-engineering]] — Tom <> Jordi: Head of AI x Engineering
-- [[2026-03-30-emily-ai-discovery]] — Emily AI Discovery
-- [[2026-03-27-skills-ai-session]] — Skills AI session
+- [[2026-04-08-fred-ai-discovery]] — Fred AI discovery
+- [[2026-04-07-matt-lees-enterprise-engine-002]] — Matt Lees Enterprise Engine 002
+- [[2026-04-02-adam-ai-discovery]] — Adam AI discovery
+- [[2026-04-02-anna-ai-discovery]] — Anna AI discovery
+- [[2026-04-02-matt-lees-enterprise-engine]] — Matt Lees Enterprise Engine
+- [[2026-04-02-shreya-ai-discovery]] — Shreya AI discovery
+
+### March 2026
+
+- [[2026-03-30-emily-ai-discovery]] — Emily AI discovery
+- [[2026-03-30-jordi-head-of-ai-engineering]] — Jordi — Head of AI Engineering
+- [[2026-03-30-sam-ai-cop]] — Sam AI CoP
 - [[2026-03-27-chris-ai]] — Chris AI
+- [[2026-03-27-skills-ai-session]] — Skills AI session
+- [[2026-03-26-abs-ai]] — Abs AI
 - [[2026-03-26-fergus-hoai-001]] — Fergus HoAI 001
-- [[2026-03-26-abs-ai]] — abs AI
-- [[2026-03-25-skills-engineering-drop-in]] — Skills in engineering drop-in meeting
-- [[2026-03-25-sam-thoughts-on-ai]] — Sam's thoughts on AI
-- [[2026-03-24-matt-ai-product-management]] — Matt and AI in product management
+- [[2026-03-25-sam-thoughts-on-ai]] — Sam thoughts on AI
+- [[2026-03-25-skills-engineering-drop-in]] — Skills engineering drop-in
+- [[2026-03-24-matt-ai-product-management]] — Matt AI product management
 
 ---
 
 ## Reviews
 
-- [[2026-W19]] — Week 19 Review
-- [[2026-W17]] — Week 17 Review
-- [[2026-W13]] — Week 13 Review
+- [[reviews/2026-W19]] — Week 19 2026
+- [[reviews/2026-W17]] — Week 17 2026
+- [[reviews/2026-W13]] — Week 13 2026
 
 ---
 
 ## People
 
-- [[abs]] — Abs
+- [[abs]] — Abs Lamzini (left)
+- [[adam-sandle]] — Adam Sandle
 - [[adam-smith]] — Adam Smith
-- [[aleks-yanova]] — Aleks Yanova
+- [[aleks-yanova]] — Aleks Yaneva
 - [[alex-dyball]] — Alex Dyball
-- [[alex-smith]] — Alex Smith
-- [[anna]] — Anna Spriggs
-- [[anneliese-vanwijk]] — Anneliese Vanwijk
+- [[alex-smith]] — Alex Smith (left)
+- [[anna]] — Anna
+- [[anneliese-vanwijk]] — Anneliese van Wijk
 - [[ben-allen]] — Ben Allen
 - [[chris]] — Chris Fothergill
+- [[christian-leth-nielsen]] — Christian Leth Nielsen
 - [[daisy-mae-baker]] — Daisy Mae Baker
 - [[darren]] — Darren McCauley
 - [[david]] — David Zamora
-- [[ed]] — Ed Leon Klinger
-- [[emily]] — Emily Staton
+- [[david-pilley]] — David Pilley
+- [[ed]] — Ed (CEO)
+- [[emily]] — Emily
 - [[eraaz-ali]] — Eraaz Ali
-- [[fergus]] — Fergus Doyle
+- [[fergus]] — Fergus
 - [[francesco-venerandi]] — Francesco Venerandi
 - [[fred-bush]] — Fred Bush
-- [[geran]] — Geran Butcher
-- [[ishmael]] — Ismael Jebril
+- [[geran]] — Geran
+- [[harry-dowrick]] — Harry Dowrick
+- [[ishmael]] — Ishmael Jebril
 - [[ivan-boix]] — Ivan Boix
 - [[jacob-holland]] — Jacob Holland
 - [[jade-mounir]] — Jade Mounir
 - [[jake-wood]] — Jake Wood
 - [[javier]] — Javier Arranz
 - [[jonny-smith]] — Jonny Smith
-- [[jordi]] — Jordi Pallares Roset
+- [[jordi]] — Jordi
 - [[kevin-berg]] — Kevin Berg
-- [[kirsty]] — Kirsty Alexandre
-- [[matt-dipre]] — Matt Dipre
+- [[kirsty]] — Kirsty
+- [[liam-thomson]] — Liam Thomson
+- [[matt]] — Matt (CTO)
+- [[matt-dipre]] — Matt DiPré
 - [[matt-lees]] — Matt Lees
-- [[matt]] — Matthew Price
+- [[michael-matthews]] — Michael Matthews
 - [[milan-chavda]] — Milan Chavda
-- [[mima]] — Jemima Pitceathly
+- [[mima]] — Mima
 - [[nathan-simkiss]] — Nathan Simkiss
 - [[ollie-crowe]] — Ollie Crowe
 - [[paul]] — Paul O'Neill
 - [[phoebe-woodman]] — Phoebe Woodman
 - [[queency-gonsalves]] — Queency Gonsalves
-- [[rakhee]] — Rakhee Gohil
-- [[rob]] — Rob Grice
-- [[sam]] — Sam Adeniyi
-- [[sami]] — Sami
+- [[rakhee]] — Rakhee
+- [[rob]] — Rob
+- [[sam]] — Sam
 - [[shreya-chowta]] — Shreya Chowta
 - [[sophie-dodds]] — Sophie Dodds
 - [[stephen-millington]] — Stephen Millington
@@ -414,22 +391,32 @@
 
 ## Reference
 
-- [[ai-adoption-frameworks]] — AI Adoption Frameworks
-- [[org-chart]] — Organisation Chart
-- [[activation-pathway]] — AI Activation Pathway
+- [[activation-pathway]] — Activation Pathway
+- [[ai-activation-assessment-2026-06]] — AI Activation Assessment Jun 2026
 - [[ai-activation-map]] — AI Activation Map
-- [[cowork-implementation]] — BDM Brain — co:work Implementation Design
-- [[ai-capability-baseline-2026-04]] — AI capability baseline — April 2026
-- [[philosophical-ai-workshop]] — Philosophical AI Workshop — design notes
-- [[amazon-ai-sprawl-cautionary-tale]] — Amazon AI sprawl — Peter Girnus (AI Tools Governance PM)
-- [[ollie-conversion-bets-2026-04-27]] — Ollie Crowe: conversion bet reframing (Antton + Curtis)
-- [[ai-content-corpus-analysis]] — AI Content Corpus — 60-Day Notion Documents
-- [[thin-harness-fat-skills]] — Thin Harness, Fat Skills — Garry Tan + vault analysis
-- [[offsite-ai-session-draft]] — ProdTech offsite — 90-min AI session
-- [[ai-roadmap-draft-2026-04-14]] — AI Roadmap — Board Draft
-- [[enterprise-engine-technical-review]] — Enterprise Engine — Technical Review (2 Apr 2026)
-- [[noc-cancellation-workflow]] — Notice of Cancellation (NOC) — Zapier workflow design
-- [[tco-value-statement-process]] — TCO / Flock Value Statement — New Business Process
-- [[ai-initiative-roadmap]] — AI initiative roadmap
-- [[ai-project-roadmap]] — AI project roadmap
-- [[head-of-ai-pitch]] — Head of AI at Flock
+- [[ai-adoption-frameworks]] — AI Adoption Frameworks
+- [[ai-capability-baseline-2026-04]] — AI Capability Baseline Apr 2026
+- [[ai-roadmap-draft-2026-04-14]] — AI Roadmap Draft Apr 14
+- [[amazon-ai-sprawl-cautionary-tale]] — Amazon AI Sprawl Cautionary Tale
+- [[enterprise-engine-technical-review]] — Enterprise Engine Technical Review
+- [[flock-communication-playbook]] — Flock Communication Playbook
+- [[head-of-ai-pitch]] — Head of AI Pitch
+- [[noc-cancellation-workflow]] — NOC Cancellation Workflow
+- [[offsite-ai-session-draft]] — Offsite AI Session Draft
+- [[org-chart]] — Org Chart
+- [[philosophical-ai-workshop]] — Philosophical AI Workshop
+- [[reference/shared-brain/README]] — Shared Brain README
+- [[reference/shared-brain/cowork-implementation]] — Shared Brain Co:work Implementation
+- [[slt-ai-update-2026-06-17]] — SLT AI Update Jun 17
+- [[tco-value-statement-process]] — TCO Value Statement Process
+- [[thin-harness-fat-skills]] — Thin Harness Fat Skills
+
+---
+
+## Inbox
+
+- [[inbox/morning-review-activation-assessment]] — Morning review activation assessment
+- [[inbox/adam-bdm-brain-meeting-prep]] — Adam BDM brain meeting prep
+- [[inbox/bdm-brain-meeting-prep]] — BDM brain meeting prep
+- [[inbox/ollie-bdm-brain-meeting-prep]] — Ollie BDM brain meeting prep
+- [[inbox/ai-activation-happy-path]] — AI activation happy path

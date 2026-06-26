@@ -33,14 +33,14 @@ Measure every person at Flock against the [[activation-pathway]] framework and m
 
 **Sample scored**: ~13 people across engineering, product, ops, finance, and leadership. See [[ai-activation-map]] for the full distribution.
 
-| Stage | People (confirmed) |
-|---|---|
-| 5 — Extended orchestration | Ishmael |
-| 4 — Multi-agent / delegation | Stephen, Emily, Javier, Jordi, Ollie, Mima, Adam |
-| 3 — Plan mode / fluency | Rob, Fergus, Matt |
-| 2 — Context + tools | Ed |
-| 1 — First genuine win | Queency |
-| ? — Not yet assessed | ~25+ people |
+| Stage | Count | People (selected) |
+|---|---|---|
+| 5 — Orchestration | 1 | Ishmael |
+| 4 — Delegation | 20 | Jordi, Javier, Jacob, Stephen, Sam, Aleks, Chris, Rob, David Z · Mima, Ollie, Geran, Matt (product) · Emily, Shreya · Kirsty, Christian · Matt Lees, Adam Smith · Fergus |
+| 3 — Fluency | 15 | Anna · Kevin, Ivan, Harry, David P · Alex D, Sophie, Liam · Jake, Darren M, Tom R · Eraaz, Rakhee, Phoebe · Ed |
+| 2 — Context + tools | 11 | Jonny, Fred · Jade, Paul, Anneliese, Matt D, Milan, Michael · Adam Sandle, Ben, Daisy |
+| 1 — First win | 1 | Queency |
+| ? — Unassessed | 7 | Pavel · Antton · Darren N, Billy, Curtis, Andrew, Matt S |
 
 **Not yet assessed**: Jacob, Sami, David Zamora, Geran, Anna, Shreya, Fred, Ivan, Kirsty, David P, Antton, Darren, Alex (engineer), Francesco, Milan, Chris, Eraaz, Paul, Jonny, Matt DiPré, and others.
 
@@ -77,6 +77,33 @@ These surfaced in the first scoring pass and should be resolved before rolling o
 - **The "checkbox" trap**: the threshold metric (3 tasks in a project) can be gamed. What matters is whether people are genuinely changed — returning to AI habitually, not just completing an exercise.
 
 ## Log
+
+### 2026-06-22–25 — Discovery week: 10 conversations, 6 stage movements
+
+Highest-volume assessment week of the programme. Key movements confirmed:
+
+- **Fergus**: Stage 3 → 4. Built full finance ledger service prototype overnight with Claude despite no prior production code in the codebase. Self-healing loop framing (agents auto-solve tickets; engineer reviews/approves PRs) confirms Stage 4 orientation.
+- **Christian Leth Nielsen** (CFO): unassessed → Stage 4. SPA vendor obligations, GWP budget analysis, distribution cost analysis — all replacing old spreadsheet workflows. First leadership-tier Stage 4 outside Engineering.
+- **Phoebe Woodman**: Stage 1 → 3. Flock O'Clock automation designed (spreadsheet → Claude → Slack → HTML slides); HTML deployed to Netlify; Claude Design discovered live on call; Alar daily briefings live.
+- **Rakhee**: Stage 2 → 3. Granola-to-tracker pipeline live for entire People team, each member with a custom variant.
+- **Eraaz Ali**: Stage 2 → 3 (approaching 4). OS-layer usage confirmed: rejection skill with relational guardrails, agency terms ranked + 3 emails sent directly from Claude, Alar calendar/feedback automation.
+- **Liam Thomson**: confidence upgraded to high. Chrome MCP budget tracker live, Claude Design for high-stakes decks, full ChatGPT → Claude switch confirmed.
+
+**Week pattern**: Stage 2 → 3 continues to be the most common movement, triggered by a concrete domain win (budget tracking, Flock O'Clock, Granola pipeline). Stage 3 → 4 requires autonomous delegation — Fergus's overnight prototype is the clearest new example. The Finance and People teams are now substantially activated; underwriting ICs remain the main gap.
+
+**PGR skills decision**: decided NOT to roll out Francesco's Pace (over-engineered, 15-20 skills). Rakhee + Eraaz to build simpler prompt/co-work skill instead. Workshop for volunteers planned. Target: co-work project that tracks 1:1s and auto-populates next PGR prep. See [[AI-115]].
+
+**Ivan Boix (Finance/Credit Control)**: confirmed Stage 3; exploring NetSuite MCP to eliminate manual XLS download step from daily priorities report. Month-end automation (bad debt provision, commission income journals) is the next horizon. Broker payment behaviour HTML dashboard live.
+
+### 2026-06-15 — Ed mandate reinforced + benchmark ready
+
+Ed came into an impromptu Rakhee/Phoebe 1:1 last week with the K-shaped diagram, enthusiastically reinforcing his AI mandate. Board has agreed Flock should be "AI first"; Admiral is looking to learn from Flock. Ed's estimate: 10% of Flockers on the upward curve — Tom disagrees, estimates ~30% based on observed data.
+
+80% company activation benchmark is ready to share with Rakhee this week. Standalone AI survey to be rerun end of Q2 as a progress measure.
+
+Key gap: Ed may not know the volume of work already happening (workshops more than weekly, squad-level, informal champions). Tom to send proactive comms to Ed this week rather than waiting for a Gina-arranged slot. → [[AI-113]], [[AI-114]]
+
+Next quarter framing shift: from "just use AI" → "are you using it well?" — the go-use-it phase is largely done (80-90% of company at least at that point).
 
 ### 2026-06-12 — Underwriting activation strategy
 

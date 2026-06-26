@@ -7,8 +7,8 @@ role: Engineer
 team: Engineering
 tags: [engineering, acquisition, ai-native, document-classification]
 ai_activation_stage: 4
-ai_activation_confidence: medium
-ai_activation_assessed: 2026-05-26
+ai_activation_confidence: high
+ai_activation_assessed: 2026-06-18
 ---
 
 ## Role
@@ -33,15 +33,15 @@ Formerly a direct report.
 - Concerned about job security implications of AI-native engineering — addressed with "better not faster" framing
 
 ## AI Activation
-**Stage**: 4 — Multi-agent orchestration  
-**Confidence**: medium  
-**Assessed**: 2026-05-26  
-**Evidence**: `CLAUDE.md` at repo root; skills-based document classification (TRS, CC detection, assembler pattern); agreed to "not coding for a month" pilot; Acquisition AI PoC (HubSpot→Claude→Flock API quoting). Data from April — may have progressed further.
+**Stage**: 4 — Delegation
+**Confidence**: high
+**Assessed**: 2026-06-19
+**Evidence**: Running parallel PRs simultaneously via agents ("My agents right now, I'm writing two different PRs" — Jun 4 group therapy). Multi-MCP personal agent system (energy market data, Apollo/LinkedIn, Outlook, PostHog, Linear). CLAUDE.md sitting above multiple repos coordinating context. Skills-based document classification (TRS, CC detection, assembler pattern). Jun 4 session confirms routine daily delegation at scale.
 
-**Not Stage 3**: Has systematic context loading (`CLAUDE.md`), not ad hoc. Building structured agent skills (document classification with assembler pattern) rather than one-off prompts. Committed to a month of deliberate delegation — that's a Stage 4 bet on the future, not Stage 3 behaviour.  
-**Not Stage 5**: Data is from April — assessment is stale. No evidence yet of multi-repo orchestration, adherence measurement, or the engineering problems of the new paradigm. The pilot was beginning, not completed.  
-**To progress**: Complete the "not coding for a month" experiment. The Stage 4→5 transition is: when the agent gets something wrong, update the context file rather than working around it. The feedback loop from mistake → context improvement is what builds adherence thinking.  
-**Framework note**: Data freshness is a real problem here. Medium confidence + stale data = the assessment could be wrong in either direction. The framework needs a "last verified" concept separate from "last assessed."
+**Not Stage 3**: Parallel agent PRs and multi-service orchestration is well past fluency. The "not coding for a month" experiment has been superseded by actual daily practice.
+**Not Stage 5**: Not yet measuring adherence or directing systems at the organisational level. Hasn't socialised his methods with the team — Tom (Jun 17): "I'd love it if Harvey came with 'I really want to roll this out in the team' but they haven't yet."
+**To progress**: Share the harness. The craft-loss grief ("taking the craft out of the work") may be the psychological blocker. Reframe: sharing methods is not diminishing the craft but redefining it. Pair with Ismael on team-level rollout.
+**Framework note**: Craft-loss anxiety is a real and legitimate concern surfaced in the Jun 4 group therapy. It doesn't lower the stage — it's a Stage 4 existential question about what engineering becomes.
 
 ## 1:1 Log
 

@@ -6,9 +6,9 @@ type: person
 role: Head of Product
 team: Product
 tags: [product, leadership]
-ai_activation_stage: 3
+ai_activation_stage: 4
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-05-26
+ai_activation_assessed: 2026-06-19
 ---
 
 ## Role
@@ -32,15 +32,15 @@ Peer
 - Also experienced AI-driven burnout (Replit on phone)
 
 ## AI Activation
-**Stage**: 3 — Plan mode / conversational fluency  
-**Confidence**: medium  
-**Assessed**: 2026-05-26  
-**Evidence**: Sees PM IDE shift clearly (Cursor replacing email/Slack/docs); second brain concept where agent reads team project docs and surfaces coaching examples; experienced AI-driven burnout (Replit on phone); identifies "last mile" quality problem with LLM output. Strong conceptual model. Not confirmed as a deep daily practitioner — evidence is more strategic than demonstrated tooling depth.
+**Stage**: 4 — Delegation
+**Confidence**: medium
+**Assessed**: 2026-06-19
+**Evidence**: Delegates complex analysis tasks across HubSpot, PostHog, and Looker MCPs daily. Uses second brain to coach his reports — reads team project docs via agent, surfaces coaching examples. May 12: running Looker MCP queries conversationally, directing step by step but handing off the execution. May 18: sharing context across team repos, reading his own context files. Delegates whole analytical workflows to Claude as part of product leadership practice.
 
-**Not Stage 2**: Has experienced AI-driven burnout — implying he's gone deep enough to hit a ceiling, not just dipping in. Has a sophisticated conceptual model of Stage 4+ (second brain, PM IDE shift). Not at the "it's a conversation" stage — he understands the landscape well beyond that.  
-**Not Stage 4**: No demonstrated AI tool or skill building. The second brain is a vision, not a built system. The "last mile" quality problem is the Stage 3 quality ceiling — he's experiencing it but using it as a reason to pause rather than loading better context to push through it. Conceptual model and practice are significantly decoupled.  
-**To progress**: Build the thing he's described. A context-loaded project with his team's strategy docs, OKRs, and 1:1 notes is Stage 2 done properly, and it directly serves his coaching use case. The gap isn't conceptual — it's activation energy.  
-**Framework note**: Matt is the clearest example of conceptual model ≠ activation stage. He thinks at Stage 4/5 level but practises at Stage 3. The framework should probably track these separately — someone can have high "conceptual activation" and low "practical activation." The two inform different interventions.
+**Not Stage 3**: Past conversational fluency — multiple MCPs wired together, delegates analysis workflows, uses second brain for management coaching. The conceptual/practice gap that previously characterised his assessment has closed.
+**Not Stage 5**: Not directing multi-agent systems or measuring adherence. The coaching skill he describes is a vision being built, not a governed system.
+**To progress**: Ship the coaching skill — agent ingests all team Linear projects, surfaces the "so what" for each 1:1 proactively. One built, repeatable, delegated workflow would push toward Stage 5.
+**Framework note**: Previously the clearest example of "conceptual model ≠ activation stage." By June, practice has caught up — he's doing the work, not just describing it.
 
 ## 1:1 Log
 

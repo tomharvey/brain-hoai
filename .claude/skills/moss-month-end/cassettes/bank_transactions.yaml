@@ -1,0 +1,52 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+    method: POST
+    uri: https://public-api.getmoss.com/oauth2/token
+  response:
+    body:
+      string: '{"access_token": "test_token_abc", "expires_in": 3600, "token_type":
+        "bearer"}'
+    headers:
+      Content-Type:
+      - application/json
+      X-RateLimit-Remaining:
+      - '99'
+      X-RateLimit-Reset:
+      - '9999999999'
+      X-RateLimit-Scope:
+      - read
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer test_token_abc
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://public-api.getmoss.com/v1/bank-transactions/search-query
+  response:
+    body:
+      string: '{"data": [{"id": "bt-001", "amount": {"amount": "-500.00", "currency":
+        "GBP"}, "description": "Payment to Acme", "bookingDate": "2026-06-15"}], "meta":
+        {"pagination": {"type": "offset", "page": 1, "pageSize": 100, "hasMore": false,
+        "totalPages": 1, "totalItems": 1}}, "errors": []}'
+    headers:
+      Content-Type:
+      - application/json
+      X-RateLimit-Remaining:
+      - '99'
+      X-RateLimit-Reset:
+      - '9999999999'
+      X-RateLimit-Scope:
+      - write
+    status:
+      code: 200
+      message: OK
+version: 1

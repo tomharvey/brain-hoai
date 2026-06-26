@@ -6,9 +6,9 @@ type: person
 role: Underwriting Assistant
 team: Ops (reports to Emily Staton)
 tags: [underwriting, ops, ai-user, zapier, hubspot, cancellations]
-ai_activation_stage: 3
+ai_activation_stage: 4
 ai_activation_confidence: high
-ai_activation_assessed: 2026-06-02
+ai_activation_assessed: 2026-06-18
 ---
 
 ## Role
@@ -37,15 +37,15 @@ First spoke 2026-04-02. Proactive, keen, already designing automations independe
 
 ## AI Activation
 
-**Stage**: 3 — Conversational fluency / tool building
+**Stage**: 4 — Delegation
 **Confidence**: high
-**Assessed**: 2026-06-02
-**Evidence**: Built and shipped a working NOC letter generator skill used by the whole team (8-step workflow: HubSpot pull → template fill → .docx export). Connected HubSpot to Claude live during discovery call. Designs Zapier workflows independently. "We're relying more on Claude now than tech automation." Growing confidence and sharing work proactively across the team.
+**Assessed**: 2026-06-18
+**Evidence**: Independently built tools in at least three domains: NOC letter generator (8-step HubSpot→.docx), new business deal creator (reads broker emails, creates/links HubSpot deals, handles conditional logic), and underwriter workload distribution (Slack alerts for deal allocation equity). Iterates without prompting, teaches methodology to others, demos at group syncs. Geran cited her in strategic planning as the worked example of ops enablement at scale. Deal creator handles multi-source conditional logic across the full new business pipeline — task-level review, not interaction-level.
 
-**Not Stage 2**: Not just using tools — building them for others. The NOC skill is a shared team resource, not a personal automation. Stage 2 is "I have tools connected"; Stage 3 is "I built something that runs."
-**Not Stage 4**: Single skill, single domain. The NOC workflow is powerful but isolated. No evidence yet of multi-step pipeline orchestration or delegating whole workflows end-to-end.
-**To progress**: The driver referral automation she offered to help Fred with is the natural Stage 3→4 test — can she build something end-to-end in a new domain independently? Extending to a second skill without guidance is the signal.
-**Framework note**: One of the fastest progressors in the company. Assessment from April but evidence is strong and unlikely to have reversed.
+**Not Stage 3**: Multiple independent tools across different domains, teaching others, reviewing at task level ("doing about 50-60% right, here are the specific failure modes"). Past single-tool fluency.
+**Not Stage 5**: Monitoring and governance layer not yet present — finding errors per-run through observation, not structured quality monitoring. No defined accuracy threshold for production readiness.
+**To progress**: Define explicit accuracy thresholds for each tool. Build a systematic review mechanism (weekly spot-check log) rather than relying on organic error discovery.
+**Framework note**: Fastest non-engineering progressor. Observer→Stage 4 in ~10 weeks. The cancellation process work is the next complexity frontier.
 
 ## 1:1 Log
 

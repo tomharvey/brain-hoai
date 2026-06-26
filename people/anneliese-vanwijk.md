@@ -37,8 +37,8 @@ Only she and [[queency-gonsalves|Queency]] use MOSS on the finance team.
 
 **Not Stage 1**: Has a clear target use case, has set up the full tooling infrastructure, and is moving toward building — past the "one task, done" stage.
 **Not Stage 3**: Assessment made on day 1 of active engagement. No workflows built yet. Context loaded; nothing running.
-**To progress**: The MOSS consistency checker is the natural Stage 2→3 project. Building it will require iterative refinement of prompts and logic — that's Stage 3 in the making.
-**Framework note**: Very fresh assessment (2026-06-01). Data will compound quickly. Reassess after finance tech day.
+**To progress**: The MOSS MCP has been built and installed by Kirsty (Jun 3). The tool is now available — the Stage 2→3 transition is using it iteratively for month-end consistency checking, not just running it once.
+**Framework note**: MOSS MCP is live as of Jun 3. NetSuite MCP also now available. Weekly finance workshops are the coaching vehicle. Reassess after first month-end cycle with the new tools.
 
 ## Notes
 

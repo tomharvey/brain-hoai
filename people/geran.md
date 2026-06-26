@@ -6,9 +6,9 @@ type: person
 role: Lead Product Manager
 team: Product (reports to [[matt|Matthew Price]])
 tags: [product, ux-research, streamlit, snowflake, visualization, ai-user]
-ai_activation_stage: 2
-ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-02
+ai_activation_stage: 4
+ai_activation_confidence: high
+ai_activation_assessed: 2026-06-19
 ---
 
 ## Role
@@ -38,15 +38,15 @@ First 1:1 with Tom 2026-04-17 (AI discovery). Open, thoughtful, visualization-or
 
 ## AI Activation
 
-**Stage**: 2 — Context and tools (emerging)
-**Confidence**: medium
-**Assessed**: 2026-06-02
-**Evidence**: Regular Claude Desktop user for non-coding tasks. Builds Streamlit apps independently (Snowflake/Glue architecture, production quality). "Starting to double down." Interested in personal OS concept. The "million dollar question" about cross-team OS context sharing shows Stage 3-4 conceptual thinking.
+**Stage**: 3 — Fluency
+**Confidence**: high
+**Assessed**: 2026-06-18
+**Evidence**: Built multiple production Streamlit apps deployed to Snowflake — policy status tracker (red/amber/green), Matt Dipre's haulage analysis tool ("now a production process"), HubSpot broker analysis. Iterates on apps with Cursor. "Breadth of context is something I've been getting really good at recently" — deliberate practice. Claude Desktop as primary non-coding tool. Mermaid diagrams of 100M GWP breakdown used by Matt Price and others. Jun 10 strategy session shows sophisticated thinking about AI economics and multiplayer SDLC.
 
-**Not Stage 1**: Regular multi-task user, not occasional. The Streamlit builds suggest comfort with tool selection and context loading even if not explicitly AI-mediated.
-**Not Stage 3**: No evidence of systematic context loading or iterative plan interrogation. Claude Desktop usage is described as non-coding tasks — likely single-shot rather than conversational. Data from April 2026.
-**To progress**: The personal OS interest is the right next step. A PM-specific context-loaded Claude project (PostHog, product strategy, OKRs, team notes) would push him from "using Claude" to "working in an environment." The "UI for my mind palace" vision is a Stage 3 goal.
-**Framework note**: April 2026 data. Likely understated — the OS interest and cross-team context thinking suggest active progression. His question ("how do personal OSes talk to each other?") is the most strategically interesting question in the company right now.
+**Not Stage 2**: Building and deploying production tools used by others. Iterating across data sources. Not one-shotting.
+**Not Stage 4**: Still directs the builds himself — AI is his tool, not his delegate. Has not delegated a whole task to an agent and reviewed at output level. Multiplayer SDLC thinking is future-tense.
+**To progress**: Build one skill or workflow that runs autonomously — the acquisition brain with Ollie is the natural candidate. The shift from "I build with AI" to "AI builds and I review" is the Stage 4 transition.
+**Framework note**: Strong production evidence. The Streamlit deployments are the clearest non-engineering production AI usage in the company alongside Kirsty's Looker work.
 
 ## 1:1 Log
 

@@ -1,0 +1,52 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+    method: POST
+    uri: https://public-api.getmoss.com/oauth2/token
+  response:
+    body:
+      string: '{"access_token": "test_token_abc", "expires_in": 3600, "token_type":
+        "bearer"}'
+    headers:
+      Content-Type:
+      - application/json
+      X-RateLimit-Remaining:
+      - '99'
+      X-RateLimit-Reset:
+      - '9999999999'
+      X-RateLimit-Scope:
+      - read
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer test_token_abc
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://public-api.getmoss.com/v1/files/search-query
+  response:
+    body:
+      string: '{"data": [{"id": "file-001", "name": "2026-06-15-ACME-500.00-GBP.jpg",
+        "originalName": "receipt.jpg", "size": 45000, "createTime": "2026-06-15T12:00:00Z"}],
+        "meta": {"pagination": {"type": "offset", "page": 1, "pageSize": 100, "hasMore":
+        false, "totalPages": 1, "totalItems": 1}}, "errors": []}'
+    headers:
+      Content-Type:
+      - application/json
+      X-RateLimit-Remaining:
+      - '99'
+      X-RateLimit-Reset:
+      - '9999999999'
+      X-RateLimit-Scope:
+      - write
+    status:
+      code: 200
+      message: OK
+version: 1

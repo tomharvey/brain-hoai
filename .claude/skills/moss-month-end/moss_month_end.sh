@@ -179,44 +179,67 @@ def get(d, *keys, default='Unknown'):
     return default
 
 def vendor(e):
-    return get(e,
-        'merchantName', 'merchant_name', 'vendor', 'supplier',
-        'merchant.name', 'creditor', 'payee', 'description')
+    md = e.get('expenseMetadata') or {}
+    merchant = (md.get('merchantDetails') or {}).get('name')
+    if merchant:
+        return merchant.strip()
+    return get(e, 'bookingText', 'description')
 
 def category(e):
-    return get(e,
-        'expenseAccount', 'expenseAccount.name', 'expense_account',
-        'category', 'accountName', 'account_name', 'costAccount')
+    """Return expense account UUID (no lookup available in bash mode)."""
+    lines = e.get('lines') or []
+    if lines:
+        return lines[0].get('expenseAccountId', 'Unknown')
+    return 'Unknown'
 
 def cost_centre(e):
-    return get(e,
-        'costCenter', 'costCenter.name', 'cost_center',
-        'costCentre', 'cost_centre', 'team', 'department',
-        default='')
+    """Return cost centre dimension item UUID."""
+    lines = e.get('lines') or []
+    if lines:
+        dims = lines[0].get('dimensions') or []
+        if dims:
+            return dims[0].get('dimensionItemId', '')
+    return ''
 
 def tx_month(e):
-    for k in ('date', 'transactionDate', 'transaction_date',
-              'invoiceDate', 'invoice_date', 'createdAt', 'created_at'):
+    for k in ('expenseTime', 'createTime', 'updateTime'):
         v = str(e.get(k, ''))
+        if len(v) >= 7:
+            return v[:7]
+    md = e.get('expenseMetadata') or {}
+    for k in ('invoiceDate', 'bookingDate', 'settlementDate'):
+        v = str(md.get(k, ''))
         if len(v) >= 7:
             return v[:7]
     return ''
 
 def tx_status(e):
-    return get(e,
-        'status', 'approvalStatus', 'approval_status',
-        'workflowStatus', 'workflow_status',
-        default='unknown').lower()
+    return get(e, 'status', default='unknown').lower()
 
 def tx_amount(e):
-    for k in ('amount', 'totalAmount', 'total_amount', 'grossAmount',
-              'gross_amount', 'netAmount', 'net_amount'):
+    for k in ('homeAmount', 'amount'):
         v = e.get(k)
-        if v is not None:
+        if isinstance(v, dict):
+            raw = v.get('amount')
+            if raw is not None:
+                try:
+                    return float(str(raw).replace(',', ''))
+                except ValueError:
+                    pass
+        elif v is not None:
             try:
                 return float(str(v).replace(',', '').replace('£', '').strip())
             except ValueError:
                 pass
+    lines = e.get('lines') or []
+    if lines:
+        for k in ('grossAmount', 'amount', 'netAmount'):
+            v = lines[0].get(k)
+            if isinstance(v, dict) and v.get('amount') is not None:
+                try:
+                    return float(str(v['amount']).replace(',', ''))
+                except ValueError:
+                    pass
     return None
 
 # ── Build data structure: vendor → month → list of transactions ───────────

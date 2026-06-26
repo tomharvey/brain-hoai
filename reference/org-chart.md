@@ -86,7 +86,7 @@ graph TD
     MP --> JMP
     MP --> OC
 
-    %% === Operations (under Mollie) ===
+    %% === Operations (under Antton — Mollie Brownlow departed) ===
     ES["Emily Staton<br/>Senior Underwriting Operations Manager"]
     JS["Jonny Smith<br/>Connectivity Operations Manager"]
 
@@ -150,7 +150,7 @@ graph TD
 
     %% === Underwriting (under Darren McCauley) ===
     DN["Darren Nightingale<br/>Head of Underwriting"]
-    LTA["Lawrence Tanner<br/>Claims Operations Manager"]
+    %% LTA Lawrence Tanner — left the company
     MM["Michael Matthews<br/>Head of Actuarial"]
     MC["Milan Chavda<br/>Head of Pricing Intelligence"]
     TR["Tom Rogers<br/>Head of Motor Underwriting"]
@@ -158,7 +158,7 @@ graph TD
     ADO["Andrew Dodd<br/>Senior Underwriter"]
 
     DM --> DN
-    DM --> LTA
+    %% DM --> LTA (Lawrence left)
     DM --> MM
     DM --> MC
     DM --> TR
@@ -172,10 +172,10 @@ graph TD
     MC --> FV
     MC --> HD
 
-    %% Under Lawrence Tanner (Claims Operations Manager)
+    %% Lawrence Tanner left — Adam Sandle now reports to Darren McCauley directly
     AR2["Adam Sandle<br/>Claims Operations Associate"]
 
-    LTA --> AR2
+    DM --> AR2
 
     %% Under Ben Allen (Senior Customer Success Manager)
     DMB2["Daisy Mae Baker<br/>Customer Success Associate"]

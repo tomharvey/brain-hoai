@@ -6,6 +6,9 @@ type: person
 role: Data Engineer
 team: Prod-tech
 tags: [data, engineering]
+ai_activation_stage: 4
+ai_activation_confidence: medium
+ai_activation_assessed: 2026-06-19
 ---
 
 ## Role
@@ -27,11 +30,17 @@ Formerly a direct report.
 - Worried about losing David as line manager and data opportunities in new team
 - Confirmed frequent collaboration with others, which helped address concerns
 
-## AI practice
+## AI Activation
 
-**Stage 2 (low confidence)** — cynical about AI but is using it. Multiple transcripts exist; formal assessment pending.
+**Stage**: 4 — Delegation
+**Confidence**: medium
+**Assessed**: 2026-06-19
+**Evidence**: Ran multiple parallel agents for 36 hours on document processing (including while cooking — agents running autonomously in background). Daily Cursor + Claude Code use. Delegates complex coding tasks as part of the engineering team. Attended group therapy sessions Jun 3 and Jun 10.
 
-The cynicism fits the "understand vs trust" pattern seen in engineering: AI monitoring framed as "babysitting", discomfort shipping code she can't read. This is a philosophical position, not a capability block — she's using the tools despite the reservations. Attended AI culture group therapy session Jun 3.
+**Not Stage 3**: Running autonomous agents for 36 hours is delegation, not fluency. She's past directed conversation into handing off whole tasks.
+**Not Stage 5**: No evidence of directing multi-agent systems or measuring adherence. Single-domain delegation.
+**To progress**: Build domain knowledge confidence in unfamiliar areas — she's honest about trusting Claude 100% in domains she doesn't know well. The review muscle in unfamiliar territory is the Stage 4→5 gap.
+**Framework note**: Philosophical cynicism ("I want to have the skill rather than Claude having the skill") is a values position, not a capability block. She's using the tools at Stage 4 level despite the reservations. The grief is real and worth naming — it doesn't lower the stage.
 
 ## 1:1 Log
 

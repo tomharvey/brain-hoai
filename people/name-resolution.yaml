@@ -52,12 +52,41 @@ substitutions:
     guard: "only when used as a person's name (not the drink)"
     confirmed: 2026-05-27
 
+  - heard: ["araz", "Araz"]
+    person: eraaz-ali
+    phonetics: "'Eraaz' → 'Araz' — drops the leading 'E', softens 'ee' to short vowel"
+    guard: "only when used as a person's name"
+    confirmed: 2026-06-15
+
+  - heard: ["Gran"]
+    person: geran
+    phonetics: "'Geran' → 'Gran' — truncated, drops middle vowel"
+    guard: "only when used as a person's name, not as a prefix (e.g. 'Granola')"
+    confirmed: 2026-06-17
+
+  - heard: ["Alex unova", "unova"]
+    person: aleks-yanova
+    phonetics: "'Aleks Yaneva' → 'Alex unova' — anglicised first name, garbled surname"
+    guard: "only when used as a person's name in engineering context"
+    confirmed: 2026-06-17
+
+  - heard: ["Francesca"]
+    person: francesco-venerandi
+    phonetics: "'Francesco' → 'Francesca' — gender-swapped Italian ending in speech/transcription"
+    guard: "only in pricing/data science context"
+    confirmed: 2026-06-17
+
 nicknames:
   # Correct short forms — not transcription errors, just informal names
   # Format:
   #   nickname:  the informal name used in speech and transcript
   #   person:    people/ filename
   #   full_name: canonical full name
+
+  - nickname: "Rocky"
+    person: rakhee
+    full_name: "Rakhee Gohil"
+    confirmed: 2026-06-24
 
   - nickname: "Mima"
     person: mima

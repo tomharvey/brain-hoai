@@ -6,9 +6,9 @@ type: person
 role: Data Engineer
 team: Engineering — Retention / Safety
 tags: [engineering, data, automation, ai-champion]
-ai_activation_stage: 3
-ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-02
+ai_activation_stage: 4
+ai_activation_confidence: high
+ai_activation_assessed: 2026-06-18
 ---
 
 ## Role
@@ -34,15 +34,15 @@ Met in group context at codifying context session (2026-04-21).
 
 ## AI Activation
 
-**Stage**: 3 — Tool building / automated agents
-**Confidence**: medium
-**Assessed**: 2026-06-02
-**Evidence**: Built automated documentation update agents running on cron. Golden rules for DBT projects encoded in markdown — Claude enforces them. Claude Code terminal usage (99% of his AI usage). Wiring Fergus's pipeline results into Iceberg tables. Described by colleagues as "using AI as a harness." Skeptical of Notion MCP quality — prefers markdown + vector encoding (principled tool selection).
+**Stage**: 4 — Delegation
+**Confidence**: high
+**Assessed**: 2026-06-18
+**Evidence**: Managing 2-3 parallel Claude Code processes as junior engineers — assigns discrete tasks, flips between screens, reviews at task level. "I just view them as really capable Juniors." Built automated documentation update agents on cron. Maintains golden rules for DBT projects in markdown that Claude enforces. Had to set a guardrail when an agent tried to push directly to main — meaning autonomous production pushes are a realistic failure mode he has addressed.
 
-**Not Stage 2**: Not just using tools — building agents that run autonomously on a schedule. The cron-based documentation agents are Stage 3+ behaviour.
-**Not Stage 4**: Single group session observation. No evidence of multi-agent coordination, worktree usage, or delegating PR-sized chunks. "Depth unclear" per original map note.
-**To progress**: His question about sharing resources beyond local terminal usage points to Stage 4. Connecting automated agents to team-level shared context — encoding data extraction skills for Ishmael, Kirsty, Ben — would push him toward coordinated multi-agent work.
-**Framework note**: One group session — confidence is medium. Ishmael is on his team. Strong candidate for Stage 4 if depth is confirmed in a 1:1.
+**Not Stage 3**: Not thinking with the model — directing multiple instances in parallel. Reviews at task level, not line-by-line.
+**Not Stage 5**: Cron agents and DBT golden rules are personal/team-scoped. Has not yet described directing multi-agent systems with defined adherence metrics or building shared infrastructure others use.
+**To progress**: Take the DBT golden rules pattern and make it the team standard. Add a conformance check loop and Slack notification when drift is detected — that tips into Stage 5 territory.
+**Framework note**: Jun 2026 group therapy session provided direct verbatim Stage 4 evidence. The "capable Juniors" framing and guardrail anecdote are unambiguous.
 
 ## 1:1 Log
 

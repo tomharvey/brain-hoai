@@ -9,7 +9,7 @@ location: Norfolk
 tags: [distribution, broker-relations, ai-user]
 ai_activation_stage: 3
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-02
+ai_activation_assessed: 2026-06-18
 ---
 
 # Alex Dyball

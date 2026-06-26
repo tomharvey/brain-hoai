@@ -21,7 +21,7 @@ Ops — Underwriting assistance and customer support
 
 ## Relationship
 
-Reports to Mollie Brownlow (Head of Operations). Not yet spoken to.
+Reports to Antton Pena (CCO). Mollie Brownlow (former Head of Operations) has left the company.
 
 ## Working style notes
 

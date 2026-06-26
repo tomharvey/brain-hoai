@@ -6,9 +6,9 @@ type: person
 role: Broker Distribution Manager
 team: Distribution (reports to Adam Smith)
 tags: [distribution, broker-management]
-ai_activation_stage: 2
+ai_activation_stage: 3
 ai_activation_confidence: high
-ai_activation_assessed: 2026-06-02
+ai_activation_assessed: 2026-06-23
 ---
 
 ## Role
@@ -48,15 +48,15 @@ Discovery call completed 2026-04-13. Engaged, pragmatic, open to guidance.
 
 ## AI Activation
 
-**Stage**: 2 — Context and tools (activation threshold crossed)
+**Stage**: 3 — Fluency
 **Confidence**: high
-**Assessed**: 2026-06-02
-**Evidence**: Explicitly noted as having "clearly crossed the activation threshold" (2026-05-29). Using Granola + HubSpot MCP daily. Confident and self-directing. Live HubSpot query demonstrated in the call. Wants a custom Granola summary skill for BDM calls. Interest in a broker prioritisation tool (daily briefing style).
+**Assessed**: 2026-06-23
+**Evidence**: Daily brief running in Notion each morning — urgent actions (Granola, email, Slack), upcoming meetings, last week's overview, open pipeline. Meeting summaries auto-slack 15 mins after each call. Using personal folder more than BDM brain (more evolved). Identifying data quality issues (pipeline broker names missing, dates wrong) and iterating on fixes. Proofreading AI output for nuance. Planning to rebuild daily brief as a Claude skill in BDM brain. Planning coaching setup.
 
-**Not Stage 1**: Multiple MCPs in daily use, clear use cases, self-directing — well past single-task wins.
-**Not Stage 3**: Not yet iterating on outputs systematically or building tools independently. Wants a custom skill but hasn't built one yet. The interest in tools is Stage 2 top end; building them independently is Stage 3.
-**To progress**: Build the custom Granola summary skill herself rather than having it built for her. That's the Stage 2→3 transition — from using tools others built to building tools for herself.
-**Framework note**: Strong, confident Stage 2. The coaching framing resonates with her. The BDM team workshop (week of 2026-06-08) is the natural context for a Stage 3 push.
+**Not Stage 2**: Has built working daily workflows — not just using tools, but running automated pipelines. Iterating on output quality. Self-directing without coaching.
+**Not Stage 4**: Still proofreading and manually posting to distribution channel. Not delegating whole workflows autonomously. The skill rebuild and coaching setup are plans, not running systems.
+**To progress**: Rebuild the daily brief as a Claude skill in the BDM brain (select both personal and BDM folders). Add Slack ping with top 5 urgent items. Get the coaching setup running.
+**Framework note**: Strong progression from Stage 2 (May) to Stage 3 (June). The daily brief pipeline and auto-slack summaries are genuine Stage 3 behaviour — she's building and iterating, not just consuming.
 
 ## Prep notes (for 2026-05-28 call)
 

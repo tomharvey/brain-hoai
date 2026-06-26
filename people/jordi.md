@@ -8,8 +8,8 @@ team: Engineering
 email: jordi.pallaresroset@flockcover.com
 tags: [engineering, leadership, ai-discovery]
 ai_activation_stage: 4
-ai_activation_confidence: medium
-ai_activation_assessed: 2026-05-26
+ai_activation_confidence: high
+ai_activation_assessed: 2026-06-18
 ---
 
 ## Role

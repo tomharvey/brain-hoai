@@ -29,7 +29,7 @@ Head of Financial Planning & Analysis. Fractional CFO contractor — 3+ years at
 
 - **Daily data analysis and commentary**: flags unusual items in reports, writes first-pass commentary
 - **Automated trading pack commentary**: Google Apps Script reads the weekly table, generates commentary in Kevin's style
-- **Formula assistance**: complex budget restructuring reduced from 4 hours → 20 minutes. Known issue: Claude writes complex nested IFs instead of auditable simple formulas — Kevin grits teeth rather than correcting, which is the wrong habit
+- **Formula assistance**: complex budget restructuring reduced from 4 hours → 20 minutes. Built a skill that enforces auditable formulas (XLOOKUP over nested IFs, master error-check tab)
 - **Proof and reconciliation automation**: critical for accounting accuracy; enabled share options project within 2-day/week constraint
 - **Predictive model building**: personal data science exploration; found and corrected a data leakage issue himself
 
@@ -42,8 +42,8 @@ Head of Financial Planning & Analysis. Fractional CFO contractor — 3+ years at
 
 **Not Stage 2**: Not just using tools — building automated workflows that run on schedule (trading pack commentary script). The breadth and depth of application across FP&A is well past context loading.
 **Not Stage 4**: AI work is personal and proprietary — not yet shared or delegated to others. "Needs to become a product" framing means he's still in single-player mode. No evidence of multi-agent orchestration.
-**To progress**: Two things. First: encode the correction patterns — go back and build a skill from everything Claude got wrong on formulas and methodology. Currently "gritting teeth" through bad outputs instead of teaching. Second: make the trading pack commentary shareable so it becomes a team workflow, not a personal one.
-**Framework note**: Strong Stage 3. The "gritting teeth" habit is the specific behaviour blocking Stage 4 — he's not closing the feedback loop. Once he encodes corrections into skills, the quality ceiling lifts significantly.
+**To progress**: Make the trading pack commentary shareable so it becomes a team workflow, not just Kevin's personal automation. The formula skill already shows the correction-encoding habit — extend it to other domains.
+**Framework note**: Strong Stage 3. The formula skill (May 19 workshop) demonstrates he HAS learned to encode corrections — the prior "gritting teeth" failure mode has been resolved. The remaining gap to Stage 4 is sharing/delegating, not correction habits.
 
 ## 1:1 Log
 

@@ -7,8 +7,8 @@ role: Technical Product Manager
 team: Product (reports to Matt Price)
 tags: [product, whatsapp, prototype, advanced-ai-user]
 ai_activation_stage: 4
-ai_activation_confidence: medium
-ai_activation_assessed: 2026-05-26
+ai_activation_confidence: high
+ai_activation_assessed: 2026-06-18
 ---
 
 ## Role
@@ -31,15 +31,15 @@ Met through engineering discussions. Built WhatsApp driver reporting bot indepen
 - Tom advised: test with 1-2 fleets via Ben, lean into forgiveness over permission, but don't expand beyond that without telling engineering
 
 ## AI Activation
-**Stage**: 4 — Multi-agent orchestration  
-**Confidence**: medium  
-**Assessed**: 2026-05-26  
-**Evidence**: Built and deployed WhatsApp bot prototype independently (Render + Twilio + SQLite); running parallel research spikes with Claude independently (Adam's pipelining tool, #underwriting-losses structuring) without eng time; classified as "advanced AI user" by peers; consistent self-starter pattern across multiple unsolicited initiatives.
+**Stage**: 4 — Delegation
+**Confidence**: high
+**Assessed**: 2026-06-19
+**Evidence**: Built and operates the acquisition brain — Google Drive-backed with resolver MD, onboarding skill, Granola/Notion sync skills, scheduled HubSpot label updates (123 confirmed runs as of Jun 11). Deployed to Rob and Javier. WhatsApp bot (1.5hrs to MVP). 614K WhisperFlow words, voice-first primary input. Jun 15: co-designing BDM brain architecture with Tom (ontology layer, resolver patterns, validation layer). Hosts AI Breakfast.
 
-**Not Stage 3**: Built and deployed a complete working product without being asked — that's well past plan interrogation. Running parallel research spikes simultaneously using Claude without eng support. The behaviour is autonomous delegation, not assisted generation.  
-**Not Stage 5**: Single-agent applications, not multi-agent orchestration. No evidence of context engineering at the meta level or architectural design of agent systems. The self-starter pattern is consistent but each initiative appears to run independently.  
-**To progress**: Connect the parallel spikes into coordinated context rather than running them independently. The natural next step is a context-loaded project that spans his product domain — so each spike informs the next rather than starting cold.  
-**Framework note**: Ollie is a TPM who builds things — the product vs dev split in the framework doesn't cleanly contain him. He's following the dev pathway more than the PM pathway. Worth noting that role title isn't a reliable indicator of which activation pathway applies.
+**Not Stage 3**: Operating autonomous infrastructure — 123 scheduled runs, deployed to teammates, fan-out Granola ingestion. Well past fluency.
+**Not Stage 5**: Not yet directing a multi-agent system with measured adherence. The BDM brain resolver architecture (in build with Tom) would be Stage 5 if completed with validation layer and observability.
+**To progress**: Complete the BDM brain resolver with validation layer and ontology MCP server. That constitutes directing a system: resolver routes to skills, validates against schema, distributes intelligence to team members proactively.
+**Framework note**: Follows the dev pathway, not the PM pathway. The most consistently active AI practitioner across the full evaluation period. Confidence upgraded to High based on Jun operational evidence (scheduled runs, team deployment).
 
 ## 1:1 Log
 

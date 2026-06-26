@@ -7,8 +7,8 @@ role: Connectivity Operations Manager
 team: Ops (reports to Emily Staton)
 tags: [connectivity, ops, looker, zapier, hubspot, ai-user]
 ai_activation_stage: 2
-ai_activation_confidence: low
-ai_activation_assessed: 2026-06-02
+ai_activation_confidence: medium
+ai_activation_assessed: 2026-06-18
 ---
 
 ## Role

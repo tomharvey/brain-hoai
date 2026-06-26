@@ -6,22 +6,26 @@ type: person
 role: Head of Motor Underwriting
 team: Underwriting
 tags: [underwriting, pricing, claims, looker, excel, operational-tooling]
-ai_activation_stage: 2
-ai_activation_confidence: medium
-ai_activation_assessed: 2026-04-16
+ai_activation_stage: 3
+ai_activation_confidence: high
+ai_activation_assessed: 2026-06-23
 ---
 
 # Tom Rogers
 
 Head of Motor Underwriting. Deep domain expertise; Looker power user (queries custom tables directly); averages ~64 calls/day. Works primarily in Excel, G Drive, pricing model.
 
-## AI profile
+## AI Activation
 
-- **Stage 2** — Connected tools, daily light use; trust broken by ChatGPT for complex Excel work
-- ChatGPT mainly; Gemini for internal meeting summaries; not Claude yet
-- Uses AI personally (personal claims analysis, historical data patterns)
-- Team at "amateur level" — everyone understands potential, no one deep
-- Darren McCauley confirmed using AI more than he lets on (Tom's observation)
+**Stage**: 3 — Fluency
+**Confidence**: high
+**Assessed**: 2026-06-23
+**Evidence**: Building dashboards in Claude instead of Looker for complex analysis. New Ventures dashboard: 5-10 mins vs a full day in Looker, got Darren's thumbs-up in 10 seconds, quoted 6-7 new fleets. Using Gemini smartly for Excel formulas (consolidating sheets, calculating excesses, splitting by underwriting year). Ran a 3,000-lead haulage company scrape (O-license database + Companies House + LinkedIn directors) — one-paragraph prompt. Tests hypotheses: "I've got a feeling about something. I'm just going to use Claude to explore that and prove or disprove it." HubSpot dashboard (Jake's) in use but has data quality issues being fixed.
+
+**Not Stage 2**: Building tools, testing hypotheses, choosing between Claude and Looker based on complexity. Using Gemini for formulas (not black-box answers). Way past context-loading.
+**Not Stage 4**: Doesn't yet delegate whole workflows autonomously. Trust gate remains for final pricing calculations ("I can't turn around and say Gemini told me that"). Appropriate professional caution, not a capability gap.
+**To progress**: The submissions automation pipeline (Ollie's work) connecting to the portal would be the Stage 4 moment — whole workflow delegated.
+**Framework note**: Massive progression from April. "Without realizing it, AI is just part and parcel of what I do now." Team-wide: Curtis, Billy, Jake all using it; Darren mostly ChatGPT.
 
 ## Key context
 

@@ -6,9 +6,9 @@ type: person
 role: Interim CPTO
 team: Leadership
 tags: [leadership, strategy]
-ai_activation_stage: 3
-ai_activation_confidence: low
-ai_activation_assessed: 2026-05-26
+ai_activation_stage: 4
+ai_activation_confidence: medium
+ai_activation_assessed: 2026-06-25
 ---
 
 ## Role
@@ -30,15 +30,15 @@ Reports-to. Tom reports directly to Fergus. They worked together years ago at an
 - Pragmatic about re-teaming friction — expects people to "come out the other end"
 
 ## AI Activation
-**Stage**: 3 — Plan mode / conversational fluency  
-**Confidence**: low  
-**Assessed**: 2026-05-26  
-**Evidence**: Led 9,000-submission pipeline analysis (three S3 bucket architecture); strong strategic endorser of AI harness direction (CI/CD analogy, "technology initiative on the priority stack"). In Dev AI Practices transcript, engages thoughtfully but doesn't demo personal daily AI tooling. Low confidence — may be higher; assessment based on observed behaviour rather than demonstrated practice.
 
-**Not Stage 2**: Led a technically substantial pipeline project. In Dev AI Practices engaged with architectural implications, not surface-level interest. The quality of his strategic thinking suggests he's past the "context + tools" stage — he understands what the tools can do.  
-**Not Stage 4**: No demonstrated personal daily AI tooling. The pipeline may reflect technical leadership and architecture rather than personal agentic practice. Insufficient data to confirm Stage 4 behaviours.  
-**To progress**: Unknown — insufficient data to prescribe specific next steps. Priority action is a 1:1 focused on his personal AI practice rather than strategy and direction. He may already be Stage 4 and this score is wrong.  
-**Framework note**: Fergus is the clearest confidence problem in the sample. Low confidence at Stage 3 means this assessment could be wrong by two stages in either direction. The framework needs a way to express this — a low-confidence Stage 3 is a very different thing from a high-confidence Stage 3. Currently only the map notes this; it should be more prominent in the person file.
+**Stage**: 4 — Delegation
+**Confidence**: medium
+**Assessed**: 2026-06-25
+**Evidence**: Built a ledger service prototype overnight with Claude — never written a line of code in this codebase, ~80% of the way there with some architectural repointing needed. Gave Claude the full installments OKR doc + Jordi's MVP requirements → working service output. Used Claude to prototype and validate the OAuth refresh token auth flow as a background task (ran for an hour, found and implemented the abuse prevention feature in one change). Champions the self-healing loop and harness architecture concepts as central engineering strategy. "I can't understand why people aren't just doing the same sort of discovery effort."
+
+**Not Stage 3**: This is agentic delegation — giving Claude an entire codebase context + requirements doc and getting a working service back overnight. Not conversational fluency.
+**Not Stage 5**: Not yet running instrumented feedback loops or measuring model adherence at team level. The harness he's championing would be Stage 5 if built and instrumented.
+**To progress**: Lead the two-day installments hack session (→ Jordi + Joanne + Geran + Javier). Drive the Ishmael harness pitch (→ [[AI-140]]). Both would turn his personal practice into team practice.
 
 ## 1:1 Log
 
@@ -76,3 +76,13 @@ Reports-to. Tom reports directly to Fergus. They worked together years ago at an
 - Data source decision needed: HubSpot tickets vs Google Drive
 - Integration opportunity with Javier's document classification work
 - See: [[2026-04-20-submission-processing-pipeline]]
+
+### 2026-06-25 — Weekly
+
+- Frustration with Geran's "six months of work" framing for installments — built ledger service prototype overnight with Claude, never having written production code in this codebase
+- Proposed two-day hack session: Joanne + Geran + Javier + Jordi + Fergus to surface what's actually hard
+- Engineering culture concern: team frozen, not shipping at pace; "have we lost our ability to ship?"
+- Proposed making building the harness Ishmael's explicit job for a month
+- Claude spend: ~£5-6k/month; agreed to formalise as a production policy → [[AI-142]]
+- Bedrock fallback: Tom to check what's wired → [[AI-143]]
+- See: [[2026-06-25-fergus-tom-weekly]]

@@ -1,0 +1,49 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+    method: POST
+    uri: https://public-api.getmoss.com/oauth2/token
+  response:
+    body:
+      string: '{"access_token": "test_token_abc", "expires_in": 3600, "token_type":
+        "bearer"}'
+    headers:
+      Content-Type:
+      - application/json
+      X-RateLimit-Remaining:
+      - '99'
+      X-RateLimit-Reset:
+      - '9999999999'
+      X-RateLimit-Scope:
+      - read
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer test_token_abc
+    method: GET
+    uri: https://public-api.getmoss.com/v1/files/file-001/content
+  response:
+    body:
+      string: "\x89PNG\r\n\x1A\n\0\0\0\rIHDR\0\0\0\x01\0\0\0\x01\b\x06\0\0\0\x1F\x15\
+        \xC4\x89\0\0\0\rIDATx\xDAcd\xF8\xCFP\x0F\0\x03\x86\x01\x80Z4}k\0\0\0\0IEND\xAE\
+        B`\x82"
+    headers:
+      Content-Type:
+      - image/png
+      X-RateLimit-Remaining:
+      - '99'
+      X-RateLimit-Reset:
+      - '9999999999'
+      X-RateLimit-Scope:
+      - read
+    status:
+      code: 200
+      message: OK
+version: 1

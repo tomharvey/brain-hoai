@@ -12,6 +12,7 @@ Credentials (in priority order):
 
 from __future__ import annotations
 
+import base64
 import calendar
 import json
 import os
@@ -31,6 +32,7 @@ BASE_URL               = "https://public-api.getmoss.com"
 RECURRENCE_THRESHOLD   = 10   # months out of last 12 to be "recurring"
 CONSISTENCY_MIN_MONTHS = 3    # minimum appearances before checking consistency
 APPROVED_STATUSES      = {"approved", "exported", "paid", "completed", "booked", "posted", "processed"}
+EXCLUDED_STATUSES      = {"deleted", "cancelled", "rejected"}
 
 # ── Credentials ────────────────────────────────────────────────────────────
 
@@ -77,6 +79,10 @@ class MossClient:
             "read":  {"remaining": None, "reset": None},
             "write": {"remaining": None, "reset": None},
         }
+
+        # Lookup caches (UUID → name), loaded lazily
+        self._expense_accounts: dict[str, str] | None = None
+        self._cost_centres: dict[str, str] | None = None
 
     def _update_rate_limit(self, headers: requests.structures.CaseInsensitiveDict) -> None:
         scope = headers.get("X-RateLimit-Scope", "read").lower()
@@ -135,20 +141,75 @@ class MossClient:
         resp.raise_for_status()
         return resp.json()
 
-    def fetch_expenses(self, start: str, end: str) -> list[dict]:
+    def post(self, path: str, body: dict | None = None) -> dict | list:
+        self._ensure_token()
+        self._throttle("write")
+        resp = self._session.post(
+            f"{BASE_URL}{path}",
+            headers={"Authorization": f"Bearer {self._token}", "Content-Type": "application/json"},
+            json=body or {},
+            timeout=30,
+        )
+        self._update_rate_limit(resp.headers)
+        if resp.status_code == 429:
+            raise RuntimeError("MOSS API write rate limit exceeded after retries.")
+        resp.raise_for_status()
+        return resp.json()
+
+    def get_raw(self, path: str) -> requests.Response:
+        """GET that returns the raw response (for binary file downloads)."""
+        self._ensure_token()
+        self._throttle("read")
+        resp = self._session.get(
+            f"{BASE_URL}{path}",
+            headers={"Authorization": f"Bearer {self._token}"},
+            timeout=60,
+        )
+        self._update_rate_limit(resp.headers)
+        if resp.status_code == 429:
+            raise RuntimeError("MOSS API read rate limit exceeded after retries.")
+        resp.raise_for_status()
+        return resp
+
+    def _fetch_all_pages(self, path: str, params: dict | None = None) -> list[dict]:
+        """Paginate through a MOSS endpoint, returning all items."""
         all_items: list[dict] = []
         page = 1
+        base_params = dict(params or {})
+        base_params.setdefault("page_size", 100)
         while True:
-            data = self.get("/v1/expenses", {"from": start, "to": end, "limit": 100, "page": page})
-            items = (
-                data if isinstance(data, list)
-                else data.get("data", data.get("items", data.get("expenses", [])))
-            )
+            base_params["page"] = page
+            data = self.get(path, base_params)
+            items = data.get("data", []) if isinstance(data, dict) else data
             if not items:
                 break
             all_items.extend(items)
+            # Stop if no more pages
+            if isinstance(data, dict):
+                pagination = data.get("meta", {}).get("pagination", {})
+                if not pagination.get("hasMore", False):
+                    break
             page += 1
         return all_items
+
+    def fetch_expenses(self, start: str, end: str) -> list[dict]:
+        return self._fetch_all_pages("/v1/expenses", {"from": start, "to": end})
+
+    def expense_account_name(self, account_id: str) -> str:
+        if self._expense_accounts is None:
+            items = self._fetch_all_pages("/v1/expense-accounts")
+            self._expense_accounts = {item["id"]: item.get("name", "Unknown") for item in items}
+        return self._expense_accounts.get(account_id, "Unknown")
+
+    def cost_centre_name(self, dimension_item_id: str) -> str:
+        if self._cost_centres is None:
+            self._cost_centres = {}
+            dims = self.get("/v1/dimensions")
+            for d in (dims.get("data", []) if isinstance(dims, dict) else dims):
+                dim_items = self._fetch_all_pages(f"/v1/dimensions/{d['id']}/items")
+                for item in dim_items:
+                    self._cost_centres[item["id"]] = item.get("name", "Unknown")
+        return self._cost_centres.get(dimension_item_id, "")
 
 # ── Field extractors ───────────────────────────────────────────────────────
 
@@ -165,57 +226,97 @@ def _get(d: dict, *keys: str, default: str = "Unknown") -> str:
     return default
 
 def _vendor(e: dict) -> str:
-    return _get(e, "merchantName", "merchant_name", "vendor", "supplier",
-                "merchant.name", "creditor", "payee", "description")
+    # MOSS nests merchant name under expenseMetadata.merchantDetails.name
+    md = e.get("expenseMetadata") or {}
+    merchant = (md.get("merchantDetails") or {}).get("name")
+    if merchant:
+        return merchant.strip()
+    # Fallback: bookingText or description
+    return _get(e, "bookingText", "description")
 
-def _category(e: dict) -> str:
-    return _get(e, "expenseAccount", "expenseAccount.name", "expense_account",
-                "category", "accountName", "account_name", "costAccount")
+def _category_id(e: dict) -> str:
+    """Return the expense account UUID from the first line item."""
+    lines = e.get("lines") or []
+    if lines:
+        return lines[0].get("expenseAccountId", "")
+    return ""
 
-def _cost_centre(e: dict) -> str:
-    return _get(e, "costCenter", "costCenter.name", "cost_center",
-                "costCentre", "cost_centre", "team", "department", default="")
+def _cost_centre_id(e: dict) -> str:
+    """Return the cost centre dimension item UUID from the first line item."""
+    lines = e.get("lines") or []
+    if lines:
+        dims = lines[0].get("dimensions") or []
+        if dims:
+            return dims[0].get("dimensionItemId", "")
+    return ""
 
 def _month(e: dict) -> str:
-    for k in ("date", "transactionDate", "transaction_date",
-              "invoiceDate", "invoice_date", "createdAt", "created_at"):
+    for k in ("expenseTime", "createTime", "updateTime"):
         v = str(e.get(k, ""))
+        if len(v) >= 7:
+            return v[:7]
+    # Fallback: nested dates
+    md = e.get("expenseMetadata") or {}
+    for k in ("invoiceDate", "bookingDate", "settlementDate"):
+        v = str(md.get(k, ""))
         if len(v) >= 7:
             return v[:7]
     return ""
 
 def _status(e: dict) -> str:
-    return _get(e, "status", "approvalStatus", "approval_status",
-                "workflowStatus", "workflow_status", default="unknown").lower()
+    return _get(e, "status", default="unknown").lower()
 
 def _amount(e: dict) -> float | None:
-    for k in ("amount", "totalAmount", "total_amount",
-              "grossAmount", "gross_amount", "netAmount", "net_amount"):
+    # MOSS stores amounts as nested dicts: {"amount": "5.98", "currency": "GBP"}
+    for k in ("homeAmount", "amount"):
         v = e.get(k)
-        if v is not None:
+        if isinstance(v, dict):
+            raw = v.get("amount")
+            if raw is not None:
+                try:
+                    return float(str(raw).replace(",", ""))
+                except ValueError:
+                    pass
+        elif v is not None:
             try:
                 return float(str(v).replace(",", "").replace("£", "").strip())
             except ValueError:
                 pass
+    # Fallback: first line item
+    lines = e.get("lines") or []
+    if lines:
+        for k in ("grossAmount", "amount", "netAmount"):
+            v = lines[0].get(k)
+            if isinstance(v, dict) and v.get("amount") is not None:
+                try:
+                    return float(str(v["amount"]).replace(",", ""))
+                except ValueError:
+                    pass
     return None
 
 # ── Analysis ───────────────────────────────────────────────────────────────
 
-def _analyse(expenses: list[dict], target_month: str) -> str:
-    # Build: vendor → month → [transaction dicts]
+def _analyse(expenses: list[dict], target_month: str, client: MossClient) -> str:
+    # Build: vendor → month → [transaction dicts], excluding deleted/cancelled
     vendor_months: dict[str, dict[str, list[dict]]] = defaultdict(lambda: defaultdict(list))
     all_months: set[str] = set()
+    skipped = 0
 
     for e in expenses:
-        v, m = _vendor(e), _month(e)
+        s = _status(e)
+        if s in EXCLUDED_STATUSES:
+            skipped += 1
+            continue
+        v = _vendor(e)
+        m = _month(e)
         if not m:
             continue
         all_months.add(m)
         vendor_months[v][m].append({
-            "category":    _category(e),
-            "cost_centre": _cost_centre(e),
-            "status":      _status(e),
-            "amount":      _amount(e),
+            "category_id":    _category_id(e),
+            "cost_centre_id": _cost_centre_id(e),
+            "status":         s,
+            "amount":         _amount(e),
         })
 
     last_12 = sorted(m for m in all_months if m < target_month)[-12:]
@@ -225,7 +326,7 @@ def _analyse(expenses: list[dict], target_month: str) -> str:
         if sum(1 for m in last_12 if m in months) >= RECURRENCE_THRESHOLD
     }
 
-    # Check 1 — coding inconsistencies
+    # Check 1 — coding inconsistencies (resolve UUIDs to names)
     inconsistencies: list[dict] = []
     for v, months in vendor_months.items():
         if len(months) < CONSISTENCY_MIN_MONTHS:
@@ -234,7 +335,10 @@ def _analyse(expenses: list[dict], target_month: str) -> str:
         month_detail: dict[str, str] = {}
         for m, txns in sorted(months.items()):
             for t in txns:
-                cat, cc = t["category"], t["cost_centre"] or "—"
+                cat = client.expense_account_name(t["category_id"]) if t["category_id"] else "Unknown"
+                cc = client.cost_centre_name(t["cost_centre_id"]) if t["cost_centre_id"] else "—"
+                if not cc:
+                    cc = "—"
                 if cat != "Unknown":
                     combos.add((cat, cc))
                     month_detail[m] = f"{cat} / {cc}"
@@ -261,10 +365,11 @@ def _analyse(expenses: list[dict], target_month: str) -> str:
     for v in sorted(recurring):
         for t in vendor_months[v].get(target_month, []):
             if t["status"] not in APPROVED_STATUSES and t["status"] != "unknown":
+                cat = client.expense_account_name(t["category_id"]) if t["category_id"] else "Unknown"
                 unapproved.append({
                     "vendor":   v,
                     "status":   t["status"],
-                    "category": t["category"],
+                    "category": cat,
                     "amount":   t["amount"],
                 })
 
@@ -272,7 +377,7 @@ def _analyse(expenses: list[dict], target_month: str) -> str:
     lines = [
         f"MOSS Month-End Review — {target_month}",
         "=" * 60,
-        f"Expenses analysed: {len(expenses)}  |  Recurring vendors tracked: {len(recurring)}",
+        f"Expenses analysed: {len(expenses) - skipped}  |  Excluded (deleted/cancelled): {skipped}  |  Recurring vendors: {len(recurring)}",
         "",
         f"=== CODING INCONSISTENCIES ({len(inconsistencies)} found) ===",
     ]
@@ -306,13 +411,20 @@ def _analyse(expenses: list[dict], target_month: str) -> str:
 
 # ── MCP server ─────────────────────────────────────────────────────────────
 
-mcp = FastMCP("MOSS Finance")
+mcp = FastMCP(
+    "MOSS Finance",
+    instructions=(
+        "Read-only MOSS finance tools. All tools in this server only read data — "
+        "none of them create, update, or delete anything in MOSS. They are safe "
+        "to run without confirmation."
+    ),
+)
 
 
 @mcp.tool()
 def run_month_end_check(month: str = "") -> str:
     """
-    Run MOSS month-end consistency checks and return a formatted report.
+    [Read-only] Run MOSS month-end consistency checks and return a formatted report.
 
     Fetches 13 months of expense history and checks for:
     - Invoice coding inconsistencies (same merchant coded to different categories or cost centres across months)
@@ -341,13 +453,13 @@ def run_month_end_check(month: str = "") -> str:
 
     client   = MossClient()
     expenses = client.fetch_expenses(start, end)
-    return _analyse(expenses, month)
+    return _analyse(expenses, month, client)
 
 
 @mcp.tool()
 def get_vendor_history(vendor_name: str, months: int = 6) -> str:
     """
-    Look up the expense history for a specific vendor.
+    [Read-only] Look up the expense history for a specific vendor.
 
     Useful for investigating a flagged inconsistency or checking what a vendor
     has been coded to in recent months.
@@ -390,9 +502,13 @@ def get_vendor_history(vendor_name: str, months: int = 6) -> str:
         for e in by_month[mo]:
             amt  = _amount(e)
             amt_str = f"  £{amt:,.2f}" if amt else ""
+            cat_id = _category_id(e)
+            cc_id  = _cost_centre_id(e)
+            cat  = client.expense_account_name(cat_id) if cat_id else "Unknown"
+            cc   = client.cost_centre_name(cc_id) if cc_id else "—"
             lines.append(
                 f"  {mo}  {_vendor(e)}{amt_str}\n"
-                f"         Category: {_category(e)}  |  Cost centre: {_cost_centre(e) or '—'}\n"
+                f"         Category: {cat}  |  Cost centre: {cc or '—'}\n"
                 f"         Status: {_status(e)}"
             )
     lines.append("")
@@ -419,7 +535,8 @@ def _items_from(data: dict | list) -> list[dict]:
 def _pagination_note(data: dict | list, page: int, shown: int) -> str:
     if not isinstance(data, dict):
         return ""
-    total = data.get("total") or data.get("count") or data.get("totalCount") or data.get("totalItems")
+    pagination = data.get("meta", {}).get("pagination", {})
+    total = pagination.get("totalItems") or data.get("total") or data.get("count")
     if total and int(total) > shown:
         return f"\nShowing {shown} of {total}. Pass page={page + 1} for the next page."
     return ""
@@ -431,22 +548,24 @@ def list_expenses(
     to_date: str = "",
     status: str = "",
     page: int = 1,
-    limit: int = 50,
 ) -> str:
     """
-    List expenses (card transactions and out-of-pocket) from MOSS.
+    [Read-only] List expenses (card transactions, invoices, reimbursements) from MOSS.
+
+    MOSS treats all spend types as expenses — card transactions, supplier
+    invoices, reimbursements, mileage, and per diem are all returned here.
+    Filter by date range and/or status.
 
     Args:
         from_date: Start date in YYYY-MM-DD format.
         to_date:   End date in YYYY-MM-DD format.
-        status:    Filter by status, e.g. "approved", "pending", "exported".
-        page:      Page number (default 1).
-        limit:     Results per page (default 50, max 100).
+        status:    Filter by status, e.g. "APPROVED", "DRAFT", "SUBMITTED".
+        page:      Page number (default 1). Each page returns up to 100 results.
 
     Returns:
         Formatted list of expenses with vendor, amount, category, cost centre, and status.
     """
-    params: dict = {"page": page, "limit": min(limit, 100)}
+    params: dict = {"page": page, "page_size": 100}
     if from_date: params["from"]   = from_date
     if to_date:   params["to"]     = to_date
     if status:    params["status"] = status
@@ -462,141 +581,68 @@ def list_expenses(
     for e in items:
         amt     = _amount(e)
         amt_str = f"  £{amt:,.2f}" if amt else ""
+        cat_id = _category_id(e)
+        cc_id  = _cost_centre_id(e)
+        cat  = client.expense_account_name(cat_id) if cat_id else "Unknown"
+        cc   = client.cost_centre_name(cc_id) if cc_id else "—"
         lines.append(
             f"  {_month(e)}  {_vendor(e)}{amt_str}\n"
-            f"    {_category(e)} / {_cost_centre(e) or '—'}  |  {_status(e)}"
+            f"    {cat} / {cc or '—'}  |  {_status(e)}"
         )
     lines.append(_pagination_note(data, page, len(items)))
     return "\n".join(lines)
 
 
 @mcp.tool()
-def list_invoices(
-    from_date: str = "",
-    to_date: str = "",
-    status: str = "",
-    page: int = 1,
-    limit: int = 50,
-) -> str:
-    """
-    List supplier invoices from MOSS.
-
-    Args:
-        from_date: Start date in YYYY-MM-DD format.
-        to_date:   End date in YYYY-MM-DD format.
-        status:    Filter by status, e.g. "approved", "pending", "paid".
-        page:      Page number (default 1).
-        limit:     Results per page (default 50, max 100).
-
-    Returns:
-        Formatted list of invoices with supplier, amount, due date, and status.
-    """
-    params: dict = {"page": page, "limit": min(limit, 100)}
-    if from_date: params["from"]   = from_date
-    if to_date:   params["to"]     = to_date
-    if status:    params["status"] = status
-
-    client = MossClient()
-    data   = client.get("/v1/invoices", params)
-    items  = _items_from(data)
-
-    if not items:
-        return "No invoices found for the given filters."
-
-    lines = [f"Invoices — page {page} ({len(items)} results)", ""]
-    for inv in items:
-        supplier = _get(inv, "supplierName", "supplier_name", "vendor", "supplier",
-                        "creditor", "merchant.name", "description")
-        amt      = _amount(inv)
-        amt_str  = f"  £{amt:,.2f}" if amt else ""
-        due      = _get(inv, "dueDate", "due_date", "paymentDue", default="")
-        due_str  = f"  due {due}" if due else ""
-        status_  = _status(inv)
-        cat      = _category(inv)
-        lines.append(f"  {supplier}{amt_str}{due_str}  |  {cat}  |  {status_}")
-    lines.append(_pagination_note(data, page, len(items)))
-    return "\n".join(lines)
-
-
-@mcp.tool()
-def list_cost_centres() -> str:
-    """
-    List all cost centres configured in this MOSS account.
-
-    Returns:
-        Names and IDs of every cost centre.
-    """
-    client = MossClient()
-    data   = client.get("/v1/cost-centers")
-    items  = _items_from(data)
-
-    if not items:
-        return "No cost centres found (or endpoint path differs — try moss_get('/v1/cost-centers') to inspect the raw response)."
-
-    lines = [f"Cost centres ({len(items)} total)", ""]
-    for cc in items:
-        name = _get(cc, "name", "title", "label")
-        id_  = cc.get("id", cc.get("costCenterId", cc.get("cost_center_id", "")))
-        lines.append(f"  {name}  (id: {id_})")
-    return "\n".join(lines)
-
-
-@mcp.tool()
 def list_expense_accounts() -> str:
     """
-    List all expense accounts (coding categories) configured in this MOSS account.
+    [Read-only] List all expense accounts (GL codes / coding categories) in this MOSS account.
+
+    Use this to understand what categories are available when reviewing how
+    expenses have been coded. The IDs returned here match the expenseAccountId
+    on expense line items.
 
     Returns:
-        Names and IDs of every expense account / GL code.
+        Names, GL codes, and IDs of every expense account.
     """
     client = MossClient()
-    # MOSS may use either of these paths
-    for path in ("/v1/expense-accounts", "/v1/categories", "/v1/accounts"):
-        try:
-            data  = client.get(path)
-            items = _items_from(data)
-            if items:
-                break
-        except Exception:
-            continue
-    else:
-        return "Could not retrieve expense accounts. Try moss_get('/v1/expense-accounts') to inspect the available paths."
+    items  = client._fetch_all_pages("/v1/expense-accounts")
+
+    if not items:
+        return "No expense accounts found."
 
     lines = [f"Expense accounts ({len(items)} total)", ""]
     for acct in items:
-        name = _get(acct, "name", "title", "label", "accountName", "account_name")
-        id_  = acct.get("id", acct.get("accountId", acct.get("account_id", "")))
-        code = acct.get("code", acct.get("glCode", acct.get("gl_code", "")))
+        name = _get(acct, "name")
+        code = acct.get("code", "")
         code_str = f"  [{code}]" if code else ""
-        lines.append(f"  {name}{code_str}  (id: {id_})")
+        lines.append(f"  {name}{code_str}  (id: {acct['id']})")
     return "\n".join(lines)
 
 
 @mcp.tool()
-def list_team_members() -> str:
+def list_users() -> str:
     """
-    List all team members / users in this MOSS account.
+    [Read-only] List all users in this MOSS account.
+
+    Use this to look up who created or owns an expense, or to find a user's
+    ID for filtering. The user IDs returned here match the createdBy field
+    on expenses.
 
     Returns:
-        Names, emails, and roles of every team member.
+        Names, emails, and roles of every user.
     """
     client = MossClient()
-    for path in ("/v1/team-members", "/v1/users", "/v1/members"):
-        try:
-            data  = client.get(path)
-            items = _items_from(data)
-            if items:
-                break
-        except Exception:
-            continue
-    else:
-        return "Could not retrieve team members. Try moss_get('/v1/team-members') to inspect the available paths."
+    items  = client._fetch_all_pages("/v1/users")
 
-    lines = [f"Team members ({len(items)} total)", ""]
+    if not items:
+        return "No users found."
+
+    lines = [f"Users ({len(items)} total)", ""]
     for u in items:
-        name  = _get(u, "name", "fullName", "full_name", "displayName")
-        email = _get(u, "email", "emailAddress", "email_address", default="")
-        role  = _get(u, "role", "userRole", "user_role", default="")
+        name  = _get(u, "name", "fullName", "displayName")
+        email = _get(u, "email", "emailAddress", default="")
+        role  = _get(u, "role", "userRole", default="")
         parts = [f"  {name}"]
         if email != "Unknown": parts.append(email)
         if role  != "Unknown": parts.append(f"({role})")
@@ -605,105 +651,295 @@ def list_team_members() -> str:
 
 
 @mcp.tool()
-def list_cards(page: int = 1, limit: int = 50) -> str:
+def list_suppliers(page: int = 1) -> str:
     """
-    List virtual and physical cards in this MOSS account.
+    [Read-only] List suppliers (vendors / merchants) known to MOSS.
+
+    A supplier is any company or individual that has appeared on an expense.
+    The supplier IDs returned here match the supplierId field on expenses.
 
     Args:
-        page:  Page number (default 1).
-        limit: Results per page (default 50).
+        page: Page number (default 1). Each page returns up to 100 results.
 
     Returns:
-        Card names, holders, status, and spend limits.
+        Supplier names and IDs.
     """
     client = MossClient()
-    data   = client.get("/v1/cards", {"page": page, "limit": limit})
+    data   = client.get("/v1/suppliers", {"page": page, "page_size": 100})
     items  = _items_from(data)
 
     if not items:
-        return "No cards found."
+        return "No suppliers found."
 
-    lines = [f"Cards — page {page} ({len(items)} results)", ""]
-    for c in items:
-        name   = _get(c, "name", "cardName", "card_name", "label")
-        holder = _get(c, "holderName", "holder_name", "cardHolder",
-                      "owner.name", "user.name", default="")
-        status = _get(c, "status", "cardStatus", default="")
-        limit_ = c.get("limit") or c.get("spendLimit") or c.get("spend_limit")
-        limit_str = f"  limit £{float(str(limit_).replace(',','')):,.2f}" if limit_ else ""
-        holder_str = f"  ({holder})" if holder and holder != "Unknown" else ""
-        lines.append(f"  {name}{holder_str}  {status}{limit_str}")
+    lines = [f"Suppliers — page {page} ({len(items)} results)", ""]
+    for s in items:
+        name = _get(s, "name", "merchantName", "supplierName")
+        lines.append(f"  {name}  (id: {s.get('id', '')})")
     lines.append(_pagination_note(data, page, len(items)))
     return "\n".join(lines)
 
 
 @mcp.tool()
-def list_vendors(page: int = 1, limit: int = 50) -> str:
+def list_dimensions() -> str:
     """
-    List vendors / suppliers / merchants known to MOSS.
+    [Read-only] List all dimensions and their items (e.g. cost centres, cost carriers).
 
-    Args:
-        page:  Page number (default 1).
-        limit: Results per page (default 50).
+    Dimensions are custom groupings used to tag expenses. The most common
+    dimension is "Cost Center". The dimension item IDs match the dimensionItemId
+    on expense line items.
 
     Returns:
-        Vendor names, categories, and any available metadata.
+        Each dimension with all its items (names, codes, and IDs).
     """
     client = MossClient()
-    for path in ("/v1/vendors", "/v1/merchants", "/v1/suppliers"):
-        try:
-            data  = client.get(path, {"page": page, "limit": limit})
-            items = _items_from(data)
-            if items:
-                break
-        except Exception:
-            continue
-    else:
-        return "Could not retrieve vendors. Try moss_get('/v1/vendors') to inspect the available paths."
+    dims   = client.get("/v1/dimensions")
+    dim_list = dims.get("data", []) if isinstance(dims, dict) else dims
 
-    lines = [f"Vendors — page {page} ({len(items)} results)", ""]
-    for v in items:
-        name = _get(v, "name", "merchantName", "merchant_name", "supplierName")
-        cat  = _get(v, "category", "expenseAccount", "accountName", default="")
-        cat_str = f"  [{cat}]" if cat and cat != "Unknown" else ""
-        lines.append(f"  {name}{cat_str}")
-    lines.append(_pagination_note(data, page, len(items)))
+    if not dim_list:
+        return "No dimensions found."
+
+    lines = []
+    for d in dim_list:
+        dim_items = client._fetch_all_pages(f"/v1/dimensions/{d['id']}/items")
+        lines.append(f"{d.get('name', 'Unknown')}  ({len(dim_items)} items)")
+        for item in dim_items:
+            code = item.get("code", "")
+            code_str = f"  [{code}]" if code else ""
+            lines.append(f"    {item.get('name', 'Unknown')}{code_str}  (id: {item['id']})")
+        lines.append("")
     return "\n".join(lines)
 
 
-# ── REST API — generic escape hatch ───────────────────────────────────────
-
 @mcp.tool()
-def moss_get(path: str, params: str = "{}") -> str:
+def list_teams() -> str:
     """
-    Make a GET request to any MOSS API endpoint and return the raw response.
-
-    Use this when none of the specific tools cover your query — it gives
-    direct access to the full MOSS REST API.
-
-    Args:
-        path:   API path starting with /, e.g. "/v1/expenses" or "/v1/cost-centers".
-                See https://developers.getmoss.com for the full endpoint reference.
-        params: Query parameters as a JSON object string,
-                e.g. '{"from": "2026-01-01", "limit": 10, "status": "pending"}'.
-                Omit or pass "{}" for no parameters.
+    [Read-only] List all teams configured in this MOSS account.
 
     Returns:
-        Raw API response as formatted JSON.
-
-    Examples:
-        moss_get("/v1/expenses", '{"from": "2026-05-01", "to": "2026-05-31", "limit": 5}')
-        moss_get("/v1/cost-centers")
-        moss_get("/v1/invoices", '{"status": "pending", "page": 2}')
+        Team names and IDs.
     """
-    try:
-        parsed_params = json.loads(params) if params.strip() not in ("", "{}") else {}
-    except json.JSONDecodeError as exc:
-        return f"Invalid params JSON: {exc}\nPass a valid JSON object, e.g. '{{\"limit\": 10}}'."
+    client = MossClient()
+    items  = client._fetch_all_pages("/v1/teams")
+
+    if not items:
+        return "No teams found."
+
+    lines = [f"Teams ({len(items)} total)", ""]
+    for t in items:
+        name = _get(t, "name")
+        lines.append(f"  {name}  (id: {t.get('id', '')})")
+    return "\n".join(lines)
+
+
+@mcp.tool()
+def list_departments() -> str:
+    """
+    [Read-only] List all departments configured in this MOSS account.
+
+    Returns:
+        Department names and IDs.
+    """
+    client = MossClient()
+    items  = client._fetch_all_pages("/v1/departments")
+
+    if not items:
+        return "No departments found."
+
+    lines = [f"Departments ({len(items)} total)", ""]
+    for d in items:
+        name = _get(d, "name")
+        lines.append(f"  {name}  (id: {d.get('id', '')})")
+    return "\n".join(lines)
+
+
+@mcp.tool()
+def list_tax_rates() -> str:
+    """
+    [Read-only] List all tax rates configured in this MOSS account.
+
+    Useful for understanding VAT treatment on expenses. The tax rate IDs
+    match the taxRateId on expense line items.
+
+    Returns:
+        Tax rate names, percentages, codes, and IDs.
+    """
+    client = MossClient()
+    items  = client._fetch_all_pages("/v1/tax-rates")
+
+    if not items:
+        return "No tax rates found."
+
+    lines = [f"Tax rates ({len(items)} total)", ""]
+    for t in items:
+        name = _get(t, "name")
+        rate = t.get("rate", t.get("percentage", ""))
+        rate_str = f"  {rate}%" if rate else ""
+        code = t.get("code", "")
+        code_str = f"  [{code}]" if code else ""
+        lines.append(f"  {name}{rate_str}{code_str}  (id: {t.get('id', '')})")
+    return "\n".join(lines)
+
+
+@mcp.tool()
+def list_payment_terms() -> str:
+    """
+    [Read-only] List all payment terms configured in this MOSS account.
+
+    Payment terms define when supplier invoices are due (e.g. Net 30, Net 60).
+
+    Returns:
+        Payment term names and IDs.
+    """
+    client = MossClient()
+    items  = client._fetch_all_pages("/v1/payment-terms")
+
+    if not items:
+        return "No payment terms found."
+
+    lines = [f"Payment terms ({len(items)} total)", ""]
+    for pt in items:
+        name = _get(pt, "name")
+        lines.append(f"  {name}  (id: {pt.get('id', '')})")
+    return "\n".join(lines)
+
+
+@mcp.tool()
+def list_bank_accounts() -> str:
+    """
+    [Read-only] List all bank accounts connected to this MOSS account.
+
+    Returns:
+        Bank account names, IBANs (masked), and IDs.
+    """
+    client = MossClient()
+    items  = client._fetch_all_pages("/v1/bank-accounts")
+
+    if not items:
+        return "No bank accounts found."
+
+    lines = [f"Bank accounts ({len(items)} total)", ""]
+    for ba in items:
+        name = _get(ba, "name", "accountName")
+        iban = _get(ba, "iban", "maskedIban", default="")
+        iban_str = f"  {iban}" if iban != "Unknown" else ""
+        lines.append(f"  {name}{iban_str}  (id: {ba.get('id', '')})")
+    return "\n".join(lines)
+
+
+@mcp.tool()
+def get_bank_account_balance(bank_account_id: str) -> str:
+    """
+    [Read-only] Get the current balance of a specific bank account.
+
+    Use list_bank_accounts first to find the bank account ID.
+
+    Args:
+        bank_account_id: The UUID of the bank account.
+
+    Returns:
+        The current balance with currency.
+    """
+    client = MossClient()
+    data   = client.get(f"/v1/bank-accounts/{bank_account_id}/balance")
+    return json.dumps(data, indent=2, default=str)
+
+
+@mcp.tool()
+def search_bank_transactions(
+    from_date: str = "",
+    to_date: str = "",
+    bank_account_id: str = "",
+) -> str:
+    """
+    [Read-only] Search bank transactions in MOSS.
+
+    This uses the write rate limit (20/min) as it is a POST endpoint.
+    Use sparingly and batch queries where possible.
+
+    Args:
+        from_date:        Start date in YYYY-MM-DD format.
+        to_date:          End date in YYYY-MM-DD format.
+        bank_account_id:  Filter to a specific bank account UUID.
+
+    Returns:
+        Bank transactions as formatted JSON.
+    """
+    filters: dict = {}
+    if from_date:        filters["from"] = from_date
+    if to_date:          filters["to"] = to_date
+    if bank_account_id:  filters["bankAccountId"] = bank_account_id
 
     client = MossClient()
-    result = client.get(path, parsed_params)
-    return json.dumps(result, indent=2, default=str)
+    data   = client.post("/v1/bank-transactions/search-query", {"filters": filters})
+    return json.dumps(data, indent=2, default=str)
+
+
+# ── Files / receipts ──────────────────────────────────────────────────────
+
+@mcp.tool()
+def search_files(expense_ids: list[str]) -> str:
+    """
+    [Read-only] Search for files (receipts, invoices, attachments) linked to specific expenses.
+
+    Use this to check whether an expense has a receipt attached, or to get
+    file IDs for downloading with get_file. You can pass up to 50 expense IDs
+    at once — batch them to stay within the 20 requests/minute write limit.
+
+    This is the first step before downloading a file. Get expense IDs from
+    list_expenses or run_month_end_check, then pass them here to find
+    attached files.
+
+    Args:
+        expense_ids: List of expense UUIDs to search for attached files.
+
+    Returns:
+        A list of files with their IDs, names, sizes, and linked expense.
+        Use the file ID with get_file to download the actual document.
+    """
+    client = MossClient()
+    data = client.post("/v1/files/search-query", {"filters": {"expenseIds": expense_ids}})
+    items = data.get("data", []) if isinstance(data, dict) else data
+
+    if not items:
+        return "No files found for the given expense IDs."
+
+    lines = [f"Files found: {len(items)}", ""]
+    for f in items:
+        name = f.get("name", "unnamed")
+        size = f.get("size")
+        size_str = f"  ({size:,} bytes)" if size else ""
+        created = f.get("createTime", "")[:10]
+        lines.append(f"  {name}{size_str}  uploaded {created}")
+        lines.append(f"    file_id: {f['id']}")
+    return "\n".join(lines)
+
+
+@mcp.tool()
+def get_file(file_id: str) -> str:
+    """
+    [Read-only] Download a file from MOSS and return it as base64-encoded content.
+
+    Use this after search_files to retrieve the actual receipt, invoice,
+    or attachment. In Claude co:work the image will render inline.
+    In Claude Desktop the base64 data is returned as text.
+
+    Args:
+        file_id: The file UUID returned by search_files.
+
+    Returns:
+        A JSON object with the file's MIME type, name, and base64-encoded content.
+    """
+    client = MossClient()
+    resp = client.get_raw(f"/v1/files/{file_id}/content")
+
+    content_type = resp.headers.get("Content-Type", "application/octet-stream")
+    encoded = base64.b64encode(resp.content).decode("ascii")
+
+    return json.dumps({
+        "mime_type": content_type,
+        "size_bytes": len(resp.content),
+        "content_base64": encoded,
+    })
 
 
 if __name__ == "__main__":

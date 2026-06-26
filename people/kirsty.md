@@ -6,9 +6,9 @@ type: person
 role: Senior Analytics Engineer
 team: Finance (reports to Christian Nielsen, CFO)
 tags: [data, finance, visualisation]
-ai_activation_stage: 3
-ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-02
+ai_activation_stage: 4
+ai_activation_confidence: high
+ai_activation_assessed: 2026-06-18
 ---
 
 ## Role
@@ -40,15 +40,15 @@ Finance
 
 ## AI Activation
 
-**Stage**: 3 — Tool building and infrastructure
-**Confidence**: medium
-**Assessed**: 2026-06-02
-**Evidence**: Built Looker→Claude MCP integration used by the whole finance and distribution team. Auto-generates review packs and insight paragraphs from trading data. Built HTML dashboards from hand-drawn wireframe photos. Presents at AI Breakfasts. Adam wants his team to book sessions with her. "Absolutely obsessed with Claude." Self-directed — "wants help productionising, not direction on what to build."
+**Stage**: 4 — Delegation
+**Confidence**: high
+**Assessed**: 2026-06-18
+**Evidence**: Built Looker→Claude MCP integration deployed locally and trialled across Finance and Distribution teams. Automated FP&A pod metric sheet generation — a task that "was spinning our wheels for four months" completed in "a week of iterating with Claude." Presents at AI Breakfasts, de facto AI infrastructure owner for Finance. Other departments (Distribution) book sessions with her. "Absolutely obsessed with Claude."
 
-**Not Stage 2**: Not just using connected tools — building infrastructure for others. The review pack auto-generation and Looker integration are systems that other people rely on.
-**Not Stage 4**: Single-domain integration (Looker/finance data). No evidence of multi-agent orchestration or coordinated pipelines. Assessment is 6 weeks stale — she may have progressed significantly.
-**To progress**: Connect the Looker pipeline to a multi-step automated workflow (query → synthesise → format → distribute to right people). That's the Stage 3→4 transition for her domain.
-**Framework note**: Data from April 2026. She moves fast and has infrastructure ambitions. Cloud MCP deployment would unlock her. Reassessment recommended — likely understated.
+**Not Stage 3**: Running infrastructure others depend on. Pod metrics automation, review pack auto-generation, and Looker integration are systems, not personal tools.
+**Not Stage 5**: Has not yet handed workflows off to run autonomously without her involvement. Cloud MCP deployment (AI-010) blocked pending infrastructure support. Single primary data pipeline (Looker→Claude).
+**To progress**: Productionise Looker MCP on shared cloud infrastructure (AI-010). Connect pipeline to multi-step automated output (query → synthesise → format → distribute). Build feedback loops so insight quality is tracked over time.
+**Framework note**: Moves fast. Cloud MCP deployment is the single biggest unlock in the Finance department.
 
 ## 1:1 Log
 

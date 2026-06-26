@@ -6,9 +6,9 @@ type: person
 role: Software Engineer
 team: Engineering — Acquisition squad (Ollie Crowe / David Zamora)
 tags: [engineering, acquisition, ai-user, claude, submissions]
-ai_activation_stage: 3
+ai_activation_stage: 4
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-05-26
+ai_activation_assessed: 2026-06-19
 ---
 
 ## Role
@@ -36,15 +36,15 @@ First week at Flock (started w/c 14 Apr 2026). Met Tom 2026-04-17 with Ollie pre
 - Aware of AI subsidy economics, pragmatic about SaaS ("repricing not apocalypse")
 
 ## AI Activation
-**Stage**: 3 — Plan mode / conversational fluency  
-**Confidence**: medium  
-**Assessed**: 2026-05-26  
-**Evidence**: Strong AI user since 2023–24; previous sub-agent experience at Boxfish (9 repos); connected HubSpot MCP in week 1. Confirmed failure mode: takes output at face value without interrogating, skips pre-thinking ("not doing the import of trying to understand what he wants to solve or why he's solving this" — Jordi, May 2026); doesn't encode lessons from AI mistakes ("I just work around it"). Needs targeted critical thinking and context-file support; different profile from Chris/Ishmael.
+**Stage**: 4 — Delegation
+**Confidence**: medium
+**Assessed**: 2026-06-19
+**Evidence**: Delegates complex coding tasks to AI daily as part of the acquisition squad with Ollie. Built HubSpot submissions pipeline in Claude Code. Strong AI user since 2023-24; previous sub-agent experience at Boxfish (9 repos); connected HubSpot MCP in week 1. Jun 2026 group therapy session: described delegating whole coding workflows.
 
-**Not Stage 2**: In Claude Code doing real work — not just the chat window. Has loaded context (word vomit style) and connected tools (HubSpot MCP in week 1). The Stage 2 behaviours are present, if undisciplined.  
-**Not Stage 4**: The prerequisite for Stage 4 delegation is the ability to review output quality. Rob can't reliably do that yet — he takes output at face value rather than interrogating it. Delegating without review means shipping whatever the agent produces. That's the over-reliance before mastery failure mode, and it's the specific thing blocking progression.  
-**To progress**: Two habits to build. First: before generating output, write down what you're trying to achieve and why — force the pre-thinking step. Second: when the agent gets something wrong, update the context file rather than working around it. That second habit is what builds the review muscle over time.  
-**Framework note**: Rob's Boxfish sub-agent experience gives him conceptual awareness of Stage 4+ but hasn't transferred to his current practice. Prior experience from a different context doesn't carry a stage assignment forward. The framework should stage current practice, not historical peaks.
+**Not Stage 3**: Delegates whole coding tasks daily — confirmed by Head of AI direct observation. Past conversational fluency into routine delegation.
+**Not Stage 5**: No evidence of directing multi-agent systems or measuring adherence. Still building review skills.
+**To progress**: Build the review muscle — when the agent gets something wrong, encode the correction into context rather than working around it. The coding standards project with Chris is a natural vehicle.
+**Historical note**: April/May assessment noted a failure mode (takes output at face value, "I just work around it"). This was observed in his first weeks at Flock. Now 2 months into the acquisition squad with Ollie — daily delegation is confirmed practice. The failure mode may have improved but should be monitored.
 
 ## 1:1 Log
 

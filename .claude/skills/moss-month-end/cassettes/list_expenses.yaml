@@ -1,0 +1,127 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+    method: POST
+    uri: https://public-api.getmoss.com/oauth2/token
+  response:
+    body:
+      string: '{"access_token": "test_token_abc", "expires_in": 3600, "token_type":
+        "bearer"}'
+    headers:
+      Content-Type:
+      - application/json
+      X-RateLimit-Remaining:
+      - '99'
+      X-RateLimit-Reset:
+      - '9999999999'
+      X-RateLimit-Scope:
+      - read
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer test_token_abc
+    method: GET
+    uri: https://public-api.getmoss.com/v1/expenses?page=1&page_size=100&from=2026-06-01&to=2026-06-30
+  response:
+    body:
+      string: '{"data": [{"id": "exp-001", "status": "APPROVED", "expenseTime": "2026-06-15T10:00:00Z",
+        "createTime": "2026-06-15T10:00:00Z", "updateTime": "2026-06-15T10:00:00Z",
+        "expenseType": "CARD_TRANSACTION", "expenseMetadata": {"type": "CARD_TRANSACTION",
+        "merchantDetails": {"name": "TRAINLINE"}}, "homeAmount": {"amount": "99.50",
+        "currency": "GBP"}, "lines": [{"id": "l-001", "expenseAccountId": "acct-001",
+        "dimensions": [{"dimensionId": "d-001", "dimensionItemId": "cc-001"}]}]}],
+        "meta": {"pagination": {"type": "offset", "page": 1, "pageSize": 100, "hasMore":
+        false, "totalPages": 1, "totalItems": 1}}, "errors": []}'
+    headers:
+      Content-Type:
+      - application/json
+      X-RateLimit-Remaining:
+      - '99'
+      X-RateLimit-Reset:
+      - '9999999999'
+      X-RateLimit-Scope:
+      - read
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer test_token_abc
+    method: GET
+    uri: https://public-api.getmoss.com/v1/expense-accounts?page_size=100&page=1
+  response:
+    body:
+      string: '{"data": [{"id": "acct-001", "name": "Staff Travel", "code": "1001",
+        "status": "ACTIVE"}], "meta": {"pagination": {"type": "offset", "page": 1,
+        "pageSize": 100, "hasMore": false, "totalPages": 1, "totalItems": 1}}, "errors":
+        []}'
+    headers:
+      Content-Type:
+      - application/json
+      X-RateLimit-Remaining:
+      - '99'
+      X-RateLimit-Reset:
+      - '9999999999'
+      X-RateLimit-Scope:
+      - read
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer test_token_abc
+    method: GET
+    uri: https://public-api.getmoss.com/v1/dimensions
+  response:
+    body:
+      string: '{"data": [{"id": "dim-001", "name": "Cost Center", "status": "ACTIVE"}],
+        "meta": {}, "errors": []}'
+    headers:
+      Content-Type:
+      - application/json
+      X-RateLimit-Remaining:
+      - '99'
+      X-RateLimit-Reset:
+      - '9999999999'
+      X-RateLimit-Scope:
+      - read
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer test_token_abc
+    method: GET
+    uri: https://public-api.getmoss.com/v1/dimensions/dim-001/items?page_size=100&page=1
+  response:
+    body:
+      string: '{"data": [{"id": "cc-001", "name": "Technology", "code": "5", "status":
+        "ACTIVE", "dimensionId": "dim-001"}], "meta": {"pagination": {"type": "offset",
+        "page": 1, "pageSize": 100, "hasMore": false, "totalPages": 1, "totalItems":
+        1}}, "errors": []}'
+    headers:
+      Content-Type:
+      - application/json
+      X-RateLimit-Remaining:
+      - '99'
+      X-RateLimit-Reset:
+      - '9999999999'
+      X-RateLimit-Scope:
+      - read
+    status:
+      code: 200
+      message: OK
+version: 1

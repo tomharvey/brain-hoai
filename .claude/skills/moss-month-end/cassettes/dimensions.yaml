@@ -1,0 +1,74 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+    method: POST
+    uri: https://public-api.getmoss.com/oauth2/token
+  response:
+    body:
+      string: '{"access_token": "test_token_abc", "expires_in": 3600, "token_type":
+        "bearer"}'
+    headers:
+      Content-Type:
+      - application/json
+      X-RateLimit-Remaining:
+      - '99'
+      X-RateLimit-Reset:
+      - '9999999999'
+      X-RateLimit-Scope:
+      - read
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer test_token_abc
+    method: GET
+    uri: https://public-api.getmoss.com/v1/dimensions
+  response:
+    body:
+      string: '{"data": [{"id": "00000000-0000-0000-0000-000000000001", "name": "Cost
+        Center", "status": "ACTIVE"}], "meta": {"pagination": {"hasMore": false, "totalItems":
+        1}}, "errors": []}'
+    headers:
+      Content-Type:
+      - application/json
+      X-RateLimit-Remaining:
+      - '99'
+      X-RateLimit-Reset:
+      - '9999999999'
+      X-RateLimit-Scope:
+      - read
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer test_token_abc
+    method: GET
+    uri: https://public-api.getmoss.com/v1/dimensions/00000000-0000-0000-0000-000000000001/items?page_size=100&page=1
+  response:
+    body:
+      string: '{"data": [{"id": "cc-001", "name": "Technology", "code": "5", "status":
+        "ACTIVE", "dimensionId": "00000000-0000-0000-0000-000000000001"}, {"id": "cc-002",
+        "name": "Distribution", "code": "10", "status": "ACTIVE", "dimensionId": "00000000-0000-0000-0000-000000000001"}],
+        "meta": {"pagination": {"hasMore": false, "totalItems": 2}}, "errors": []}'
+    headers:
+      Content-Type:
+      - application/json
+      X-RateLimit-Remaining:
+      - '99'
+      X-RateLimit-Reset:
+      - '9999999999'
+      X-RateLimit-Scope:
+      - read
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -6,9 +6,9 @@ type: person
 role: Senior Underwriting Assistant
 team: Ops (reports to Emily Staton)
 tags: [underwriting, ops, ai-user]
-ai_activation_stage: 2
+ai_activation_stage: 3
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-02
+ai_activation_assessed: 2026-06-18
 ---
 
 ## Role
@@ -33,15 +33,15 @@ Ops — reports to [[emily|Emily Staton]]
 
 ## AI Activation
 
-**Stage**: 2 — Context and tools
+**Stage**: 3 — Fluency
 **Confidence**: medium
-**Assessed**: 2026-06-02
-**Evidence**: Longest-tenured AI adopter on Emily's ops team. Daily user. Successfully migrated ChatGPT→Claude for vehicle resolution (found higher accuracy). Connected HubSpot to Claude "trivially easy." Experimenting with Computer Use for G Drive folder automation. Process redesign instinct: "ideally we would just cut out all of these unnecessary steps rather than trying to automate each step" — already thinking architecturally.
+**Assessed**: 2026-06-18
+**Evidence**: Process redesign thinking: "ideally we would just cut out all of these unnecessary steps rather than trying to automate each step." Independently migrated ChatGPT prompts to Claude after quality assessment. Experimented with Claude Computer Use for G Drive automation. At May 13 ops sync, identified systematic errors in the deal creator amount calculation and proposed a dual-logic fix (use provided rate when available, default to Fred's calculation otherwise). This is iterative, critical engagement with AI output.
 
-**Not Stage 1**: Multiple tools connected, cross-platform migration, multi-task usage — well past single-task wins.
-**Not Stage 3**: Data from April 2026 (2+ months stale). The Computer Use experimentation and process redesign thinking are Stage 3 signals, but no confirmed Stage 3 patterns observed.
-**To progress**: The G Drive Computer Use experiment is the right next step. If she's iterating on that and building conversational refinement into her workflow, she's likely already at Stage 3. Needs a fresh 1:1 to verify.
-**Framework note**: Data is stale. Emily's team moves fast and Anna is the longest-tenured adopter. She may well be Stage 3 already — reassessment is a priority.
+**Not Stage 2**: Redesigning processes architecturally, critically evaluating AI output (systematic error identification), proposing multi-condition logic fixes, proactively exploring new capabilities. Past context-loading.
+**Not Stage 4**: No evidence of delegating whole workflows end-to-end. G Drive Computer Use project was experimental as of April — unconfirmed if shipped.
+**To progress**: N/A — departing 2026-07-10. Priority is knowledge transfer, not progression.
+**Framework note**: Confidence medium because April transcript is a stub (meeting note only). May 13 ops sync contributions are the strongest direct evidence. Departing Jul 10 — focus on handover of renewals process knowledge and any AI workflows she has built.
 
 ## 1:1 Log
 
