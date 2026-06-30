@@ -1,14 +1,14 @@
 ---
 title: Ollie Crowe
 created: 2026-03-30
-updated: 2026-04-27
+updated: 2026-06-30
 type: person
 role: Technical Product Manager
 team: Product (reports to Matt Price)
 tags: [product, whatsapp, prototype, advanced-ai-user]
 ai_activation_stage: 4
 ai_activation_confidence: high
-ai_activation_assessed: 2026-06-18
+ai_activation_assessed: 2026-06-30
 ---
 
 ## Role
@@ -33,13 +33,13 @@ Met through engineering discussions. Built WhatsApp driver reporting bot indepen
 ## AI Activation
 **Stage**: 4 — Delegation
 **Confidence**: high
-**Assessed**: 2026-06-19
-**Evidence**: Built and operates the acquisition brain — Google Drive-backed with resolver MD, onboarding skill, Granola/Notion sync skills, scheduled HubSpot label updates (123 confirmed runs as of Jun 11). Deployed to Rob and Javier. WhatsApp bot (1.5hrs to MVP). 614K WhisperFlow words, voice-first primary input. Jun 15: co-designing BDM brain architecture with Tom (ontology layer, resolver patterns, validation layer). Hosts AI Breakfast.
+**Assessed**: 2026-06-30
+**Evidence**: Built and operates the acquisition brain — Google Drive-backed with resolver MD, onboarding skill, Granola/Notion sync skills, scheduled HubSpot label updates (123 confirmed runs as of Jun 11). Deployed to Rob and Javier. WhatsApp bot (1.5hrs to MVP). 614K WhisperFlow words, voice-first primary input. Co-designing BDM brain architecture with Tom (ontology layer, resolver patterns, validation layer). Has "blue sky thinking" skill for creative ideation and "skill maintainer" for self-improvement. Considering hooks for co-work session close. Using co-work schedules extensively. Working on broker pulse categorization. Researching quantitative trading hackathon as personal project. Hosts AI Breakfast.
 
-**Not Stage 3**: Operating autonomous infrastructure — 123 scheduled runs, deployed to teammates, fan-out Granola ingestion. Well past fluency.
+**Not Stage 3**: Operating autonomous infrastructure — 123 scheduled runs, deployed to teammates, fan-out Granola ingestion. Building meta-skills (skill maintainer). Well past fluency.
 **Not Stage 5**: Not yet directing a multi-agent system with measured adherence. The BDM brain resolver architecture (in build with Tom) would be Stage 5 if completed with validation layer and observability.
 **To progress**: Complete the BDM brain resolver with validation layer and ontology MCP server. That constitutes directing a system: resolver routes to skills, validates against schema, distributes intelligence to team members proactively.
-**Framework note**: Follows the dev pathway, not the PM pathway. The most consistently active AI practitioner across the full evaluation period. Confidence upgraded to High based on Jun operational evidence (scheduled runs, team deployment).
+**Framework note**: Follows the dev pathway, not the PM pathway. The most consistently active AI practitioner across the full evaluation period. Confidence upgraded to High based on Jun operational evidence (scheduled runs, team deployment, meta-skill creation).
 
 ## 1:1 Log
 
@@ -56,3 +56,16 @@ Met through engineering discussions. Built WhatsApp driver reporting bot indepen
 - Running parallel spikes independently (Adam's pipelining tool, #underwriting-losses structuring) using Claude-Cowork, not eng time — consistent with self-starter pattern
 - Owes Antton: five ranked conversion bets grounded in data
 - See [[ollie-conversion-bets-2026-04-27]]
+
+### 2026-06-30 — June assessment update
+
+- Acquisition brain fully operational — Google Drive-backed with resolver, onboarding skill, Granola/Notion sync
+- 123 scheduled HubSpot label update runs confirmed
+- 614K WhisperFlow words — voice-first remains primary input
+- Co-designing BDM brain architecture with Tom: ontology layer, resolver patterns, validation
+- Built "blue sky thinking" skill for creative ideation and "skill maintainer" for meta self-improvement
+- Considering hooks for co-work session close
+- Using co-work schedules extensively (some limitations with cloud vs local)
+- Working on broker pulse categorization
+- Researching quantitative trading hackathon as personal side project
+- Stage 4 confirmed with high confidence; BDM brain resolver would be stage 5 if completed

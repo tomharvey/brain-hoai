@@ -1,14 +1,14 @@
 ---
 title: Emily Staton
 created: 2026-03-27
-updated: 2026-04-20
+updated: 2026-06-30
 type: person
-role: Head of Ops
+role: Operations Manager
 team: Ops — Underwriting assistance and customer support
 tags: [ops, underwriting, leadership]
-ai_activation_stage: 4
-ai_activation_confidence: high
-ai_activation_assessed: 2026-05-26
+ai_activation_stage: 3
+ai_activation_confidence: medium
+ai_activation_assessed: 2026-06-30
 ---
 
 ## Role
@@ -36,15 +36,14 @@ Reports to Antton Pena (CCO). Mollie Brownlow (former Head of Operations) has le
 - Flock's "official unofficial" complaints handler
 
 ## AI Activation
-**Stage**: 4 — Multi-agent orchestration (ops ceiling)  
-**Confidence**: high  
-**Assessed**: 2026-05-26  
-**Evidence**: Zapier power user; designs new processes with AI from the start; ChatGPT + Claude daily (PDF data extraction, complaint resolution compliance checking, Excel formulas); HubSpot + Zapier for underwriter deviation tracking and audit trails; automated Slack reminders and slide updates; runs monthly AI/Automations sync with team. Reference model for ops activation across the company.
+**Stage**: 3 — Fluency (Stage 2-3)
+**Confidence**: medium
+**Assessed**: 2026-06-30
+**Evidence**: Jun 19 Claude Connectors catch-up: Using Chrome extension for Claude browser automation but finding it interferes with work (takes over tabs). Exploring driver referral automation with Fred. Interested in Netsuite connection for cancellations and vehicle lists. Needs spare laptop for AI automation — Lawrence's laptop identified. Built driver referral skill and shared it with team. Connected to Looker but finds it temperamental. Previous evidence: Zapier power user, designs processes with AI from the start, ChatGPT + Claude daily, HubSpot + Zapier automations. The June evidence shows practical friction with tooling (Chrome extension interference, temperamental Looker connection) that moderates the previous Stage 4 assessment.
 
-**Not Stage 3**: Designs processes with AI in mind from the start — that's architectural thinking, not tactical tool use. Multiple interconnected automations running in coordination across different systems. The reference model framing matters: she's the person others are benchmarked against within ops.  
-**Not Stage 5 (ops equivalent)**: Stage 5 for ops means engineering the automation decision framework — formalising when to automate vs where a human checkpoint must stay, detecting when automations degrade or drift, designing for failure. Emily is operating excellent automations, but the meta-layer (monitoring, degradation detection, explicit boundary decisions) is less evidenced.  
-**To progress**: Make explicit the decision framework she's been applying intuitively. When does a task go to an agent vs a human? How does she know when an automation has started producing bad output? Formalising this thinking is the step that tips Stage 4 ops into Stage 5.  
-**Framework note**: The ops Stage 5 definition needs sharpening. "Process design and automation decisions" is less precise than the dev Stage 5 equivalent. Emily's situation is a good worked example to develop it from.
+**Not Stage 2**: Built and shared the driver referral skill with team. Using multiple connectors (Looker, Chrome extension). Creating tools, not just consuming them.
+**Not Stage 4**: Hitting practical friction with tooling — Chrome extension takes over tabs, Looker connection is temperamental, needs a spare laptop for background AI work. The friction points suggest the multi-agent orchestration framing from the previous assessment was ahead of where she is operationally. Skill-building and sharing is Stage 3 territory.
+**To progress**: Resolve the tooling friction (spare laptop, stable Netsuite connection). Complete the driver referral automation end-to-end. Get the Netsuite connection working for cancellations and vehicle lists. Once tooling friction is resolved, the Zapier + Claude + Netsuite combination could push back toward Stage 4.
 
 ## 1:1 Log
 
@@ -78,3 +77,14 @@ Reports to Antton Pena (CCO). Mollie Brownlow (former Head of Operations) has le
 - OKR3 authority framework — Emily leading, described as "hospital pass"
 - M and Andrew co-owning with tracking progress Q1-Q2
 - New platform improvements may help time-to-quote regardless of authority framework
+
+### 2026-06-30 — June Assessment Update
+
+- Using Chrome extension for Claude browser automation but finding it interferes with work (takes over tabs)
+- Exploring driver referral automation with Fred
+- Interested in Netsuite connection for cancellations and vehicle lists
+- Needs spare laptop for AI automation — Lawrence's laptop identified
+- Built driver referral skill and shared with team
+- Connected to Looker but finds it temperamental
+- Stage reassessed to 3 (from 4) — built and shared skills, using multiple connectors, but hitting practical friction with tooling
+- Source: [[2026-06-19-claude-connectors-catch-up]]

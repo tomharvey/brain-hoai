@@ -1,13 +1,13 @@
 ---
 title: Phoebe Woodman
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-06-30
 domain: ai-enablement
 type: person
 tags: [people-team, hr, ai-enablement]
-ai_activation_stage: 3
+ai_activation_stage: 2
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-24
+ai_activation_assessed: 2026-06-30
 ---
 
 # Phoebe Woodman
@@ -27,15 +27,14 @@ Member of the People team at Flock. Key focus on company communications, Flock O
 
 ## AI Activation
 
-**Stage**: 3 — Fluency
+**Stage**: 2 — Context and tools (Stage 1 progressing to 2)
 **Confidence**: medium
-**Assessed**: 2026-06-24
-**Evidence**: HTML slides for June fireside chat built entirely in Claude and deployed on Netlify ("I felt like I was getting really techy"). Daily task briefings via Alar. Uses Claude for design (flyers, posters), data manipulation and summarisation. Flock O'Clock automation fully designed: Slack-based contributor flow, Claude validates against Ed's comms playbook, deck rebuilds automatically on each submission. Discovered and began exploring Claude Design tab during Jun 24 session. Still uses ChatGPT occasionally for tone/phrasing.
+**Assessed**: 2026-06-30
+**Evidence**: Learning to use Flock deck builder skill. Connected to Gmail, Google Drive, Slack via Claude connectors. Wants to automate Flock O'Clock creation workflow (manual slide creation, contributor assignment). Self-describes as "I feel like I'm stupid when it comes to this." Open and willing to learn. Started using daily tracker from Eraaz's prompt. Needs spare laptop for running AI tasks in background — Lawrence's laptop identified as option. Previous evidence includes HTML slides deployed on Netlify and Alar daily briefings, but self-assessment and observed usage indicate early Stage 2 rather than fluency.
 
-**Not Stage 1**: Multiple demonstrated wins — Netlify HTML slides shipped, Alar daily briefings live, data manipulation at scale. No longer prospective.
-**Not Stage 2**: Live tools running (Alar), artefacts shipped (Netlify slides), iterating on output quality. Past the context-and-tools stage.
-**Not Stage 4**: Not yet delegating autonomously. Flock O'Clock automation is designed but the Slack trial (→ [[AI-141]]) has not yet run end-to-end.
-**To progress**: Complete Flock O'Clock Slack trial. If contributors submit and deck rebuilds automatically, that's Stage 4 territory.
+**Not Stage 1**: Has connectors set up (Gmail, Google Drive, Slack), starting to use skills. Past basic queries.
+**Not Stage 3**: Not building skills or workflows independently. Using tools others have built (Eraaz's daily tracker prompt, deck builder skill). Self-assessment reflects early learner confidence. Enthusiastic and open but not yet fluent.
+**To progress**: Complete the Flock O'Clock automation trial end-to-end. Build one skill or workflow independently rather than using one created by someone else. The spare laptop for background AI tasks would remove a practical friction point.
 
 ## Notes
 
@@ -54,3 +53,14 @@ Member of the People team at Flock. Key focus on company communications, Flock O
 - HTML slides for fireside chat already deployed on Netlify — first real AI artefact shipped
 - Discovered Claude Design tab (bottom left of app) during this call
 - See: [[2026-06-24-ai-phoebe]]
+
+### 2026-06-30 — June Assessment Update
+
+- Learning to use Flock deck builder skill
+- Connected to Gmail, Google Drive, Slack via Claude connectors
+- Wants to automate Flock O'Clock creation workflow (manual slide creation, contributor assignment)
+- Self-describes as "I feel like I'm stupid when it comes to this" — open and willing to learn
+- Started using daily tracker from Eraaz's prompt
+- Needs spare laptop for running AI tasks in background — Lawrence's laptop identified as option
+- Stage reassessed to 2 — has connectors set up, starting to use skills, but very early; enthusiastic and open
+- Sources: [[2026-06-24-ai-phoebe]], [[2026-06-02-people-team-workshop]]

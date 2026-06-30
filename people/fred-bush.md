@@ -1,14 +1,14 @@
 ---
 title: Fred Bush
 created: 2026-03-30
-updated: 2026-04-09
+updated: 2026-06-30
 type: person
 role: Underwriting Assistant
 team: Ops (reports to Emily Staton)
-tags: [underwriting, ops]
+tags: [underwriting, ops, cowork]
 ai_activation_stage: 2
-ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-18
+ai_activation_confidence: high
+ai_activation_assessed: 2026-06-30
 ---
 
 ## Role
@@ -37,27 +37,27 @@ Ops — reports to [[emily|Emily Staton]]
 
 ## AI Activation
 
-**Stage**: 1 — First genuine wins
-**Confidence**: medium
-**Assessed**: 2026-06-02
-**Evidence**: Daily Claude user for VRN extraction and document parsing. Switched from ChatGPT to Claude (better PDF extraction — found this himself). Attended workshops. Key takeaway: "have a conversation, don't one-shot it." Identifies driver referrals as biggest manual gap and is thinking about automation.
+**Stage**: 2 — Context and tools (progressing to 3)
+**Confidence**: high
+**Assessed**: 2026-06-30
+**Evidence**: Using driver referral decision skill daily (built with Emily). No longer manually inputs data to HubSpot — AI handles it, he checks output. Created his first personal skill ("Fred driver referral decision") during a Jun 3 co:work session. Learning the skill self-improvement pattern (feeding corrections back into the skill). Uses co:work. Wants briefer HubSpot notes. Amazon season keeping team very busy.
 
-**Not Stage 0**: Daily returning user with multiple task wins. Has made a tool switch based on quality assessment — not just dipping in.
-**Not Stage 2**: Single-task, single-shot use. HubSpot not connected. No context loading. The "have a conversation" lesson from workshops hasn't yet translated into practice.
-**To progress**: Connect HubSpot to Claude — the driver referral automation is the natural Stage 2 entry point. The day he builds the referral workflow is the day context loading becomes necessary. Shreya has offered to pair with him on it.
-**Framework note**: Data from April 2026. Emily and Shreya are well-placed to accelerate him. Driver referral automation is the forcing function.
+**Not Stage 1**: Connected to HubSpot, using a shared skill daily for driver referrals, saving significant manual time. Has moved well past single-task usage into tool-connected workflows.
+**Not Stage 3**: Created his first personal skill during a guided session, not independently. Still checking AI output carefully rather than trusting and iterating. The skill iteration pattern is learned but not yet habitual.
+**To progress**: Build a second skill independently (without session guidance). The briefer HubSpot notes request is a good candidate — he knows what he wants and has the pattern from the driver referral skill. When he starts iterating on skills unprompted, that's Stage 3.
+**Framework note**: Strong progression from Stage 1 (April) to Stage 2 (June). The driver referral skill was the forcing function as predicted. Creating a personal skill variant in-session is the first Stage 3 signal. Amazon season pressure may slow further exploration.
 
 ## 1:1 Log
 
-### 2026-04-08 — AI Discovery
+### 2026-06-03 — Co:Work Session
 
-- Benefits from Anna's automated renewal workflows (sees tickets, doesn't engage with AI directly)
-- Day-to-day: Claude for VRN extraction from presentations, transferring submission info from Gmail to Flock port
-- Driver referrals identified as biggest manual gap: 10-20/day, ~15min each, fully manual (AI-011)
-- Two inboxes: Support (driver referrals, cancellations, etc.) and New Business (submissions)
-- Key learning from prompting workshops: have a conversation, don't one-shot it
-- Open to more AI — "I'm sure there are ways, whether or not I'm creative enough to think of them"
-- Emily encouraging further AI development across the team
+- Driver referral decision skill (built with Emily) now in daily use — saves significant manual time
+- No longer manually inputs data to HubSpot — checks AI output instead
+- Created his first personal skill: "Fred driver referral decision" (variant of the shared skill)
+- Learned about skill self-improvement — feeding corrections back into the skill to improve accuracy
+- Amazon season keeping the ops team very busy — less time for exploration
+- Wants briefer HubSpot notes — current output too verbose
+- Good engagement in co:work format
 
 ### 2026-04-15 — Monthly Ops AI Sync
 
@@ -68,4 +68,14 @@ Ops — reports to [[emily|Emily Staton]]
 - Blocker: authority framework needs Darren's sign-off — expected within a month
 - Entering the "this is annoying" phase of skill building — team to support
 - See: [[2026-04-15-monthly-ops-ai-sync]]
+
+### 2026-04-08 — AI Discovery
+
+- Benefits from Anna's automated renewal workflows (sees tickets, doesn't engage with AI directly)
+- Day-to-day: Claude for VRN extraction from presentations, transferring submission info from Gmail to Flock port
+- Driver referrals identified as biggest manual gap: 10-20/day, ~15min each, fully manual (AI-011)
+- Two inboxes: Support (driver referrals, cancellations, etc.) and New Business (submissions)
+- Key learning from prompting workshops: have a conversation, don't one-shot it
+- Open to more AI — "I'm sure there are ways, whether or not I'm creative enough to think of them"
+- Emily encouraging further AI development across the team
 

@@ -1,14 +1,14 @@
 ---
 title: Sam Adeniyi
 created: 2026-03-27
-updated: 2026-03-27
+updated: 2026-06-30
 type: person
 role: Staff Engineer
 team: Prod-tech
 tags: [engineering, security, governance, phd]
-ai_activation_stage: 4
+ai_activation_stage: 3
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-19
+ai_activation_assessed: 2026-06-30
 ---
 
 ## Role
@@ -34,15 +34,16 @@ Formerly a direct report.
 
 ## AI Activation
 
-**Stage**: 4 — Delegation
+**Stage**: 3 — Tool building
 **Confidence**: medium
-**Assessed**: 2026-06-18
-**Evidence**: Jun 2026 group therapy session: "treats Claude as another more senior engineer that thinks faster than me" — interrogates output line by line, asks "why did you do it like that." Used Claude to pull all AI initiatives from Notion for CoP proposal. Risk and governance mindset. Part-time PhD on secure AI systems.
+**Assessed**: 2026-06-30
+**Evidence**: Treats Claude as a "senior engineer" — more capable than him. Interrogates output line by line ("why did you write that?"). Shifts focus to reviewing output rather than planning. Strong code review approach. Different from peers — sees AI as peer/senior not junior. Previously: used Claude to pull all AI initiatives from Notion for CoP proposal. Risk and governance mindset. Part-time PhD on secure AI systems.
 
-**Not Stage 3**: Delegates complex coding tasks daily as part of the engineering team — confirmed by Head of AI direct observation. Treats Claude as "a senior engineer that thinks faster than me" and interrogates output with judgment. Past fluency into routine delegation.
-**Not Stage 5**: No evidence of directing multi-agent systems or measuring adherence. The governance/security PhD lens is a differentiator that could accelerate Stage 5 thinking.
-**To progress**: Channel the governance mindset into defining guardrails and adherence measurements. His security research background makes him a natural candidate for building the team's quality assurance framework for AI-generated code.
-**Framework note**: Biggest individual mover in the company: Stage 1 (April, Jordi's "not AI driven" flag) → Stage 4 (June) in 2 months. Key Jun quote is second-hand (Tom recapping to Jordi) but corroborated by group therapy session behaviour.
+**Not Stage 2**: Deeply engaged with AI output, interrogating decisions, building a review-first workflow. Past basic tool connection.
+**Not Stage 4**: The "senior engineer" framing and line-by-line interrogation is a distinctive Stage 3 pattern — he's building a deep working relationship with the tool, not delegating autonomously. Previous Stage 4 assessment over-weighted the delegation framing; Sam's primary mode is collaborative interrogation, not hands-off delegation.
+**To progress**: Trust the "senior engineer" enough to delegate discrete tasks without line-by-line review. Build skills that encode his review criteria so the interrogation becomes automated. The governance PhD lens could become the basis for automated quality checks.
+**Historical note**: Adjusted from Stage 4 (Jun 18) to Stage 3 (Jun 30). Sam's approach is genuinely distinctive — treating AI as senior rather than junior — but it's a deep Stage 3 practice (sophisticated tool use with interrogation) rather than Stage 4 delegation. Still the biggest individual mover: Stage 1 (April) to Stage 3 (June) in 2 months.
+**Framework note**: Sam's "AI as senior" framing is unique in the team. Most engineers treat AI as a junior they direct; Sam treats it as a senior he learns from. This may be a faster path to Stage 4 — once trust is established, delegation follows naturally.
 
 ## 1:1 Log
 
@@ -66,3 +67,11 @@ Formerly a direct report.
 - Jordi notes Sam struggles with execution on large undefined projects — start small, measurable goals, expand after delivery
 - Jordi has 1:1 with Sam Thursday to set Q2 goals
 - Lunch & learn proposed: Sam presents documentation learnings
+
+### 2026-06-30 — June transcript synthesis
+
+- Treats Claude as a "senior engineer" — more capable than him. Distinctive framing vs peers who see AI as junior
+- Interrogates output line by line — "why did you write that?"
+- Shifts focus to reviewing output rather than planning
+- Strong code review approach — doesn't accept output uncritically
+- Stage reassessed: 4 → 3. Deep collaborative interrogation is sophisticated Stage 3 practice, not hands-off delegation. Still the biggest individual mover (Stage 1 → 3 in two months)

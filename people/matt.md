@@ -1,14 +1,14 @@
 ---
 title: Matthew Price
 created: 2026-03-27
-updated: 2026-05-05
+updated: 2026-06-30
 type: person
 role: Head of Product
 team: Product
 tags: [product, leadership]
 ai_activation_stage: 4
-ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-19
+ai_activation_confidence: medium-high
+ai_activation_assessed: 2026-06-30
 ---
 
 ## Role
@@ -33,14 +33,14 @@ Peer
 
 ## AI Activation
 **Stage**: 4 — Delegation
-**Confidence**: medium
-**Assessed**: 2026-06-19
-**Evidence**: Delegates complex analysis tasks across HubSpot, PostHog, and Looker MCPs daily. Uses second brain to coach his reports — reads team project docs via agent, surfaces coaching examples. May 12: running Looker MCP queries conversationally, directing step by step but handing off the execution. May 18: sharing context across team repos, reading his own context files. Delegates whole analytical workflows to Claude as part of product leadership practice.
+**Confidence**: medium-high
+**Assessed**: 2026-06-30
+**Evidence**: Delegates complex analysis tasks across HubSpot, PostHog, and Looker MCPs daily. Uses second brain to coach his reports. Jun 30: using Lovable for presentation slides (prefers over Flock presentation skill for animation/design). Built PostHog embedded hardware device project (Arduino/ESP32) with Claude Code — C++ work, enjoying hardware prototyping. Connected web analytics + policy performance + HubSpot data for retention analysis dashboard. Used co:work project for budget analysis. Shared retention correlation findings with sales team. Considering hooking PostHog device to telemetry data. Daily active users metric tied to retention. Good strategic thinking about AI product direction (J needs to be customer-first not "come use our AI").
 
-**Not Stage 3**: Past conversational fluency — multiple MCPs wired together, delegates analysis workflows, uses second brain for management coaching. The conceptual/practice gap that previously characterised his assessment has closed.
+**Not Stage 3**: Past conversational fluency — building hardware projects with AI (Arduino/ESP32/C++), cross-data-source analysis dashboards, presentation tooling evaluation. High fluency across diverse domains.
 **Not Stage 5**: Not directing multi-agent systems or measuring adherence. The coaching skill he describes is a vision being built, not a governed system.
-**To progress**: Ship the coaching skill — agent ingests all team Linear projects, surfaces the "so what" for each 1:1 proactively. One built, repeatable, delegated workflow would push toward Stage 5.
-**Framework note**: Previously the clearest example of "conceptual model ≠ activation stage." By June, practice has caught up — he's doing the work, not just describing it.
+**To progress**: Ship the coaching skill — agent ingests all team Linear projects, surfaces the "so what" for each 1:1 proactively. Or instrument the PostHog hardware device as an autonomous telemetry system.
+**Framework note**: Confidence upgraded from medium to medium-high. June evidence shows breadth — hardware prototyping, cross-source analytics, presentation tools, budget analysis via co:work. Practice continues to match conceptual model.
 
 ## 1:1 Log
 
@@ -74,3 +74,14 @@ Peer
 - Next step: collaborative backfill of team now/next/later with PMs as a way to demonstrate the process and teach what good looks like
 - Fergus flagged to Tom separately (2026-05-08): "excellent diplomat, struggling to get strong opinions from him" — asked Tom to think on it
 - See: [[2026-05-05-multiplayer-second-brain]]
+
+### 2026-06-30 — June assessment update
+
+- Using Lovable for presentation slides — finds it better than Flock presentation skill for animation/design
+- Built PostHog embedded hardware device project (Arduino/ESP32) with Claude Code — C++ work, enjoying hardware prototyping
+- Connected web analytics + policy performance + HubSpot data for retention analysis dashboard
+- Used co:work project for budget analysis
+- Shared retention correlation findings with sales team
+- Considering hooking PostHog device to telemetry data; daily active users metric tied to retention
+- Good strategic thinking about AI product direction: J needs to be customer-first not "come use our AI"
+- Stage 4 confirmed, confidence upgraded to medium-high based on breadth of AI tool usage

@@ -1,12 +1,12 @@
 ---
 title: Anneliese Vanwijk
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-06-30
 type: person
 tags: [finance, moss, operational-tooling]
-ai_activation_stage: 2
+ai_activation_stage: 1
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-02
+ai_activation_assessed: 2026-06-30
 ---
 
 # Anneliese Vanwijk
@@ -30,15 +30,18 @@ Only she and [[queency-gonsalves|Queency]] use MOSS on the finance team.
 
 ## AI Activation
 
-**Stage**: 2 — Context and tools (day one)
+**Stage**: 1 — Search mode
 **Confidence**: medium
-**Assessed**: 2026-06-02
-**Evidence**: Set up 8 Claude connectors in one session (Notion, Slack, Granola, Looker, Flock custom, Gmail, Google Drive, Google Calendar). Clear target use case: automate MOSS month-end consistency checking. Generated MOSS API keys same day in prep. Understands the AI displacement concern for junior team members — conceptually ahead of where practice is.
+**Assessed**: 2026-06-30
+**Evidence**: Python installation issues blocking Moss MCP setup (Jun 29). Previously tried to build the MCP connection herself but it wasn't right. Recognises she underestimated the complexity. Apologised for deprioritising it. Persistent errors with installation. Willing but blocked by the technical setup hurdle.
 
-**Not Stage 1**: Has a clear target use case, has set up the full tooling infrastructure, and is moving toward building — past the "one task, done" stage.
-**Not Stage 3**: Assessment made on day 1 of active engagement. No workflows built yet. Context loaded; nothing running.
-**To progress**: The MOSS MCP has been built and installed by Kirsty (Jun 3). The tool is now available — the Stage 2→3 transition is using it iteratively for month-end consistency checking, not just running it once.
-**Framework note**: MOSS MCP is live as of Jun 3. NetSuite MCP also now available. Weekly finance workshops are the coaching vehicle. Reassess after first month-end cycle with the new tools.
+**Not Stage 0**: Genuinely wants to use AI tools, has attempted setup independently, and has a clear target use case (MOSS month-end consistency checking). The intent and conceptual understanding are there.
+**Not Stage 2**: Cannot get past Python/installation issues to actually connect tools. The 8 Claude connectors set up in early June were web-based (Notion, Slack, etc.) — the local MCP tooling that requires Python is a different technical bar she hasn't cleared yet.
+**To progress**: Needs hands-on support to get past the Python/installation hurdle. Once Moss MCP is running, the month-end consistency checking use case is ready to go. A paired session to resolve the technical blockers would unblock the Stage 1→2 transition immediately.
+
+### Prior assessment (2026-06-02)
+
+Previously assessed at Stage 2 based on setting up 8 Claude connectors and generating MOSS API keys. The June evidence shows that while web-based connectors are working, the local MCP tooling (which requires Python) has been persistently blocked. The downgrade reflects that tool connection is incomplete — the key use case (MOSS automation) remains unconnected.
 
 ## Notes
 

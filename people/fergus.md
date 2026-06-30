@@ -1,14 +1,14 @@
 ---
 title: Fergus Doyle
 created: 2026-03-27
-updated: 2026-04-20
+updated: 2026-06-30
 type: person
 role: Interim CPTO
 team: Leadership
 tags: [leadership, strategy]
 ai_activation_stage: 4
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-25
+ai_activation_assessed: 2026-06-30
 ---
 
 ## Role
@@ -33,12 +33,13 @@ Reports-to. Tom reports directly to Fergus. They worked together years ago at an
 
 **Stage**: 4 — Delegation
 **Confidence**: medium
-**Assessed**: 2026-06-25
-**Evidence**: Built a ledger service prototype overnight with Claude — never written a line of code in this codebase, ~80% of the way there with some architectural repointing needed. Gave Claude the full installments OKR doc + Jordi's MVP requirements → working service output. Used Claude to prototype and validate the OAuth refresh token auth flow as a background task (ran for an hour, found and implemented the abuse prevention feature in one change). Champions the self-healing loop and harness architecture concepts as central engineering strategy. "I can't understand why people aren't just doing the same sort of discovery effort."
+**Assessed**: 2026-06-30
+**Evidence**: Built a ledger service prototype overnight with Claude — never written a line of code in this codebase, ~80% of the way there with some architectural repointing needed. Gave Claude the full installments OKR doc + Jordi's MVP requirements → working service output. Used Claude to prototype and validate the OAuth refresh token auth flow as a background task. Champions the self-healing loop and harness architecture concepts as central engineering strategy. Jun 11: deep strategic thinking about AI team structure — wants lean units with specific objectives. Concerned about "hi-fi wireframe" problem (people jumping to finished product). Wants next AI workshop focused on intent, not tools. Thinking about platform reliability vs AI innovation balance. Jun 4: discussing shared context repository approach. Concerned about data integrity with AI-generated outputs. Wants to understand artifact output standards (CSV, HTML, Looker). Thinking about how to measure Ollie/Jaren's product AI work impact.
 
 **Not Stage 3**: This is agentic delegation — giving Claude an entire codebase context + requirements doc and getting a working service back overnight. Not conversational fluency.
 **Not Stage 5**: Not yet running instrumented feedback loops or measuring model adherence at team level. The harness he's championing would be Stage 5 if built and instrumented.
 **To progress**: Lead the two-day installments hack session (→ Jordi + Joanne + Geran + Javier). Drive the Ishmael harness pitch (→ [[AI-140]]). Both would turn his personal practice into team practice.
+**Leadership note**: June evidence reinforces Fergus's dual role — personal AI builder (Stage 4) AND strategic shaper of how AI gets adopted across engineering. His concerns about intent vs tools, data integrity, and measurement standards directly shape the AI activation framework itself.
 
 ## 1:1 Log
 
@@ -86,3 +87,15 @@ Reports-to. Tom reports directly to Fergus. They worked together years ago at an
 - Claude spend: ~£5-6k/month; agreed to formalise as a production policy → [[AI-142]]
 - Bedrock fallback: Tom to check what's wired → [[AI-143]]
 - See: [[2026-06-25-fergus-tom-weekly]]
+
+### 2026-06-30 — June assessment update
+
+- Jun 11: wants lean AI units with specific objectives; concerned about "hi-fi wireframe" problem (people jumping to finished product)
+- Wants next AI workshop focused on intent, not tools
+- Thinking about platform reliability vs AI innovation balance
+- Jun 4: discussing shared context repository approach
+- Concerned about data integrity with AI-generated outputs
+- Wants to understand artifact output standards (CSV, HTML, Looker)
+- Thinking about how to measure Ollie/Jaren's product AI work impact
+- Camping in thunderstorm
+- Stage 4 confirmed; leadership note added recognising dual role as builder and strategic shaper

@@ -1,14 +1,14 @@
 ---
 title: Adam Smith
 created: 2026-03-27
-updated: 2026-05-27
+updated: 2026-06-30
 type: person
 role: Head of Distribution
 team: Distribution
 tags: [distribution, leadership, granola, hubspot, trading-pack, strategic-partner]
 ai_activation_stage: 4
 ai_activation_confidence: high
-ai_activation_assessed: 2026-05-27
+ai_activation_assessed: 2026-06-30
 ---
 
 ## Role
@@ -37,12 +37,12 @@ First spoke 2026-04-02. Positive, collaborative, wants structured support for hi
 
 **Stage**: 4 — Delegation
 **Confidence**: high
-**Assessed**: 2026-06-19
-**Evidence**: Built a Claude trading review project for SLT + trading team; runs scheduled inbox cleanup automation; uses Claude as strategic partner for complex stakeholder navigation (Admiral paper, leadership coaching via Granola transcripts). Independently developed AI-as-coach usage pattern. **Quality concern (Jun 11)**: Fergus reported that at a trading meeting, "almost on every slide, it was like those numbers don't look right" — the trading pack had data integrity issues presented to SLT. This is the "output ownership" failure mode: delegating without sufficient validation of the output.
+**Assessed**: 2026-06-30
+**Evidence**: Built a Claude trading review project for SLT + trading team; runs scheduled inbox cleanup automation; uses Claude as strategic partner for complex stakeholder navigation (Admiral paper, leadership coaching via Granola transcripts). Independently developed AI-as-coach usage pattern. **Quality concern (Jun 11)**: Fergus reported that at a trading meeting, "almost on every slide, it was like those numbers don't look right" — the trading pack had data integrity issues presented to SLT. This is the "output ownership" failure mode: delegating without sufficient validation of the output. **Jun 15 update**: Built trading report pack skill in co:work. Built activity tracking dashboard for team performance (meetings, calls, face-to-face split). Using Granola transcripts for personal coaching/post-call analysis. Articulated clear AI team vision: librarian (data lookup), secretary (prioritization/scheduling), coach (personal development + sales playbook). Managing 356 broker accounts with 2.5 BDMs. New BDM starting Jul 21. Wants AI to help identify, diagnose, then let team take action.
 
-**Not Stage 3**: Running scheduled automations and delegating whole workflows (inbox, trading pack, coaching). Well past fluency.
-**Not Stage 5**: The Jun 11 data integrity failure shows he's not yet measuring or validating AI output systematically. He's delegating at scale but the quality assurance layer is missing.
-**To progress**: Instrument the trading pack with validation queries — SQL persistence + Kirsty sign-off before presenting to SLT. The "output ownership" lesson is the most important one for Q3.
+**Not Stage 3**: Running scheduled automations and delegating whole workflows (inbox, trading pack, coaching). Well past fluency. Now building team-level tools (activity dashboard) and articulating product-level AI vision.
+**Not Stage 5**: The Jun 11 data integrity failure shows he's not yet measuring or validating AI output systematically. He's delegating at scale but the quality assurance layer is missing. HubSpot data quality acknowledged as messy — validation infrastructure not yet in place.
+**To progress**: Instrument the trading pack with validation queries — SQL persistence + Kirsty sign-off before presenting to SLT. The "output ownership" lesson is the most important one for Q3. Team toolkit consistency (2-3 common workflows everyone runs) is the bridge to Stage 5 — directing a system, not just delegating individual tasks.
 
 ## Broker segmentation (as of 2026-05-27)
 
@@ -79,15 +79,18 @@ Accelerator brokers have a Notion dashboard. Currently static PDF; Adam wants it
 
 ## 1:1 Log
 
-### 2026-04-02 — AI Discovery
-- Distribution = ~300 brokers, some with 50+ UK offices, high-touch account management
-- Team already using Granola (shared folder), ChatGPT/Claude for data interrogation, Kirsty's Looker MCP
-- Wants distribution-specific AI toolkit: slide production, broker prioritisation, data interrogation skills
-- Granola as accidental CRM — solves decades-old problem of salespeople not filling in Salesforce
-- HubSpot thin on broker account data — joint project with Emily to clean up
-- Ideal pipeline: Granola → HubSpot → Claude via MCP
-- Semantic/naming consistency across systems is a prerequisite
-- Tom to act as bridge between advanced users and broader team
+### 2026-06-15 — BDM Dashboards
+
+- Built trading report pack skill in co:work session
+- Activity tracking dashboard: BDM activity index (meetings, calls, face-to-face split) for team performance visibility
+- Using Granola transcripts for personal coaching and post-call analysis
+- Wants team to share best practices — sees need for consistent toolkit across BDMs
+- Articulated three-role AI vision: librarian (data lookup), secretary (prioritization/scheduling), coach (personal development + sales playbook)
+- Managing 356 broker accounts with 2.5 BDMs — scale demands AI leverage
+- New BDM starting Jul 21 — wants AI-first onboarding
+- Wants AI to help identify and diagnose issues, then let team take action (not full automation)
+- Using broker pulse concepts for prioritization
+- HubSpot data quality acknowledged as messy — Brown & Brown complexity persists
 
 ### 2026-06-10 — BDM Team AI
 
@@ -110,3 +113,13 @@ Accelerator brokers have a Notion dashboard. Currently static PDF; Adam wants it
 - Tom flagged secretary→coach→strategic partner pattern for Rakhee
 - AI Breakfast attendance confirmed
 - See [[2026-05-27-adam-ai-catchup]]
+
+### 2026-04-02 — AI Discovery
+- Distribution = ~300 brokers, some with 50+ UK offices, high-touch account management
+- Team already using Granola (shared folder), ChatGPT/Claude for data interrogation, Kirsty's Looker MCP
+- Wants distribution-specific AI toolkit: slide production, broker prioritisation, data interrogation skills
+- Granola as accidental CRM — solves decades-old problem of salespeople not filling in Salesforce
+- HubSpot thin on broker account data — joint project with Emily to clean up
+- Ideal pipeline: Granola → HubSpot → Claude via MCP
+- Semantic/naming consistency across systems is a prerequisite
+- Tom to act as bridge between advanced users and broader team

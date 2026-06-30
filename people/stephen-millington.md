@@ -1,14 +1,14 @@
 ---
 title: Stephen Millington
 created: 2026-04-21
-updated: 2026-05-19
+updated: 2026-06-30
 type: person
 role: Data / Backend Engineer
 team: Engineering — Retention / Safety (reports to Jemima)
 tags: [engineering, databricks, data]
-ai_activation_stage: 4
-ai_activation_confidence: high
-ai_activation_assessed: 2026-05-26
+ai_activation_stage: 2
+ai_activation_confidence: medium
+ai_activation_assessed: 2026-06-30
 ---
 
 ## Role
@@ -38,16 +38,26 @@ First 1:1 on 2026-05-19. Was previously under the radar on AI usage (occasional 
 - System is non-deterministic (Claude decides what's anomalous) vs his previous deterministic code — a deliberate architectural choice.
 
 ## AI Activation
-**Stage**: 4 — Multi-agent orchestration  
-**Confidence**: high  
-**Assessed**: 2026-05-26  
-**Evidence**: Built Databricks monitoring system with Claude Code in ~2 weeks (SQL queries → Claude anomaly detection → Slack alerts with Acknowledge/Create ticket buttons → Linear integration); built team-agnostic MCP server for Slack alerting; deliberate non-deterministic vs deterministic architectural choice; went from occasional ChatGPT to #2 on company token leaderboard. Grappling with Stage 5 questions ("prompt babysitter" concern, relevance through systems understanding).
+**Stage**: 2 — Context and tools
+**Confidence**: medium
+**Assessed**: 2026-06-30
+**Evidence**: AI mitigates his weakest professional points — documentation and Linear tickets are better. Appreciates good testing frameworks and CI/CD pipelines as guardrails for AI-generated code. Less exacting about crafted code but compensates with testing. Concerned about brain rot. Hasn't done much beyond basic usage in June. Previously built Databricks monitoring system (May), but June evidence shows primarily augmentation-level usage.
 
-**Not Stage 3**: Built a complete multi-component pipeline from scratch, not just one-shot code generation. Made explicit architectural decisions about determinism. Built reusable infrastructure (the MCP server is team-agnostic) rather than a one-off tool. The scale and intentionality of the Databricks system is well past plan mode.  
-**Not Stage 5**: The system is a single workflow, not orchestrated multi-agent work. No evidence of empirical context quality testing on his own systems (he knows PromptFoo from J evals but hasn't applied it to his own work). The "prompt babysitter" anxiety signals he's approaching Stage 5 questions but hasn't resolved them.  
-**To progress**: Apply empirical context testing to his own systems — PromptFoo or equivalent. Does improving the prompt actually improve anomaly detection? That measurement step is the Stage 4→5 transition. Then expand from single-workflow builds to multi-workflow orchestration.
+**Not Stage 1**: Uses AI daily for documentation and ticket management. Has CI/CD guardrail awareness. Previously built the Databricks monitoring system (May assessment).
+**Not Stage 3**: June evidence shows primarily using AI to augment weak points rather than building tools or workflows. Hasn't progressed beyond the Databricks system. Brain rot concern suggests he's pulling back from deeper usage rather than pushing forward.
+**Previous assessment note**: Downgraded from stage 4 (May 2026). The Databricks monitoring system was a genuine stage 4 achievement, but June evidence shows that was a spike rather than a sustained operating level. Current daily usage is stage 2 — augmenting weak points, not building new tools.
+**To progress**: Needs a new build project to re-engage at stage 3+. The testing/CI/CD guardrail thinking is mature — channel it into a second system that builds on the Databricks foundation.
 
 ## 1:1 Log
+
+### 2026-06-30 — Stage reassessment (transcript review)
+
+- Downgraded from stage 4 to stage 2 based on June transcript evidence
+- AI mitigates weakest professional points — documentation and Linear tickets improved
+- Appreciates testing frameworks and CI/CD pipelines as guardrails for AI code
+- Less exacting about crafted code, compensates with testing
+- Concerned about brain rot
+- Hasn't done much beyond basic usage in June — Databricks system was a May spike
 
 ### 2026-05-19 — AI catchup
 

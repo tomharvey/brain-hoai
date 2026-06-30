@@ -1,14 +1,14 @@
 ---
 title: Eraaz Ali
 created: 2026-04-16
-updated: 2026-04-16
+updated: 2026-06-30
 type: person
 role: Talent Acquisition
 team: People
 tags: [people, talent, recruitment, ai-user]
-ai_activation_stage: 3
+ai_activation_stage: 4
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-18
+ai_activation_assessed: 2026-06-30
 ---
 
 ## Role
@@ -36,14 +36,14 @@ Met Tom 2026-04-16 for intro. 2 months at Flock, took over from Adam.
 
 ## AI Activation
 
-**Stage**: 3 — Fluency (approaching Stage 4)
+**Stage**: 4 — Delegation (Stage 3-4)
 **Confidence**: medium
-**Assessed**: 2026-06-25
-**Evidence**: Jun 2 workshop: multi-connector daily optimisation system (3x/day co:work, Notion/Granola/Gmail/Slack/Calendar). Jun 25 People checkin: Candidate rejection skill with relational guardrails (factual-only; flags positive scorecards — "are we sure this candidate should be rejected?"). Onboarding skill: CV + JD + feedback → 5-page onboarding plan with 30/60/90-day goals. Agency terms: downloaded all three agency terms, defined criteria, asked Claude to rank agencies and draft tailored responses to all three in one pass — emails sent directly from Claude. Uses Claude as an OS layer: drafting and sending emails and Slacks directly. Alar chasing calendar invites 24hrs before interviews and chasing interview feedback automatically. Ashby MCP flagged as next major unlock.
+**Assessed**: 2026-06-30
+**Evidence**: Built daily optimization tracker that runs 3x daily via co:work. Connected to all connectors (Notion, Granola, Gmail, Slack). Morning briefing running automatically. Creating prompts for team members (Rakhee, Phoebe). Building skills actively. High engagement. Previous evidence: candidate rejection skill with relational guardrails, onboarding skill (CV + JD + feedback → 5-page plan), agency terms ranking with autonomous email sending, Alar chasing calendar invites and interview feedback automatically. The combination of schedule-based autonomous operations, skill creation for others, and multi-connector co:work system tips the assessment from "approaching Stage 4" to Stage 4.
 
-**Not Stage 2**: Scheduled multi-MCP co:work system, skills with relational guardrails, autonomous email sending. Far past context-and-tools.
-**Not Stage 4**: The agency terms flow was close to autonomous delegation and review, but most of his work still involves him in the loop. The "OS layer" framing is a Stage 4 indicator — this assessment may be conservative.
-**To progress**: Delegate a whole recruitment workflow end-to-end (JD → screen → interview pack → rejection/offer comms) and review at output level. The Ashby MCP when available would accelerate this significantly.
+**Not Stage 3**: Automated daily workflows running on schedule (3x/day co:work). Creating tools and prompts for teammates (Rakhee, Phoebe). This is delegation and tool-building for others, not just personal fluency.
+**Not Stage 5**: Not yet directing multi-agent systems or building validation/observability layers. The autonomous operations are individual scheduled tasks, not coordinated multi-agent workflows.
+**To progress**: Delegate a whole recruitment workflow end-to-end (JD → screen → interview pack → rejection/offer comms) and review at output level. Build validation layer: how does he know when an automated workflow has produced bad output? The Ashby MCP when available would accelerate this significantly.
 
 ## 1:1 Log
 
@@ -71,3 +71,13 @@ Met Tom 2026-04-16 for intro. 2 months at Flock, took over from Adam.
 - Co-building PGR prompt with Rakhee — distilling Pace (too complex) to 1–2 core features
 - Session booked for Monday after town hall to build and test basic prompt together
 - See: [[2026-06-25-pgr-skills]]
+
+### 2026-06-30 — June Assessment Update
+
+- Daily optimization tracker running 3x daily via co:work — confirmed still active
+- Connected to all connectors (Notion, Granola, Gmail, Slack)
+- Morning briefing running automatically
+- Creating prompts for team members (Rakhee, Phoebe)
+- Building skills actively; high engagement
+- Stage upgraded to 4 — automated daily workflows, creating tools for teammates, schedule-based AI operations
+- Sources: [[2026-06-02-people-team-workshop]], [[2026-06-25-people-team-checkin-ai-update]]

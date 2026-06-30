@@ -1,14 +1,14 @@
 ---
 title: Rob Grice
 created: 2026-03-27
-updated: 2026-04-20
+updated: 2026-06-30
 type: person
 role: Software Engineer
 team: Engineering — Acquisition squad (Ollie Crowe / David Zamora)
 tags: [engineering, acquisition, ai-user, claude, submissions]
-ai_activation_stage: 4
+ai_activation_stage: 3
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-19
+ai_activation_assessed: 2026-06-30
 ---
 
 ## Role
@@ -36,15 +36,15 @@ First week at Flock (started w/c 14 Apr 2026). Met Tom 2026-04-17 with Ollie pre
 - Aware of AI subsidy economics, pragmatic about SaaS ("repricing not apocalypse")
 
 ## AI Activation
-**Stage**: 4 — Delegation
+**Stage**: 3 — Tool building
 **Confidence**: medium
-**Assessed**: 2026-06-19
-**Evidence**: Delegates complex coding tasks to AI daily as part of the acquisition squad with Ollie. Built HubSpot submissions pipeline in Claude Code. Strong AI user since 2023-24; previous sub-agent experience at Boxfish (9 repos); connected HubSpot MCP in week 1. Jun 2026 group therapy session: described delegating whole coding workflows.
+**Assessed**: 2026-06-30
+**Evidence**: Using Claude Code with Flock coding principles embedded. Uses Codex adversarial review skill for post-code quality checks. Built "grill me" skill for better context capture. Presented submissions pipeline ingestion module at prodtech demo. Feels he could go 2-4x faster if more tickets existed. Consciously takes 2hrs/week for own thinking without AI. Concerned about brain rot as early-career engineer but finds parallel between AI and historical framework abstractions.
 
-**Not Stage 3**: Delegates whole coding tasks daily — confirmed by Head of AI direct observation. Past conversational fluency into routine delegation.
-**Not Stage 5**: No evidence of directing multi-agent systems or measuring adherence. Still building review skills.
-**To progress**: Build the review muscle — when the agent gets something wrong, encode the correction into context rather than working around it. The coding standards project with Chris is a natural vehicle.
-**Historical note**: April/May assessment noted a failure mode (takes output at face value, "I just work around it"). This was observed in his first weeks at Flock. Now 2 months into the acquisition squad with Ollie — daily delegation is confirmed practice. The failure mode may have improved but should be monitored.
+**Not Stage 2**: Building tools and skills independently — adversarial review patterns, "grill me" skill, coding principles in context. Well past connecting MCPs.
+**Not Stage 4**: Not yet running multiple parallel agents or delegating autonomously. Building skills and workflows but still hands-on with each task. Previous assessment at Stage 4 was premature — revisited with more evidence from Jun 2026 1:1s.
+**To progress**: Move from building individual skills to delegating whole tasks and running parallel agent workflows. The submissions pipeline is a good vehicle — break it into discrete chunks that agents can tackle independently.
+**Historical note**: Downgraded from Stage 4 (Jun 19) to Stage 3 (Jun 30). Earlier assessment over-weighted the delegation framing from group therapy. Deeper Jun 2026 evidence shows strong tool-building and skill creation, but not routine autonomous delegation at scale.
 
 ## 1:1 Log
 
@@ -64,3 +64,13 @@ First week at Flock (started w/c 14 Apr 2026). Met Tom 2026-04-17 with Ollie pre
 - Attended Fergus's architecture walkthrough
 - Part of tech-team audience for submission pipeline alignment
 - See: [[2026-04-20-submission-processing-pipeline]]
+
+### 2026-06-30 — June transcript synthesis
+
+- Using Claude Code with Flock coding principles embedded in context
+- Uses Codex adversarial review skill for post-code quality — built "grill me" skill for better context
+- Presented submissions pipeline ingestion module at prodtech demo
+- Feels he could go 2-4x faster if more tickets existed — capacity exceeds ticket supply
+- Concerned about brain rot as early-career engineer — finds comfort in parallel between AI and historical framework abstractions (jQuery → React etc.)
+- Consciously takes 2hrs/week for own thinking without AI
+- Stage reassessed: 4 → 3. Strong tool builder, not yet routine delegator

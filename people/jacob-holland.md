@@ -1,14 +1,14 @@
 ---
 title: Jacob Holland
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-06-30
 type: person
 role: Data Engineer
 team: Engineering — Retention / Safety
 tags: [engineering, data, automation, ai-champion]
 ai_activation_stage: 4
 ai_activation_confidence: high
-ai_activation_assessed: 2026-06-18
+ai_activation_assessed: 2026-06-30
 ---
 
 ## Role
@@ -36,13 +36,13 @@ Met in group context at codifying context session (2026-04-21).
 
 **Stage**: 4 — Delegation
 **Confidence**: high
-**Assessed**: 2026-06-18
-**Evidence**: Managing 2-3 parallel Claude Code processes as junior engineers — assigns discrete tasks, flips between screens, reviews at task level. "I just view them as really capable Juniors." Built automated documentation update agents on cron. Maintains golden rules for DBT projects in markdown that Claude enforces. Had to set a guardrail when an agent tried to push directly to main — meaning autonomous production pushes are a realistic failure mode he has addressed.
+**Assessed**: 2026-06-30
+**Evidence**: Views Claude as "really capable juniors." Runs 2-3 agents on discrete tasks simultaneously, flipping between screens. Uses Claude AI/co-work for higher-level architecture discussions. Found Claude lacks context for Flock-specific things at high level. Has jittery attention — suits multi-agent workflow. Uses terraform/AWS documentation MCP servers. Forces Claude to "do its homework first" by reading docs before proposing solutions. Good at managing multiple parallel AI workloads. Previously: built automated documentation update agents on cron, maintains golden rules for DBT projects, set guardrail when agent tried to push directly to main.
 
-**Not Stage 3**: Not thinking with the model — directing multiple instances in parallel. Reviews at task level, not line-by-line.
-**Not Stage 5**: Cron agents and DBT golden rules are personal/team-scoped. Has not yet described directing multi-agent systems with defined adherence metrics or building shared infrastructure others use.
-**To progress**: Take the DBT golden rules pattern and make it the team standard. Add a conformance check loop and Slack notification when drift is detected — that tips into Stage 5 territory.
-**Framework note**: Jun 2026 group therapy session provided direct verbatim Stage 4 evidence. The "capable Juniors" framing and guardrail anecdote are unambiguous.
+**Not Stage 3**: Directing multiple parallel instances, reviewing at task level not line-by-line. The "capable juniors" framing and multi-screen workflow are unambiguous delegation.
+**Not Stage 5**: Managing personal/team-scoped AI workflows. Has not yet built shared infrastructure with defined adherence metrics or organisational-level agent coordination. The "do its homework first" pattern is a good quality control instinct but not yet systematised.
+**To progress**: Take the DBT golden rules pattern and the "do homework first" discipline and make them team standards. Add conformance check loops and drift detection — that tips into Stage 5 territory. The terraform/AWS MCP server usage could be documented as a template for other engineers.
+**Framework note**: Jun 2026 1:1 confirms and strengthens Stage 4 assessment. The jittery attention / multi-agent match is an interesting self-awareness insight — his working style naturally suits the delegation model.
 
 ## 1:1 Log
 
@@ -53,3 +53,14 @@ Met in group context at codifying context session (2026-04-21).
 - Automated documentation agents flagged as template for team-level shared context
 - Could encode data extraction skills for wider team (Ismael, Kirsty, Ben)
 - See: [[2026-04-21-codifying-context-retention-team]]
+
+### 2026-06-30 — June transcript synthesis
+
+- Views Claude as "really capable juniors" — runs 2-3 agents on discrete tasks simultaneously, flipping between screens
+- Uses Claude AI/co-work for higher-level architecture discussions
+- Found Claude lacks context for Flock-specific things at high level
+- Has jittery attention — suits multi-agent workflow naturally
+- Uses terraform/AWS documentation MCP servers
+- Forces Claude to "do its homework first" — read docs before proposing solutions
+- Good at managing multiple parallel AI workloads
+- Stage confirmed: 4. Strengthened evidence from Jun 1:1s

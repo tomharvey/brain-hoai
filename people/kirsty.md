@@ -1,14 +1,14 @@
 ---
 title: Kirsty Alexandre
 created: 2026-03-27
-updated: 2026-04-09
+updated: 2026-06-30
 type: person
 role: Senior Analytics Engineer
 team: Finance (reports to Christian Nielsen, CFO)
 tags: [data, finance, visualisation]
-ai_activation_stage: 4
-ai_activation_confidence: high
-ai_activation_assessed: 2026-06-18
+ai_activation_stage: 2
+ai_activation_confidence: medium
+ai_activation_assessed: 2026-06-30
 ---
 
 ## Role
@@ -40,15 +40,18 @@ Finance
 
 ## AI Activation
 
-**Stage**: 4 — Delegation
-**Confidence**: high
-**Assessed**: 2026-06-18
-**Evidence**: Built Looker→Claude MCP integration deployed locally and trialled across Finance and Distribution teams. Automated FP&A pod metric sheet generation — a task that "was spinning our wheels for four months" completed in "a week of iterating with Claude." Presents at AI Breakfasts, de facto AI infrastructure owner for Finance. Other departments (Distribution) book sessions with her. "Absolutely obsessed with Claude."
+**Stage**: 2 — Context and tools
+**Confidence**: medium
+**Assessed**: 2026-06-30
+**Evidence**: Got new Moss MCP server installed successfully (Jun 29). Previously had installed an older version that didn't work properly. Understands the need for proper API configuration. Willing to help install on Jade and Dave's machines. Interested in month-end automation via Moss. Has tools connected and is actively using Claude with Moss MCP, though dependent on others for initial setup.
 
-**Not Stage 3**: Running infrastructure others depend on. Pod metrics automation, review pack auto-generation, and Looker integration are systems, not personal tools.
-**Not Stage 5**: Has not yet handed workflows off to run autonomously without her involvement. Cloud MCP deployment (AI-010) blocked pending infrastructure support. Single primary data pipeline (Looker→Claude).
-**To progress**: Productionise Looker MCP on shared cloud infrastructure (AI-010). Connect pipeline to multi-step automated output (query → synthesise → format → distribute). Build feedback loops so insight quality is tracked over time.
-**Framework note**: Moves fast. Cloud MCP deployment is the single biggest unlock in the Finance department.
+**Not Stage 1**: Has MCP tools installed and functioning, actively using Claude with connected data sources. Not just running basic queries — understands the tooling landscape and is helping others get set up.
+**Not Stage 3**: Dependent on others for Moss MCP setup. Not yet building her own workflows or skills around Moss. Using the tool once installed rather than creating new capabilities from it.
+**To progress**: Build a Moss month-end automation workflow independently. Create a reusable skill or process around Moss expense management. Move from using the MCP to building on top of it.
+
+### Prior assessment (2026-06-18)
+
+Previously assessed at Stage 4 (Delegation) based on Looker MCP work: built Looker→Claude MCP integration, automated FP&A pod metric sheet generation, presented at AI Breakfasts, de facto AI infrastructure owner for Finance. That evidence remains valid for Looker-based workflows. The current assessment reflects the Moss-specific context where she is earlier in the adoption curve.
 
 ## 1:1 Log
 

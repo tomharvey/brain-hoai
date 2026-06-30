@@ -1,19 +1,19 @@
 ---
 title: Rakhee Gohil
 created: 2026-03-27
-updated: 2026-05-27
+updated: 2026-06-30
 type: person
-role: Senior People Business Partner
+role: Head of People
 team: Leadership
 tags: [people, comms, leadership, ai-enablement]
-ai_activation_stage: 3
+ai_activation_stage: 2
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-25
+ai_activation_assessed: 2026-06-30
 ---
 
 ## Role
 
-Senior People Business Partner
+Head of People
 
 ## Team
 
@@ -37,14 +37,14 @@ Pub conversation 2026-05-21 re: AI job security concerns in engineering. Flagged
 
 ## AI Activation
 
-**Stage**: 3 — Fluency
+**Stage**: 2 — Context and tools
 **Confidence**: medium
-**Assessed**: 2026-06-25
-**Evidence**: Granola-to-tracker pipeline running daily for the whole People team — each member has a custom variant (Eraaz: daily briefing, Rakhee: action tracker, Phoebe: her own version). Alar-based daily agenda + action tracking; down to two Notion trackers from many. Heavy Claude use as thought partner for strategy, policy review, presentation decks, qualitative data analysis. Moving toward fully digital workflow. Described usage in Jun 25 team checkin: "I use it as a thought partner for different things." PGR automation work in progress with Eraaz (→ [[AI-144]]).
+**Assessed**: 2026-06-30
+**Evidence**: Using Claude with Notion connector for task prioritization. Has Notion-based people team tracker but finds it clunky. Working on AI benchmark survey re-run. Managing Ed's AI mandate — pushing back on "people team leads AI" framing. Thinks 10% at top of K-curve (Ed's framing). Wants structured workshop roadmap for rest of year. Concerned about Ed's forcefulness of messaging. Interested in engagement survey automation. Admiral/Pioneer want to learn from Flock's AI approach. Strategy-focused rather than tool-building. Previous evidence of Granola-to-tracker pipeline and Alar-based daily agenda persists but overall orientation remains planning-heavy.
 
-**Not Stage 2**: Working daily pipeline (Granola→tracker), team custom variants built and in use. Past context-and-tools.
-**Not Stage 4**: Still human-in-the-loop on everything. Nothing fully autonomous yet. Engagement survey automation and Notion integration are planned, not built.
-**To progress**: Connect Granola tracker to Notion. Build the engagement survey skill (pull from Bob → company deck → department decks). PGR co:work prompt (→ [[AI-144]]) would naturally push toward Stage 4.
+**Not Stage 1**: Connected to Notion via Claude, using it for task prioritization. Past basic search queries.
+**Not Stage 3**: Strategy-focused rather than tool-building. Not creating skills or building workflows unprompted. Heavy focus on planning workshops and survey design rather than building automation. Need to progress from planning to doing.
+**To progress**: Build the engagement survey skill. Move from using Claude as a thought partner to building repeatable workflows. The workshop roadmap is a planning artefact — shipping one automation end-to-end would demonstrate Stage 3.
 
 ## Actions outstanding
 
@@ -68,4 +68,18 @@ Pub conversation 2026-05-21 re: AI job security concerns in engineering. Flagged
 - Also planning engagement survey automation (pull from Bob → company + department decks)
 - Interested in AI workshop roadmap for Q3 → [[AI-147]]
 - See: [[2026-06-25-people-team-checkin-ai-update]]
+
+### 2026-06-30 — June Assessment Update
+
+- Working on AI benchmark survey re-run
+- Managing Ed's AI mandate — pushing back on "people team leads AI" framing
+- Thinks 10% at top of K-curve (Ed's framing)
+- Wants structured workshop roadmap for rest of year
+- Concerned about Ed's forcefulness of messaging
+- Has Notion-based people team tracker but finds it clunky
+- Learning to use Claude with Notion connector for task prioritization
+- Interested in engagement survey automation
+- Admiral/Pioneer want to learn from Flock's AI approach
+- Stage reassessed to 2 — strategy-focused rather than tool-building; need to progress from planning to doing
+- Sources: [[2026-06-15-ai-catch-up]], [[2026-06-09-ai-workshops]], [[2026-06-02-people-team-workshop]]
 

@@ -1,14 +1,14 @@
 ---
 title: Ivan Boix
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-06-30
 type: person
 role: Financial Analyst
 team: Finance (reports to Anneliese Van Wijk)
 tags: [finance, credit-control, netsuite, ai-user]
 ai_activation_stage: 3
-ai_activation_confidence: high
-ai_activation_assessed: 2026-06-02
+ai_activation_confidence: medium
+ai_activation_assessed: 2026-06-30
 ---
 
 ## Role
@@ -31,15 +31,18 @@ Finance. Works alongside [[matt-dipre|Matt Dipré]] and [[queency-gonsalves|Quee
 
 ## AI Activation
 
-**Stage**: 3 — Daily automated workflow with skill creation
-**Confidence**: high
-**Assessed**: 2026-06-02
-**Evidence**: Daily credit control prioritisation system running 2+ months: NetSuite aging export → Claude → prioritised report with summary dashboard, top 5 actions, movement tracking, overdue vs. not-yet-due breakdown. Completed in ~5 minutes including export. Weekly Admiral carrier reporting (1 min). Has created a Claude skill for the daily report. Considering migration to Claude Co-Work for better session management.
+**Stage**: 3 — Tool building
+**Confidence**: medium
+**Assessed**: 2026-06-30
+**Evidence**: Built connectivity APIs for J — 4 new endpoints in safety API (Jun 3 Prodtech demo). Created MCP tools for J's connectivity skill. Worked with Chris and Jacob on data lake integration. Working on Netsuite MCP (Jun 25). Dipped toe into co:work during a team session. Technical implementation of AI-facing features — more infrastructure-focused than personal AI usage. Building the tooling that enables AI capabilities for others.
 
-**Not Stage 2**: Not just using a connected tool — built an autonomous daily workflow and created a reusable skill from it. Stage 2 is "I have context loaded"; Stage 3 is "I have a system that runs."
-**Not Stage 4**: Single workflow, single domain. No multi-agent orchestration or delegation of whole business processes. Hasn't yet shared or scaled the workflow to teammates.
-**To progress**: Encode the payment terms knowledge that lives in his head into a Claude skill/context file — that's the Stage 3→4 data foundation. Then extend the workflow to HubSpot chasing when broker-specific logic is captured. Kevin and Matt Dipré are natural cross-pollination partners (AI-050 context).
-**Framework note**: Strong Stage 3 with high confidence. "Well ahead of the team" per Tom's post-call notes. The daily use case is a reference model for ops/finance activation.
+**Not Stage 2**: Not just using connected tools — actively building API infrastructure and MCP tools that enable AI features. Creating endpoints and integrations, not just consuming them.
+**Not Stage 4**: Building tools and infrastructure for AI features but not yet delegating to autonomous systems or orchestrating multi-agent workflows. More focused on the engineering side (APIs, MCP tools) than on personal AI delegation.
+**To progress**: Move from building AI infrastructure for others to delegating his own workflows to autonomous agents. Extend the co:work experiment into a regular working pattern. Set up scheduled or multi-step AI workflows for his own engineering tasks.
+
+### Prior assessment (2026-06-02)
+
+Previously assessed at Stage 3 (high confidence) based on daily credit control prioritisation system (NetSuite aging → Claude → prioritised report) running 2+ months, weekly Admiral carrier reporting, and Claude skill creation. Current assessment maintains Stage 3 but shifts confidence to medium — the June evidence shows infrastructure/API building (connectivity APIs, MCP tools, Netsuite MCP) which is Stage 3 work, but the personal daily workflow evidence from earlier still anchors the assessment.
 
 ## 1:1 Log
 

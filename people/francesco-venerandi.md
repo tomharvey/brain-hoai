@@ -1,14 +1,14 @@
 ---
 title: Francesco Venerandi
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-06-30
 type: person
 role: Senior Data Scientist
 team: Pricing (reports to Milan Chavda)
 tags: [pricing, data-science, ai-enablement]
-ai_activation_stage: 4
+ai_activation_stage: 3
 ai_activation_confidence: high
-ai_activation_assessed: 2026-06-02
+ai_activation_assessed: 2026-06-30
 ---
 
 ## Role
@@ -36,17 +36,26 @@ First direct 1:1 catchup 2026-05-19 (had been on holiday in Mexico). Previously 
 
 ## AI Activation
 
-**Stage**: 4 — Multi-agent orchestration
+**Stage**: 3 — Tool building
 **Confidence**: high
-**Assessed**: 2026-06-02
-**Evidence**: Built MCP-based performance coach system (Granola + Slack + Notion + GCal, three operating modes: weekly progress tracking, 1:1 prep/follow-up, weekly coaching). Built J feedback pipeline (Granola transcript synthesis service). Triangle analysis skill (built independently, parallel to Milan's). Planning 2-day pricing automation hackathon with Javier. "Wants to move from 'using AI to build things' to 'building AI systems'" — explicitly naming the Stage 4→5 transition.
+**Assessed**: 2026-06-30
+**Evidence**: Built AI performance management coach tool independently — uses it for 1:1 prep with Milan. Tool champions achievements well, documents throughout the month. Less good at challenging/coaching constructively (sycophantic). Doing lots with AI in evaluation of telemetry features. Active poster about Claude Code usage. Built J feedback pipeline (Granola transcript synthesis service). Triangle analysis skill (built independently, parallel to Milan's).
 
-**Not Stage 3**: The performance coach is a multi-MCP orchestration system with three distinct modes — this is architectural thinking and multi-component integration, not single-domain tool use.
-**Not Stage 5**: No evidence yet of adherence measurement or empirical context quality testing on his own systems. Frustration about pricing work being deprioritised suggests he hasn't had space to apply Stage 5 meta-thinking to production systems.
-**To progress**: The hackathon with Javier is the right vehicle. Stage 4→5 starts with measuring whether the context he writes actually produces better agent behaviour — PromptFoo or equivalent applied to his own pipelines, not just J.
-**Framework note**: Strong Stage 4, closest to Stage 5 among non-engineering non-Ishmael staff. The "building AI systems" aspiration is exactly the Stage 5 orientation. The pricing deprioritisation is the main constraint.
+**Not Stage 2**: Built the performance management tool independently, iterates on it, uses it regularly for real work outcomes. This is tool building, not just tool usage.
+**Not Stage 4**: While the performance coach uses multiple MCPs, the usage pattern is building and iterating on tools rather than orchestrating autonomous multi-agent systems. No evidence of delegation — he's directing the tools, not handing off whole workflows. The tool is a single integrated application, not multiple agents coordinating.
+**Previous assessment note**: Downgraded from stage 4 (Jun 2026). The MCP-based performance coach is impressive tool building but closer to stage 3 than stage 4 — it's a tool he built and uses, not an autonomous system he delegates to.
+**To progress**: Move from building individual tools to delegating whole workflows. The pricing automation hackathon with Javier could be the vehicle for stage 3→4 if it produces autonomous pipelines rather than one-off tools.
 
 ## 1:1 Log
+
+### 2026-06-30 — Stage reassessment (transcript review)
+
+- Downgraded from stage 4 to stage 3 based on June transcript evidence
+- Performance management coach tool: built independently, uses for 1:1 prep with Milan
+- Tool good at championing achievements, weak on constructive criticism (sycophantic)
+- Active in telemetry feature evaluation with AI
+- Active poster about Claude Code usage
+- Stage 3 (tool building) rather than 4 — builds tools but doesn't delegate to autonomous systems
 
 ### 2026-05-19 — AI catchup
 

@@ -1,15 +1,15 @@
 ---
 title: Jordi Pallares Roset
 created: 2026-03-27
-updated: 2026-06-02
+updated: 2026-06-30
 type: person
 role: Head of Engineering
 team: Engineering
 email: jordi.pallaresroset@flockcover.com
 tags: [engineering, leadership, ai-discovery]
-ai_activation_stage: 4
-ai_activation_confidence: high
-ai_activation_assessed: 2026-06-18
+ai_activation_stage: 3
+ai_activation_confidence: medium
+ai_activation_assessed: 2026-06-30
 ---
 
 ## Role
@@ -34,14 +34,15 @@ Replaced Tom after his time as interim Head of Engineering — handed over as a 
 - Practical builder — will spin up a Lambda MVP to validate an idea before asking for resources
 
 ## AI Activation
-**Stage**: 4 — Multi-agent orchestration  
-**Confidence**: medium  
-**Assessed**: 2026-05-26  
-**Evidence**: Self-started cron job that checks repo vulnerabilities and auto-raises PRs (personal repos, moving to Flock platform); Engine Room triage automation (Lambda + Bedrock); renewal automation with Anna; architectural thinking with Claude before delegating implementation; `CLAUDE.md` updated per task; records team calls as transcripts for agent context. Coordination model with Tom: discovers, Tom supports complex implementations.
+**Stage**: 3 — Tool building
+**Confidence**: medium
+**Assessed**: 2026-06-30
+**Evidence**: Self-started cron job that checks repo vulnerabilities and auto-raises PRs (personal repos); Engine Room triage automation (Lambda + Bedrock); renewal automation with Anna; architectural thinking with Claude before delegating implementation; `CLAUDE.md` updated per task; records team calls as transcripts for agent context. Jun 11: presented at InsurTech conference about AI — market sees Flock as ahead. Installing Moss MCP for finance team. Jun 2: discussing finance system architecture — debating whether to build platform screens vs just use Claude. Interested in Stripe's AI capabilities (MCP, product catalog via prompt). Thinks about data quality challenges for AI in finance. Agrees Flock should be more aggressive with AI in product.
 
-**Not Stage 3**: Self-started multiple production automations without prompting. Architectural thinking with Claude before delegating implementation — not one-shotting, but pre-thinking with Claude then handing off. Updates `CLAUDE.md` per task and uses call transcripts as context — systematic context engineering, not ad hoc loading.  
-**Not Stage 5**: Automations are individual pipelines, not orchestrated multi-agent systems. No evidence of adherence measurement or the engineering problems of the new paradigm (persuasion tools, adherence spectrum). Sophistication is in the volume and quality of individual builds, not in orchestrating them together.  
-**To progress**: Move from individual automation projects to multi-agent coordination — connect the pipelines. Start measuring whether the `CLAUDE.md` updates are actually improving agent adherence, rather than updating by feel.
+**Not Stage 2**: Beyond just connecting tools — has built automations (Engine Room triage, vulnerability cron job) and thinks architecturally about AI integration. Installing MCPs for other teams (Moss for finance).
+**Not Stage 4**: June evidence positions Jordi more as a leader/enabler than a daily builder of autonomous systems. The cron job and triage automation are individual pipelines, not delegated agentic workflows. Primary mode is architectural thinking and enabling others, not personal delegation at scale.
+**To progress**: Move from enabling others and individual automations to running delegated agentic workflows personally. The finance system architecture decision (platform screens vs Claude) is a natural on-ramp — if he builds and delegates it, that's Stage 4.
+**Framework note**: Stage revised down from 4 to 3 based on June reassessment. Prior assessment weighted the automation builds heavily, but Jordi's primary mode is leadership/enablement — discovering opportunities, installing MCPs for teams, presenting externally — rather than daily agentic delegation. The automations are real but represent peak capability, not sustained practice.
 
 ## 1:1 Log
 
@@ -86,3 +87,14 @@ Replaced Tom after his time as interim Head of Engineering — handed over as a 
 
 - KR2 kickoff with Adam, Tom, Darren — trading evolution, connectivity chicken/egg
 - Haulage fact find needed — Liam doesn't have current version, may need restart
+
+### 2026-06-30 — June assessment update
+
+- Jun 11: presented at InsurTech conference about AI — did very well, market sees Flock as ahead
+- Installing Moss MCP for finance team
+- Hiring freelance engineers
+- Jun 2: discussing finance system architecture — debating whether to build platform screens vs just use Claude
+- Interested in Stripe's AI capabilities (MCP, product catalog via prompt)
+- Thinks about data quality challenges for AI in finance
+- Agrees Flock should be more aggressive with AI in product
+- Stage revised from 4 to 3 — primary mode is leader/enabler rather than daily builder of autonomous systems

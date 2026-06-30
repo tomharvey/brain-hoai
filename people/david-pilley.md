@@ -1,15 +1,15 @@
 ---
 title: David Pilley
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-06-30
 domain: operational-tooling
 type: person
 role: Finance Analyst
 team: Finance
 tags: [finance, dashboards, operational-tooling, mi-reporting]
-ai_activation_stage: 3
+ai_activation_stage: 1
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-24
+ai_activation_assessed: 2026-06-30
 ---
 
 # David Pilley
@@ -39,14 +39,18 @@ AI discovery session 2026-06-24. Previously on parental leave — returned (or p
 
 ## AI Activation
 
-**Stage**: 3 — Fluency / Plan mode
+**Stage**: 1 — Search mode
 **Confidence**: medium
-**Assessed**: 2026-06-24
-**Evidence**: Built a Claude skill that generates the weekly Finance MI dashboard autonomously — three Looker explores (Kirsty's FP&A explore, policy data platform, HubSpot), runs in under 10 minutes. Separate submission mix and pricing analysis dashboard for Christian and Tom. Agreed to add save-to-Google-Drive step and daily schedule in the session. Tested Google Drive sync live during the call (HTML opened in Safari from desktop — worked). Building insight delta tracking: track how AI-generated insights change week-over-week, flag new vs recurring.
+**Assessed**: 2026-06-30
+**Evidence**: Getting Moss MCP installed with Tom's help (Jun 30). Needed Python installed — no prior Python on his machine. Following guided setup step by step. Asked basic questions about terminal commands and file saving. Very early in AI tool adoption for Moss/operational tooling.
 
-**Not Stage 2**: Two production dashboards running; skill generates HTML artifacts without manual intervention. Past context-and-tools.
-**Not Stage 4**: Still manually initiating skills. The daily schedule would push toward Stage 4, but not there yet.
-**To progress**: Add Google Drive save step and daily schedule to MI dashboard (→ [[AI-138]]). Add Milan's pricing data to Claude folder to overlay on conversion rate graphs. Build insight delta tracking.
+**Not Stage 0**: Actively engaging with AI tool setup, following instructions, asking questions. Willing to invest time in getting tools working.
+**Not Stage 2**: No independent AI usage for Moss yet. Required guided help for every step of installation. Basic terminal and file management questions indicate early-stage technical comfort with this tooling.
+**To progress**: Complete Moss MCP installation and run a first successful query independently. Build confidence with terminal-based workflows. Use Claude with Moss data for a real finance task without guided support.
+
+### Prior assessment (2026-06-24)
+
+Previously assessed at Stage 3 (Fluency) based on MI dashboard work: built a Claude skill for weekly Finance MI dashboard (3 Looker explores, under 10 mins), submission mix and pricing analysis dashboard, insight delta tracking concept. That evidence remains valid for Looker-based dashboard workflows. The current assessment reflects the Moss-specific context where he is at a much earlier stage of adoption.
 
 ## Actions outstanding
 
