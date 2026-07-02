@@ -66,15 +66,20 @@ Stage 5  ·                                (0)
 **Company: min 1 · median 3 · p80 4 · max 4** (n=49 scored)
 
 - Fluent or better (Stage 3+): **63%** of scored
-- **Verified tool-builders** (named, reusable artifact in repeated use): **25 people — 51%** of scored
 - Delegating whole tasks (Stage 4): **27%** of scored
+
+**Who actually builds their own tools** (artifact-level audit, Jul 2):
+
+| | | |
+|---|---|---|
+| **51%** build independently — reusable tools in live use | **71%** have built or co-built at least one skill | **29%** no artifact yet |
 
 **Presenter notes**
 - p80 method: nearest-rank — the stage that 80% of people sit at or below. Company p80 = 4 means the top fifth of the company is delegating whole tasks.
 - **Bridge from what Tom told Ed on Jun 24** (claims → recalibrated data):
   - "50% at the top end, two at the very furthest" → actually **27% at Stage 4, zero at Stage 5**. Reframe: "About a quarter are at delegation; on closer review nobody has genuinely reached orchestration yet."
   - "90% activated" → **96% of scored / 84% of scope**. The mechanism claimed was right: the gap is people not yet sat down with, not people who stalled.
-  - "75% building their own tools" → the Stage 3+ proxy gives **63% of scored**, but the artifact-level audit (Jul 2) verifies only **51%** with a named, reusable, self-built tool in repeated use (71% if guided/decayed builds count). The 75–80% figure was well ahead of the evidence — treat tool-building as the Q3 target, not the current state.
+  - "75% building their own tools" → the Stage 3+ proxy gives **63% of scored**, the artifact-level audit (Jul 2) splits it into a ladder: **51% verified independent builders · 71% built or co-built at least one skill (even guided — Fred's tier) · 29% no artifact**. So the "75%" was roughly right under the loose definition and ahead of the evidence under the strict one — say which definition you mean, and use the ladder: the middle rung is one coached rep away from verified, which is the Q3 conversion story.
   - "Finance and underwriting lag, broad distribution" → both confirmed lowest by mean (2.2 / 2.5), but only **Finance is broadly spread (1–4)**; UW is the tightest cluster in the company (everyone at 2–3, no stars, no stragglers).
   - "~30% of underwriting past activation, same for finance" → Finance: exactly right at 30% fluent+. UW: actually **50% fluent+** — but zero at Stage 4, which is why it still reads as lagging.
   - "90% there on presenting benchmarking with Rakhee" → 49/56 scored = 87.5%. Holds as "high-80s".
