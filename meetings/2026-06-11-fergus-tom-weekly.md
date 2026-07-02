@@ -30,7 +30,7 @@ Proposed frame for the next workshop: two bookends — **be clear about the inte
 
 ### Christian's co:work budget artifact — collaboration and shareability problem
 
-_Note: "Christian" is unresolved — a male Finance/SLT-adjacent person who built a co:work project producing an HTML budget analysis post-Admiral acquisition (showing commitments vs. actuals). No people file — confirm identity._
+_Identity resolved 2026-07-02: this is [[christian-leth-nielsen|Christian Leth Nielsen]] (CFO) — confirmed via the June assessment register ("co:work budget project, highest token user") and his Jun 23 discovery 1:1._
 
 The artifact was presented to SLT and shared around. The problem: co:work projects on local machines aren't shareable; artifact is aggregate, not the underlying data. [[geran]] and Thom Rogers ([[tom-rogers]]) want to drill into the numbers but can't.
 

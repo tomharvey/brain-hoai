@@ -66,7 +66,7 @@ Stage 5  ·                                (0)
 **Company: min 1 · median 3 · p80 4 · max 4** (n=49 scored)
 
 - Fluent or better (Stage 3+): **63%** of scored
-- **Verified tool-builders** (named, reusable artifact in repeated use): **24 people — 49%** of scored
+- **Verified tool-builders** (named, reusable artifact in repeated use): **25 people — 51%** of scored
 - Delegating whole tasks (Stage 4): **27%** of scored
 
 **Presenter notes**
@@ -74,7 +74,7 @@ Stage 5  ·                                (0)
 - **Bridge from what Tom told Ed on Jun 24** (claims → recalibrated data):
   - "50% at the top end, two at the very furthest" → actually **27% at Stage 4, zero at Stage 5**. Reframe: "About a quarter are at delegation; on closer review nobody has genuinely reached orchestration yet."
   - "90% activated" → **96% of scored / 84% of scope**. The mechanism claimed was right: the gap is people not yet sat down with, not people who stalled.
-  - "75% building their own tools" → the Stage 3+ proxy gives **63% of scored**, but the artifact-level audit (Jul 2) verifies only **49%** with a named, reusable, self-built tool in repeated use (69% if guided/decayed builds count). The 75–80% figure was well ahead of the evidence — treat tool-building as the Q3 target, not the current state.
+  - "75% building their own tools" → the Stage 3+ proxy gives **63% of scored**, but the artifact-level audit (Jul 2) verifies only **51%** with a named, reusable, self-built tool in repeated use (71% if guided/decayed builds count). The 75–80% figure was well ahead of the evidence — treat tool-building as the Q3 target, not the current state.
   - "Finance and underwriting lag, broad distribution" → both confirmed lowest by mean (2.2 / 2.5), but only **Finance is broadly spread (1–4)**; UW is the tightest cluster in the company (everyone at 2–3, no stars, no stragglers).
   - "~30% of underwriting past activation, same for finance" → Finance: exactly right at 30% fluent+. UW: actually **50% fluent+** — but zero at Stage 4, which is why it still reads as lagging.
   - "90% there on presenting benchmarking with Rakhee" → 49/56 scored = 87.5%. Holds as "high-80s".
@@ -177,12 +177,12 @@ Finance       1:██  2:█████  3:██  4:█
 
 Per-person artifact audit (8 dept agents, people files + transcript corroboration). Rubric: **builder = named, reusable artifact they created with AI (skill, dashboard, automation, MCP workflow, app, pipeline) in repeated use** — not one-off chats, guided builds, or using others' tools.
 
-**Result: 24 of 49 verified builders (49%) · 10 assisted/decayed (20%) · 15 no build evidence (31%).**
+**Result: 25 of 49 verified builders (51%) · 10 assisted/decayed (20%) · 14 no build evidence (29%).**
 
-Verified: Ismael, Jordi, David Z, Javier, Jacob, Chris, Rob, Stephen† (Engineering); Mima, Ollie, Geran (Product); Emily, Shreya (Ops); Kevin, Ivan, Kirsty†, David Pilley† (Finance); Adam Smith, Liam (Distribution); Francesco, Jake, Harry, Milan† (UW); Eraaz (People). († = builder-verified while scored Stage ≤2 — score understates them.)
+Verified: Ismael, Jordi, David Z, Javier, Jacob, Chris, Rob, Stephen† (Engineering); Mima, Ollie, Geran (Product); Emily, Shreya (Ops); Christian‡, Kevin, Ivan, Kirsty†, David Pilley† (Finance); Adam Smith, Liam (Distribution); Francesco, Jake, Harry, Milan† (UW); Eraaz (People). († = builder-verified while scored Stage ≤2 — score understates them. ‡ = initially misclassified no-build by the audit; corrected 2026-07-02 — his co:work HTML budget artifact was shared to SLT/Antton and his distribution-cost workflow replaced the old flow as default; the Jun 11 source note had his identity unresolved, now fixed.)
 
 The Stage 3+ proxy fails in both directions:
-- **Too generous (5 no-build at Stage 3+):** Christian (Stage 4 — fluent *delegator* of analyses, no artifact), Sam, Anna, Alex Dyball, **Darren McCauley** (Stage 3 rests on one uncorroborated observation; Jun 22 transcript: "pretty much a ChatGPT guy"). Plus 6 assisted-only at 3+: Matt Price, Tom Rogers (one-offs), Matt Lees (flagship decayed, Jun 24 manual-search regression), Sophie (template-based), Fergus and Ed (prototypes/demos, not tools in service).
+- **Too generous (4 no-build at Stage 3+):** Sam, Anna, Alex Dyball, **Darren McCauley** (Stage 3 rests on one uncorroborated observation; Jun 22 transcript: "pretty much a ChatGPT guy"). Plus 6 assisted-only at 3+: Matt Price, Tom Rogers (one-offs), Matt Lees (flagship decayed, Jun 24 manual-search regression), Sophie (template-based), Fergus and Ed (prototypes/demos, not tools in service).
 - **Too strict (4 builders at Stage ≤2):** Stephen (Databricks monitoring system real but dormant), Kirsty (Looker MCP + pod-metrics skill still in use by Distribution), David Pilley (MI dashboard skill, <10 min weekly), **Milan** (claims-triangle + UW-report skills, corroborated by Harry — his own file wrongly says "hasn't built anything independently").
 
 Structural conclusion: the stage axis conflates *how someone works* (fluency, delegation) with *what they've shipped*. Ed's Stage 3 wording literally says "builds tools", so either (a) enforce a named-artifact gate on Stage 3+ scores, or (b) track a separate builder badge (verified/assisted/none) in people-file frontmatter and report it as its own number. Recommend (b) — it preserves stage comparability and fixes the false positives without re-scoring everyone.
