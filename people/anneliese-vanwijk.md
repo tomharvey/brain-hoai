@@ -4,7 +4,7 @@ created: 2026-06-01
 updated: 2026-06-30
 type: person
 tags: [finance, moss, operational-tooling]
-ai_activation_stage: 2
+ai_activation_stage: 1
 ai_activation_confidence: medium
 ai_activation_assessed: 2026-07-02
 ---
@@ -30,23 +30,24 @@ Only she and [[queency-gonsalves|Queency]] use MOSS on the finance team.
 
 ## AI Activation
 
-**Stage**: 2 — Context+tools (early)
+**Stage**: 1 — First win (top end)
 **Confidence**: medium
 **Assessed**: 2026-07-02
-**Evidence**: 8 Claude connectors live since Jun 1 (Notion, Slack, Granola, Looker, Flock custom, Gmail, Drive, Calendar) and in working use. Generated MOSS API keys herself and attempted the MCP build unassisted before it stalled. Clear, well-specified target use case (month-end MOSS consistency checking: invoice coding, cost centres, recurring patterns, missing invoices).
+**Evidence**: 8 Claude connectors configured Jun 1 — but in a guided session with Tom ([[2026-06-01-anneliese-thomas]]), not independently. Generated MOSS API keys; attempted the Moss MCP build unassisted (initiative, but it didn't work). Clear, well-specified target use case (month-end MOSS consistency checking). No demonstrated context-fuelled win in the vault since the connectors went in.
 
-**Not Stage 1**: Connecting data sources and working with connected context is Stage 2 behaviour — she has done it eight times over on the web side. Multiple regular finance uses, not a single win.
-**Not Stage 3**: No evidence yet of iterating hard on output, arguing with the model, or building reusable tools. The month-end use case is defined but not built.
-**To progress**: Resolve the local Python blocker ([[AI-149]]) and ship the month-end consistency check as her first built tool — the use case is ready, only the environment is in the way.
+**Not Stage 0**: Genuine engagement — attempted a build herself, keys generated, use case specified, leads finance team AI time.
+**Not Stage 2**: Stage 2 is behaviour, not possession: the connectors were set up in a guided session, and there's no evidence of her working productively through them since. The activation threshold (3 useful tasks in a context-fuelled project) has not been evidenced.
+**To progress**: Resolve the Python blocker ([[AI-149]]), then ship the month-end consistency check — one real win through her connectors flips her to Stage 2 immediately. Fastest expected mover on the at-risk list.
 
 ### Re-assessment note (2026-07-02)
 
-The Jun 30 Stage 1 score conflated a machine/IT blocker (no Python for the local Moss MCP) with capability. The framework scores AI practice; her practice — connectors set up herself, keys generated, regular use — is Stage 2. The blocked local install gates one use case, not her stage.
+Scored 2 briefly on Jul 2 (reversing the Jun 30 Stage 1) on the grounds that the Python blocker shouldn't count against her — that reasoning stands, but the Stage 2 call over-credited the guided connector setup as independent behaviour. Tom's challenge, evidence re-checked: Stage 1 (top end) is the honest score. The blocker is still an environment issue, tracked separately.
 
 ### Prior assessments
 
-- 2026-06-30: Stage 1 (Moss-install context — superseded, see note above)
-- 2026-06-02: Stage 2 (connectors + MOSS API keys — restored as the operative assessment)
+- 2026-07-02 (earlier same day): Stage 2 — over-credited guided setup; corrected same day
+- 2026-06-30: Stage 1 (Moss-install context)
+- 2026-06-02: Stage 2 (connectors + MOSS API keys — now understood as guided)
 
 ## Notes
 

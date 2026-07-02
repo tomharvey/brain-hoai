@@ -6,9 +6,9 @@ type: person
 role: Finance (accounts/reimbursements)
 team: Finance
 tags: [finance]
-ai_activation_stage: 2
-ai_activation_confidence: low
-ai_activation_assessed: 2026-06-30
+ai_activation_stage: 1
+ai_activation_confidence: medium
+ai_activation_assessed: 2026-07-02
 ---
 
 ## Role
@@ -31,14 +31,18 @@ Met Tom 2026-04-17. Attended finance team AI workshop 2026-05-19.
 
 ## AI Activation
 
-**Stage**: 2 — Context and tools (early)
-**Confidence**: low
-**Assessed**: 2026-06-30
-**Evidence**: Has Moss MCP installed (Jun 29). Uses Claude to create messages with links for expense approvals. Had issues with API key conflicts and an older MCP version initially. Getting familiar with expense queries via Claude. Basic usage pattern — has the tool connected but still dependent on others for setup and troubleshooting.
+**Stage**: 1 — First win
+**Confidence**: medium
+**Assessed**: 2026-07-02
+**Evidence**: Daily approvals workflow: feeds downloaded files into Claude, gets formatted messages with links — repeated, useful, but one-shot each time. Moss MCP installed (Jun 29, with help; reinstalled herself on-call under guidance) but not yet queried in real work. When Moss returned wrong data ("it just said there were no expenses") she stopped rather than pushed back or iterated. Prior use: calculator replacement for Moss totals (May).
 
-**Not Stage 1**: Has MCP installed and is using Claude with a connected data source (Moss), not just pasting data into chat. The tool connection itself is a meaningful step beyond single-shot queries.
-**Not Stage 3**: Basic usage only. Dependent on others for setup, troubleshooting, and configuration. Not building workflows or iterating on prompts independently.
-**To progress**: Use the Moss MCP independently for a recurring task (e.g. weekly expense review or approval batch processing). Build confidence troubleshooting MCP issues without support. Start iterating on Claude conversations rather than single-shot queries.
+**Not Stage 0**: Repeated real use in a daily workflow, not one-off experiments.
+**Not Stage 2**: Stage 2 is behaviour, not tool possession. The MCP was installed with support; her working pattern shows no iteration, no pushback, no independent context loading. Tom's Jul 2 challenge, evidence re-checked: the Jun 30 Stage 2 over-credited the installed connector.
+**To progress**: One real Moss query, iterated to a correct answer, in her actual approvals work. The expense-type filtering bug (her shared chat) is the concrete practice ground — debugging it WITH her is the intervention.
+
+### Re-assessment note (2026-07-02)
+
+Downgraded 2→1. The connected MCP is a meaningful step but the framework scores behaviour; hers is single-shot with assisted setup. Decisive test: first self-driven, iterated Moss query in real work.
 
 ### Prior assessment (2026-05-26)
 
