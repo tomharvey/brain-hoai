@@ -64,14 +64,14 @@ Stage 4  █████████████                    (13)
 Stage 5  ·                                (0)
 ```
 
-**Company: min 1 · median 3 · top fifth at 4 · max 4** (n=49 scored)
+**Company: min 1 · median 3 · p80 4.0 · max 4** (n=49 scored)
 
 - Fluent or better (Stage 3+): **65%** of scored
 - Handing off whole tasks (Stage 4): **27%** of scored
 - At Stage 1: Anneliese (guided setup, install blocked — AI-149) and Queency (daily use, but single-shot)
 
 **Presenter notes**
-- "Top fifth" = nearest-rank p80: the stage that 80% of people sit at or below. Company p80 = 4 means the top fifth of the company is delegating whole tasks. Plain-language on the slide per playbook no-jargon rule; method here.
+- P80 = the stage 80% of the team sits at or below, computed with **linear interpolation** (hence the 3.2s — nearest-rank on integer stages can only produce round numbers, which read as false precision the other way). Company p80 = 4.0: the top fifth of the company is delegating whole tasks. Label changed from "top fifth" to "P80" after it confused Ed live on Jul 2 ("that would be top four fifths"); he now knows the concept.
 - **Jul 2 evidence challenges (Tom) moved four scores** — the honest ledger: David Pilley 1→3 and Anneliese briefly 1→2 (Moss environment blockers separated from practice), then Anneliese corrected back to 1 and Queency 2→1 on a second evidence pass (guided setups and single-shot patterns don't clear Stage 2's behaviour bar). Adam Sandle's 2 survived the same challenge (telemetry MCP + FNOL skill in real use).
 - **Bridge from what Tom told Ed on Jun 24** (claims → recalibrated data):
   - "50% at the top end, two at the very furthest" → actually **27% at Stage 4, zero at Stage 5**. Reframe: "About a quarter are at delegation; on closer review nobody has genuinely reached orchestration yet."
@@ -103,14 +103,14 @@ Stage 5  ·                                (0)
 
 ## Slide 5 — BDM and Prodtech lead; Finance and Underwriting are the Q3 focus, for different reasons
 
-| Team | n | min | top fifth | max | Shape |
+| Team | n | min | P80 | max | Shape |
 |---|---|---|---|---|---|
-| Distribution | 5 | **3** | 4 | 4 | Nobody below fluency; two agent systems in production |
-| Prodtech | 15 | 2 | **4** | 4 | Over half at delegation — deep vanguard, fragile tail |
-| Operations | 5 | 2 | 3 | 4 | One star, mixed middle |
-| People | 3 | 2 | 4 | 4 | One star, two early |
-| **UW & Pricing** | 10 | 2 | 3 | **3** | Uniform — no laggards, **no stars** |
-| **Finance** | 10 | **1** | 3 | 4 | Widest spread — both Stage 1s and the Stage-4 CFO |
+| Distribution | 5 | **3** | 4.0 | 4 | Nobody below fluency; two agent systems in production |
+| Prodtech | 15 | 2 | **4.0** | 4 | Over half at delegation — deep vanguard, fragile tail |
+| Operations | 5 | 2 | 3.2 | 4 | One star, mixed middle |
+| People | 3 | 2 | 3.2 | 4 | One star, two early |
+| **UW & Pricing** | 10 | 2 | 3.0 | **3** | Uniform — no laggards, **no stars** |
+| **Finance** | 10 | **1** | 3.0 | 4 | Widest spread — both Stage 1s and the Stage-4 CFO |
 
 ```
 Distribution  2:      3:███     4:██
@@ -122,10 +122,10 @@ Finance       1:██  2:████  3:███  4:█
 ```
 
 **Presenter notes**
-- Small-team caveat: for People (n=3), the top-fifth figure ≡ max — read the dots, not the percentile.
+- Small-team caveat: People is n=3, so any percentile is fragile — interpolation fixes the old artifact where nearest-rank made their p80 equal the max (Eraaz alone dragged it to 4); 3.2 is the honest figure.
 - Ed (Stage 3) and Tom sit outside the team view by design (confirmed with Tom, Jul 2) — Ed counts in the company-level stats only.
 - **Finance and UW are confirmed as the Q3 focus teams, but for different reasons.** Finance is infrastructure-gated: the blockers are Moss MCP installs, Python-less machines, and NetSuite/Looker access — not skill or will (Jun 29/30 meetings are the direct evidence; both Stage-1s sit here and both are one unblock-plus-one-win from Stage 2). UW is propagation-gated: five genuine builders at Stage 3, zero at 4, and practice staying private — Darren McCauley is "secretly all over it, not pushing down"; Jake Wood is the deliberate bottom-up bridge to the 5 unassessed ICs and Darren Nightingale ("number one cynic" — do not approach yet).
-- Prodtech's shape is the subtle story: top fifth at 4 with a min of 2 — 8 of 15 at Stage 4, but a tail of 2s. The vanguard (Ismael, Jacob, David Z) is real; the middle was recalibrated down amid craft-loss anxiety (Javier "associate factory", Aleks "I've learned nothing", Stephen pulling back). The intervention is teaching capacity + shared quality infrastructure, not more tooling.
+- Prodtech's shape is the subtle story: p80 of 4.0 with a min of 2 — 8 of 15 at Stage 4, but a tail of 2s. The vanguard (Ismael, Jacob, David Z) is real; the middle was recalibrated down amid craft-loss anxiety (Javier "associate factory", Aleks "I've learned nothing", Stephen pulling back). The intervention is teaching capacity + shared quality infrastructure, not more tooling.
 - Operations context: Antton (CCO) belongs to this team but is unassessed (no 1:1 yet) — Operations' coverage gap; n=5 understates the team by one.
 - Team labels follow the July groupings (Prodtech = former Engineering + Product + Fergus); several people's files still carry a "Leadership" team tag but are bucketed by function (Christian→Finance, Darren McC→UW, Paul→Finance, Rakhee→People, Fergus→Prodtech, Ed→unassigned). Numbers reconcile; don't let a live vault click-through surprise you.
 - Unassessed (not in these stats): Darren Nightingale (tentative 0, skeptic), Andrew Dodd, Curtis Bailey (holiday; tentative 0–1), Billy Bone (paternity; tentative 1 — Jake built colourblind mode for him), Matt Smith (tentative 1, went quiet after week one), Pavel (tentative 0, no signal), Antton (tentative 1–2, engages with outputs, asks governance questions — Operations' gap).
