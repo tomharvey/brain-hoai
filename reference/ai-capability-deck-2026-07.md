@@ -140,14 +140,14 @@ Finance       1:██  2:████  3:███  4:█
 | Distribution (BDM) | **The whole team** 🏆 | Nobody below fluency; two agent systems in production — a 9-agent enterprise pipeline and the SLT trading review |
 | Prodtech | **The Stage-4 vanguard** 🏆 | 8 of 15 delegating: parallel agents writing PRs (Ismael ~90% AI-generated code), test suites, the acquisition brain, production apps |
 | Operations | Shreya | 3 production tools built independently; now teaching the method |
-| Finance | Christian (CFO) | co:work budget artifact shared to SLT; contract-obligation extraction via 10–11 self-checking runs |
+| Finance | Ivan | Daily credit-control skill running 2+ months (Slack nudge); broker-payment dashboard; co-built the NetSuite MCP |
 | Underwriting | Jake Wood | Dashboard drove HubSpot notes 0→90%; the peer bridge into underwriting |
 | Pricing | Francesco | MCP performance coach in weekly 1:1 use; claims-triangle skill; J feedback pipeline |
 | People | Eraaz | 3×/day co:work optimisation system; builds prompts for his own team |
 
 **Presenter notes**
 - Table rule: max one named individual per team; where most of a team is at champion level (BDM, Prodtech's vanguard), the team itself is the champion — the stronger story for Ed anyway ("whole teams get there, not just heroes").
-- The full bench behind the table (promotion-conversation shortlist + deputy pool for the Q3 AI partnering team, AI-127): Jacob, David Z, Fergus, Mima, Ollie, Geran, Matt Price (Prodtech — Ed named Mima on Jun 24 as the promote-the-boundary-pushers example); Matt Lees, Adam Smith (the BDM call-out); Kevin (Finance — teaching David Pilley); Emily (Ops); Tom Rogers (Underwriting); Harry (Pricing).
+- The full bench behind the table (promotion-conversation shortlist + deputy pool for the Q3 AI partnering team, AI-127): Jacob, David Z, Fergus, Mima, Ollie, Geran, Matt Price (Prodtech — Ed named Mima on Jun 24 as the promote-the-boundary-pushers example); Matt Lees, Adam Smith (the BDM call-out); Christian (CFO — exec sponsor: co:work budget artifact to SLT, provides leadership rather than holds the pen), Kevin (teaching David Pilley — strongest evidence but fractional contractor), Matt Dipre (near-champion; flagship automation broke on a NetSuite update, unblocking AI-014 resurrects him) — all Finance; Emily (Ops); Tom Rogers (Underwriting); Harry (Pricing).
 - **Watch flags on champions and near-champions** (over-trust, the company-wide failure mode): Adam Smith presented wrong Claude numbers to SLT (Jun 11), validation still not in place; Tom Rogers promised a customer an unconfirmed feature; David Pilley (Stage 3, Moss unblocked Jun 30) carries Kevin's "thinks it's magic... cedes to it" flag — his 3→4 path is review muscle, not more tools. Celebrate the output, install the guardrails.
 
 ---
