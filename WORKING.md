@@ -2,77 +2,40 @@
 
 ## Current task
 
-Completed: Full Granola transcript import and synthesis pass for Jun 22–25, 2026.
+AI Capability deck for Ed — source markdown drafted at `reference/ai-capability-deck-2026-07.md`. Awaiting Tom's review/iteration before building actual slides.
 
-## What was done this session
+## What was done this session (2026-07-02)
 
-**18 meetings processed** across Jun 22–25. All transcripts written to vault.
+### Past-7-days transcript check (deck prerequisite)
+- Three Granola meetings from Jun 29–30 were missing from the vault; imported with notes + transcripts:
+  - `meetings/2026-06-29-moss-finance-rollout.md` (Kirsty, Anneliese, Queency, Rob)
+  - `meetings/2026-06-30-david-pilley-moss-install.md`
+  - `meetings/2026-06-30-thomas-matthew-1-1.md` (Matt Price)
+- Verified their evidence was ALREADY reflected in the Jun 30 re-assessment (people files cite Jun 29/30 events) — no score changes needed.
+- New issues: AI-148 (Moss rollout, Kirsty), AI-149 (Anneliese Python fix), AI-150 (Rob/Javier 100% AI-assisted, London), AI-151 (Geran finance metrics session).
 
-### Transcripts written (this multi-session block)
+### Deck evidence pass (multi-agent workflow, 61 agents)
+- Per-person audit of all 49 scored people against transcript corpus; dept syntheses; claims-vs-data verification vs what Tom told Ed on Jun 24; completeness critique.
+- Company stats (frontmatter canonical): n=49, min 1 / median 3 / p80 4 / max 4; stages 1:2, 2:16, 3:18, 4:13, 5:0. Activated 47/49 = 96% of scored = 84% of 56 scope (Ed's 80% target met).
+- Full deck source incl. presenter notes, claims bridge, and data-quality flags: `reference/ai-capability-deck-2026-07.md` (appendix lists all caveats).
 
-- `meetings/transcripts/2026-06-22-tom-rogers-ai-discovery-transcript.md` ✅
-- `meetings/transcripts/2026-06-22-adam-sandle-ai-discovery-transcript.md` ✅
-- `meetings/transcripts/2026-06-22-adam-smith-ai-discovery-transcript.md` ✅
-- `meetings/transcripts/2026-06-22-ollie-tom-weekly-transcript.md` ✅
-- `meetings/transcripts/2026-06-23-sophie-dodds-ai-transcript.md` ✅
-- `meetings/transcripts/2026-06-23-rakhee-people-ai-transcript.md` ✅
-- `meetings/transcripts/2026-06-23-francesco-pgr-ai-transcript.md` ✅
-- `meetings/transcripts/2026-06-23-christian-leth-nielsen-ai-discovery-transcript.md` ✅
-- `meetings/transcripts/2026-06-24-ed-tom-ai-wrap-up-transcript.md` ✅ (pre-existing)
-- `meetings/transcripts/2026-06-24-david-pilley-ai-discovery-transcript.md` ✅
-- `meetings/transcripts/2026-06-24-matt-lees-ai-discovery-transcript.md` ✅
-- `meetings/transcripts/2026-06-24-ai-group-therapy-transcript.md` ✅
-- `meetings/transcripts/2026-06-24-ai-phoebe-transcript.md` ✅
-- `meetings/transcripts/2026-06-24-q3-okr-bonanza-transcript.md` ✅
-- `meetings/transcripts/2026-06-25-people-team-checkin-ai-update-transcript.md` ✅
-- `meetings/transcripts/2026-06-25-liam-thomson-ai-discovery-transcript.md` ✅
-- `meetings/transcripts/2026-06-25-fergus-tom-weekly-transcript.md` ✅
-- `meetings/transcripts/2026-06-25-pgr-skills-transcript.md` ✅
-- `meetings/transcripts/2026-06-25-netsuite-mcp-ivan-transcript.md` ✅
-
-### Stage movements confirmed Jun 22–25
-
-| Person | Before | After | Key moment |
-|--------|--------|-------|-----------|
-| Fergus | Stage 3 (L) | Stage 4 (M) | Built ledger service overnight; never written production code in codebase |
-| Christian Leth Nielsen | unassessed | Stage 4 | SPA obligations, GWP analysis, distribution cost analysis replacing workflows |
-| Phoebe Woodman | Stage 1 | Stage 3 | Flock O'Clock automation designed, Netlify deploy, Alar briefings |
-| Rakhee | Stage 2 | Stage 3 | Granola tracker live for whole People team with custom variants |
-| Eraaz Ali | Stage 2 | Stage 3 | OS-layer usage, rejection skill, Alar automation, emails sent from Claude |
-| Liam Thomson | Stage 3 (M) | Stage 3 (high) | Chrome MCP tracker, Claude Design, full ChatGPT switch confirmed |
-
-### Synthesis pass completed
-
-- `reference/ai-activation-map.md` — stale notes fixed (Tom Rogers, Eraaz, Phoebe, Rakhee, Christian, David Pilley); new notes added for Fergus and Eraaz; footer updated
-- `initiatives/ai-activation.md` — stage table updated to full 48-person distribution; Jun 22–25 log entry added
-- `domains/ai-enablement/index.md` — Claude-as-OS pattern, Flock O'Clock architecture, PGR skills initiative decision
-- `domains/engineering-workflows/index.md` — self-healing loop, frozen team pattern, spec-driven dev + TDD
-- `initiatives/bdm-ai-multiplayer.md` — Sophie personal brief evolution, Matt Lees enterprise pipeline note
-
-### Key strategic observations from the week
-
-1. **People team is now Stage 3 across the board** (Eraaz, Rakhee, Phoebe) — fastest team-wide activation this quarter.
-2. **Fergus Stage 4 confirms engineering leadership is moving.** The self-healing loop concept is the direction.
-3. **PGR skills: Pace is not being rolled out.** Rakhee + Eraaz building simpler prompt. Workshop for volunteers planned.
-4. **Q3 OKR Bonanza**: Jade to 100% customers (50% activation), Finance Installments (zero manual), Haulage (40% of H2 new biz target). Nathan appointed OKR champion from Jul 1.
-5. **Ivan NetSuite MCP**: working toward eliminating the manual XLS download step from daily credit control report.
+### Data-quality flags to resolve (before company-wide rollout)
+- Kirsty (2 vs valid Stage-4 Looker evidence), David Pilley (1 vs valid Stage-3 dashboard evidence) — context-scoped downgrades.
+- Geran frontmatter 4 vs body 3; Javier 3 vs "3-4"; Aleks 2 vs "2-3".
+- Stale: Mima (05-26, unincorporated 06-24 transcript), Kevin/Matt Lees/Matt Dipre/Ben/Daisy (06-02).
+- Scope denominator: 56 (assessment doc) vs ~63 (ai-activation-map.md Jun 25) — reconcile before Admiral Pioneer sees numbers.
+- NOTE: the "Stage movements Jun 22–25" table in the previous WORKING.md (Phoebe→3, Rakhee→3) was superseded by the Jun 30 re-assessment (Phoebe 2, Rakhee 2, Eraaz 4).
 
 ## Open / next session
-
-- Meeting notes still to write (transcripts exist, notes not created): ~15 meetings from Jun 22–25
-- Issues to create from meeting actions (Jun 22–25): batch review needed
-- AI benchmark survey: Ed committed to running company-wide; Tom + Rakhee to deliver within 1–2 weeks → AI-125
-- PGR skills prompt: Rakhee + Eraaz building week of Jun 29
-- Fergus hacking session: Geran + Harvey + Joanne, ~2 days — schedule TBC
-- NetSuite MCP: check in with Ivan on progress
-- BDM Brain: Matt Lees enterprise pipeline Apollo fix; Sophie cross-BDM signals
+- Iterate deck with Tom; then build slides (flock-deck-builder skill when ready).
+- Meeting notes still to write for ~15 Jun 22–25 meetings (transcripts exist).
+- AI-125 benchmark survey with Rakhee — due Jul 7 (Ed/Admiral commitment).
+- London visit w/c Jul 7: AI-150 (Rob/Javier), AI-151 (Geran), finance + underwriting mornings.
+- Untracked `datadog-secrets.txt` sitting in repo root — decide: gitignore or remove (do not commit).
 
 ## Priority open issues
-
-- AI-115: New hire AI baseline onboarding (PGR skills related)
-- AI-125: Company-wide AI benchmark survey (Ed/Admiral commitment)
-- AI-127: AI partnering team Q3 pilot (Ghostbusters unit)
-- AI-128: Framework embedded in hiring/performance/promotions
-- AI-079: AI June engineering sprint — due Jun 30
-- AI-122: Michael Matthews follow-up (habit gap, 1 week)
-- AI-096: MCP read/write governance
+- AI-125: Company-wide AI benchmark survey (due Jul 7)
+- AI-127: AI partnering team Q3 pilot (due Jul 1 — needs launch)
+- AI-128: Framework in hiring assessment (due Jul 8)
+- AI-148/149: Moss MCP rollout + Anneliese unblock (Jul 3–6)
+- AI-150/151: London coaching sessions (Jul 9–10)
