@@ -92,20 +92,16 @@ Stage 5  ·                                (0)
 
 | Team | n | min | p80 | max | Shape |
 |---|---|---|---|---|---|
-| Product | 4 | **4** | 4 | 4 | Solid block at delegation — the benchmark |
 | Distribution | 5 | **3** | 4 | 4 | Nobody below fluency; two building agentic systems |
-| Leadership | 2 | 3 | 4 | 4 | Practice now matches the talk |
-| Engineering | 10 | 2 | **4** | 4 | Deep vanguard, fragile middle |
+| Prodtech | 15 | 2 | **4** | 4 | Over half at delegation — deep vanguard, fragile tail |
 | Operations | 5 | 2 | 3 | 4 | One star, mixed middle |
 | People | 3 | 2 | 4 | 4 | One star, two early |
 | **UW & Pricing** | 10 | 2 | 3 | **3** | Uniform — no laggards, **no stars** |
 | **Finance** | 10 | **1** | 3 | 4 | Widest spread in the company |
 
 ```
-Product       2:      3:        4:████
 Distribution  2:      3:███     4:██
-Leadership    2:      3:█       4:█
-Engineering   2:██    3:█████   4:███
+Prodtech      2:██    3:█████   4:████████
 Operations    2:██    3:██      4:█
 People        2:██    3:        4:█
 UW & Pricing  2:█████ 3:█████   4:
@@ -113,11 +109,13 @@ Finance       1:██  2:█████  3:██  4:█
 ```
 
 **Presenter notes**
-- Small-team caveat: for People (n=3) and Leadership (n=2), p80 ≡ max — read the dots, not the percentile.
+- Small-team caveat: for People (n=3), p80 ≡ max — read the dots, not the percentile.
+- Ed (Stage 3) sits outside the team view — Leadership is no longer a team grouping, so he counts in the company-level stats only; where he lands is TBC with Tom.
 - **Finance and UW are confirmed as the Q3 focus teams, but for different reasons.** Finance is infrastructure-gated: six of ten are stuck at Stage 1–2 and the blockers are Moss MCP installs, Python-less machines, and NetSuite/Looker access — not skill or will (Jun 29/30 meetings are the direct evidence). UW is propagation-gated: five genuine builders at Stage 3, zero at 4, and practice staying private — Darren McCauley is "secretly all over it, not pushing down"; Jake Wood is the deliberate bottom-up bridge to the 5 unassessed ICs and Darren Nightingale ("number one cynic" — do not approach yet).
-- Engineering's shape is the subtle story: p80 of 4 with a min of 2. The vanguard (Ismael, Jacob, David Z) is real; the middle was recalibrated down amid craft-loss anxiety (Javier "associate factory", Aleks "I've learned nothing", Stephen pulling back). The intervention is teaching capacity + shared quality infrastructure, not more tooling.
-- Department labels here follow the June assessment groupings; six people's files carry a "Leadership" team tag but are bucketed by function (Christian→Finance, Darren McC→UW, Paul→Finance, Rakhee→People). Numbers reconcile; don't let a live vault click-through surprise you.
-- Unassessed (not in these stats): Darren Nightingale (tentative 0, skeptic), Andrew Dodd, Curtis Bailey (holiday; tentative 0–1), Billy Bone (paternity; tentative 1 — Jake built colourblind mode for him), Matt Smith (tentative 1, went quiet after week one), Pavel (tentative 0, no signal), Antton (tentative 1–2, engages with outputs, asks governance questions).
+- Prodtech's shape is the subtle story: p80 of 4 with a min of 2 — 8 of 15 at Stage 4, but a tail of 2s. The vanguard (Ismael, Jacob, David Z) is real; the middle was recalibrated down amid craft-loss anxiety (Javier "associate factory", Aleks "I've learned nothing", Stephen pulling back). The intervention is teaching capacity + shared quality infrastructure, not more tooling.
+- Operations context: Antton (CCO) now belongs to this team but is unassessed (no 1:1 yet) — he is Operations' coverage gap, so n=5 understates the team by one.
+- Team labels here follow the new July groupings (Prodtech = former Engineering + Product + Fergus); several people's files still carry a "Leadership" team tag but are bucketed by function, now spanning even more teams (Christian→Finance, Darren McC→UW, Paul→Finance, Rakhee→People, Fergus→Prodtech, Ed→unassigned). Numbers reconcile; don't let a live vault click-through surprise you.
+- Unassessed (not in these stats): Darren Nightingale (tentative 0, skeptic), Andrew Dodd, Curtis Bailey (holiday; tentative 0–1), Billy Bone (paternity; tentative 1 — Jake built colourblind mode for him), Matt Smith (tentative 1, went quiet after week one), Pavel (tentative 0, no signal), Antton (tentative 1–2, engages with outputs, asks governance questions — Operations' gap).
 
 ---
 
@@ -127,12 +125,12 @@ Finance       1:██  2:█████  3:██  4:█
 
 | Team | Who | The one-liner |
 |---|---|---|
-| Engineering | Ismael | ~90% AI-generated code; parallel agents writing PRs he reviews |
-| Engineering | Jacob | Runs 2–3 agents as "capable juniors"; cron doc-agents; DBT golden rules |
-| Engineering | David Z | Agents run planning→build autonomously; wrote the team's skills/rules doc |
-| Product | Mima | 111 PromptFoo test cases for J; stakeholders self-serve eval-writing |
-| Product | Ollie | 1,128 claims transcripts analysed via 10 sub-agents + QA agent in ~2 hrs |
-| Product | Geran | Production Streamlit apps on Snowflake — "1 PM = 3.5 engineers" |
+| Prodtech | Ismael | ~90% AI-generated code; parallel agents writing PRs he reviews |
+| Prodtech | Jacob | Runs 2–3 agents as "capable juniors"; cron doc-agents; DBT golden rules |
+| Prodtech | David Z | Agents run planning→build autonomously; wrote the team's skills/rules doc |
+| Prodtech | Mima | 111 PromptFoo test cases for J; stakeholders self-serve eval-writing |
+| Prodtech | Ollie | 1,128 claims transcripts analysed via 10 sub-agents + QA agent in ~2 hrs |
+| Prodtech | Geran | Production Streamlit apps on Snowflake — "1 PM = 3.5 engineers" |
 | Ops | Shreya | 3 production tools built independently; now teaching the method |
 | Finance | Christian (CFO) | Delegated SPA obligation extraction, 10–11 self-checking runs; saved external legal fees |
 | Finance | Kevin | 4-hour trading-pack task → 20 min; now teaching David Pilley |
@@ -140,7 +138,7 @@ Finance       1:██  2:█████  3:██  4:█
 | Distribution | Adam Smith | Claude trading review replacing ~3 juniors' worth of manual prep |
 | UW & Pricing | Tom Rogers · Jake Wood | Dashboards in minutes not days; Jake drove HubSpot notes 0→90% and is the peer bridge |
 | People | Eraaz | 3×/day co:work optimisation system; builds prompts for his own team |
-| Leadership | Fergus | Ledger-service prototype overnight in an unfamiliar codebase |
+| Prodtech | Fergus | Ledger-service prototype overnight in an unfamiliar codebase |
 
 **At-risk — the honest list**
 
@@ -148,7 +146,7 @@ Finance       1:██  2:█████  3:██  4:█
 |---|---|---|
 | Finance | Anneliese · David Pilley | Stage 1 — both blocked on installs/Python, not motivation |
 | Finance | Queency | Stage 2 low-confidence; still feeding files in manually |
-| Engineering | Stephen · Aleks | Recalibrated 4→2; pull-back and skill-displacement grief |
+| Prodtech | Stephen · Aleks | Recalibrated 4→2; pull-back and skill-displacement grief |
 | UW & Pricing | Michael M · Milan | Heads of function at Stage 2; "still not ingrained" |
 | UW & Pricing | Ben · Daisy Mae | Stage 2 on inference only — near-zero individual data |
 | People | Rakhee · Phoebe | Stage 2 — the people coordinating the AI programme trail it |
@@ -184,7 +182,7 @@ Per-person artifact audit (8 dept agents, people files + transcript corroboratio
 
 **Result: 25 of 49 verified builders (51%) · 10 assisted/decayed (20%) · 14 no build evidence (29%).**
 
-Verified: Ismael, Jordi, David Z, Javier, Jacob, Chris, Rob, Stephen† (Engineering); Mima, Ollie, Geran (Product); Emily, Shreya (Ops); Christian‡, Kevin, Ivan, Kirsty†, David Pilley† (Finance); Adam Smith, Liam (Distribution); Francesco, Jake, Harry, Milan† (UW); Eraaz (People). († = builder-verified while scored Stage ≤2 — score understates them. ‡ = initially misclassified no-build by the audit; corrected 2026-07-02 — his co:work HTML budget artifact was shared to SLT/Antton and his distribution-cost workflow replaced the old flow as default; the Jun 11 source note had his identity unresolved, now fixed.)
+Verified: Ismael, Jordi, David Z, Javier, Jacob, Chris, Rob, Stephen†, Mima, Ollie, Geran (Prodtech — Fergus, also Prodtech, stays BUILDER-ASSISTED, see below); Emily, Shreya (Ops); Christian‡, Kevin, Ivan, Kirsty†, David Pilley† (Finance); Adam Smith, Liam (Distribution); Francesco, Jake, Harry, Milan† (UW); Eraaz (People). († = builder-verified while scored Stage ≤2 — score understates them. ‡ = initially misclassified no-build by the audit; corrected 2026-07-02 — his co:work HTML budget artifact was shared to SLT/Antton and his distribution-cost workflow replaced the old flow as default; the Jun 11 source note had his identity unresolved, now fixed.)
 
 The Stage 3+ proxy fails in both directions:
 - **Too generous (4 no-build at Stage 3+):** Sam, Anna, Alex Dyball, **Darren McCauley** (Stage 3 rests on one uncorroborated observation; Jun 22 transcript: "pretty much a ChatGPT guy"). Plus 6 assisted-only at 3+: Matt Price, Tom Rogers (one-offs), Matt Lees (flagship decayed, Jun 24 manual-search regression), Sophie (template-based), Fergus and Ed (prototypes/demos, not tools in service).
