@@ -126,8 +126,7 @@ Finance       2:██████ 3:███   4:█
 | Team | Champion | The one-liner |
 |---|---|---|
 | Distribution (BDM) | **The whole team** 🏆 | Nobody below fluency; two agentic systems in production — a 9-agent enterprise pipeline and the SLT trading review |
-| Product pod (Prodtech) | **The whole pod** 🏆 | All four PMs at Stage 4 — eval suites, the acquisition brain, production Streamlit apps |
-| Prodtech | Ismael | ~90% AI-generated code; parallel agents writing PRs he reviews |
+| Prodtech | **The Stage-4 vanguard** 🏆 | 8 of 15 delegating: parallel agents writing PRs (Ismael ~90% AI-generated code), eval suites, the acquisition brain, production Streamlit apps |
 | Operations | Shreya | 3 production tools built independently; now teaching the method |
 | Finance | Christian (CFO) | co:work budget artifact shared to SLT; SPA extraction via 10–11 self-checking runs |
 | UW & Pricing | Jake Wood | Dashboard drove HubSpot notes 0→90%; the peer bridge into underwriting |
@@ -137,12 +136,10 @@ Finance       2:██████ 3:███   4:█
 
 | Team | Who | Why |
 |---|---|---|
-| Finance | Anneliese | Stage 2 — practice is fine; one Python install (AI-149) from shipping her month-end tool |
-| Finance | Queency | Stage 2 low-confidence; MCP connected but not yet queried in real work |
+| Finance | Anneliese · Queency | Stage 2 — Anneliese one Python install (AI-149) from her month-end tool; Queency low-confidence, MCP connected but unqueried in real work |
 | Prodtech | Stephen · Aleks | Recalibrated 4→2; pull-back and skill-displacement grief |
-| UW & Pricing | Michael M · Milan | Heads of function at Stage 2; "still not ingrained" |
-| UW & Pricing | Ben · Daisy Mae | Stage 2 on inference only — near-zero individual data |
-| People | Rakhee · Phoebe | Stage 2 — the people coordinating the AI programme trail it |
+| UW & Pricing | Michael M · Milan · Ben · Daisy Mae | Heads of function "still not ingrained"; Ben and Daisy Mae scored on inference only — near-zero individual data |
+| People | Rakhee · Phoebe | Stage 2 — the people coordinating the AI programme trail it; Phoebe is mid-build on the Flock O'Clock automation (AI-141), the clean 2→3 path |
 | Ops | Jonny · Fred | Stage 2; unclear AI vs traditional automation, guided-only wins |
 
 **Presenter notes**
