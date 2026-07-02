@@ -16,35 +16,35 @@ Six slides. Slide text is deliberately sparse; presenter notes carry the evidenc
 
 ## Slide 1 — Headline
 
-> **84% of the company is activated. Your 80% target is met.**
-> The next game is not activation — it's delegation.
+> **The centre of gravity of the company is Stage 3 — Fluency.**
+> A quarter of the company is already delegating whole tasks. Nobody is at zero.
 
 - 49 of 56 in-scope people scored (87.5% coverage)
-- Centre of gravity: **Stage 3 — Fluency**
-- Nobody left at Stage 0. Two people at Stage 1, both blocked on tooling, not will.
+- Two people at Stage 1, both blocked on tooling, not will
+- The frontier: 13 people at Stage 4 — nobody yet at Stage 5
 
 **Presenter notes**
-- Activation = Stage 2+ ("3 useful tasks in a context-fuelled Claude project"). 47 of 49 scored are activated — 96% of scored, **83.9% of the full 56-person scope**. Ed's target was 80% by Jun 30: met on the scope denominator, comfortably beaten on the scored denominator.
-- The 7 unscored are the gap-to-100%: 5 underwriting ICs (holiday/paternity/deliberate deferral), Pavel (finance, no signal), Antton (CCO, no 1:1 yet). Of the 9 people not counted as activated, 7 are simply unmeasured — only 2 are confirmed below the line.
+- Activation framing deliberately removed from the slides pending definition alignment with Ed — his verbal shorthand for "activated" (Jun 24: "building tools, bringing in the data") maps to Stage 2–3, not the framework's Stage-1-exit threshold, and the two definitions give very different headline numbers (84% vs 55–63% of scope). Numbers preserved in the appendix; realign the definition with Ed before reintroducing.
+- The 7 unscored are the coverage gap: 5 underwriting ICs (holiday/paternity/deliberate deferral), Pavel (finance, no signal), Antton (CCO, no 1:1 yet).
 - Denominator caveat: `ai-activation-map.md` (updated Jun 25) uses ~63 in scope; this deck uses the 56-person scope from the June assessment. Reconcile before Ed forwards numbers to Admiral Pioneer.
 - Do NOT reuse the Jun 24 verbal numbers ("90% activated, 75% building tools, 50% at top end") — see Slide 3 notes for the honest bridge.
 
 ---
 
-## Slide 2 — The framework: six stages, scored on behaviour
+## Slide 2 — The framework
 
-| Stage | Name | Intent | Behaviours we check for |
+| Stage | Name | What it looks like | Expanded: the behaviours we check for |
 |---|---|---|---|
-| 0 | Search mode | AI as a search engine | Single prompt, read, done. No follow-up, doesn't return |
-| 1 | Conversation | Realises iteration beats one-shotting | Pushes back, redirects, gets real wins **← activation threshold at top of this stage** |
-| 2 | Context + tools | Builds an environment, not prompts | Front-loads context; CLAUDE.md / strategy docs; connects real systems (MCP, files, APIs) |
-| 3 | Fluency | Model as thinking partner | Argues with output; "what are the failure modes?"; builds on partial output; plan mode |
-| 4 | Delegation | Hands off whole units of work | Reviews at task level, not line level; parallel sessions; catches errors via domain knowledge |
-| 5 | Orchestration | Directs a system, doesn't do the work | Adherence engineering; context quality measured by agent behaviour; composes human/agent/function |
-
-> Activation threshold: **complete 3 useful tasks in a context-fuelled Claude project** — without starting from scratch each session.
+| 0 | Search | Single prompt, read answer, done | No follow-up or correction; doesn't come back after "fine but unremarkable" output |
+| 1 | First win | Pushes back, iterates, has a conversation | Gets genuinely useful wins that become a default, not one-offs |
+| 2 | Context+tools | Loads context, connects data sources, dresses the model | CLAUDE.md / strategy docs / process maps; real systems connected (MCP, files, APIs) |
+| 3 | Fluency | Argues with output, thinks with the model, builds tools | "What are the failure modes?"; builds on partial output; named, reusable artifacts |
+| 4 | Delegation | Hands off whole tasks, reviews at output level | Trusts the agent within constraints; parallel sessions; catches errors via domain knowledge |
+| 5 | Orchestration | Directs systems, measures adherence | Context quality judged by agent behaviour, not by reading it; composes human/agent/function |
 
 **Presenter notes**
+- Stage/Name/What-it-looks-like columns use **verbatim** the wording shared with Ed on Jun 24 (`reference/framework-stages-shared-with-ed-2026-06-24.png`) — he should recognise the table. The fourth column is the expansion.
+- "Builds tools" sits inside Stage 3's description — so any Stage 3+ claim implies tool-building. See the builder-audit caveats before leaning on that number.
 - **Behaviour, not understanding.** The framework scores what people do, not what they grasp — that's why the CEO can score below a junior ops person, and why this is not a capability ranking. Say this out loud before showing team numbers.
 - Scores carry confidence tiers (high/medium/low). Low confidence = "gather more data", not "this is true". Five headline-relevant scores are low-confidence: Queency, Michael Matthews, Ben Allen, Daisy Mae (+ Aleks medium with contested range).
 - Ed's "does it extend to 6, 7, 8?" question (Jun 24, Chesky story): Stage 5 is the current defined ceiling and **nobody currently sits there** — Ismael was recalibrated 5→4 on Jun 30 under tighter "sustained practice, not spikes" standards. Stage 6 is deliberately uncharacterised; Ismael is the person to help define the frontier. This preserves comparability with past scores, which Ed said he wants.
@@ -65,16 +65,16 @@ Stage 5  ·                                (0)
 
 **Company: min 1 · median 3 · p80 4 · max 4** (n=49 scored)
 
-- Activated (Stage 2+): **84%** of the 56-person scope
-- Fluent+ (Stage 3+): **63%** of scored
-- Delegating (Stage 4): **27%** of scored
+- Fluent or better (Stage 3+): **63%** of scored
+- **Verified tool-builders** (named, reusable artifact in repeated use): **24 people — 49%** of scored
+- Delegating whole tasks (Stage 4): **27%** of scored
 
 **Presenter notes**
 - p80 method: nearest-rank — the stage that 80% of people sit at or below. Company p80 = 4 means the top fifth of the company is delegating whole tasks.
 - **Bridge from what Tom told Ed on Jun 24** (claims → recalibrated data):
   - "50% at the top end, two at the very furthest" → actually **27% at Stage 4, zero at Stage 5**. Reframe: "About a quarter are at delegation; on closer review nobody has genuinely reached orchestration yet."
   - "90% activated" → **96% of scored / 84% of scope**. The mechanism claimed was right: the gap is people not yet sat down with, not people who stalled.
-  - "75% building their own tools" → Stage 3+ is **63% of scored (55% of scope)**. The 75–80% figure was ahead of the recalibrated data — it's the Q3 target, not the current state.
+  - "75% building their own tools" → the Stage 3+ proxy gives **63% of scored**, but the artifact-level audit (Jul 2) verifies only **49%** with a named, reusable, self-built tool in repeated use (69% if guided/decayed builds count). The 75–80% figure was well ahead of the evidence — treat tool-building as the Q3 target, not the current state.
   - "Finance and underwriting lag, broad distribution" → both confirmed lowest by mean (2.2 / 2.5), but only **Finance is broadly spread (1–4)**; UW is the tightest cluster in the company (everyone at 2–3, no stars, no stragglers).
   - "~30% of underwriting past activation, same for finance" → Finance: exactly right at 30% fluent+. UW: actually **50% fluent+** — but zero at Stage 4, which is why it still reads as lagging.
   - "90% there on presenting benchmarking with Rakhee" → 49/56 scored = 87.5%. Holds as "high-80s".
@@ -160,7 +160,7 @@ Finance       1:██  2:█████  3:██  4:█
 
 ## Slide 6 — What this means for Q3
 
-1. **Activation is done as a strategy.** 84% ≥ 80% target. The remaining tail is 7 named people with dates and owners, not a programme.
+1. **The baseline exists.** 49 of 56 scored on one rubric; the remaining tail is 7 named people with dates and owners, not a programme.
 2. **Focus shifts to the two gap teams** — Finance (unblock infrastructure) and UW (propagate via Jake + peer demos). Monthly team workshops continue; company-wide sessions don't scale.
 3. **Deputise the champions** — AI partnering team pilot for Q3 (the Ghostbusters model), drawn from Slide 5's left column.
 4. **Measure outcomes, not tool usage** — PGR pressure to count skills built is the wrong metric; the benchmarking survey (with Rakhee, this week) gives the baseline, then targets go on the rubric.
@@ -172,6 +172,22 @@ Finance       1:██  2:█████  3:██  4:█
 - Ed's provocations from Jun 24 not answered by this deck (park explicitly if raised): the company-wide intensive week, hiring bar ("no Copilot-only engineers"), firing implications, external speakers. The deck's line: benchmark first, then set the bar.
 
 ---
+
+## Appendix — builder audit (2026-07-02, not for presentation)
+
+Per-person artifact audit (8 dept agents, people files + transcript corroboration). Rubric: **builder = named, reusable artifact they created with AI (skill, dashboard, automation, MCP workflow, app, pipeline) in repeated use** — not one-off chats, guided builds, or using others' tools.
+
+**Result: 24 of 49 verified builders (49%) · 10 assisted/decayed (20%) · 15 no build evidence (31%).**
+
+Verified: Ismael, Jordi, David Z, Javier, Jacob, Chris, Rob, Stephen† (Engineering); Mima, Ollie, Geran (Product); Emily, Shreya (Ops); Kevin, Ivan, Kirsty†, David Pilley† (Finance); Adam Smith, Liam (Distribution); Francesco, Jake, Harry, Milan† (UW); Eraaz (People). († = builder-verified while scored Stage ≤2 — score understates them.)
+
+The Stage 3+ proxy fails in both directions:
+- **Too generous (5 no-build at Stage 3+):** Christian (Stage 4 — fluent *delegator* of analyses, no artifact), Sam, Anna, Alex Dyball, **Darren McCauley** (Stage 3 rests on one uncorroborated observation; Jun 22 transcript: "pretty much a ChatGPT guy"). Plus 6 assisted-only at 3+: Matt Price, Tom Rogers (one-offs), Matt Lees (flagship decayed, Jun 24 manual-search regression), Sophie (template-based), Fergus and Ed (prototypes/demos, not tools in service).
+- **Too strict (4 builders at Stage ≤2):** Stephen (Databricks monitoring system real but dormant), Kirsty (Looker MCP + pod-metrics skill still in use by Distribution), David Pilley (MI dashboard skill, <10 min weekly), **Milan** (claims-triangle + UW-report skills, corroborated by Harry — his own file wrongly says "hasn't built anything independently").
+
+Structural conclusion: the stage axis conflates *how someone works* (fluency, delegation) with *what they've shipped*. Ed's Stage 3 wording literally says "builds tools", so either (a) enforce a named-artifact gate on Stage 3+ scores, or (b) track a separate builder badge (verified/assisted/none) in people-file frontmatter and report it as its own number. Recommend (b) — it preserves stage comparability and fixes the false positives without re-scoring everyone.
+
+Corrections to feed back into people files: Milan (builder evidence), Darren McC (stage likely overstated), Stephen/Kirsty/David Pilley (builder-verified flags). Identity flag: some June engineering references to "Alex Dyball" are likely a different Alex (name-resolution conflation) — excluded from his audit.
 
 ## Appendix — provenance (not for presentation)
 
