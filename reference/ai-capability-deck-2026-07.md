@@ -20,11 +20,11 @@ Six slides. Slide text is deliberately sparse; presenter notes carry the evidenc
 > A quarter of the company is already delegating whole tasks. Nobody is at zero.
 
 - 49 of 56 in-scope people scored (87.5% coverage)
-- Two people at Stage 1, both blocked on tooling, not will
+- Nobody below Stage 2 — the company floor is "context loaded, tools connected"
 - The frontier: 13 people at Stage 4 — nobody yet at Stage 5
 
 **Presenter notes**
-- Activation framing deliberately removed from the slides pending definition alignment with Ed — his verbal shorthand for "activated" (Jun 24: "building tools, bringing in the data") maps to Stage 2–3, not the framework's Stage-1-exit threshold, and the two definitions give very different headline numbers (84% vs 55–63% of scope). Numbers preserved in the appendix; realign the definition with Ed before reintroducing.
+- Activation framing deliberately removed from the slides pending definition alignment with Ed — his verbal shorthand for "activated" (Jun 24: "building tools, bringing in the data") maps to Stage 2–3, not the framework's Stage-1-exit threshold, and the two definitions give very different headline numbers (87.5% vs 57–65% of scope). Numbers preserved in the appendix; realign the definition with Ed before reintroducing.
 - The 7 unscored are the coverage gap: 5 underwriting ICs (holiday/paternity/deliberate deferral), Pavel (finance, no signal), Antton (CCO, no 1:1 yet).
 - Denominator caveat: `ai-activation-map.md` (updated Jun 25) uses ~63 in scope; this deck uses the 56-person scope from the June assessment. Reconcile before Ed forwards numbers to Admiral Pioneer.
 - Do NOT reuse the Jun 24 verbal numbers ("90% activated, 75% building tools, 50% at top end") — see Slide 3 notes for the honest bridge.
@@ -56,16 +56,16 @@ Six slides. Slide text is deliberately sparse; presenter notes carry the evidenc
 
 ```
 Stage 0  ·                                (0)
-Stage 1  ██                               (2)
-Stage 2  ████████████████                 (16)
-Stage 3  ██████████████████               (18)   ← centre of gravity
+Stage 1  ·                                (0)
+Stage 2  █████████████████                (17)
+Stage 3  ███████████████████              (19)   ← centre of gravity
 Stage 4  █████████████                    (13)
 Stage 5  ·                                (0)
 ```
 
-**Company: min 1 · median 3 · p80 4 · max 4** (n=49 scored)
+**Company: min 2 · median 3 · p80 4 · max 4** (n=49 scored)
 
-- Fluent or better (Stage 3+): **63%** of scored
+- Fluent or better (Stage 3+): **65%** of scored
 - Delegating whole tasks (Stage 4): **27%** of scored
 
 **Who actually builds their own tools** (artifact-level audit, Jul 2):
@@ -78,9 +78,9 @@ Stage 5  ·                                (0)
 - p80 method: nearest-rank — the stage that 80% of people sit at or below. Company p80 = 4 means the top fifth of the company is delegating whole tasks.
 - **Bridge from what Tom told Ed on Jun 24** (claims → recalibrated data):
   - "50% at the top end, two at the very furthest" → actually **27% at Stage 4, zero at Stage 5**. Reframe: "About a quarter are at delegation; on closer review nobody has genuinely reached orchestration yet."
-  - "90% activated" → **96% of scored / 84% of scope**. The mechanism claimed was right: the gap is people not yet sat down with, not people who stalled.
-  - "75% building their own tools" → the Stage 3+ proxy gives **63% of scored**, the artifact-level audit (Jul 2) splits it into a ladder: **51% verified independent builders · 71% built or co-built at least one skill (even guided — Fred's tier) · 29% no artifact**. So the "75%" was roughly right under the loose definition and ahead of the evidence under the strict one — say which definition you mean, and use the ladder: the middle rung is one coached rep away from verified, which is the Q3 conversion story.
-  - "Finance and underwriting lag, broad distribution" → both confirmed lowest by mean (2.2 / 2.5), but only **Finance is broadly spread (1–4)**; UW is the tightest cluster in the company (everyone at 2–3, no stars, no stragglers).
+  - "90% activated" → **100% of scored / 87.5% of scope** (after the Jul 2 re-scores separated Moss environment blockers from practice — see appendix). The mechanism claimed was right: the remaining gap is entirely people not yet sat down with.
+  - "75% building their own tools" → the Stage 3+ proxy gives **65% of scored**, the artifact-level audit (Jul 2) splits it into a ladder: **51% verified independent builders · 71% built or co-built at least one skill (even guided — Fred's tier) · 29% no artifact**. So the "75%" was roughly right under the loose definition and ahead of the evidence under the strict one — say which definition you mean, and use the ladder: the middle rung is one coached rep away from verified, which is the Q3 conversion story.
+  - "Finance and underwriting lag, broad distribution" → both confirmed lowest by mean (now tied at 2.5 after the Jul 2 re-scores). Finance spans 2–4 with the biggest Stage-2 cohort (six of ten) and the CFO as its lone Stage 4; UW is the tightest cluster in the company (everyone at 2–3, no stars, no stragglers).
   - "~30% of underwriting past activation, same for finance" → Finance: exactly right at 30% fluent+. UW: actually **50% fluent+** — but zero at Stage 4, which is why it still reads as lagging.
   - "90% there on presenting benchmarking with Rakhee" → 49/56 scored = 87.5%. Holds as "high-80s".
 - **Bridge from the Jun 18 assessment doc** (in case Ed saw it): it said "Engineering & Product every person at Stage 4+" and 19 people at Stage 4. The Jun 30 re-assessment applied tighter evidence standards — sustained practice, not peak spikes — and pulled 7 of 10 engineers down (Ismael 5→4, Jordi/Chris/Sam/Rob 4→3, Stephen/Aleks 4→2). The company didn't get worse; the measurement got honest. Same standards will be used for the company-wide survey, so the baseline is defensible.
@@ -97,7 +97,7 @@ Stage 5  ·                                (0)
 | Operations | 5 | 2 | 3 | 4 | One star, mixed middle |
 | People | 3 | 2 | 4 | 4 | One star, two early |
 | **UW & Pricing** | 10 | 2 | 3 | **3** | Uniform — no laggards, **no stars** |
-| **Finance** | 10 | **1** | 3 | 4 | Widest spread in the company |
+| **Finance** | 10 | 2 | 3 | 4 | Bottom-heavy — six of ten at Stage 2, the CFO alone at 4 |
 
 ```
 Distribution  2:      3:███     4:██
@@ -105,13 +105,13 @@ Prodtech      2:██    3:█████   4:████████
 Operations    2:██    3:██      4:█
 People        2:██    3:        4:█
 UW & Pricing  2:█████ 3:█████   4:
-Finance       1:██  2:█████  3:██  4:█
+Finance       2:██████ 3:███   4:█
 ```
 
 **Presenter notes**
 - Small-team caveat: for People (n=3), p80 ≡ max — read the dots, not the percentile.
-- Ed (Stage 3) sits outside the team view — Leadership is no longer a team grouping, so he counts in the company-level stats only; where he lands is TBC with Tom.
-- **Finance and UW are confirmed as the Q3 focus teams, but for different reasons.** Finance is infrastructure-gated: six of ten are stuck at Stage 1–2 and the blockers are Moss MCP installs, Python-less machines, and NetSuite/Looker access — not skill or will (Jun 29/30 meetings are the direct evidence). UW is propagation-gated: five genuine builders at Stage 3, zero at 4, and practice staying private — Darren McCauley is "secretly all over it, not pushing down"; Jake Wood is the deliberate bottom-up bridge to the 5 unassessed ICs and Darren Nightingale ("number one cynic" — do not approach yet).
+- Ed (Stage 3) and Tom sit outside the team view by design (confirmed with Tom, Jul 2) — Ed counts in the company-level stats only.
+- **Finance and UW are confirmed as the Q3 focus teams, but for different reasons.** Finance is infrastructure-gated: six of ten sit at Stage 2 and the blockers are Moss MCP installs, Python-less machines, and NetSuite/Looker access — not skill or will (Jun 29/30 meetings are the direct evidence; the Jul 2 re-scores of Anneliese 1→2 and David Pilley 1→3 formalised exactly this separation of environment from practice). UW is propagation-gated: five genuine builders at Stage 3, zero at 4, and practice staying private — Darren McCauley is "secretly all over it, not pushing down"; Jake Wood is the deliberate bottom-up bridge to the 5 unassessed ICs and Darren Nightingale ("number one cynic" — do not approach yet).
 - Prodtech's shape is the subtle story: p80 of 4 with a min of 2 — 8 of 15 at Stage 4, but a tail of 2s. The vanguard (Ismael, Jacob, David Z) is real; the middle was recalibrated down amid craft-loss anxiety (Javier "associate factory", Aleks "I've learned nothing", Stephen pulling back). The intervention is teaching capacity + shared quality infrastructure, not more tooling.
 - Operations context: Antton (CCO) now belongs to this team but is unassessed (no 1:1 yet) — he is Operations' coverage gap, so n=5 understates the team by one.
 - Team labels here follow the new July groupings (Prodtech = former Engineering + Product + Fergus); several people's files still carry a "Leadership" team tag but are bucketed by function, now spanning even more teams (Christian→Finance, Darren McC→UW, Paul→Finance, Rakhee→People, Fergus→Prodtech, Ed→unassigned). Numbers reconcile; don't let a live vault click-through surprise you.
@@ -123,29 +123,22 @@ Finance       1:██  2:█████  3:██  4:█
 
 **Champions — recognise them (Ed: "meritocracy everywhere")**
 
-| Team | Who | The one-liner |
+| Team | Champion | The one-liner |
 |---|---|---|
+| Distribution (BDM) | **The whole team** 🏆 | Nobody below fluency; two agentic systems in production — a 9-agent enterprise pipeline and the SLT trading review |
+| Product pod (Prodtech) | **The whole pod** 🏆 | All four PMs at Stage 4 — eval suites, the acquisition brain, production Streamlit apps |
 | Prodtech | Ismael | ~90% AI-generated code; parallel agents writing PRs he reviews |
-| Prodtech | Jacob | Runs 2–3 agents as "capable juniors"; cron doc-agents; DBT golden rules |
-| Prodtech | David Z | Agents run planning→build autonomously; wrote the team's skills/rules doc |
-| Prodtech | Mima | 111 PromptFoo test cases for J; stakeholders self-serve eval-writing |
-| Prodtech | Ollie | 1,128 claims transcripts analysed via 10 sub-agents + QA agent in ~2 hrs |
-| Prodtech | Geran | Production Streamlit apps on Snowflake — "1 PM = 3.5 engineers" |
-| Ops | Shreya | 3 production tools built independently; now teaching the method |
-| Finance | Christian (CFO) | Delegated SPA obligation extraction, 10–11 self-checking runs; saved external legal fees |
-| Finance | Kevin | 4-hour trading-pack task → 20 min; now teaching David Pilley |
-| Distribution | Matt Lees | 9 scheduled agents running a 600-company enterprise pipeline |
-| Distribution | Adam Smith | Claude trading review replacing ~3 juniors' worth of manual prep |
-| UW & Pricing | Tom Rogers · Jake Wood | Dashboards in minutes not days; Jake drove HubSpot notes 0→90% and is the peer bridge |
+| Operations | Shreya | 3 production tools built independently; now teaching the method |
+| Finance | Christian (CFO) | co:work budget artifact shared to SLT; SPA extraction via 10–11 self-checking runs |
+| UW & Pricing | Jake Wood | Dashboard drove HubSpot notes 0→90%; the peer bridge into underwriting |
 | People | Eraaz | 3×/day co:work optimisation system; builds prompts for his own team |
-| Prodtech | Fergus | Ledger-service prototype overnight in an unfamiliar codebase |
 
 **At-risk — the honest list**
 
 | Team | Who | Why |
 |---|---|---|
-| Finance | Anneliese · David Pilley | Stage 1 — both blocked on installs/Python, not motivation |
-| Finance | Queency | Stage 2 low-confidence; still feeding files in manually |
+| Finance | Anneliese | Stage 2 — practice is fine; one Python install (AI-149) from shipping her month-end tool |
+| Finance | Queency | Stage 2 low-confidence; MCP connected but not yet queried in real work |
 | Prodtech | Stephen · Aleks | Recalibrated 4→2; pull-back and skill-displacement grief |
 | UW & Pricing | Michael M · Milan | Heads of function at Stage 2; "still not ingrained" |
 | UW & Pricing | Ben · Daisy Mae | Stage 2 on inference only — near-zero individual data |
@@ -153,11 +146,13 @@ Finance       1:██  2:█████  3:██  4:█
 | Ops | Jonny · Fred | Stage 2; unclear AI vs traditional automation, guided-only wins |
 
 **Presenter notes**
-- Champions framing for Ed: he named Mima as the promote-the-boundary-pushers example on Jun 24; this table is the full promotion-conversation shortlist. It is also the deputy pool for the Q3 AI partnering team (Ed wants it launched now; issue AI-127, due Jul 1, open).
-- Two **watch flags on champions** (over-trust, the company-wide failure mode): Adam Smith presented wrong Claude numbers to SLT (Jun 11) and validation still isn't in place; Tom Rogers promised a customer an unconfirmed feature. Celebrate the output, install the guardrails.
+- Table rule: max one named individual per team; where most of a team is at champion level (BDM, the Product pod), the team itself is the champion — that's the stronger story for Ed anyway ("whole teams get there, not just heroes").
+- The full bench behind the table (promotion-conversation shortlist + deputy pool for the Q3 AI partnering team, AI-127): Jacob, David Z, Fergus (Prodtech); Mima, Ollie, Geran, Matt Price (the Product pod call-out — Ed named Mima on Jun 24 as the promote-the-boundary-pushers example); Matt Lees, Adam Smith (the BDM call-out); Kevin (Finance — teaching David Pilley); Emily (Ops); Tom Rogers, Francesco (UW).
+- **Watch flags on champions and near-champions** (over-trust, the company-wide failure mode): Adam Smith presented wrong Claude numbers to SLT (Jun 11), validation still not in place; Tom Rogers promised a customer an unconfirmed feature; David Pilley (now Stage 3, Moss unblocked Jun 30) carries Kevin's "thinks it's magic... cedes to it" flag — his 3→4 path is review muscle, not more tools. Celebrate the output, install the guardrails.
+- Queency's Stage 2, justified: she has a connected data source (Moss MCP — reinstalled it herself on the Jun 29 call) and her daily approvals workflow runs on loaded context (feeds files to Claude as the first step). That's Stage 2 behaviour by the book. Not Stage 1: regular multi-task use, not a single win. Not Stage 3: no iteration or building, still setup-dependent. Low confidence stands until she queries Moss data in real work — the expense-type filtering bug (her Slack-shared chat) is the current blocker.
 - At-risk framing: nobody on this list is refusing. The list splits into *blocked* (finance installs), *unmeasured* (Ben, Daisy — assess before judging), *pulled back* (Stephen, Aleks — needs the craft conversation, not pressure), and *habit not formed* (Michael, Milan, Rakhee, Phoebe). Different interventions per group; a single "level up or else" message would misfire on three of the four.
 - Rakhee/Phoebe sensitivity: Ed will spot that the People team trails the programme it coordinates. Eraaz is the in-team fix (already building their prompts). Rakhee is also the partner for the benchmarking survey — position as "her programme skills + my practice coaching", not as a problem child.
-- Score conflicts to resolve before this goes company-wide (don't present, just know): Kirsty scored 2 on Moss context while her Stage-4 Looker evidence "remains valid"; David Pilley similarly 1 vs prior Stage-3 dashboard work; Geran's frontmatter says 4 while his file body argues 3. If challenged on any of these names, the honest answer is "scored on current sustained practice in the newest context; noted, under review."
+- Score conflicts to resolve before this goes company-wide (don't present, just know): Kirsty scored 2 on Moss context while her Stage-4 Looker evidence "remains valid" (the same environment-vs-practice case that was corrected for David Pilley and Anneliese on Jul 2 — Kirsty is the remaining one); Geran's frontmatter says 4 while his file body argues 3. If challenged, the honest answer is "scored on current sustained practice; noted, under review."
 
 ---
 
@@ -182,19 +177,20 @@ Per-person artifact audit (8 dept agents, people files + transcript corroboratio
 
 **Result: 25 of 49 verified builders (51%) · 10 assisted/decayed (20%) · 14 no build evidence (29%).**
 
-Verified: Ismael, Jordi, David Z, Javier, Jacob, Chris, Rob, Stephen†, Mima, Ollie, Geran (Prodtech — Fergus, also Prodtech, stays BUILDER-ASSISTED, see below); Emily, Shreya (Ops); Christian‡, Kevin, Ivan, Kirsty†, David Pilley† (Finance); Adam Smith, Liam (Distribution); Francesco, Jake, Harry, Milan† (UW); Eraaz (People). († = builder-verified while scored Stage ≤2 — score understates them. ‡ = initially misclassified no-build by the audit; corrected 2026-07-02 — his co:work HTML budget artifact was shared to SLT/Antton and his distribution-cost workflow replaced the old flow as default; the Jun 11 source note had his identity unresolved, now fixed.)
+Verified: Ismael, Jordi, David Z, Javier, Jacob, Chris, Rob, Stephen†, Mima, Ollie, Geran (Prodtech — Fergus, also Prodtech, stays BUILDER-ASSISTED, see below); Emily, Shreya (Ops); Christian‡, Kevin, Ivan, Kirsty†, David Pilley (Finance — re-scored to Stage 3 on Jul 2, dagger resolved); Adam Smith, Liam (Distribution); Francesco, Jake, Harry, Milan† (UW); Eraaz (People). († = builder-verified while scored Stage ≤2 — score understates them. ‡ = initially misclassified no-build by the audit; corrected 2026-07-02 — his co:work HTML budget artifact was shared to SLT/Antton and his distribution-cost workflow replaced the old flow as default; the Jun 11 source note had his identity unresolved, now fixed.)
 
 The Stage 3+ proxy fails in both directions:
 - **Too generous (4 no-build at Stage 3+):** Sam, Anna, Alex Dyball, **Darren McCauley** (Stage 3 rests on one uncorroborated observation; Jun 22 transcript: "pretty much a ChatGPT guy"). Plus 6 assisted-only at 3+: Matt Price, Tom Rogers (one-offs), Matt Lees (flagship decayed, Jun 24 manual-search regression), Sophie (template-based), Fergus and Ed (prototypes/demos, not tools in service).
-- **Too strict (4 builders at Stage ≤2):** Stephen (Databricks monitoring system real but dormant), Kirsty (Looker MCP + pod-metrics skill still in use by Distribution), David Pilley (MI dashboard skill, <10 min weekly), **Milan** (claims-triangle + UW-report skills, corroborated by Harry — his own file wrongly says "hasn't built anything independently").
+- **Too strict (3 builders at Stage ≤2, was 4):** Stephen (Databricks monitoring system real but dormant), Kirsty (Looker MCP + pod-metrics skill still in use by Distribution), **Milan** (claims-triangle + UW-report skills, corroborated by Harry — his own file wrongly says "hasn't built anything independently"). David Pilley was the fourth; resolved by his Jul 2 re-score to Stage 3.
 
 Structural conclusion: the stage axis conflates *how someone works* (fluency, delegation) with *what they've shipped*. Ed's Stage 3 wording literally says "builds tools", so either (a) enforce a named-artifact gate on Stage 3+ scores, or (b) track a separate builder badge (verified/assisted/none) in people-file frontmatter and report it as its own number. Recommend (b) — it preserves stage comparability and fixes the false positives without re-scoring everyone.
 
-Corrections to feed back into people files: Milan (builder evidence), Darren McC (stage likely overstated), Stephen/Kirsty/David Pilley (builder-verified flags). Identity flag: some June engineering references to "Alex Dyball" are likely a different Alex (name-resolution conflation) — excluded from his audit.
+Corrections to feed back into people files: Milan (builder evidence), Darren McC (stage likely overstated), Stephen/Kirsty (builder-verified flags; David Pilley and Anneliese resolved by Jul 2 re-scores). Identity flag: some June engineering references to "Alex Dyball" are likely a different Alex (name-resolution conflation) — excluded from his audit.
 
 ## Appendix — provenance (not for presentation)
 
 - **Source of truth:** `people/*.md` frontmatter (`ai_activation_stage/confidence/assessed`). 28 people re-assessed 2026-06-30 against Jun 22–30 transcripts (commit 8f627a3); others assessed Jun 2–25. Framework: [[activation-pathway]]. Prior snapshots: [[ai-activation-assessment-2026-06]] (Jun 18 — stages superseded, groupings retained), [[ai-capability-baseline-2026-04]].
 - **Past-7-days check (2026-07-02):** three Granola meetings from Jun 29–30 were not in the vault; imported today ([[2026-06-29-moss-finance-rollout]], [[2026-06-30-david-pilley-moss-install]], [[2026-06-30-thomas-matthew-1-1]]). Their evidence was already reflected in the Jun 30 scores.
 - **Verification:** per-person evidence audit (49 agents) against the transcript corpus; department syntheses; adversarial claims-vs-data check; completeness critique. Stats computed nearest-rank.
-- **Known data-quality flags:** stale scores (Mima 05-26 with an unincorporated 06-24 transcript; Kevin, Matt Lees, Matt Dipre, Ben, Daisy 06-02); context-scoped downgrades under review (Kirsty, David Pilley); frontmatter/body disagreements (Geran 4 vs 3, Javier 3 vs "3–4", Aleks 2 vs "2–3"); Emily's cited source meeting not present in the vault; scope denominator 56 (assessment) vs ~63 (activation map, Jun 25).
+- **Jul 2 re-scores:** Anneliese 1→2 and David Pilley 1→3 after separating the Moss environment blocker (no Python, guided installs) from AI practice — the framework scores practice, not machine administration. David Pilley's Moss install completed Jun 30. Company min moved 1→2 as a result.
+- **Known data-quality flags:** stale scores (Mima 05-26 with an unincorporated 06-24 transcript; Kevin, Matt Lees, Matt Dipre, Ben, Daisy 06-02); context-scoped downgrade still under review (Kirsty — same case shape as the two resolved on Jul 2); frontmatter/body disagreements (Geran 4 vs 3, Javier 3 vs "3–4", Aleks 2 vs "2–3"); Emily's cited source meeting not present in the vault; scope denominator 56 (assessment) vs ~63 (activation map, Jun 25).

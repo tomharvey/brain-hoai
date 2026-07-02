@@ -4,9 +4,9 @@ created: 2026-06-01
 updated: 2026-06-30
 type: person
 tags: [finance, moss, operational-tooling]
-ai_activation_stage: 1
+ai_activation_stage: 2
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-30
+ai_activation_assessed: 2026-07-02
 ---
 
 # Anneliese Vanwijk
@@ -30,18 +30,23 @@ Only she and [[queency-gonsalves|Queency]] use MOSS on the finance team.
 
 ## AI Activation
 
-**Stage**: 1 — Search mode
+**Stage**: 2 — Context+tools (early)
 **Confidence**: medium
-**Assessed**: 2026-06-30
-**Evidence**: Python installation issues blocking Moss MCP setup (Jun 29). Previously tried to build the MCP connection herself but it wasn't right. Recognises she underestimated the complexity. Apologised for deprioritising it. Persistent errors with installation. Willing but blocked by the technical setup hurdle.
+**Assessed**: 2026-07-02
+**Evidence**: 8 Claude connectors live since Jun 1 (Notion, Slack, Granola, Looker, Flock custom, Gmail, Drive, Calendar) and in working use. Generated MOSS API keys herself and attempted the MCP build unassisted before it stalled. Clear, well-specified target use case (month-end MOSS consistency checking: invoice coding, cost centres, recurring patterns, missing invoices).
 
-**Not Stage 0**: Genuinely wants to use AI tools, has attempted setup independently, and has a clear target use case (MOSS month-end consistency checking). The intent and conceptual understanding are there.
-**Not Stage 2**: Cannot get past Python/installation issues to actually connect tools. The 8 Claude connectors set up in early June were web-based (Notion, Slack, etc.) — the local MCP tooling that requires Python is a different technical bar she hasn't cleared yet.
-**To progress**: Needs hands-on support to get past the Python/installation hurdle. Once Moss MCP is running, the month-end consistency checking use case is ready to go. A paired session to resolve the technical blockers would unblock the Stage 1→2 transition immediately.
+**Not Stage 1**: Connecting data sources and working with connected context is Stage 2 behaviour — she has done it eight times over on the web side. Multiple regular finance uses, not a single win.
+**Not Stage 3**: No evidence yet of iterating hard on output, arguing with the model, or building reusable tools. The month-end use case is defined but not built.
+**To progress**: Resolve the local Python blocker ([[AI-149]]) and ship the month-end consistency check as her first built tool — the use case is ready, only the environment is in the way.
 
-### Prior assessment (2026-06-02)
+### Re-assessment note (2026-07-02)
 
-Previously assessed at Stage 2 based on setting up 8 Claude connectors and generating MOSS API keys. The June evidence shows that while web-based connectors are working, the local MCP tooling (which requires Python) has been persistently blocked. The downgrade reflects that tool connection is incomplete — the key use case (MOSS automation) remains unconnected.
+The Jun 30 Stage 1 score conflated a machine/IT blocker (no Python for the local Moss MCP) with capability. The framework scores AI practice; her practice — connectors set up herself, keys generated, regular use — is Stage 2. The blocked local install gates one use case, not her stage.
+
+### Prior assessments
+
+- 2026-06-30: Stage 1 (Moss-install context — superseded, see note above)
+- 2026-06-02: Stage 2 (connectors + MOSS API keys — restored as the operative assessment)
 
 ## Notes
 

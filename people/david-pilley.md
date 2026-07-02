@@ -7,9 +7,9 @@ type: person
 role: Finance Analyst
 team: Finance
 tags: [finance, dashboards, operational-tooling, mi-reporting]
-ai_activation_stage: 1
+ai_activation_stage: 3
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-30
+ai_activation_assessed: 2026-07-02
 ---
 
 # David Pilley
@@ -39,18 +39,23 @@ AI discovery session 2026-06-24. Previously on parental leave — returned (or p
 
 ## AI Activation
 
-**Stage**: 1 — Search mode
+**Stage**: 3 — Fluency
 **Confidence**: medium
-**Assessed**: 2026-06-30
-**Evidence**: Getting Moss MCP installed with Tom's help (Jun 30). Needed Python installed — no prior Python on his machine. Following guided setup step by step. Asked basic questions about terminal commands and file saving. Very early in AI tool adoption for Moss/operational tooling.
+**Assessed**: 2026-07-02
+**Evidence**: Built and runs a weekly Finance MI dashboard Claude skill independently (3 Looker explores, under 10 minutes; Kevin reviews output). Built a submission-mix and pricing analysis dashboard for Christian and Tom. Conceived the insight-delta feedback loop (track novelty and whether insights were acted on). Moss MCP now installed and working (Jun 30, first query successful).
 
-**Not Stage 0**: Actively engaging with AI tool setup, following instructions, asking questions. Willing to invest time in getting tools working.
-**Not Stage 2**: No independent AI usage for Moss yet. Required guided help for every step of installation. Basic terminal and file management questions indicate early-stage technical comfort with this tooling.
-**To progress**: Complete Moss MCP installation and run a first successful query independently. Build confidence with terminal-based workflows. Use Claude with Moss data for a real finance task without guided support.
+**Not Stage 2**: Builds his own reusable tools (MI dashboard skill in weekly use) — verified in the Jul 2 builder audit. Beyond connecting data sources.
+**Not Stage 4**: Doesn't delegate whole workflows; and the review muscle is the gap — Kevin's flag ("they think it's magic... cede to it") is the classic Stage 3 over-trust danger zone. Progression is review skill, not more tools.
+**To progress**: Own the quality of outputs — spot-check dashboard numbers against source before circulating; use Moss MCP for a real month-end task and validate it himself.
 
-### Prior assessment (2026-06-24)
+### Re-assessment note (2026-07-02)
 
-Previously assessed at Stage 3 (Fluency) based on MI dashboard work: built a Claude skill for weekly Finance MI dashboard (3 Looker explores, under 10 mins), submission mix and pricing analysis dashboard, insight delta tracking concept. That evidence remains valid for Looker-based dashboard workflows. The current assessment reflects the Moss-specific context where he is at a much earlier stage of adoption.
+The Jun 30 Stage 1 score conflated an environment problem (no Python on his machine, guided terminal setup) with AI capability — the framework scores AI practice, not machine administration. His sustained Looker/dashboard practice was and is Stage 3; the Moss blocker is now resolved anyway (install completed with Tom, Jun 30 — see [[2026-06-30-david-pilley-moss-install]]).
+
+### Prior assessments
+
+- 2026-06-30: Stage 1 (Moss-context — superseded, see note above)
+- 2026-06-24: Stage 3 (MI dashboard work — restored as the operative assessment)
 
 ## Actions outstanding
 
