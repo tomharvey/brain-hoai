@@ -2,40 +2,31 @@
 
 ## Current task
 
-AI Capability deck for Ed — source markdown drafted at `reference/ai-capability-deck-2026-07.md`. Awaiting Tom's review/iteration before building actual slides.
+AI Capability deck for Ed — iterating. Source of truth: `reference/ai-capability-deck-2026-07.md`. Rendered pptx: `outbox/ai-capability-where-flock-stands-2026-07-02.pptx` (gitignored — regenerate with `node tools/ai-capability-deck/create_presentation.js`; needs `npm i pptxgenjs` + assets in `.claude/skills/flock-deck-builder/assets`).
 
-## What was done this session (2026-07-02)
+## State as of 2026-07-02 (end of session, machine move pending)
 
-### Past-7-days transcript check (deck prerequisite)
-- Three Granola meetings from Jun 29–30 were missing from the vault; imported with notes + transcripts:
-  - `meetings/2026-06-29-moss-finance-rollout.md` (Kirsty, Anneliese, Queency, Rob)
-  - `meetings/2026-06-30-david-pilley-moss-install.md`
-  - `meetings/2026-06-30-thomas-matthew-1-1.md` (Matt Price)
-- Verified their evidence was ALREADY reflected in the Jun 30 re-assessment (people files cite Jun 29/30 events) — no score changes needed.
-- New issues: AI-148 (Moss rollout, Kirsty), AI-149 (Anneliese Python fix), AI-150 (Rob/Javier 100% AI-assisted, London), AI-151 (Geran finance metrics session).
+### Deck (v4)
+- 8 statement-titled slides + cover; Ed's verbatim framework wording on slide 2; P80 (interpolated floats) range chart; teams re-cut Jul 2: Prodtech (15), Distribution (5), People (3), Underwriting (5), Pricing (4, split out — inverted pyramid story), Operations (7, claims folded in), Finance (10). Ed + Tom outside team view.
+- Company: n=50 of 57 scope; 1:3 · 2:15 · 3:19 · 4:13; min 1 · median 3 · p80 4.0 · max 4; builders 50%/70%/30%.
+- Champions: one row per team; Finance = Ivan (Christian → exec-sponsor bench).
+- OPEN deck edits from Ed morning call: slide 8 needs the quantified targets (100% ≥ Stage 3, majority Stage 4, Stage 5 = eng stretch) and the "Ghostbusters" label removed (Tom disowned it live). Optional: plainer "Stage-4 vanguard" wording, per-stage example names in slide 2 notes.
+- Upload destination NOT decided (auto-mode blocked shared-drive upload — personnel-sensitive content; Tom to choose: private My Drive vs shared).
+- AI-154: send slides to Eraaz for review BEFORE the Ed update.
 
-### Deck evidence pass (multi-agent workflow, 61 agents)
-- Per-person audit of all 49 scored people against transcript corpus; dept syntheses; claims-vs-data verification vs what Tom told Ed on Jun 24; completeness critique.
-- Company stats (frontmatter canonical): n=49, min 1 / median 3 / p80 4 / max 4; stages 1:2, 2:16, 3:18, 4:13, 5:0. Activated 47/49 = 96% of scored = 84% of 56 scope (Ed's 80% target met).
-- Full deck source incl. presenter notes, claims bridge, and data-quality flags: `reference/ai-capability-deck-2026-07.md` (appendix lists all caveats).
+### Scores (people/ frontmatter = source of truth)
+- Jul 2 changes: David Pilley 1→3, Anneliese 1→2→1, Queency 2→1 (challenged to 0 — refused on evidence, reasoning in chat/deck notes), Adam Sandle upheld 2, Kaylee (new, people/kaylee.md, surname TBC) scored 1.
+- Still open: Kirsty context-scoped 2 vs Stage-4 Looker evidence; Geran frontmatter 4 vs body 3; Darren Nightingale unassessed (tentative 0–1, second-hand only — do NOT score without direct evidence).
 
-### Data-quality flags to resolve (before company-wide rollout)
-- Kirsty (2 vs valid Stage-4 Looker evidence), David Pilley (1 vs valid Stage-3 dashboard evidence) — context-scoped downgrades.
-- Geran frontmatter 4 vs body 3; Javier 3 vs "3-4"; Aleks 2 vs "2-3".
-- Stale: Mima (05-26, unincorporated 06-24 transcript), Kevin/Matt Lees/Matt Dipre/Ben/Daisy (06-02).
-- Scope denominator: 56 (assessment doc) vs ~63 (ai-activation-map.md Jun 25) — reconcile before Admiral Pioneer sees numbers.
-- NOTE: the "Stage movements Jun 22–25" table in the previous WORKING.md (Phoebe→3, Rakhee→3) was superseded by the Jun 30 re-assessment (Phoebe 2, Rakhee 2, Eraaz 4).
+### Q3 plan (from Jul 2 Ed + Eraaz meetings)
+- Targets: 100% Stage 3+, majority 4, end of Q3; not a company OKR (Ed/Tom/Rakhee).
+- Issues AI-152..156: operationalise w/ Rakhee + Ed 10-min (152, due Jul 3), Prodtech Stage-5 push + CEO demo (153, London wk), deck fixes + Eraaz review (154), JD AI content — Eraaz (155), PGR tooling trial — Eraaz+Rakhee Mon Jul 6 (156).
+- Slide-8 operationalisation map: `reference/q3-slide8-operationalisation-map.md` (what Eraaz covered vs gaps — item 5 "own the quality" is the orphan; proposal: deputy responsibility).
 
-## Open / next session
-- Iterate deck with Tom; then build slides (flock-deck-builder skill when ready).
-- Meeting notes still to write for ~15 Jun 22–25 meetings (transcripts exist).
-- AI-125 benchmark survey with Rakhee — due Jul 7 (Ed/Admiral commitment).
-- London visit w/c Jul 7: AI-150 (Rob/Javier), AI-151 (Geran), finance + underwriting mornings.
-- Untracked `datadog-secrets.txt` sitting in repo root — decide: gitignore or remove (do not commit).
-
-## Priority open issues
-- AI-125: Company-wide AI benchmark survey (due Jul 7)
-- AI-127: AI partnering team Q3 pilot (due Jul 1 — needs launch)
-- AI-128: Framework in hiring assessment (due Jul 8)
-- AI-148/149: Moss MCP rollout + Anneliese unblock (Jul 3–6)
-- AI-150/151: London coaching sessions (Jul 9–10)
+## Next session
+1. Apply the two open deck edits (slide 8 targets + Ghostbusters), regenerate pptx, send to Eraaz (AI-154).
+2. Decide Drive upload destination.
+3. Book Rakhee operationalisation + Ed 10-min (AI-152).
+4. London week prep: AI-150/151/153.
+5. SECURITY: `datadog-secrets.txt` untracked in repo root — travels with any docker image copy. Delete or move out before imaging.
+6. ~15 Jun 22–25 meeting notes still unwritten (transcripts exist).
