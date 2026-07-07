@@ -52,7 +52,7 @@ With Eraaz it appeared only as PGR data integrity ("he scored a four, actually a
 
 When Ed asks "who's operationalising item 5", the honest answer today is *nobody but me, ad hoc*.
 
-**Resolved (Jul 7, Tom's call):** owned by **Tom + [[kirsty|Kirsty]] + [[jacob-holland|Jacob]]** — Tom sets guardrail patterns, Kirsty carries them into Finance/data workflows, Jacob into Prodtech (his DBT golden rules / push-to-main guardrails are the existing model). Deputies surface incidents; this trio fixes and standardises. Supersedes the earlier deputy-responsibility proposal.
+**Resolved (Jul 7, Tom's call):** owned by **Tom + [[kirsty|Kirsty]] + [[jacob-holland|Jacob]]** — Tom sets guardrail patterns, Kirsty carries them into Finance/data workflows, Jacob into Prodtech (his DBT golden rules / push-to-main guardrails are the existing model). Deputies carry a required detection-and-escalation duty: feed back quality problems and ensure their team floats issues/improvements. The trio fixes and standardises. Supersedes the earlier proposal that deputies own quality outright.
 
 ## The 10-minute Ed close-out, in one line
 
