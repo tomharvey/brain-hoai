@@ -46,6 +46,10 @@ First week at Flock (started w/c 14 Apr 2026). Met Tom 2026-04-17 with Ollie pre
 **To progress**: Move from building individual skills to delegating whole tasks and running parallel agent workflows. The submissions pipeline is a good vehicle — break it into discrete chunks that agents can tackle independently.
 **Historical note**: Downgraded from Stage 4 (Jun 19) to Stage 3 (Jun 30). Earlier assessment over-weighted the delegation framing from group therapy. Deeper Jun 2026 evidence shows strong tool-building and skill creation, but not routine autonomous delegation at scale.
 
+## Initiatives
+
+- [[ai-first-hiring]] — his self-started AI-first engineering interview format, now tracked as an initiative (Rob owns the format; Tom sponsors the cross-function expansion). Named Q3 artifact candidate — confirm ownership w/c Jul 7 in London.
+
 ## 1:1 Log
 
 ### 2026-04-17 — AI Discovery / Introduction

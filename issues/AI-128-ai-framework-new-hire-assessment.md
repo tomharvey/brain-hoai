@@ -27,3 +27,5 @@ Engineers who say they use Copilot and have never used Claude or Cursor should n
 - Integration into onboarding (link with [[AI-115]])
 - Framework should also inform promotions (Jemima as positive example) and exits for non-progressors
 - Coordinate with [[rakhee]] alongside AI-125 benchmarking work
+
+**Update 2026-07-07**: delivery route now tracked as initiative [[ai-first-hiring]] — Rob Grice's AI-first engineering interview format, piloted on the live senior-eng-lead search, then ported cross-function with Eraaz.

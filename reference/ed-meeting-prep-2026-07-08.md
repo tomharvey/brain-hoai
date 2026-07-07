@@ -62,7 +62,7 @@ tags: [ed, q3, prep, deliverables, operationalisation]
 
 ## Hiring — Rob Grice's AI-first engineering interview (5 min, inside Half 2)
 
-Rob has been working on what an AI-first engineering interview looks like. This answers Ed's Jun 24 hiring bar ("if an engineer says they use Copilot and have never used Claude or Cursor, don't hire them") with something better than a screening question — an interview where AI use IS the assessment surface.
+Rob has been working on what an AI-first engineering interview looks like (now tracked: [[ai-first-hiring]]). This answers Ed's Jun 24 hiring bar ("if an engineer says they use Copilot and have never used Claude or Cursor, don't hire them") with something better than a screening question — an interview where AI use IS the assessment surface.
 
 **Why it lands with Ed:** the current format treats AI as cheating — a candidate was literally "caught using AI live during interview" this June (Jun 11 Jordi weekly) and it counted against them. Rob's format inverts that: watch how a candidate dresses the model, argues with output, and reviews what comes back. That's the capability framework applied at the front door. Bonus narrative: the early-career engineer who worried about AI brain-rot is the one designing the assessment.
 
