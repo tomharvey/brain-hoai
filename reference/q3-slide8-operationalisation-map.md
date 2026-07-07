@@ -52,8 +52,8 @@ With Eraaz it appeared only as PGR data integrity ("he scored a four, actually a
 
 When Ed asks "who's operationalising item 5", the honest answer today is *nobody but me, ad hoc*.
 
-**Proposal:** make it a deputy responsibility — each deputy owns "are my team's shipped numbers validated?" Ties the orphan to the structure just built and gives deputies a concrete mandate beyond comms.
+**Resolved (Jul 7, Tom's call):** owned by **Tom + [[kirsty|Kirsty]] + [[jacob-holland|Jacob]]** — Tom sets guardrail patterns, Kirsty carries them into Finance/data workflows, Jacob into Prodtech (his DBT golden rules / push-to-main guardrails are the existing model). Deputies surface incidents; this trio fixes and standardises. Supersedes the earlier deputy-responsibility proposal.
 
 ## The 10-minute Ed close-out, in one line
 
-Lead with 4 and 3 as "operationalised via the people team" · park 2 as "already running" · bring 1's maintenance question and 5's ownership proposal as the two decisions needed from Ed and Rakhee.
+Lead with 4 and 3 as "operationalised via the people team" · park 2 as "already running" · bring 1's maintenance question as the open decision; 5 is resolved (Tom + Kirsty + Jacob) — present for ratification, not decision.

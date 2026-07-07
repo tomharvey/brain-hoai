@@ -58,14 +58,14 @@ tags: [ed, q3, prep, deliverables, operationalisation]
 
 **The open problem to put on the table (don't hide it):** structured measurement of *additionality* — "what got done that would never have been done." Examples exist (login bug, BDM research, Michael's pricing research); the measurement isn't designed. Proposal: deputies collect additionality stories fortnightly; AI evaluates/synthesises them; quarterly narrative to SLT. Ask Ed if that's sufficient rigour for Admiral Pioneer or if he wants a harder metric.
 
-**Quality ownership (slide-8 item 5 — currently unowned):** propose each deputy owns "are my team's shipped numbers validated?" — extends the deputy mandate beyond comms; Tom supplies guardrail patterns (calculations stay in Looker; Claude surfaces insight).
+**Quality ownership (slide-8 item 5 — now owned):** Tom + [[kirsty|Kirsty]] + [[jacob-holland|Jacob]] own "the numbers people ship are validated." Tom sets the guardrail patterns (calculations stay in Looker/auditable systems; Claude surfaces insight); Kirsty carries them into Finance/data workflows (Looker MCP + pod-metrics owner, mid-Moss rollout); Jacob carries them into Prodtech (DBT golden rules Claude-enforced, push-to-main guardrail — already builds exactly this). Deputies still surface quality incidents via their Slack reports, but the fix-and-standardise responsibility sits with these three.
 
 ## Decisions to extract from Ed (write these down in the meeting)
 
 1. Deputy names — bless the list or manager-nominated?
 2. Target ratification: 100% @ 3+ / majority @ 4 — is that the number he presents to Admiral Pioneer?
 3. Additionality: is story-collection + AI synthesis enough, or does he want a harder metric?
-4. Quality ownership via deputies — approve?
+4. Quality ownership = Tom + Kirsty + Jacob — approve the trio and their mandate?
 5. His own asks from Jun 24 still unanswered: intensive company week (parked?), hiring bar, firing implications — park explicitly or schedule.
 6. What does HE show Admiral Pioneer, and when? (Shapes how polished the survey/deck must be.)
 
