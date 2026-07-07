@@ -60,14 +60,44 @@ tags: [ed, q3, prep, deliverables, operationalisation]
 
 **Quality ownership (slide-8 item 5 — now owned):** Tom + [[kirsty|Kirsty]] + [[jacob-holland|Jacob]] own "the numbers people ship are validated." Tom sets the guardrail patterns (calculations stay in Looker/auditable systems; Claude surfaces insight); Kirsty carries them into Finance/data workflows (Looker MCP + pod-metrics owner, mid-Moss rollout); Jacob carries them into Prodtech (DBT golden rules Claude-enforced, push-to-main guardrail — already builds exactly this). Deputies have a hard requirement in this loop, not a courtesy role: they must **feed back quality problems** from their team and **ensure people are floating issues and improvements** rather than sitting on them (the norm from the Jun 29 Moss call: "ping when you hit data query issues" — that behaviour, made every deputy's job). The trio owns fix-and-standardise; deputies own detection-and-escalation. A quality incident that never reached the trio is a deputy-lane failure, not a trio failure.
 
+## Hiring — Rob Grice's AI-first engineering interview (5 min, inside Half 2)
+
+Rob has been working on what an AI-first engineering interview looks like. This answers Ed's Jun 24 hiring bar ("if an engineer says they use Copilot and have never used Claude or Cursor, don't hire them") with something better than a screening question — an interview where AI use IS the assessment surface.
+
+**Why it lands with Ed:** the current format treats AI as cheating — a candidate was literally "caught using AI live during interview" this June (Jun 11 Jordi weekly) and it counted against them. Rob's format inverts that: watch how a candidate dresses the model, argues with output, and reviews what comes back. That's the capability framework applied at the front door. Bonus narrative: the early-career engineer who worried about AI brain-rot is the one designing the assessment.
+
+**How we expand it (the plan to put to Ed):**
+1. Rob documents the format as a reusable artifact — interview structure, task bank, scoring rubric mapped to framework stages (candidates get a provisional stage, feeding AI-128 new-hire assessment directly).
+2. Trial it live: the senior engineering lead search is running NOW (two recruiters engaged since June) — pilot on real candidates this quarter, calibrate against the hiring managers' reads.
+3. Port beyond engineering with Eraaz: he already asks AI questions "in every single screening"; Rob's format gives those questions teeth. Eraaz adapts per function with hiring managers (ties to AI-155 JD work — assess what the JD now advertises).
+4. Close the loop at onboarding: interview stage-read becomes the new joiner's baseline score (AI-115) — coverage never degrades as the company grows, and Kaylee-style "personal use, no work practice" starters get spotted on day one.
+
+**Ask Rob first** (London, this week — he's already on the AI-150 push): does he want to own this as his named Q3 artifact? It's his strongest builder evidence yet and a better story than "hand-finishes code".
+
+## Firing — take it head-on, don't park it (10 min, after deliverables)
+
+Ed's Jun 24 position: "start firing people if they're not the right place on the framework and don't level up… meritocracy everywhere… the best people survive and thrive." He wanted it rolled out "in a week". We've deferred twice; tomorrow, engage it properly.
+
+**The position to take in the room:** consequences are legitimate — but only on a measurement system that would survive being challenged by the person being fired. Today's baseline can't carry that weight, and saying so is what makes the rest of the plan credible:
+
+- Scores are conversation-derived, several low-confidence (Ben, Daisy scored on inference only), some contested in-file (Geran 4-vs-3), and the framework's own rule is "low confidence = gather more data before acting".
+- The at-risk list decomposes to blocked / unmeasured / pulled-back / habit-not-formed — nobody currently at the bottom is *refusing*. Firing anyone on today's list would be firing someone we failed to unblock (Anneliese's Python install) or never measured (Ben, Daisy).
+- The same acquisition retention-bonus constraint that delayed the PGR pillar applies to consequence-bearing changes generally — Eraaz flagged it; changing the rules mid-retention-period reads badly.
+
+**The sequence to propose:** Q3 = measurement becomes defensible (survey + full 57/57 coverage + PGR tooling trial + one re-score cycle) and every at-risk person gets a dated, resourced intervention. Q4 = the honest fork: anyone still below bar *after a real offer of help* is having a performance conversation — with Rakhee running it as performance management, not an AI purge. Hiring bar (Rob's interview) starts NOW, so the front door tightens before the exit does.
+
+**Where to agree with Ed enthusiastically:** promotion side first — the champions table is the shortlist, Mima was his own example. Recognition before consequences builds the meritocracy story he wants without a fear phase; fear drives usage-theatre, which corrupts the additionality measurement we're trying to build.
+
 ## Decisions to extract from Ed (write these down in the meeting)
 
 1. Deputy names — bless the list or manager-nominated?
 2. Target ratification: 100% @ 3+ / majority @ 4 — is that the number he presents to Admiral Pioneer?
 3. Additionality: is story-collection + AI synthesis enough, or does he want a harder metric?
-4. Quality ownership = Tom + Kirsty + Jacob — approve the trio and their mandate?
-5. His own asks from Jun 24 still unanswered: intensive company week (parked?), hiring bar, firing implications — park explicitly or schedule.
-6. What does HE show Admiral Pioneer, and when? (Shapes how polished the survey/deck must be.)
+4. Quality ownership = Tom + Kirsty + Jacob (deputies required to escalate) — approve?
+5. Hiring: green-light Rob's AI-first interview pilot on the live senior-eng-lead search + Eraaz port to other functions?
+6. Firing: agree the sequence — Q3 defensible measurement + interventions, Q4 performance conversations via Rakhee; promotions start now?
+7. Intensive company week — park explicitly or schedule.
+8. What does HE show Admiral Pioneer, and when? (Shapes how polished the survey/deck must be.)
 
 ## Logistics / prep before 13:00
 
@@ -76,3 +106,4 @@ tags: [ed, q3, prep, deliverables, operationalisation]
 - [ ] Apply the two open deck edits before the meeting: slide-8 targets on the slide (AI-152/154) + drop "Ghostbusters" label.
 - [ ] The 11:00 AI Finance workshop and 12:00 Ops sync that morning are live evidence — carry one fresh example from each into the 13:00.
 - [ ] Send Eraaz the slides first (promised Jul 2, AI-154) if not yet done.
+- [ ] Grab Rob before the 13:00 (he's in London this week): confirm he'll own the AI-first interview artifact and is happy being named to Ed.
