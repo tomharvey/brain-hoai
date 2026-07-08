@@ -37,7 +37,7 @@ Ed sent the Arvind Jain (Glean CEO) tweet quoting Uber's CTO on **Agentic Pods**
 
 **Our structural difference, said plainly:** Uber flies an engineer in to extract domain knowledge. We've spent two quarters making the domain experts *AI-capable themselves* — so our "domain expert" isn't a source to be mined, they're a **mechanic who feeds into system design and does part of the implementation** (Ivan co-built the NetSuite MCP; Shreya builds her own tools; David Pilley ships dashboards). The pod doesn't dissolve when the engineer leaves — that's the answer to the obvious failure mode of Uber's model, and it's why the capability baseline mattered.
 
-**Visual for this section — the pod structure slide** (built Jul 8): `outbox/ai-pod-structure-2026-07-08.pptx` + a paste-ready PNG at `outbox/ai-pod-structure-2026-07-08-1.png` (Insert → Image in the Slides deck). Tech lead band spanning three example pods (PM chip + mechanics chips + 10-day time-box/metric footer), deputies band beneath as the pod-to-team bridge. Pod names/PMs/mechanics are illustrative candidates — say so, and ratify the real slate as decision 8.
+**Visual for this section — the pod structure slide** (v2, Jul 8): `outbox/ai-pod-structure-2026-07-08.pptx` + paste-ready PNG `outbox/ai-pod-structure-2026-07-08-1.png` (Insert → Image in the Slides deck). Tech lead band; ONE example pod (Finance month-end: PM + mechanics Ivan/Kirsty/David P + time-boxed/metric footer — time-box length deliberately unspecified); role named **AI CHAMPIONS** (Tom's call) with four duties: Go-to · Showcase · Signal · Quality. Footer states the Q3 slate/rosters/time-box are to be agreed. **Vocabulary note for the room:** "champion" now does double duty — slide 6's champions = best-evidenced practice (recognition/promotion); AI Champions = the appointed per-team role. Distinguish verbally if it comes up: "recognised champions vs appointed AI Champions — often the same person, but one is a fact about your work, the other is a job we ask you to do." Consider renaming the recognition layer (standouts / leading practice) after the meeting.
 
 **The operating model in one sentence for Ed:** *Tom = technical lead across pods; PMs define the processes and products worth building; team members are AI-capable mechanics who feed system design and carry part of the build; deputies keep the pod connected to the team.*
 
@@ -55,7 +55,7 @@ Ed sent the Arvind Jain (Glean CEO) tweet quoting Uber's CTO on **Agentic Pods**
 | Performance + talent | People team (Eraaz/Rakhee) | PGR "Growth" pillar (Q1 2027), tooling trial (Q3), JD/hiring screens, new-hire baseline |
 | Team-level progression | Hiring managers + deputies | Fortnightly team demos, Slack what's-working reports to Tom |
 
-**The deputies network — names, not a concept.** Propose formally asking: Jacob or David Z (Prodtech eng), Mima or Ollie (Prodtech product), Shreya (Ops), Ivan (Finance — evidence-led choice; Christian as exec sponsor), Jake (Underwriting), Francesco (Pricing), Adam Smith or Matt Lees (BDM), Eraaz (People). Mechanics per Ed's own framing: fortnightly half-hour team demo + Slack channel reporting to Tom — covering what's working, what's not, **quality problems observed, and issues/improvements their team should be floating but isn't**. **Ask Ed: does he want to bless the names or have managers nominate?**
+**The AI Champions network (formerly "deputies") — names, not a concept.** Propose formally asking: Jacob or David Z (Prodtech eng), Mima or Ollie (Prodtech product), Shreya (Ops), Ivan (Finance — evidence-led choice; Christian as exec sponsor), Jake (Underwriting), Francesco (Pricing), Adam Smith or Matt Lees (BDM), Eraaz (People). Mechanics per Ed's own framing: fortnightly half-hour team demo + Slack channel reporting to Tom — covering what's working, what's not, **quality problems observed, and issues/improvements their team should be floating but isn't**. **Ask Ed: does he want to bless the names or have managers nominate?**
 
 **The cadence:**
 - Weekly: Tom 1:1s (boot list: Kaylee, Adam Sandle, Connie re-onboarding)
@@ -114,7 +114,7 @@ Ed's Jun 24 position: "start firing people if they're not the right place on the
 
 ## Decisions to extract from Ed (write these down in the meeting)
 
-1. Deputy names — bless the list or manager-nominated?
+1. AI Champion names — bless the list or manager-nominated?
 2. Target ratification: 100% @ 3+ / majority @ 4 — is that the number he presents to Admiral Pioneer?
 3. Additionality: propose pod before/after numbers (Uber-style) as the hard metric, with story-collection as the narrative layer — agreed?
 4. Quality ownership = Tom + Kirsty + Jacob (deputies required to escalate) — approve?
