@@ -9,6 +9,8 @@ tags: [ed, q3, prep, deliverables, operationalisation]
 
 # Ed <> Tom — Wed 8 Jul, 13:00 (1 hour)
 
+**FINAL SLIDES (canonical, Tom-edited):** https://docs.google.com/presentation/d/1_b7wuaukJjmEHJ23U1vxXwi2g_r_P9hfBfsj0m0-XOo/ — Google Slides copy of the Jul 2 deck with Tom's manual edits (7-team chart, slide-8 targets baked in, Ghostbusters removed). The vault markdown remains the data source of truth; the Slides copy is the presentation artifact.
+
 **Ed's question from last week: "how do we operationalise this — who meets who, when, what targets?"** This is the hour that answers it. Two halves: the delivery machinery (HOW) and the concrete deliverables (WHAT). Draws on [[2026-07-02-ed-tom-q3-operationalisation]], [[2026-07-02-tom-eraaz-pgr-ai-pillar]], [[q3-slide8-operationalisation-map]].
 
 > ⚠️ PLACEHOLDER — the second Eraaz conversation (post-Jul-2, "how he can help") is not yet imported; Granola needs re-auth. Merge its commitments into the People-team lane below once pulled.
@@ -124,7 +126,9 @@ Ed's Jun 24 position: "start firing people if they're not the right place on the
 
 - [ ] Pull the second Eraaz transcript once Granola re-authed; merge his commitments into the People lane and delete the placeholder above.
 - [ ] Chase Eraaz for the Mon Jul 6 PGR-build outcome (with Rakhee) — it's the freshest evidence the machinery works.
-- [ ] Apply the two open deck edits before the meeting: slide-8 targets on the slide (AI-152/154) + drop "Ghostbusters" label.
+- [x] Slide-8 targets + Ghostbusters removal — DONE by Tom directly in the Slides copy.
+- [ ] **FIX BEFORE 13:00 — P80 legend is inverted in the Slides copy**: it reads "80% of the team here or above"; correct is "80% of the team at or below" (equivalently: the top fifth starts here). Ed tripped on exactly this label on Jul 2 — presenting the inverted version invites a repeat.
+- [ ] Optional 2-min consistency pass in Slides: cover says "49 OF 56" while slide 3 says "9 unevaluated" (49+9=58 ≠ 56); vault state is now 50 of 57 with 7 unevaluated (Kaylee scored Jul 2). Either update cover to 50/57 or make the unevaluated count 7.
 - [ ] The 11:00 AI Finance workshop and 12:00 Ops sync that morning are live evidence — carry one fresh example from each into the 13:00.
 - [ ] Send Eraaz the slides first (promised Jul 2, AI-154) if not yet done.
 - [ ] Grab Rob before the 13:00 (he's in London this week): confirm he'll own the AI-first interview artifact and is happy being named to Ed.
