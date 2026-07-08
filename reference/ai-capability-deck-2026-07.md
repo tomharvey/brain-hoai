@@ -177,7 +177,7 @@ Finance       1:██  2:████  3:███  4:█
 1. **The baseline exists.** 49 of 56 scored on one rubric; the remaining tail is 7 named people with dates and owners, not a programme.
 2. **Focus shifts to the two gap teams** — Finance (unblock infrastructure) and UW (propagate via Jake + peer demos). Monthly team workshops continue; company-wide sessions don't scale.
 3. **Deputise the champions** — AI partnering team pilot for Q3 (the Ghostbusters model), drawn from Slide 6.
-4. **Measure outcomes, not tool usage** — counting skills built is the wrong metric; the benchmarking survey (with Rakhee, this week) gives the baseline, then targets go on the rubric.
+4. **Measure outcomes, not tool usage** — time-boxed pods with testable hypotheses and a before/after metric ("month-end consistency check: hours → minutes"). Pod numbers are the value measure; anecdotes become the narrative layer, and the rubric measures capability, not value.
 5. **The new failure mode is over-trust** — everyone owns the quality of what they ship. Guardrails ship with delegation.
 
 **Presenter notes**

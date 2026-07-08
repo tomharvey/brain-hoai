@@ -128,6 +128,9 @@ Ed's Jun 24 position: "start firing people if they're not the right place on the
 - [ ] Chase Eraaz for the Mon Jul 6 PGR-build outcome (with Rakhee) — it's the freshest evidence the machinery works.
 - [x] Slide-8 targets + Ghostbusters removal — DONE by Tom directly in the Slides copy.
 - [ ] **FIX BEFORE 13:00 — P80 legend is inverted in the Slides copy**: it reads "80% of the team here or above"; correct is "80% of the team at or below" (equivalently: the top fifth starts here). Ed tripped on exactly this label on Jul 2 — presenting the inverted version invites a repeat.
+- [ ] **Paste into Slides slide 8, point 4** (replacing the current "Move beyond behavioural rubric" body):
+  Title: MEASURE OUTCOMES, NOT TOOL USAGE
+  Body: "Time-boxed pods: a testable hypothesis per engagement, with a before/after metric (e.g. month-end consistency check: hours → minutes). Pod numbers measure value; stories carry the narrative; the rubric measures capability — not value."
 - [ ] Optional 2-min consistency pass in Slides: cover says "49 OF 56" while slide 3 says "9 unevaluated" (49+9=58 ≠ 56); vault state is now 50 of 57 with 7 unevaluated (Kaylee scored Jul 2). Either update cover to 50/57 or make the unevaluated count 7.
 - [ ] The 11:00 AI Finance workshop and 12:00 Ops sync that morning are live evidence — carry one fresh example from each into the 13:00.
 - [ ] Send Eraaz the slides first (promised Jul 2, AI-154) if not yet done.
