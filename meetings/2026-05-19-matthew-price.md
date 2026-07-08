@@ -1,5 +1,5 @@
 ---
-title: Matthew Price — 1:1
+title: "Matthew Price — 1:1"
 created: 2026-05-19
 updated: 2026-05-19
 domain: ai-enablement

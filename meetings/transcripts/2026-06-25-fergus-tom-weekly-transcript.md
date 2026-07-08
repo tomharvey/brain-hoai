@@ -1,5 +1,5 @@
 ---
-title: Fergus <> Tom: Weekly — transcript
+title: "Fergus <> Tom: Weekly — transcript"
 meeting: 2026-06-25-fergus-tom-weekly
 created: 2026-06-25
 type: transcript

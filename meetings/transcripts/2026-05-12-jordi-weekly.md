@@ -1,5 +1,5 @@
 ---
-title: Tom / Jordi — weekly 1:1 (May 12) — transcript
+title: "Tom / Jordi — weekly 1:1 (May 12) — transcript"
 meeting: 2026-05-12-jordi-weekly
 created: 2026-05-12
 type: transcript

@@ -127,7 +127,7 @@ Ed's Jun 24 position: "start firing people if they're not the right place on the
 - [ ] Pull the second Eraaz transcript once Granola re-authed; merge his commitments into the People lane and delete the placeholder above.
 - [ ] Chase Eraaz for the Mon Jul 6 PGR-build outcome (with Rakhee) — it's the freshest evidence the machinery works.
 - [x] Slide-8 targets + Ghostbusters removal — DONE by Tom directly in the Slides copy.
-- [ ] **FIX BEFORE 13:00 — P80 legend is inverted in the Slides copy**: it reads "80% of the team here or above"; correct is "80% of the team at or below" (equivalently: the top fifth starts here). Ed tripped on exactly this label on Jul 2 — presenting the inverted version invites a repeat.
+- [ ] **FIX BEFORE 13:00 — in the Slides copy, keep your label but MOVE THE DOTS** (Jul 8 decision: dot = level 80% of the team is at or above = 20th percentile; your label was right, the plotted positions were P80). New dot positions: Distribution **3.0**, Prodtech **3.0**, People **2.0**, UW **2.0**, Pricing **2.0**, Operations **2.0**, Finance **2.0**. One-line story: "80% of the leading teams clear Stage 3; 80% of everyone else only clears Stage 2." Tighten label to "80% of team at or above this point".
 - [ ] **Paste into Slides slide 8, point 4** (replacing the current "Move beyond behavioural rubric" body):
   Title: MEASURE OUTCOMES, NOT TOOL USAGE
   Body: "Time-boxed pods: a testable hypothesis per engagement, with a before/after metric (e.g. month-end consistency check: hours → minutes). Pod numbers measure value; stories carry the narrative; the rubric measures capability — not value."

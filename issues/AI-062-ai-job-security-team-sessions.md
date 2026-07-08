@@ -1,5 +1,5 @@
 ---
-title: Address AI job security concerns — 1:1s and team sessions
+title: "Address AI job security concerns — 1:1s and team sessions"
 created: 2026-05-26
 updated: 2026-05-26
 type: issue

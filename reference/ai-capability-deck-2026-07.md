@@ -103,15 +103,15 @@ Stage 5  ·                                (0)
 
 ## Slide 5 — BDM and Prodtech lead; Finance and Underwriting are the Q3 focus, for different reasons
 
-| Team | n | min | P80 | max | Shape |
+| Team | n | min | 80% at or above | max | Shape |
 |---|---|---|---|---|---|
-| Distribution | 5 | **3** | 4.0 | 4 | Nobody below fluency; two agent systems in production |
-| Prodtech | 15 | 2 | **4.0** | 4 | Over half at delegation — deep vanguard, fragile tail |
-| People | 3 | 2 | 3.2 | 4 | One star, two early |
-| **Underwriting** | 5 | 2 | 3.0 | **3** | Capped at fluency — no stars |
-| **Pricing** | 4 | 2 | 3.0 | **3** | ICs ahead of their heads — inverted pyramid |
-| Operations | 7 | **1** | 3.0 | 4 | One star, broad middle — claims folded in, incl. a new starter |
-| **Finance** | 10 | **1** | 3.0 | 4 | Widest spread — Stage 1s and the Stage-4 CFO |
+| Distribution | 5 | **3** | **3.0** | 4 | Nobody below fluency; two agent systems in production |
+| Prodtech | 15 | 2 | **3.0** | 4 | Over half at delegation — deep vanguard, fragile tail |
+| People | 3 | 2 | 2.0 | 4 | One star, two early |
+| **Underwriting** | 5 | 2 | 2.0 | **3** | Capped at fluency — no stars |
+| **Pricing** | 4 | 2 | 2.0 | **3** | ICs ahead of their heads — inverted pyramid |
+| Operations | 7 | **1** | 2.0 | 4 | One star, broad middle — claims folded in, incl. a new starter |
+| **Finance** | 10 | **1** | 2.0 | 4 | Widest spread — Stage 1s and the Stage-4 CFO |
 
 ```
 Distribution  2:      3:███     4:██
@@ -123,7 +123,8 @@ Finance       1:██  2:████  3:███  4:█
 ```
 
 **Presenter notes**
-- Small-team caveat: People is n=3, so any percentile is fragile — interpolation fixes the old artifact where nearest-rank made their p80 equal the max (Eraaz alone dragged it to 4); 3.2 is the honest figure.
+- **Marker semantics (changed Jul 8, Tom's call):** the yellow dot is now the **20th percentile** — the level that 80% of the team sits AT OR ABOVE (team of 10 → 8 people at the dot or higher). This is the floor-of-the-bulk, not the ceiling: it answers "what can I rely on almost everyone in this team to do?" The story: 80% of Distribution and Prodtech clear Stage 3; 80% of every other team only clears Stage 2. Integer values are the data, not rounding — the percentile lands inside blocks of identical stages. (The earlier P80 view — where the top fifth starts — kept for reference: Dist 4.0, Prodtech 4.0, People 3.2, UW 3.0, Pricing 3.0, Ops 3.0, Finance 3.0.)
+- Small-team caveat: People is n=3, so any percentile is fragile — read the underlying scores, not the marker.
 - Ed (Stage 3) and Tom sit outside the team view by design (confirmed with Tom, Jul 2) — Ed counts in the company-level stats only.
 - **Finance and UW are confirmed as the Q3 focus teams, but for different reasons.** Finance is infrastructure-gated: the blockers are Moss MCP installs, Python-less machines, and NetSuite/Looker access — not skill or will (Jun 29/30 meetings are the direct evidence; both Stage-1s sit here and both are one unblock-plus-one-win from Stage 2). Underwriting is propagation-gated: capped at Stage 3, practice staying private — Darren McCauley is "secretly all over it, not pushing down"; Jake Wood is the deliberate bottom-up bridge to the 5 unassessed ICs and Darren Nightingale ("number one cynic" — do not approach yet). Pricing (split out Jul 2) is an inverted pyramid: the ICs (Francesco, Harry — Stage 3 builders) are ahead of the heads of function (Milan, Michael Matthews — Stage 2, "still not ingrained"); the intervention is downward propagation inside the function.
 - Prodtech's shape is the subtle story: p80 of 4.0 with a min of 2 — 8 of 15 at Stage 4, but a tail of 2s. The vanguard (Ismael, Jacob, David Z) is real; the middle was recalibrated down amid craft-loss anxiety (Javier "associate factory", Aleks "I've learned nothing", Stephen pulling back). The intervention is teaching capacity + shared quality infrastructure, not more tooling.

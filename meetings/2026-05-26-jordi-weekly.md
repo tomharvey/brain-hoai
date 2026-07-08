@@ -1,5 +1,5 @@
 ---
-title: Tom <> Jordi Weekly 1:1 — 2026-05-26
+title: "Tom <> Jordi Weekly 1:1 — 2026-05-26"
 created: 2026-05-26
 updated: 2026-05-26
 domain: engineering-workflows

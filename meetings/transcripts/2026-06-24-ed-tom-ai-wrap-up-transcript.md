@@ -1,5 +1,5 @@
 ---
-title: Ed <> Tom: AI wrap up — transcript
+title: "Ed <> Tom: AI wrap up — transcript"
 meeting: "[[2026-06-24-ed-tom-ai-wrap-up]]"
 created: 2026-06-24
 type: transcript

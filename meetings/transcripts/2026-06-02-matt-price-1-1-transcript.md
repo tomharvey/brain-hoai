@@ -1,5 +1,5 @@
 ---
-title: Thomas / Matthew 1:1 — transcript
+title: "Thomas / Matthew 1:1 — transcript"
 meeting: 2026-06-02-matt-price-1-1
 created: 2026-06-02
 type: transcript

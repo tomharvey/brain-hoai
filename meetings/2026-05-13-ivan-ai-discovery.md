@@ -1,5 +1,5 @@
 ---
-title: Tom <> Ivan: AI Discovery (May 13)
+title: "Tom <> Ivan: AI Discovery (May 13)"
 created: 2026-05-13
 updated: 2026-05-13
 domain: operational-tooling

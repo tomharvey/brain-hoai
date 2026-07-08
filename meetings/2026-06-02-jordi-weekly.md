@@ -1,5 +1,5 @@
 ---
-title: Tom <> Jordi — Weekly 1:1
+title: "Tom <> Jordi — Weekly 1:1"
 created: 2026-06-02
 updated: 2026-06-02
 domain: ai-enablement

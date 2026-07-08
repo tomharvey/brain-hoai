@@ -1,5 +1,5 @@
 ---
-title: Matthew Price — 1:1 — transcript
+title: "Matthew Price — 1:1 — transcript"
 meeting: 2026-05-19-matthew-price
 created: 2026-05-19
 type: transcript

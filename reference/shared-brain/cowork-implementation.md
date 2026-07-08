@@ -1,5 +1,5 @@
 ---
-title: BDM Brain — co:work Implementation Design
+title: "BDM Brain — co:work Implementation Design"
 created: 2026-06-10
 updated: 2026-06-10
 domain: ai-enablement
