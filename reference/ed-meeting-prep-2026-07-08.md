@@ -1,5 +1,5 @@
 ---
-title: Ed meeting prep — Q3 delivery plan + concrete deliverables (Wed 8 Jul, 13:00)
+title: "Ed meeting prep — Q3 delivery plan + concrete deliverables (Wed 8 Jul, 13:00)"
 created: 2026-07-07
 updated: 2026-07-07
 domain: ai-enablement
@@ -20,6 +20,26 @@ tags: [ed, q3, prep, deliverables, operationalisation]
 - Deck updated with everything from the Jul 2 walkthrough: P80 labelling fixed, un-rounded floats, Pricing split out (the inverted-pyramid finding is NEW to Ed: Francesco/Harry ahead of Milan/Michael), claims folded into Ops, Kaylee scored (Stage 1, new starter framing).
 - Baseline now n=50 of 57. Three at Stage 1 — one brand-new, two blocked, none unwilling.
 - Eraaz engaged and building: PGR tooling session with Rakhee happened Mon Jul 6 — report the outcome (chase Eraaz before the meeting).
+
+## Ed's pre-read: the Uber "Agentic Pods" thread — fold it in, don't bolt it on
+
+Ed sent the Arvind Jain (Glean CEO) tweet quoting Uber's CTO on **Agentic Pods**: ~30 AI-proficient engineers each paired with a domain expert from a business function, 10-day sprints, 16 pods — capital allocation 15hrs→30min, financial reports 2 days→10min, marketing QA 2wks→50min. Jain's gloss: "AI initiatives don't stall for lack of ambition or model capability, but because the people building are too far removed from the friction of the actual work."
+
+**The line to take: we're already running the Flock-sized version of this — and ours goes one better.** Map their model to ours:
+
+| Uber pod role | Flock equivalent | Already live? |
+|---|---|---|
+| AI-proficient engineer | Tom as technical lead + Prodtech Stage-4s (Jordi/Chris on architecture) | Yes — London finance/UW sessions ARE pods (Rob+Javier on finance tickets, w/c Jul 7) |
+| Domain expert | The team members themselves — but at Stage 2–3, not Stage 0 | Yes — and this is our edge |
+| Process/product definition | **PMs — the layer Uber's model doesn't name.** Geran already does this ("1 PM = 3.5 engineers"); Matt Price's team defines what should be built and in what order | Partially — formalise it |
+
+**Our structural difference, said plainly:** Uber flies an engineer in to extract domain knowledge. We've spent two quarters making the domain experts *AI-capable themselves* — so our "domain expert" isn't a source to be mined, they're a **mechanic who feeds into system design and does part of the implementation** (Ivan co-built the NetSuite MCP; Shreya builds her own tools; David Pilley ships dashboards). The pod doesn't dissolve when the engineer leaves — that's the answer to the obvious failure mode of Uber's model, and it's why the capability baseline mattered.
+
+**The operating model in one sentence for Ed:** *Tom = technical lead across pods; PMs define the processes and products worth building; team members are AI-capable mechanics who feed system design and carry part of the build; deputies keep the pod connected to the team.*
+
+**Where to concede:** what Uber has that we don't is the **10-day sprint discipline and the before/after numbers**. Adopt both: time-box each finance/UW engagement as a named pod with a target metric ("month-end consistency check: X hrs → Y min"), and those numbers become the additionality measurement we've been fuzzy on — pod outcomes ARE the additionality metric, which closes decision #3 below.
+
+**Watch for:** Ed reading the thread as "hire 30 engineers" or "run 16 pods now." Flock-scale is 3–4 pods a quarter (finance month-end, UW submissions, claims FNOL, BDM enterprise), staffed by the deputy network we're proposing in this meeting — same machinery, no new headcount.
 
 ## Half 1 — HOW we deliver: the machinery (25 min)
 
@@ -92,12 +112,13 @@ Ed's Jun 24 position: "start firing people if they're not the right place on the
 
 1. Deputy names — bless the list or manager-nominated?
 2. Target ratification: 100% @ 3+ / majority @ 4 — is that the number he presents to Admiral Pioneer?
-3. Additionality: is story-collection + AI synthesis enough, or does he want a harder metric?
+3. Additionality: propose pod before/after numbers (Uber-style) as the hard metric, with story-collection as the narrative layer — agreed?
 4. Quality ownership = Tom + Kirsty + Jacob (deputies required to escalate) — approve?
 5. Hiring: green-light Rob's AI-first interview pilot on the live senior-eng-lead search + Eraaz port to other functions?
 6. Firing: agree the sequence — Q3 defensible measurement + interventions, Q4 performance conversations via Rakhee; promotions start now?
 7. Intensive company week — park explicitly or schedule.
-8. What does HE show Admiral Pioneer, and when? (Shapes how polished the survey/deck must be.)
+8. Pods: ratify 3–4 named pods for Q3 (finance month-end, UW submissions, claims FNOL, BDM enterprise), each time-boxed with a target metric?
+9. What does HE show Admiral Pioneer, and when? (Shapes how polished the survey/deck must be — pod numbers are Admiral-ready evidence.)
 
 ## Logistics / prep before 13:00
 
