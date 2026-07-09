@@ -7,8 +7,8 @@ role: Operations Manager
 team: Ops — Underwriting assistance and customer support
 tags: [ops, underwriting, leadership]
 ai_activation_stage: 3
-ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-30
+ai_activation_confidence: high
+ai_activation_assessed: 2026-07-09
 ---
 
 ## Role
@@ -44,6 +44,10 @@ Reports to Antton Pena (CCO). Mollie Brownlow (former Head of Operations) has le
 **Not Stage 2**: Built and shared the driver referral skill with team. Using multiple connectors (Looker, Chrome extension). Creating tools, not just consuming them.
 **Not Stage 4**: Hitting practical friction with tooling — Chrome extension takes over tabs, Looker connection is temperamental, needs a spare laptop for background AI work. The friction points suggest the multi-agent orchestration framing from the previous assessment was ahead of where she is operationally. Skill-building and sharing is Stage 3 territory.
 **To progress**: Resolve the tooling friction (spare laptop, stable Netsuite connection). Complete the driver referral automation end-to-end. Get the Netsuite connection working for cancellations and vehicle lists. Once tooling friction is resolved, the Zapier + Claude + Netsuite combination could push back toward Stage 4.
+
+### Update 2026-07-09
+
+**Holds 3, confidence → high.** Independently rebuilt transfer-of-agency in Claude (pulls across HubSpot, drafts template, verifies directors at Companies House) — "elevated that process"; generalising to renewals with quantified ROI (20–30 min per renewal). Tooling friction being fixed (new laptop + systems session with Tom). Restoration path to 4 visible once the laptop lands. Source: [[2026-07-08-ops-automation-ai-sync]].
 
 ## 1:1 Log
 

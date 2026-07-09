@@ -7,7 +7,7 @@ due: 2026-04-18
 origin: "[[2026-04-14-matt-dipre-ai-discovery]]"
 domain: ai-enablement
 type: issue
-status: todo
+status: cancelled
 priority: medium
 assignee: tom
 tags: [looker, access, matt-dipre, kirsty]
@@ -34,3 +34,5 @@ Matt Dipre has a Looker account but no permissions to create or view dashboards.
 - [[matt-dipre]]
 - [[kirsty]]
 - [[2026-04-14-matt-dipre-ai-discovery]]
+
+**Closed 2026-07-09 — obsolete.** Matt bypassed the access problem: pulls straight from the data lake (Geran-enabled), has a Looker MCP, and "doesn't really use that as much anymore". Superseded by his calculator pipeline (AI-162).

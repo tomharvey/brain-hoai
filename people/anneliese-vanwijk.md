@@ -4,9 +4,9 @@ created: 2026-06-01
 updated: 2026-06-30
 type: person
 tags: [finance, moss, operational-tooling]
-ai_activation_stage: 1
+ai_activation_stage: 2
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-07-02
+ai_activation_assessed: 2026-07-09
 ---
 
 # Anneliese Vanwijk
@@ -48,6 +48,10 @@ Scored 2 briefly on Jul 2 (reversing the Jun 30 Stage 1) on the grounds that the
 - 2026-07-02 (earlier same day): Stage 2 — over-credited guided setup; corrected same day
 - 2026-06-30: Stage 1 (Moss-install context)
 - 2026-06-02: Stage 2 (connectors + MOSS API keys — now understood as guided)
+
+### Update 2026-07-09
+
+**1→2.** Multiple real wins through connectors: regularly builds Claude dashboards via Looker MCP (cash burn/runway, broker commission as % of GWP) for business insight — attribution has a merged-mic caveat (Granola credits her; could be Jade), so held at 2 not 3. Also finance's governance voice (pushed the view-only NetSuite role and access segregation). Python/Moss blocker STILL open (AI-149) — environment, not practice. If the dashboards are confirmed hers, 3 is due. Source: [[2026-07-08-ai-finance-workshop]].
 
 ## Notes
 

@@ -8,7 +8,7 @@ team: Underwriting
 tags: [underwriting, pricing, claims, looker, excel, operational-tooling]
 ai_activation_stage: 3
 ai_activation_confidence: high
-ai_activation_assessed: 2026-06-23
+ai_activation_assessed: 2026-07-09
 ---
 
 # Tom Rogers
@@ -26,6 +26,10 @@ Head of Motor Underwriting. Deep domain expertise; Looker power user (queries cu
 **Not Stage 4**: Doesn't yet delegate whole workflows autonomously. Trust gate remains for final pricing calculations ("I can't turn around and say Gemini told me that"). Appropriate professional caution, not a capability gap.
 **To progress**: The submissions automation pipeline (Ollie's work) connecting to the portal would be the Stage 4 moment — whole workflow delegated.
 **Framework note**: Massive progression from April. "Without realizing it, AI is just part and parcel of what I do now." Team-wide: Curtis, Billy, Jake all using it; Darren mostly ChatGPT.
+
+### Update 2026-07-09
+
+**Holds 3, high — now builder-verified independent, edging 4.** Built his own daily-plan skill iteratively (top-10 urgent deals + Gmail unanswered-email scan tied to pipeline deals; "I had an idea... and then that evolved"); daily use. Resolves the Jul 2 builder-audit "one-offs only" caveat. Delegating his morning triage is the 4-signal to confirm next. Source: [[2026-07-09-ai-underwriting]].
 
 ## Key context
 

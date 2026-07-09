@@ -6,9 +6,9 @@ type: person
 role: Financial Analyst
 team: Finance (reports to Anneliese Van Wijk)
 tags: [finance, credit-control, netsuite, ai-user]
-ai_activation_stage: 3
+ai_activation_stage: 4
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-30
+ai_activation_assessed: 2026-07-09
 ---
 
 ## Role
@@ -43,6 +43,10 @@ Finance. Works alongside [[matt-dipre|Matt Dipré]] and [[queency-gonsalves|Quee
 ### Prior assessment (2026-06-02)
 
 Previously assessed at Stage 3 (high confidence) based on daily credit control prioritisation system (NetSuite aging → Claude → prioritised report) running 2+ months, weekly Admiral carrier reporting, and Claude skill creation. Current assessment maintains Stage 3 but shifts confidence to medium — the June evidence shows infrastructure/API building (connectivity APIs, MCP tools, Netsuite MCP) which is Stage 3 work, but the personal daily workflow evidence from earlier still anchors the assessment.
+
+### Update 2026-07-09
+
+**3→4.** Daily credit-control report now fully autonomous: folder-watch trigger, Slack alert when data is missing, zero manual Excel upload — a system running without him, sustained on top of the 2+ month pipeline. Compounding mindset: "it gives me more time to think about things I can keep automating." Source: [[2026-07-08-ai-finance-workshop]].
 
 ## 1:1 Log
 

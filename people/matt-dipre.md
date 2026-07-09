@@ -6,9 +6,9 @@ type: person
 role: Financial Analyst
 team: Finance (reports to Anneliene)
 tags: [finance, invoicing, netsuite, snowflake, ai-user]
-ai_activation_stage: 2
-ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-02
+ai_activation_stage: 3
+ai_activation_confidence: high
+ai_activation_assessed: 2026-07-09
 ---
 
 ## Role
@@ -47,6 +47,10 @@ First spoke 2026-04-14 (AI discovery round). Keen to experiment, already built a
 **Not Stage 3**: Current practice is simpler than peak capability due to access blockers. The automation regression means day-to-day behaviour is Stage 2, even though his ceiling is higher.
 **To progress**: Unblock Looker and HubSpot access. The invoice automation skill he wants to rebuild is a natural Stage 3 goal. He has the mental model — access is the constraint.
 **Framework note**: Assessment reflects current state, not peak capability. Access blockers are the limiting factor. Once unblocked, likely to jump directly to Stage 3 rebuilding.
+
+### Update 2026-07-09
+
+**2→3 (blocked→builder again).** Calculator ~1 month in daily production: code-reviewed by Chris (one fix, correct since), per-run self-audits, quarterly-MTA capability ("made something that was never possible possible" — lets finance say yes to brokers), feature added live in an OKR session, "it's like my own personal engineer". Engineering adopting it as the basis for the OKR build. Access blockers bypassed via data lake (AI-014 obsolete). Source: [[2026-07-08-ai-finance-workshop]].
 
 ## 1:1 Log
 

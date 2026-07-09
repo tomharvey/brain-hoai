@@ -6,9 +6,9 @@ type: person
 role: Finance (accounts/reimbursements)
 team: Finance
 tags: [finance]
-ai_activation_stage: 1
+ai_activation_stage: 2
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-07-02
+ai_activation_assessed: 2026-07-09
 ---
 
 ## Role
@@ -47,6 +47,10 @@ Downgraded 2→1. The connected MCP is a meaningful step but the framework score
 ### Prior assessment (2026-05-26)
 
 Previously assessed at Stage 1 based on calculation validation use case (pasting Moss totals to verify reimbursement amounts). The Moss MCP installation represents a genuine step forward — moving from "AI as calculator" to "AI with connected tools," though usage is still basic and setup-dependent.
+
+### Update 2026-07-09
+
+**1→2.** Self-driven iteration finally evidenced: invented the approvals-links improvement herself ("I just asked Claude to put direct links for their approvals for each expense... approvals done much quicker"); reconciliation workflow habitual since May and now highly accurate; co-debugged a NetSuite discrepancy with Matt Dipre live. The decisive-test bar (self-driven, iterated usage) is met. Source: [[2026-07-08-ai-finance-workshop]].
 
 ## 1:1 Log
 

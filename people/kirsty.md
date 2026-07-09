@@ -6,9 +6,9 @@ type: person
 role: Senior Analytics Engineer
 team: Finance (reports to Christian Nielsen, CFO)
 tags: [data, finance, visualisation]
-ai_activation_stage: 2
+ai_activation_stage: 4
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-30
+ai_activation_assessed: 2026-07-09
 ---
 
 ## Role
@@ -52,6 +52,10 @@ Finance
 ### Prior assessment (2026-06-18)
 
 Previously assessed at Stage 4 (Delegation) based on Looker MCP work: built Looker→Claude MCP integration, automated FP&A pod metric sheet generation, presented at AI Breakfasts, de facto AI infrastructure owner for Finance. That evidence remains valid for Looker-based workflows. The current assessment reflects the Moss-specific context where she is earlier in the adoption curve.
+
+### Update 2026-07-09
+
+**2→4 (restored).** The context-scoped Moss downgrade is resolved the same way as David Pilley's: environment ≠ practice. Jul 8 evidence: recompute-and-diff self-audit ("checking that Claude hadn't gone rogue" — it caught real drift), non-destructive writes as a safety net, exec summaries of 64 metrics that changed how Paul runs the POG meeting, and she's coordinating the Moss rollout across the team. Sustained delegation-with-verification — plus she now co-owns company-wide data-quality guardrails with Tom and Jacob. Source: [[2026-07-08-ai-finance-workshop]].
 
 ## 1:1 Log
 

@@ -6,9 +6,9 @@ type: person
 role: Connectivity Operations Manager
 team: Ops (reports to Emily Staton)
 tags: [connectivity, ops, looker, zapier, hubspot, ai-user]
-ai_activation_stage: 2
+ai_activation_stage: 3
 ai_activation_confidence: medium
-ai_activation_assessed: 2026-06-18
+ai_activation_assessed: 2026-07-09
 ---
 
 ## Role
@@ -42,6 +42,10 @@ First spoke 2026-04-10 (AI discovery round).
 **Not Stage 3**: Unclear whether Claude/AI is in his workflow or whether the automations are traditional Zapier/Looker. No direct evidence of Claude-specific usage.
 **To progress**: Unknown — need a direct conversation to establish his actual AI usage pattern.
 **Framework note**: Low confidence reflects genuine data gap — file doesn't distinguish AI-powered from traditional automation. The pragmatic builder profile suggests he'd activate quickly, but we need a 1:1 to confirm what tools he's actually using.
+
+### Update 2026-07-09
+
+**2→3.** Ambiguity resolved — genuine Claude practice, not legacy Zapier: built a co:work connector pulling Looker data, running the VLOOKUP and flagging policies over 35 connects; tested twice, in use (saves 5–10 min/day); self-debugged file-access failures; staged roadmap (HubSpot chasers next). Builder-verified. Source: [[2026-07-08-ops-automation-ai-sync]].
 
 ## 1:1 Log
 

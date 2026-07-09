@@ -20,3 +20,5 @@ Old Moss MCP installs (wrong auth headers, no rate-limit handling) caused 401s a
 - David Pilley done 2026-06-30 with Tom (Python install was the blocker — see [[2026-06-30-david-pilley-moss-install]]).
 - Queency to share her Claude chat with Tom to surface expense-type filtering issues.
 - Expect Python-not-installed failures on non-developer machines (see [[AI-149-debug-anneliese-python-install]]).
+
+**Update 2026-07-09** (from [[2026-07-08-ai-finance-workshop]]): David Pilley done; Jade to attempt solo and escalate if stuck; Christian on holiday — Kirsty to sit with him on return using Tom's written Python-fix guide. Cannot close yet.

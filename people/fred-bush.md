@@ -8,7 +8,7 @@ team: Ops (reports to Emily Staton)
 tags: [underwriting, ops, cowork]
 ai_activation_stage: 2
 ai_activation_confidence: high
-ai_activation_assessed: 2026-06-30
+ai_activation_assessed: 2026-07-09
 ---
 
 ## Role
@@ -46,6 +46,10 @@ Ops — reports to [[emily|Emily Staton]]
 **Not Stage 3**: Created his first personal skill during a guided session, not independently. Still checking AI output carefully rather than trusting and iterating. The skill iteration pattern is learned but not yet habitual.
 **To progress**: Build a second skill independently (without session guidance). The briefer HubSpot notes request is a good candidate — he knows what he wants and has the pattern from the driver referral skill. When he starts iterating on skills unprompted, that's Stage 3.
 **Framework note**: Strong progression from Stage 1 (April) to Stage 2 (June). The driver referral skill was the forcing function as predicted. Creating a personal skill variant in-session is the first Stage 3 signal. Amazon season pressure may slow further exploration.
+
+### Update 2026-07-09
+
+**Holds 2.** One substantive contribution — and it was the idea the room adopted: "put the document we've got into Claude and just say how much of this can you do?" A Stage-3-shaped instinct; still no independent build beyond guided sessions. Source: [[2026-07-08-ops-automation-ai-sync]].
 
 ## 1:1 Log
 
