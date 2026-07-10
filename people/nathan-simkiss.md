@@ -1,17 +1,17 @@
 ---
 title: Nathan Simkiss
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-07-10
 type: person
-role: Chief of Staff
+role: Head of Strategy
 team: Admiral Group
 organisation: Admiral Group
-tags: [admiral, chief-of-staff, enterprise, external]
+tags: [admiral, strategy, enterprise, external]
 ---
 
 # Nathan Simkiss
 
-Chief of Staff at Admiral Group. External observer at the 2026-06-03 Prodtech demo.
+Head of Strategy (previously Chief of Staff at Admiral Group). External observer at the 2026-06-03 Prodtech demo.
 
 ## Key context
 
