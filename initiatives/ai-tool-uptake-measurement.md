@@ -55,6 +55,34 @@ Grain: **one row per person × vendor × product × period** (summed across mode
    - If evolution gets messy, cut a **v1.0 consolidated schema** informed by all three vendors rather than patching v0.1 incrementally. Migration is cheap because we regenerate from raw.
 3. **Uptake metrics are computed from the normalised layer, not stored in it**: active users, product breadth per person, MoM retention, new activations.
 
+## Measurement constraints (decided 2026-07-10)
+
+Anthropic's per-user, per-day activity data lives behind the **Claude Enterprise Analytics API** — Enterprise plans only. **We are not on Enterprise**, so:
+
+- **No active-days metric from Anthropic.** The claude.ai admin spend export (what we have) is an aggregate over an arbitrary date range, not daily.
+- **Baseline grain is monthly.** All uptake metrics must be computable from monthly per-user × product aggregates.
+- **Optional frequency proxy: active-weeks.** The export accepts arbitrary date ranges, so four weekly exports per month would give active-weeks per user (appears in export = active that week). Decent frequency signal at ~4× the export effort; adopt only if monthly metrics prove too coarse.
+- **Revisit if we move to Enterprise.** The Analytics API would make this whole layer self-updating: per-user daily activity across all products, org-level DAU/WAU/MAU, seat counts (the denominator), and Anthropic's own active-user definition. This measurement use case is itself part of the business case for Enterprise.
+
+## Ranking / bucketing methodology (proposed)
+
+Raw `requests` are not comparable across products (one Claude Code session ≈ hundreds of API requests; one Chat message ≈ 1). Never sum or compare raw counts across products. Instead:
+
+1. **Within-product percentiles** — rank each person against other users of the same product; combine via max/mean percentile across their products.
+2. **Product class** — map products to leverage tiers: *chat* (Chat) < *assisted* (Chrome, Design) < *agentic* (Cowork, Claude Code, Office Agents, Research). Highest class used is volume-independent and maps onto the Stage 1–4 capability model (agentic-class usage ≈ Stage 3–4 behaviour in telemetry).
+3. **Breadth** — number of products used in the period.
+
+Buckets (legible criteria, not a weighted composite index — composites are opaque and gameable once attached to targets):
+
+| Bucket | Signal |
+|---|---|
+| **Dormant** | No activity in period |
+| **Light** | Chat-only, low within-product percentile |
+| **Regular** | 2+ products, or high percentile in one |
+| **Power** | Agentic-class product + breadth + sustained presence across periods |
+
+Relationship to capability stages: telemetry buckets are a **screen, not a score**. They scale automatically past the ~70-person ceiling of evidence-based scoring and flag mismatches to investigate (scored Stage 4 but telemetry-dormant; telemetry-power but unscored). Stage scores remain ground truth.
+
 ## First findings (Anthropic, Jun 1 – Jul 9 2026)
 
 - **65 distinct team members** used Anthropic tools; 61 active in June, 57 in the first 9 days of July.
@@ -69,7 +97,9 @@ Grain: **one row per person × vendor × product × period** (summed across mode
 - [x] Define normalised schema v0.1 + normaliser script — 2026-07-10
 - [ ] Add Cursor reports when available; extend normaliser, revisit schema
 - [ ] Add OpenAI reports when available; extend normaliser, revisit schema
-- [ ] Define headline uptake metrics (weekly/monthly active, breadth, retention) once denominators are known (need headcount per department for coverage %)
+- [ ] Compute first monthly uptake buckets (dormant/light/regular/power) from June + July data per the methodology above
+- [ ] Get headcount per department for coverage % (denominator — not in any vendor report)
+- [ ] Decide whether active-weeks (weekly exports) is worth the effort after seeing monthly buckets
 - [ ] Decide reporting cadence and audience (monthly summary to C-suite?)
 
 ## Open questions
