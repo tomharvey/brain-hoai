@@ -1,7 +1,8 @@
 ---
 title: Alex Smith
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-07-10
+status: departed
 type: person
 role: Software Engineer
 team: Engineering — Prodtech
@@ -9,6 +10,8 @@ tags: [engineering, product-config, testing, prodtech]
 ---
 
 # Alex Smith
+
+> **Departed** — left Flock (noted 2026-07-10). Retained for historical context; excluded from capability scoring and uptake watchlists.
 
 Software Engineer on the Prodtech team. Built the end-to-end testing framework for product configs (insurance lifecycle: quote → bind → MTAs).
 
