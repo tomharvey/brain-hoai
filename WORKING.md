@@ -2,6 +2,10 @@
 
 ## Current task
 
+**AI tool uptake measurement (Jul 10)**: new initiative `initiatives/ai-tool-uptake-measurement.md`. Anthropic Jun + Jul 1-9 reports moved from inbox to `reference/ai-tool-usage-reports/anthropic/` (renamed `2026-06.csv`, `2026-07-partial-to-09.csv`). Schema v0.1 defined (person × vendor × product × period); normaliser at `tools/ai-usage/normalise.py`, output gitignored. 65 people total, 61 active Jun / 57 Jul 1-9, 4 new activations in Jul. NEXT: Cursor + OpenAI reports incoming from Tom — add normalisers, expect schema evolution (requests not comparable cross-vendor; may need engagement tiers + product category mapping). Note: inbox/claude-spend May screenshots were already deleted (working-tree D) — deletion committed intentionally, Tom approved.
+
+## Previous task
+
 Post-London consolidation. Four Jul 8-9 meetings imported and processed (Finance workshop, Ops sync, AI Underwriting w/ Darren Nightingale present, Digital Futures Athena demo). Scores updated in one pass.
 
 ## Baseline state (2026-07-09)

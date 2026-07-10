@@ -18,3 +18,4 @@ tools/search/pkm_search/__pycache__/
 outbox/
 tools/datadog/secrets.txt
 outbox/datadog-exports/
+reference/ai-tool-usage-reports/normalised.csv
