@@ -76,6 +76,11 @@ substitutions:
     guard: "only in pricing/data science context"
     confirmed: 2026-06-17
 
+  - heard: "Kaylee"
+    person: kayleigh-bradbury
+    phonetics: "phonetic spelling of 'Kayleigh' — surname Bradbury confirmed via email directory (kayleigh.bradbury@)"
+    confirmed: 2026-07-10
+
 nicknames:
   # Correct short forms — not transcription errors, just informal names
   # Format:

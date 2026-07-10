@@ -35,7 +35,7 @@ Eraaz supplied the missing architecture:
 
 ## 1. "The baseline exists" — not touched with Eraaz, mostly covered elsewhere
 
-- Keeping it true = closing the 7-person tail + refreshing scores → the Rakhee survey ([[AI-125]], due Jul 7), the Ben/Daisy calendar problem, Kaylee/Connie onboarding.
+- Keeping it true = closing the 7-person tail + refreshing scores → the Rakhee survey ([[AI-125]], due Jul 7), the Ben/Daisy calendar problem, Kayleigh/Connie onboarding.
 - **Genuinely unassigned:** who *maintains* the baseline after the survey. Proposal for Rakhee/Ed: re-scoring becomes a PGR-cycle byproduct — the tooling trial gives us this for free (nice argument to make to Ed).
 
 ## 2. "Focus on Finance and UW" — a gap in the Eraaz call, not a gap in the plan

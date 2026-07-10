@@ -38,7 +38,7 @@ Honours the existing owner: this is Rob's work. The initiative gives it structur
 1. **Document the format** (Rob, Q3): interview structure, task bank, scoring rubric mapped to stages 0–5. Output: a reusable artifact in the vault + hiring docs.
 2. **Pilot on the live search** (Rob + hiring managers, this quarter): run on real senior-eng-lead candidates; calibrate Rob's stage-reads against hiring-manager reads.
 3. **Port beyond engineering** (Eraaz + hiring managers): adapt per function — Eraaz already asks AI questions "in every single screening"; this gives them teeth. Start with the functions hiring next.
-4. **Close the onboarding loop** (Eraaz + Tom): interview stage-read becomes the new joiner's baseline score; Kaylee-pattern starters (personal use, no work practice) spotted on day one.
+4. **Close the onboarding loop** (Eraaz + Tom): interview stage-read becomes the new joiner's baseline score; Kayleigh-pattern starters (personal use, no work practice) spotted on day one.
 
 ## Current state
 

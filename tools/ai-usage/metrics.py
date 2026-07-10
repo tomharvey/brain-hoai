@@ -41,7 +41,7 @@ SLUG_OVERRIDES = {
     "christian@flockcover.com": "christian-leth-nielsen",  # chris.md is Chris Fothergill
     "matthew.smith@flockcover.com": "matt-smith-uw",       # matt.md is Matthew Price
     "matthew.price@flockcover.com": "matt",
-    "kayleigh.bradbury@flockcover.com": "kaylee",          # kaylee.md "surname TBC" = Bradbury
+    "kayleigh.bradbury@flockcover.com": "kayleigh-bradbury",
     "daisie.baker@flockcover.com": "daisy-mae-baker",
     "aleksandra.yaneva@flockcover.com": "aleks-yanova",
     "alexander.dyball@flockcover.com": "alex-dyball",

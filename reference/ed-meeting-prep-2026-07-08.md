@@ -19,7 +19,7 @@ tags: [ed, q3, prep, deliverables, operationalisation]
 
 ## Opening 5 minutes — what's already moved since we spoke
 
-- Deck updated with everything from the Jul 2 walkthrough: P80 labelling fixed, un-rounded floats, Pricing split out (the inverted-pyramid finding is NEW to Ed: Francesco/Harry ahead of Milan/Michael), claims folded into Ops, Kaylee scored (Stage 1, new starter framing).
+- Deck updated with everything from the Jul 2 walkthrough: P80 labelling fixed, un-rounded floats, Pricing split out (the inverted-pyramid finding is NEW to Ed: Francesco/Harry ahead of Milan/Michael), claims folded into Ops, Kayleigh scored (Stage 1, new starter framing).
 - Baseline now n=50 of 57. Three at Stage 1 — one brand-new, two blocked, none unwilling.
 - Eraaz engaged and building: PGR tooling session with Rakhee happened Mon Jul 6 — report the outcome (chase Eraaz before the meeting).
 
@@ -58,7 +58,7 @@ Ed sent the Arvind Jain (Glean CEO) tweet quoting Uber's CTO on **Agentic Pods**
 **The AI Champions network (formerly "deputies") — names, not a concept.** Propose formally asking: Jacob or David Z (Prodtech eng), Mima or Ollie (Prodtech product), Shreya (Ops), Ivan (Finance — evidence-led choice; Christian as exec sponsor), Jake (Underwriting), Francesco (Pricing), Adam Smith or Matt Lees (BDM), Eraaz (People). Mechanics per Ed's own framing: fortnightly half-hour team demo + Slack channel reporting to Tom — covering what's working, what's not, **quality problems observed, and issues/improvements their team should be floating but isn't**. **Ask Ed: does he want to bless the names or have managers nominate?**
 
 **The cadence:**
-- Weekly: Tom 1:1s (boot list: Kaylee, Adam Sandle, Connie re-onboarding)
+- Weekly: Tom 1:1s (boot list: Kayleigh, Adam Sandle, Connie re-onboarding)
 - Fortnightly: deputy demos per team; deputy Slack reports
 - Monthly: team workshops (finance + UW get doubled frequency); AI Breakfast with deputy-fed agenda
 - Quarterly: re-score against baseline (PGR tooling makes this a byproduct, not a project)
@@ -94,7 +94,7 @@ Rob has been working on what an AI-first engineering interview looks like (now t
 1. Rob documents the format as a reusable artifact — interview structure, task bank, scoring rubric mapped to framework stages (candidates get a provisional stage, feeding AI-128 new-hire assessment directly).
 2. Trial it live: the senior engineering lead search is running NOW (two recruiters engaged since June) — pilot on real candidates this quarter, calibrate against the hiring managers' reads.
 3. Port beyond engineering with Eraaz: he already asks AI questions "in every single screening"; Rob's format gives those questions teeth. Eraaz adapts per function with hiring managers (ties to AI-155 JD work — assess what the JD now advertises).
-4. Close the loop at onboarding: interview stage-read becomes the new joiner's baseline score (AI-115) — coverage never degrades as the company grows, and Kaylee-style "personal use, no work practice" starters get spotted on day one.
+4. Close the loop at onboarding: interview stage-read becomes the new joiner's baseline score (AI-115) — coverage never degrades as the company grows, and Kayleigh-style "personal use, no work practice" starters get spotted on day one.
 
 **Ask Rob first** (London, this week — he's already on the AI-150 push): does he want to own this as his named Q3 artifact? It's his strongest builder evidence yet and a better story than "hand-finishes code".
 
@@ -133,7 +133,7 @@ Ed's Jun 24 position: "start firing people if they're not the right place on the
 - [ ] **Paste into Slides slide 8, point 4** (replacing the current "Move beyond behavioural rubric" body):
   Title: MEASURE OUTCOMES, NOT TOOL USAGE
   Body: "Time-boxed pods: a testable hypothesis per engagement, with a before/after metric (e.g. month-end consistency check: hours → minutes). Pod numbers measure value; stories carry the narrative; the rubric measures capability — not value."
-- [ ] Optional 2-min consistency pass in Slides: cover says "49 OF 56" while slide 3 says "9 unevaluated" (49+9=58 ≠ 56); vault state is now 50 of 57 with 7 unevaluated (Kaylee scored Jul 2). Either update cover to 50/57 or make the unevaluated count 7.
+- [ ] Optional 2-min consistency pass in Slides: cover says "49 OF 56" while slide 3 says "9 unevaluated" (49+9=58 ≠ 56); vault state is now 50 of 57 with 7 unevaluated (Kayleigh scored Jul 2). Either update cover to 50/57 or make the unevaluated count 7.
 - [ ] The 11:00 AI Finance workshop and 12:00 Ops sync that morning are live evidence — carry one fresh example from each into the 13:00.
 - [ ] Send Eraaz the slides first (promised Jul 2, AI-154) if not yet done.
 - [ ] Grab Rob before the 13:00 (he's in London this week): confirm he'll own the AI-first interview artifact and is happy being named to Ed.

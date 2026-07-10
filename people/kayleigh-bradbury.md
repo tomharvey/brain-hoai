@@ -1,8 +1,9 @@
 ---
-title: Kaylee (surname TBC)
+title: Kayleigh Bradbury
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-10
 type: person
+email: kayleigh.bradbury@flockcover.com
 role: Claims (new joiner)
 team: Ops — Claims
 tags: [claims, operations, new-joiner]
@@ -11,7 +12,7 @@ ai_activation_confidence: medium
 ai_activation_assessed: 2026-07-02
 ---
 
-# Kaylee (surname TBC)
+# Kayleigh Bradbury
 
 **Team**: Claims (bucketed under Operations in the Jul 2026 capability groupings)
 **Role**: Claims — recently joined

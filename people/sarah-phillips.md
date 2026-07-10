@@ -18,4 +18,4 @@ Joined finance "a few weeks ago"; had never used NetSuite before joining. Sits o
 
 ## AI Activation
 
-**Unassessed — new joiner.** No AI practice yet; attitude positive — accessing NetSuite through Claude appeals precisely because she doesn't know NetSuite: "if I could just ask it a question it'd be so much better." Onboarding case (Kaylee pattern), not remediation. Candidate for the new-hire baseline process ([[ai-first-hiring]]). Source: [[2026-07-08-ai-finance-workshop]].
+**Unassessed — new joiner.** No AI practice yet; attitude positive — accessing NetSuite through Claude appeals precisely because she doesn't know NetSuite: "if I could just ask it a question it'd be so much better." Onboarding case (Kayleigh pattern), not remediation. Candidate for the new-hire baseline process ([[ai-first-hiring]]). Source: [[2026-07-08-ai-finance-workshop]].

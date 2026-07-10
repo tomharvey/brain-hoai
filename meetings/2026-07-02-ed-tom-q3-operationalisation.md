@@ -33,7 +33,7 @@ Full transcript: [[2026-07-02-ed-tom-q3-operationalisation-transcript]]
 - Ed clarified the "Ghostbusters" reference (Deel CEO hiring roving process-fixers) — not the deputy model Tom wants.
 
 ### Individuals
-- 1:1 "boot" list: Kaylee (new in claims — heavy personal AI use, none at work yet), Adam Sandle trailing, Connie returning from mat leave into a transformed job ("since I've been gone I've created life and sentience").
+- 1:1 "boot" list: Kayleigh (new in claims — heavy personal AI use, none at work yet), Adam Sandle trailing, Connie returning from mat leave into a transformed job ("since I've been gone I've created life and sentience").
 - Ben & Daisy still unreached ("Chinese wall of a calendar").
 - Darren Nightingale: Stage 1 second-hand, not evidenced.
 
