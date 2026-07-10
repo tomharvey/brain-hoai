@@ -107,9 +107,23 @@ def load_justifications():
     return out
 
 
+def load_insights():
+    """slug|why|next — structured extraction from people/ assessment sections."""
+    path = REPORTS_DIR / "stage-insights.psv"
+    if not path.exists():
+        return {}
+    out = {}
+    for line in path.read_text().splitlines():
+        if line.strip():
+            slug, why, nxt = line.split("|", 2)
+            out[slug] = (why, nxt)
+    return out
+
+
 def main():
     people = load_people()
     justifications = load_justifications()
+    insights = load_insights()
 
     # aggregate normalised rows per person x product over the whole window
     per_product = defaultdict(lambda: defaultdict(lambda: {"requests": 0, "active_days": 0, "spend": 0.0}))
@@ -194,6 +208,8 @@ def main():
             "spend_usd": spend,
             "mismatch": mismatch,
             "stage_justification": justifications.get(slug, ""),
+            "why_stage": insights.get(slug, ("", ""))[0],
+            "next_step": insights.get(slug, ("", ""))[1],
         })
 
     # scored people with no telemetry at all -> dormant
@@ -208,6 +224,8 @@ def main():
                 "sustained": False, "spend_usd": 0,
                 "mismatch": "stage>=3 but no telemetry" if int(v["stage"]) >= 3 else "",
                 "stage_justification": justifications.get(slug, ""),
+                "why_stage": insights.get(slug, ("", ""))[0],
+                "next_step": insights.get(slug, ("", ""))[1],
             })
 
     bucket_order = {"power": 0, "regular": 1, "light": 2, "dormant": 3}
