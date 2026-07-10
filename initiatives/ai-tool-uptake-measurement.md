@@ -22,7 +22,7 @@ Measure **uptake** of AI tools across the company — who is using what, how oft
 | Location | Contents |
 |---|---|
 | `reference/ai-tool-usage-reports/anthropic/` | Raw Anthropic spend/usage CSVs, one per period (`2026-06.csv`, `2026-07-partial-to-09.csv`) |
-| `reference/ai-tool-usage-reports/cursor/` | (pending) Cursor reports |
+| `reference/ai-tool-usage-reports/cursor/` | Raw Cursor team usage-events CSVs (event-level, `events-<start>-to-<end>.csv`) |
 | `reference/ai-tool-usage-reports/openai/` | (pending) OpenAI reports |
 | `reference/ai-tool-usage-reports/normalised.csv` | Generated output — gitignored, rebuild with `python3 tools/ai-usage/normalise.py` |
 
@@ -30,20 +30,23 @@ Measure **uptake** of AI tools across the company — who is using what, how oft
 
 Naming convention for raw files: `YYYY-MM.csv` for a full month, `YYYY-MM-partial-to-DD.csv` for an incomplete month. The normaliser derives the period from the filename.
 
-## Normalised schema — v0.1
+## Normalised schema — v0.2
 
-Grain: **one row per person × vendor × product × period** (summed across models).
+Grain: **one row per person × vendor × product × period** (calendar month, possibly partial; summed across models).
 
 | Field | Type | Notes |
 |---|---|---|
-| `person_email` | string | Empty for non-person rows |
+| `person_email` | string | Empty for non-person rows. Joins cleanly across vendors — all Cursor users verified present in Anthropic data by email |
 | `is_person` | bool | `false` for org/service usage (e.g. Anthropic "(org service usage)" rows) — kept so spend reconciles, excluded from uptake counts |
 | `vendor` | string | `anthropic`, `cursor`, `openai` |
-| `product` | string | Vendor's product name as reported (Chat, Cowork, Claude Code, …) |
-| `period_start` | date | From filename |
-| `period_end` | date | From filename |
-| `requests` | int | Vendor's primary activity count |
-| `spend_usd` | float | Net spend |
+| `product` | string | Vendor's product name as reported (Chat, Cowork, Claude Code, Cursor, …) |
+| `period_start` | date | Clipped to actual export coverage — a rolling-window export yields honest partial months |
+| `period_end` | date | As above |
+| `requests` | int | Vendor's primary activity count. **Not comparable across products/vendors** — only for within-product percentiles |
+| `active_days` | int? | v0.2. Distinct days with any activity in the period. Populated where raw data is event-level (Cursor); empty for aggregate exports (Anthropic). The preferred frequency signal wherever present |
+| `spend_usd` | float | Net/marginal spend as reported. Cursor: on-demand overage only — subscription seat fees not in the export |
+
+v0.1 → v0.2 (2026-07-10): added `active_days` when Cursor's event-level export arrived, exactly the evolution predicted below. Cursor raw files: `cursor/events-YYYY-MM-DD-to-YYYY-MM-DD.csv` (event grain, range in filename).
 
 ### Design principles
 
@@ -69,7 +72,7 @@ Anthropic's per-user, per-day activity data lives behind the **Claude Enterprise
 Raw `requests` are not comparable across products (one Claude Code session ≈ hundreds of API requests; one Chat message ≈ 1). Never sum or compare raw counts across products. Instead:
 
 1. **Within-product percentiles** — rank each person against other users of the same product; combine via max/mean percentile across their products.
-2. **Product class** — map products to leverage tiers: *chat* (Chat) < *assisted* (Chrome, Design) < *agentic* (Cowork, Claude Code, Office Agents, Research). Highest class used is volume-independent and maps onto the Stage 1–4 capability model (agentic-class usage ≈ Stage 3–4 behaviour in telemetry).
+2. **Product class** — map products to leverage tiers: *chat* (Chat) < *assisted* (Chrome, Design) < *agentic* (Cowork, Claude Code, Cursor, Office Agents, Research). Highest class used is volume-independent and maps onto the Stage 1–4 capability model (agentic-class usage ≈ Stage 3–4 behaviour in telemetry). Class is role-blind by design: no dev/non-dev split — a non-dev on Cursor or Claude Code is agentic-class, full stop.
 3. **Breadth** — number of products used in the period.
 
 Buckets (legible criteria, not a weighted composite index — composites are opaque and gameable once attached to targets):
@@ -95,7 +98,7 @@ Relationship to capability stages: telemetry buckets are a **screen, not a score
 
 - [x] Ingest Anthropic June + July reports, establish raw-data home — 2026-07-10
 - [x] Define normalised schema v0.1 + normaliser script — 2026-07-10
-- [ ] Add Cursor reports when available; extend normaliser, revisit schema
+- [x] Add Cursor reports; normaliser extended, schema bumped to v0.2 (`active_days`) — 2026-07-10. 7 users, all also on Anthropic tools; Jun 10 – Jul 9 window (Jun 1–9 missing — pull a fuller export if Cursor admin allows custom ranges)
 - [ ] Add OpenAI reports when available; extend normaliser, revisit schema
 - [ ] Compute first monthly uptake buckets (dormant/light/regular/power) from June + July data per the methodology above
 - [ ] Get headcount per department for coverage % (denominator — not in any vendor report)
