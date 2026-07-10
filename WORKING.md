@@ -2,7 +2,7 @@
 
 ## Current task
 
-**AI tool uptake measurement (Jul 10)**: new initiative `initiatives/ai-tool-uptake-measurement.md`. Anthropic Jun + Jul 1-9 reports moved from inbox to `reference/ai-tool-usage-reports/anthropic/` (renamed `2026-06.csv`, `2026-07-partial-to-09.csv`). Schema v0.1 defined (person × vendor × product × period); normaliser at `tools/ai-usage/normalise.py`, output gitignored. 65 people total, 61 active Jun / 57 Jul 1-9, 4 new activations in Jul. NEXT: Cursor + OpenAI reports incoming from Tom — add normalisers, expect schema evolution (requests not comparable cross-vendor; may need engagement tiers + product category mapping). Note: inbox/claude-spend May screenshots were already deleted (working-tree D) — deletion committed intentionally, Tom approved.
+**AI tool uptake measurement (Jul 10)**: initiative `initiatives/ai-tool-uptake-measurement.md`. Schema **v0.2** (added active_days), normaliser `tools/ai-usage/normalise.py` handles anthropic (monthly aggregates) + cursor (event-level, `cursor/events-<start>-to-<end>.csv`). 65 people; Cursor's 7 users all also on Anthropic tools (email join verified). **Not on Claude Enterprise** → no Analytics API → no active-days for Anthropic (Cursor has it natively). Ranking methodology in doc: within-product percentiles + product class (chat<assisted<agentic, role-blind per Tom) + breadth → dormant/light/regular/power buckets; screen-not-score vs Stage 1-4. NEXT: (1) compute first Jun/Jul buckets, (2) OpenAI reports when Tom adds them, (3) fuller Cursor export (Jun 1-9 missing), (4) dept headcount for denominator.
 
 ## Previous task
 
