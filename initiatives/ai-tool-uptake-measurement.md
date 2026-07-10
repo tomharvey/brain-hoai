@@ -23,7 +23,7 @@ Measure **uptake** of AI tools across the company — who is using what, how oft
 |---|---|
 | `reference/ai-tool-usage-reports/anthropic/` | Raw Anthropic spend/usage CSVs, one per period (`2026-06.csv`, `2026-07-partial-to-09.csv`) |
 | `reference/ai-tool-usage-reports/cursor/` | Raw Cursor team usage-events CSVs (event-level, `events-<start>-to-<end>.csv`) |
-| `reference/ai-tool-usage-reports/openai/` | (pending) OpenAI reports |
+| `reference/ai-tool-usage-reports/openai/` | Hand-transcribed ChatGPT workspace analytics (`chatgpt-messages-<start>-to-<end>.csv` + source screenshot + `name-to-email.csv` mapping). No export exists — the UI table is transcribed manually (~5 min/period) |
 | `reference/ai-tool-usage-reports/normalised.csv` | Generated output — gitignored, rebuild with `python3 tools/ai-usage/normalise.py` |
 
 **Raw reports are the source of truth.** The normalised layer is disposable and regenerated from raw, so schema changes never require touching source data — just update the normaliser and re-run.
@@ -32,7 +32,7 @@ Naming convention for raw files: `YYYY-MM.csv` for a full month, `YYYY-MM-partia
 
 ## Normalised schema — v0.2
 
-Grain: **one row per person × vendor × product × period** (calendar month, possibly partial; summed across models).
+Grain: **one row per person × vendor × product × period** (calendar month, possibly partial; summed across models). Exception: OpenAI rows span the UI export window (an aggregate can't be sliced by month) — currently Jun 10 – Jul 9, crossing the month boundary. Metrics comparing calendar months must handle or exclude these rows until the capture moves to Custom calendar-month ranges.
 
 | Field | Type | Notes |
 |---|---|---|
@@ -93,13 +93,17 @@ Relationship to capability stages: telemetry buckets are a **screen, not a score
 - June product reach: Chat 56, Cowork 48, Claude Code 22, Claude in Chrome 16, Claude Design 11, Office Agents 6. **49 of 61 people used 2+ products.**
 - June net spend $2,392; July 1–9 $495. Median ~1,600 requests/user in June (max 36,701).
 - "Claude Tag" usage is entirely org-level service usage, not attributable to individuals.
+- **ChatGPT (Jun 10 – Jul 9)**: 35 active users, 3,011 messages, zero credit spend. Top users: Adam Smith (458), **Antton Pena (332 — on the unassessed list with "no signal"; heavy AI user on a different tool)**, Emily Staton (248), Ben Allen (240), Ed Klinger (236). Alex Dyball is ChatGPT-only — appears in no Anthropic report.
+- **Cursor (Jun 10 – Jul 9)**: 7 users, all also on Anthropic tools. Oliver Crowe active 30/30 days.
 
 ## Actions
 
 - [x] Ingest Anthropic June + July reports, establish raw-data home — 2026-07-10
 - [x] Define normalised schema v0.1 + normaliser script — 2026-07-10
 - [x] Add Cursor reports; normaliser extended, schema bumped to v0.2 (`active_days`) — 2026-07-10. 7 users, all also on Anthropic tools; Jun 10 – Jul 9 window (Jun 1–9 missing — pull a fuller export if Cursor admin allows custom ranges)
-- [ ] Add OpenAI reports when available; extend normaliser, revisit schema
+- [x] Add OpenAI (ChatGPT) data via UI transcription — 2026-07-10. 20 users ingested; known gaps below
+- [ ] Improve the OpenAI capture: re-screenshot with **Custom** range = calendar months (currently rolling 1M, assumed Jun 10 – Jul 9); capture **all 4 pages** (current: page 1 of 4 — ~15 active users with ≤25 messages missing); check **Codex analytics** (agentic-class signal if non-empty)
+- [ ] Verify `alex.dyball@flockcover.com` (email guessed from convention — he's ChatGPT-only, so no cross-vendor confirmation)
 - [ ] Compute first monthly uptake buckets (dormant/light/regular/power) from June + July data per the methodology above
 - [ ] Get headcount per department for coverage % (denominator — not in any vendor report)
 - [ ] Decide whether active-weeks (weekly exports) is worth the effort after seeing monthly buckets

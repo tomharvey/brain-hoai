@@ -12,6 +12,10 @@ encode coverage:
   anthropic/YYYY-MM.csv                     full month, aggregate rows
   anthropic/YYYY-MM-partial-to-DD.csv       month start to DD, aggregate rows
   cursor/events-YYYY-MM-DD-to-YYYY-MM-DD.csv  event-level, arbitrary range
+  openai/chatgpt-messages-YYYY-MM-DD-to-YYYY-MM-DD.csv
+      hand-transcribed from the ChatGPT workspace analytics UI (no export
+      exists); aggregate over the window, so the row may span two calendar
+      months. Names resolve to emails via openai/name-to-email.csv.
 
 Output is regenerated in full on every run:
 reference/ai-tool-usage-reports/normalised.csv
@@ -105,11 +109,39 @@ def normalise_cursor(path):
         }
 
 
-# Vendor name -> normaliser. Add openai here when its reports arrive;
-# each takes a raw CSV path and yields rows in the v0.2 schema.
+def normalise_openai(path):
+    if path.name == "name-to-email.csv":
+        return
+    m = re.match(r"chatgpt-messages-(\d{4}-\d{2}-\d{2})-to-(\d{4}-\d{2}-\d{2})\.csv$", path.name)
+    if not m:
+        raise ValueError(f"unrecognised openai report filename: {path.name}")
+    with open(path.parent / "name-to-email.csv", newline="") as f:
+        emails = {r["name"]: r["person_email"] for r in csv.DictReader(f)}
+    with open(path, newline="") as f:
+        for row in csv.DictReader(f):
+            name = row["name"].strip()
+            if name not in emails:
+                sys.exit(f"no email mapping for '{name}' — add to openai/name-to-email.csv")
+            yield {
+                "person_email": emails[name],
+                "is_person": "true",
+                "vendor": "openai",
+                "product": "ChatGPT",
+                # aggregate over the whole UI window; not sliceable by month
+                "period_start": m[1],
+                "period_end": m[2],
+                "requests": int(row["messages_sent"]),
+                "active_days": "",
+                "spend_usd": 0.0,
+            }
+
+
+# Vendor name -> normaliser; each takes a raw CSV path and yields rows in
+# the v0.2 schema.
 NORMALISERS = {
     "anthropic": normalise_anthropic,
     "cursor": normalise_cursor,
+    "openai": normalise_openai,
 }
 
 
