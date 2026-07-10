@@ -104,7 +104,8 @@ Relationship to capability stages: telemetry buckets are a **screen, not a score
 - [x] Add OpenAI (ChatGPT) data via UI transcription — 2026-07-10. 20 users ingested; known gaps below
 - [ ] Improve the OpenAI capture: re-screenshot with **Custom** range = calendar months (currently rolling 1M, assumed Jun 10 – Jul 9); capture **all 4 pages** (current: page 1 of 4 — ~15 active users with ≤25 messages missing); check **Codex analytics** (agentic-class signal if non-empty)
 - [ ] Verify `alex.dyball@flockcover.com` (email guessed from convention — he's ChatGPT-only, so no cross-vendor confirmation)
-- [ ] Compute first monthly uptake buckets (dormant/light/regular/power) from June + July data per the methodology above
+- [x] First bucket run — 2026-07-10: **27 power / 29 regular / 9 light / 0 dormant** across 65 people. Report: [[uptake-report-2026-06-01-to-2026-07-09]]. Compute: `tools/ai-usage/metrics.py` (joins stage scores from people/ frontmatter + justifications from `stage-justifications.psv`). Power bar: ≥60th pct in an agentic product + breadth ≥3 + sustained Jun&Jul
+- [ ] Act on screen flags: score-or-file the unscored actives (Antton, Alex Smith, Charlie Dowrick, Joan Canellas, craig.hill…); review Stage-2-but-power four (Phoebe, Fred, Milan, Michael Matthews); resolve Geran frontmatter-4-vs-body-3 mismatch
 - [ ] Get headcount per department for coverage % (denominator — not in any vendor report)
 - [ ] Decide whether active-weeks (weekly exports) is worth the effort after seeing monthly buckets
 - [ ] Decide reporting cadence and audience (monthly summary to C-suite?)

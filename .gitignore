@@ -19,3 +19,4 @@ outbox/
 tools/datadog/secrets.txt
 outbox/datadog-exports/
 reference/ai-tool-usage-reports/normalised.csv
+reference/ai-tool-usage-reports/uptake-metrics.csv
