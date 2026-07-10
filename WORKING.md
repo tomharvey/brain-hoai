@@ -2,7 +2,11 @@
 
 ## Current task
 
-**AI tool uptake measurement (Jul 10)**: initiative `initiatives/ai-tool-uptake-measurement.md`. Schema **v0.2** (added active_days), normaliser `tools/ai-usage/normalise.py` handles anthropic (monthly aggregates) + cursor (event-level, `cursor/events-<start>-to-<end>.csv`). 65 people; Cursor's 7 users all also on Anthropic tools (email join verified). **Not on Claude Enterprise** → no Analytics API → no active-days for Anthropic (Cursor has it natively). Ranking methodology in doc: within-product percentiles + product class (chat<assisted<agentic, role-blind per Tom) + breadth → dormant/light/regular/power buckets; screen-not-score vs Stage 1-4. NEXT: (1) compute first Jun/Jul buckets, (2) OpenAI reports when Tom adds them, (3) fuller Cursor export (Jun 1-9 missing), (4) dept headcount for denominator.
+**AI tool uptake measurement (Jul 10)**: initiative `initiatives/ai-tool-uptake-measurement.md`. Schema v0.2; 3 vendors normalised (anthropic aggregates, cursor events, openai UI-transcription + name-to-email map). First bucket run: **27 power / 29 regular / 9 light**, report `reference/ai-tool-usage-reports/uptake-report-2026-06-01-to-2026-07-09.md` + **shared Flock-branded dashboard** https://claude.ai/code/artifact/87df4747-ea14-4be7-9b1d-ca9e77cb11c6 (source: session scratchpad `uptake-report.html`; regen = metrics.py → JSON → embed → redeploy same URL). Dashboard excludes jai.patel@ (unrecognised acct in Anthropic export — IDENTIFY) and Alex Smith (departed, people file marked).
+
+**Jul 10 SCORE CHANGES (telemetry challenge)**: Matt Price 4→3 medium (777 req/18th agentic pct vs stage-4 cohort 1.7k-13.7k/≥57th; Jun 30 evidence self-reported; restore = artifact-level evidence at next 1:1). David Zamora 4→3 medium (paternity leave = 2-month evidence gap; strong May evidence = short restore path). **Distribution now 1:3 · 2:15 · 3:22 · 4:13** (was 3:20 · 4:15). Kaylee→**Kayleigh Bradbury** (email directory; name-resolution entry added). Screen flags pending: Phoebe/Fred/Milan/Michael Matthews (stage 2, power telemetry); unscored actives Antton/Charlie Dowrick/Joan Canellas/craig.hill; Geran frontmatter-4-vs-body-3.
+
+NEXT: (1) ChatGPT pages 2-4 + Custom calendar ranges + Codex analytics check, (2) fuller Cursor export (Jun 1-9), (3) dept headcount denominator, (4) consider soft flag: stage 4 + bottom-quartile agentic pct.
 
 ## Previous task
 

@@ -1,14 +1,14 @@
 ---
 title: Matthew Price
 created: 2026-03-27
-updated: 2026-06-30
+updated: 2026-07-10
 type: person
 role: Head of Product
 team: Product
 tags: [product, leadership]
-ai_activation_stage: 4
-ai_activation_confidence: medium-high
-ai_activation_assessed: 2026-06-30
+ai_activation_stage: 3
+ai_activation_confidence: medium
+ai_activation_assessed: 2026-07-10
 ---
 
 ## Role
@@ -32,15 +32,16 @@ Peer
 - Also experienced AI-driven burnout (Replit on phone)
 
 ## AI Activation
-**Stage**: 4 — Delegation
-**Confidence**: medium-high
-**Assessed**: 2026-06-30
+**Stage**: 3 — Building (downgraded from 4, 2026-07-10)
+**Confidence**: medium
+**Assessed**: 2026-07-10
 **Evidence**: Delegates complex analysis tasks across HubSpot, PostHog, and Looker MCPs daily. Uses second brain to coach his reports. Jun 30: using Lovable for presentation slides (prefers over Flock presentation skill for animation/design). Built PostHog embedded hardware device project (Arduino/ESP32) with Claude Code — C++ work, enjoying hardware prototyping. Connected web analytics + policy performance + HubSpot data for retention analysis dashboard. Used co:work project for budget analysis. Shared retention correlation findings with sales team. Considering hooking PostHog device to telemetry data. Daily active users metric tied to retention. Good strategic thinking about AI product direction (J needs to be customer-first not "come use our AI").
 
-**Not Stage 3**: Past conversational fluency — building hardware projects with AI (Arduino/ESP32/C++), cross-data-source analysis dashboards, presentation tooling evaluation. High fluency across diverse domains.
-**Not Stage 5**: Not directing multi-agent systems or measuring adherence. The coaching skill he describes is a vision being built, not a governed system.
+**Jul 10 rescore (4→3, telemetry challenge)**: Jun–Jul uptake telemetry shows 777 requests / 18th agentic percentile vs a stage-4 cohort at 1.7k–13.7k requests and ≥57th percentile — "daily delegation across MCPs" not supported by measured volume (Cowork ≈3 requests/day). Jun 30 evidence was largely self-reported at 1:1, not artifact-verified. Claude Code:514 corroborates the hardware build; breadth is real, intensity isn't evidenced. Off-telemetry tools (Lovable, Replit) noted as partial mitigation.
+**Not Stage 2**: Cross-domain building is unambiguous — hardware project (Arduino/ESP32/C++) via Claude Code, cross-source retention dashboard, co:work budget analysis.
+**Not Stage 4**: Delegation claim rests on self-report; measured agentic usage is bottom-quintile. Restore path: artifact-level evidence at next 1:1 (show the retention dashboard and co:work project in real use).
 **To progress**: Ship the coaching skill — agent ingests all team Linear projects, surfaces the "so what" for each 1:1 proactively. Or instrument the PostHog hardware device as an autonomous telemetry system.
-**Framework note**: Confidence upgraded from medium to medium-high. June evidence shows breadth — hardware prototyping, cross-source analytics, presentation tools, budget analysis via co:work. Practice continues to match conceptual model.
+**Framework note**: Jul 10 — confidence reduced to medium alongside the 4→3 rescore; the June "breadth" evidence stands but was self-reported. Re-evidence at next 1:1.
 
 ## 1:1 Log
 

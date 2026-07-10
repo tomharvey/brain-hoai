@@ -8,7 +8,7 @@ anneliese-vanwijk|2|medium|Jul 9 update: real wins via Looker MCP dashboards lif
 daisy-mae-baker|2|low|Team-level Granola setup implies use beyond single wins; zero individual usage data means Stage 2 is inferred from Ben's team setup only — effectively unverified.
 darren|3|medium|Building skills and goal-setting functions is active tool construction beyond Stage 2; no evidence of scheduled or autonomous delegation keeps him below 4. Mostly indirect evidence.
 ben-allen|2|low|Team Granola querying and being the insight-service conduit put him past single-task wins; no direct data on his personal practice keeps him below 3 — inference only.
-david|4|medium|Hands-off agent runs with transcript-fed context reviewed at task level exceed Stage 3; artefacts remain individual, no multi-agent or team-level measurement for 5. Paternity-leave evidence gap.
+david|3|medium|Strong May delegation evidence (hands-off agent runs, transcript-fed context) exceeds Stage 2; two months of paternity leave left the pattern unverified (157 requests Jun–Jul) — downgraded 4→3 pending re-evidence on return.
 christian-leth-nielsen|4|high|Delegated whole high-stakes workflows (SPA extraction, budget model, cost analysis) reviewed at output level; no continuous monitoring or instrumented feedback loops yet, keeping him short of 5.
 david-pilley|3|medium|Independently built reusable MI dashboard skill in weekly use, beyond connecting sources; doesn't delegate whole workflows and the review muscle is weak (over-trust), so not 4.
 chris|3|high|Built AI-specific infrastructure (policy admin MCP server) well past Stage 2; operating mode is building for delegation rather than routinely delegating — downgraded from 4 on Jun 30.
@@ -29,7 +29,7 @@ jake-wood|3|high|Unprompted 2-day HubSpot dashboard build in production (0→90%
 jordi|3|medium|Built real automations (Engine Room triage, vulnerability cron) beyond connecting tools; but primary mode is enabling others, not sustained personal agentic delegation — revised down from 4.
 jade-mounir|2|medium|Grasps the framework and is designing team workshops, past first-win Observer status; but not building her own workflows — her team is individually ahead of her. Thin evidence.
 matt-smith-uw|2|low-medium|Repeated Gemini-in-Sheets analysis on connected HubSpot/GWP data beats first wins; but no durable tooling of his own and adoption proved fragile — single assessment, low-medium confidence.
-matt|4|medium-high|Daily delegation across HubSpot/PostHog/Looker MCPs plus AI hardware builds exceed fluency; but coaching skill is vision-stage and no multi-agent direction or adherence measurement for Stage 5.
+matt|3|medium|Cross-domain building (hardware via Claude Code, retention dashboards, co:work analysis) clearly exceeds Stage 2; the "daily delegation" claim was unsupported by telemetry (18th agentic percentile) and self-reported — downgraded 4→3 on Jul 10.
 milan-chavda|2|medium|Daily co:work use and a couple of guided skills beat first-win level; but hasn't built anything independently — second brain still on to-do list, team ahead of him.
 jacob-holland|4|high|Runs 2-3 parallel agents as "capable juniors" with task-level review — unambiguous delegation; but golden rules and quality patterns aren't yet team standards with adherence metrics for Stage 5.
 michael-matthews|2|low|Co:work project, Excel plugin, and daily use lift him past single wins, but "not ingrained" habit and one-shot prompting keep him short of building workflows.
